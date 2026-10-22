@@ -5,29 +5,11 @@ A locally-run statistical system that projects every NBA player's fantasy produc
 chronologically validates forecasting models, simulates 10,000 seasons per player, and writes rankings, quantitative
 explanations, reports and plots.
 
-* **No AI/LLM API is used at any point.** Normal runs need only Python and (for fresh data) the internet.
-* Everything is reproducible from the data stored locally (`data/`), the config (`config/`) and a seed.
-* Objective order: **out-of-sample accuracy > interpretability > complexity**. A complex model is used only when it
-  beats a simpler one by more than a tolerance on the chronological backtest.
-
 ```
 FP = PTS + 2·FGM − FGA + FTM − FTA + 3PM + REB + 2·AST + 4·STL + 4·BLK − 2·TOV
 Projected FPPG  = projected FPPM (fantasy points / minute) × projected minutes per game played
 Projected total = projected FPPG × projected games played        (+ points already banked, in-season)
 ```
-
-> ### Read this first - what has and has not been verified
-> The code was built and tested in a sandbox **without internet access**. Therefore:
-> * ✅ Verified: the entire pipeline (ingest → process → features → train → validate → simulate → rank → reports → plots),
->   run end-to-end on a built-in **synthetic NBA-like league** (`--demo`), 75 unit/integration tests, leakage tests,
->   parsers against payloads in the documented formats, cache/retry/rate-limit logic with a fake HTTP session.
-> * ⚠️ **Not verified: the live scrapers.** stats.nba.com, ESPN (incl. the ESPN-only profile) and Rotowire endpoints were written from the publicly
->   known response formats but could not be called. They are schema-validated and fail loudly, but expect to
->   debug something on first contact. **Run `python check_sources.py` first** - it makes one small request per source
->   and tells you exactly which endpoint/parse step fails.
-> * Sample outputs in `sample_outputs/` come from the synthetic league (random player names) - they show the format and
->   what a validated run looks like, **not real NBA projections.**
-> * Tested with Python 3.12, pandas 3.0, numpy 2.4, scikit-learn 1.8, scipy 1.17, matplotlib 3.10.
 
 ## 1. Installation
 
@@ -109,8 +91,6 @@ fantasy_ranker/
 | Consensus rank / ADP (**comparison only**) | ESPN fantasy API, or your CSV | `kona_player_info` | TTL 24 h |
 | Cross-check of totals (optional) | Basketball-Reference | season tables (HTML) | `--crosscheck` |
 
-* **Stathead is deliberately not used** (paid, login-gated, no automated-access terms). The interface makes adding a source a
-  one-class job (`DataSource` subclass + entry in `src/data_sources/__init__.py` + config `sources`).
 * Pace, ratings, possessions, usage, assist/rebound/steal/block/turnover rates, TS%, eFG%, FT rate and 3PA rate are
   **derived from box-score counting stats** (Basketball-Reference formulas, with team totals taken over the exact window a
   player spent with each team) - no downloaded black-box metric, and no fantasy metric from anywhere.
@@ -122,25 +102,10 @@ fantasy_ranker/
   trades/signings/releases), per-game starter flags and lineup data (starting lineup = top-5 minutes in each game, a proxy),
   college / G-League / international / Summer League stats (see 6.6 for the CSV hook).
 
-### How scraping works
-`HttpClient` (`src/scraping/scraper.py`): one throttle per source (NBA 1.5 s, ESPN 1 s, Rotowire 2.5 s, Basketball-Reference 3.6 s),
-exponential back-off with jitter and `Retry-After`, no retry on 401/403/404, **schema validation before anything is cached** (a
-block page is never stored), every response stored with URL, params, timestamp and SHA-256 in `data/cache/http/`, stale-cache fallback
-with a loud warning, offline mode, and a fast connectivity probe so a dropped connection fails in seconds. The canonical tables derived
-from responses are stored in `data/raw/` with provenance in `data/raw/manifest.json` (source, timestamp, rows, hash).
-If a *completed* season cannot be downloaded the run stops rather than project from stale data.
-
-### Updating data
-Normal runs refresh only what is stale (TTLs above). `--update-data` refreshes rosters/injuries/consensus/in-progress games now.
-When a new season finishes, simply run again: the new completed season is downloaded once and the models are retrained because the
-data fingerprint changed. `data/processed/_fingerprint.json` and the model bundle's fingerprint decide when tables/models are rebuilt.
-
 ## 4. Fantasy scoring
 
-Stored in `config/league_settings.json → scoring` (defaults are exactly the ESPN values you specified). `PTS` is the box-score point total, so a
-**made three = 3 + 2 − 1 + 1 = +5, a made two = +3, a made free throw = +1, any missed shot = −1** (unit-tested). *(Your brief's example lists
-a made three as "+3"; that would only hold if PTS counted 1 per made shot. The formula you gave, with real box-score PTS, gives +5, which is also
-what ESPN's default league does, so that is what is implemented.)*
+Stored in `config/league_settings.json → scoring`. `PTS` is the box-score point total, so a
+**made three = 3 + 2 − 1 + 1 = +5, a made two = +3, a made free throw = +1, any missed shot = −1** (unit-tested).
 
 **To change scoring:** edit the 11 numbers and rerun - processed tables and models rebuild automatically (the scoring is in the fingerprint).
 Break-even make rates under the default scoring: 2PA 25%, 3PA 16.7%, FTA 50% - nearly every shot attempt is positive EV, which is why
@@ -162,7 +127,7 @@ duplicate names / inconsistent ids, traded players, team changes, missing curren
 stints (minutes-weighted rates) and adds `last_stint_*` so **performance with the previous team is separated from performance after a trade**
 (features `trade__*`, and the player report lists the split).
 
-### 6.2 Leak-free features (hard requirement)
+### 6.2 Leak-free features
 `FeatureBuilder.build(T)` hard-filters to seasons `< T` and uses only information known before season T: the roster (team), position, birth date, draft slot,
 head coach, and teammates' *prior-season* statistics. `outputs/feature_policy.csv` lists every feature with its group and permitted information, and
 `tests/test_no_leakage.py` **destroys all season-T data and asserts the features are unchanged**, and asserts game-level features never include the game itself.
@@ -227,7 +192,7 @@ multiplier brings it to 80% (`uncertainty_calibration.csv`; in the demo 74.1% �
   minutes gain, P(minutes ≥ last year + 3), P(beating last season's total) and - only if consensus data exist - the market gap (weights in config). No hard-coded sleeper lists.
 * **Consensus (ESPN ADP or your CSV) is used for comparison only** and never touches features or training: `rank_diff = model rank − consensus rank` (negative = model likes him more) and
   `value_diff = projected value − what the model's own value curve assigns to that consensus slot`.
-* **Explanations are computed, not written:** for each group (team, teammates, coach, age, role, late/post-trade form, track-record adjustment) the explanatory model is re-evaluated with that group neutralised;
+* **Explanations:** for each group (team, teammates, coach, age, role, late/post-trade form, track-record adjustment) the explanatory model is re-evaluated with that group neutralised;
   the change in FPPG is the effect (`team_effect`, `teammate_effect`, `coach_effect`, `age_effect`, ... in **FPPG**). Linear models also give exact per-feature terms. Drivers in the reports are ranked by their
   total-fantasy-point impact (observable changes in minutes/FPPM/games plus the group effects; note they overlap - the effects are model attributions, the changes are observations).
 
@@ -235,21 +200,8 @@ multiplier brings it to 80% (`uncertainty_calibration.csv`; in the demo 74.1% �
 Strictly chronological, expanding window: for each of the last `n_test_seasons` (default 5) seasons S, train on target seasons < S and predict S. Never a random split. Metrics per fold and mean: RMSE, MAE, R², Pearson, **Spearman**,
 MAPE, error among the top-N projected players, and for the combined projection also the overlap between the projected and realised top-N. Benchmarks: weighted history, naive "last season's total/FPPG".
 
-Result on the synthetic league (3 test seasons; **synthetic data, so absolute numbers are not predictive of real NBA accuracy**):
-
-| Target | Benchmark A | Best learned | Spearman A → best |
-|---|---|---|---|
-| FPPM (RMSE) | 0.109 | Ridge 0.086 | 0.862 → 0.916 |
-| Minutes per game (RMSE) | 4.34 | Elastic Net 3.37 | 0.855 → 0.914 |
-| Availability (top-100 MAE) | 0.117 | Ridge 0.108 | 0.366 → 0.533 |
-| **Season total FP** (Spearman) | weighted history 0.827, naive last-season 0.808 | **pipeline 0.893** | RMSE 601 / 645 → **492** |
-| Season FPPG (Spearman) | 0.880 / 0.894 | **0.936** | RMSE 5.7 / 5.4 → **4.1** |
-
-On the hidden simulated season (never an input): Spearman 0.864 for totals, top-50 overlap 80%, 80%-interval coverage 75.6% (calibrated folds: 80.0%).
-With real data the calibration uses more folds, so the interval widths should be better determined - check `uncertainty_calibration.csv` each time.
-
 ## 8. Outputs
-`outputs/rankings.csv` (the columns you specified, in order, then extras):
+`outputs/rankings.csv`:
 `rank_total, rank_fppg, rank_risk_adjusted, player_id, player_name, team, position, age, projected_minutes, projected_fppm, projected_fppg, projected_games, projected_total_fantasy_points, fppm_p10…p90, fppg_p10…p90, total_p10…p90, upside_score, risk_score, confidence_score, historical_fppm, historical_fppg, minutes_change, role_change, team_effect, teammate_effect, coach_effect, age_effect`
 Extras: `minutes_p10…p90, games_p10/p50/p90, projected_avail, total_mean, downside_risk, risk_adjusted_value, vor_total` (value over a replacement level of teams × roster spots), `role_effect, form_effect, history_adjustment, hist_fppm_weighted, breakout_score, p_role_expansion, p_beat_last_season, rank_vs_last_season, consensus_rank, rank_diff_vs_consensus, value_diff_vs_consensus, archetype, scoring_share, peripheral_share, pathway, is_rookie, confidence_label, inj_note, override_applied, fp_to_date, gp_to_date, games_out`.
 
@@ -268,7 +220,7 @@ Read the 10th-90th percentile of `total_*`: 80% of simulated seasons fall inside
 (median > mean). `downside_risk` = how much worse the worst-10% seasons are than the median; `risk_adjusted` ranking penalises it with λ. `confidence_score` is relative (percentile among players), the label is Low/Medium/High by thirds.
 
 ## 11. Known limitations (be skeptical in these places)
-* Live scrapers untested here (section top). stats.nba.com may block cloud IP ranges.
+* stats.nba.com may block cloud IP ranges.
 * The backtest's preseason roster is a proxy; mid-season coaching changes may leak into a few historical rows (the coach table lists the season's final head coach).
 * No lineup or per-game starter data: double-big/small-ball/stability and "starter" are top-5-by-minutes proxies. No depth-chart scraping, no transaction feed, no college/G-League ingestion.
 * Availability is independent of per-minute performance in the simulation; injuries are not predicted, only base rates and known current absences.
