@@ -1,0 +1,44 @@
+PLAYER: Naji Marshall   (DAL, F, age 29.0)
+
+Projected Rank (total value): 97 of 519    | by FPPG: 133    | risk-adjusted: 93
+Consensus rank (comparison only): 323    model-minus-consensus rank: -226    value vs consensus slot: +978 FP
+
+Projected FPPM:    0.96      (80% range 0.79 - 1.15)
+Projected Minutes: 27.2      (80% range 20.0 - 32.1)
+Projected FPPG:    26.1      (80% range 17.0 - 33.9)
+Projected Games:   66      (availability 82%, 80% range 38 - 77 games)
+Projected Total:   1765
+  (in-season: 33 FP already banked over 1 games)
+
+10th percentile total: 814
+25th percentile total: 1211
+50th percentile total: 1617
+75th percentile total: 1998
+90th percentile total: 2357
+Mean of simulated totals: 1609   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 575    risk-adjusted value: 1096
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.87 | 19.1 mpg | 16.5 FPPG | 66 GP | NOP
+  2024-25: FPPM 0.94 | 27.8 mpg | 26.1 FPPG | 69 GP | DAL
+  2025-26: FPPM 0.95 | 29.5 mpg | 28.1 FPPG | 74 GP | DAL
+  2026-27: FPPM 1.14 | 29.0 mpg | 33.0 FPPG | 1 GP | DAL
+  last-season fantasy profile per game: scoring block +19.0 | rebounds +2.0 | assists +12.0 | stocks +4.0 | turnovers -4.0 | missed-shot cost -6.0
+  FP per FGA 2.54 | FP per possession used 2.20 | FPPM per usage point 0.051 | usage 22.3% | TS% 0.615
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+1.5 FPPG]  (~+97 FP)
+Main negative drivers:
+  - fewer games expected (74 -> 66)  (~-203 FP)
+  - fewer minutes (29.5 -> 27.2 mpg)  (~-144 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.6 FPPG]  (~-106 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.5 | teammate -1.6 | coach -0.3 | age +0.3 | role +1.5 | form +0.0 | history_adjustment +0.9
+Top feature terms, FPPM adjustment: mate__same_pos_min +0.009; team__depth15 +0.006; age__age +0.006; age__hinge_young -0.012; team__usage_conc -0.007; hist__blk_pct_l1 -0.007
+Top feature terms, minutes adjustment: team__rot_size_exp +1.662; age__age +1.252; role__gap_hist +1.016; mate__same_pos_min -1.132; age__hinge_young -1.048; role__budget_ratio -0.682
+
+Archetype: all-around    scoring-block share of FP: 52%    breakout score: 40/100
+Upside score: 47   Risk score: 14   P(role expansion >= +3 mpg): 9%
+
+Confidence: High  (score 83/100)

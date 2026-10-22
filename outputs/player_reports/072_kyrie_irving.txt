@@ -1,0 +1,45 @@
+PLAYER: Kyrie Irving   (DAL, G, age 34.9)
+
+Projected Rank (total value): 72 of 519    | by FPPG: 61    | risk-adjusted: 75
+Consensus rank (comparison only): 50    model-minus-consensus rank: +22    value vs consensus slot: -194 FP
+
+Projected FPPM:    1.13      (80% range 0.95 - 1.33)
+Projected Minutes: 30.2      (80% range 24.5 - 34.0)
+Projected FPPG:    34.2      (80% range 24.8 - 42.2)
+Projected Games:   57      (availability 71%, 80% range 31 - 73 games)
+Projected Total:   1979
+  (in-season: 23 FP already banked over 1 games)
+
+10th percentile total: 941
+25th percentile total: 1391
+50th percentile total: 1862
+75th percentile total: 2311
+90th percentile total: 2721
+Mean of simulated totals: 1845   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 570    risk-adjusted value: 1216
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2022-23: FPPM 1.31 | 37.3 mpg | 48.7 FPPG | 60 GP | DAL  (traded BKN -> DAL)
+  2023-24: FPPM 1.34 | 35.0 mpg | 46.8 FPPG | 58 GP | DAL
+  2024-25: FPPM 1.19 | 36.0 mpg | 42.9 FPPG | 50 GP | DAL
+  2026-27: FPPM 0.96 | 24.0 mpg | 23.0 FPPG | 1 GP | DAL
+  last-season fantasy profile per game: scoring block +19.0 | rebounds +4.0 | assists +4.0 | stocks +4.0 | turnovers -8.0 | missed-shot cost -3.0
+  FP per FGA 2.56 | FP per possession used 1.66 | FPPM per usage point 0.038 | usage 24.9% | TS% 0.759
+
+Main positive drivers:
+  + more games expected (50 -> 57)  (~+248 FP)
+  + role and depth-chart position favor more production [+3.0 FPPG]  (~+169 FP)
+Main negative drivers:
+  - fewer minutes (36.0 -> 30.2 mpg)  (~-378 FP)
+  - age-related decline expected [-2.1 FPPG]  (~-119 FP)
+  - lower per-minute production (FPPM 1.19 -> 1.13)  (~-103 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.6 | teammate +0.1 | coach -0.3 | age -2.1 | role +3.0 | form +0.4 | history_adjustment -1.8
+Top feature terms, FPPM adjustment: hist__log_min_l1 +0.028; hist__fppm_raw_w +0.018; age__age +0.014; age__exp -0.042; age__hinge_old -0.013; age__hinge_young -0.012
+Top feature terms, minutes adjustment: age__age +3.195; team__rot_size_exp +1.662; hist__log_min_l1 +0.969; hist__missing_l1 -3.178; age__exp -2.269; age__hinge_young -1.048
+
+Archetype: scoring-heavy    scoring-block share of FP: 61%    breakout score: 2/100
+Upside score: 75   Risk score: 26   P(role expansion >= +3 mpg): 0%
+
+Confidence: High  (score 83/100)

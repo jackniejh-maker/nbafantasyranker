@@ -1,0 +1,44 @@
+PLAYER: Derrick Jones Jr.   (LAC, F, age 30.0)
+
+Projected Rank (total value): 187 of 519    | by FPPG: 212    | risk-adjusted: 177
+Consensus rank (comparison only): 296    model-minus-consensus rank: -109    value vs consensus slot: +462 FP
+
+Projected FPPM:    0.86      (80% range 0.68 - 1.05)
+Projected Minutes: 23.5      (80% range 16.2 - 28.3)
+Projected FPPG:    20.3      (80% range 12.5 - 27.1)
+Projected Games:   62      (availability 77%, 80% range 35 - 78 games)
+Projected Total:   1287
+  (in-season: 28 FP already banked over 1 games)
+
+10th percentile total: 550
+25th percentile total: 840
+50th percentile total: 1161
+75th percentile total: 1508
+90th percentile total: 1837
+Mean of simulated totals: 1185   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 366    risk-adjusted value: 764
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.77 | 23.4 mpg | 18.0 FPPG | 76 GP | DAL
+  2024-25: FPPM 0.83 | 24.3 mpg | 20.2 FPPG | 77 GP | LAC
+  2025-26: FPPM 0.85 | 26.9 mpg | 22.9 FPPG | 50 GP | LAC
+  2026-27: FPPM 1.08 | 26.0 mpg | 28.0 FPPG | 1 GP | LAC
+  last-season fantasy profile per game: scoring block +10.0 | rebounds +6.0 | assists +10.0 | stocks +4.0 | turnovers -2.0 | missed-shot cost -2.0
+  FP per FGA 7.00 | FP per possession used 4.76 | FPPM per usage point 0.112 | usage 9.6% | TS% 0.820
+
+Main positive drivers:
+  + more games expected (50 -> 62)  (~+243 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.1 FPPG]  (~+65 FP)
+Main negative drivers:
+  - fewer minutes (26.9 -> 23.5 mpg)  (~-183 FP)
+  - age-related decline expected [-0.7 FPPG]  (~-46 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.1 | teammate -0.4 | coach +0.2 | age -0.7 | role +0.4 | form -0.0 | history_adjustment -1.1
+Top feature terms, FPPM adjustment: coach__games_known +0.010; mate__reb_wavg +0.010; age__age +0.007; age__exp -0.019; age__hinge_young -0.012; team__usage_conc -0.008
+Top feature terms, minutes adjustment: age__age +1.564; team__rot_size_exp +1.538; team__ortg_l1 +0.623; age__hinge_young -1.048; age__exp -1.021; role__is_top5 -0.443
+
+Archetype: all-around    scoring-block share of FP: 51%    breakout score: 32/100
+Upside score: 31   Risk score: 24   P(role expansion >= +3 mpg): 5%
+
+Confidence: High  (score 69/100)

@@ -1,0 +1,45 @@
+PLAYER: Derrick White   (BOS, G, age 32.6)
+
+Projected Rank (total value): 30 of 519    | by FPPG: 44    | risk-adjusted: 25
+Consensus rank (comparison only): 39    model-minus-consensus rank: -9    value vs consensus slot: +213 FP
+
+Projected FPPM:    1.09      (80% range 0.91 - 1.28)
+Projected Minutes: 33.8      (80% range 28.5 - 37.2)
+Projected FPPG:    36.8      (80% range 27.5 - 44.6)
+Projected Games:   69      (availability 85%, 80% range 40 - 80 games)
+Projected Total:   2573
+  (in-season: 34 FP already banked over 1 games)
+
+10th percentile total: 1373
+25th percentile total: 1909
+50th percentile total: 2396
+75th percentile total: 2848
+90th percentile total: 3236
+Mean of simulated totals: 2353   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 991    risk-adjusted value: 1693
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.14 | 32.6 mpg | 37.1 FPPG | 73 GP | BOS
+  2024-25: FPPM 1.08 | 33.8 mpg | 36.6 FPPG | 76 GP | BOS
+  2025-26: FPPM 1.09 | 34.1 mpg | 37.2 FPPG | 77 GP | BOS
+  2026-27: FPPM 0.94 | 36.0 mpg | 34.0 FPPG | 1 GP | BOS
+  last-season fantasy profile per game: scoring block +21.0 | rebounds +1.0 | assists +16.0 | stocks +4.0 | turnovers -8.0 | missed-shot cost -6.0
+  FP per FGA 2.62 | FP per possession used 2.00 | FPPM per usage point 0.046 | usage 20.4% | TS% 0.654
+
+Main positive drivers:
+  + favorable team environment (pace / efficiency / roster turnover) [+2.3 FPPG]  (~+156 FP)
+  + role and depth-chart position favor more production [+1.8 FPPG]  (~+123 FP)
+  + coach tendencies (rotation / pace) help [+0.9 FPPG]  (~+61 FP)
+Main negative drivers:
+  - fewer games expected (77 -> 69)  (~-291 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.0 FPPG]  (~-67 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +2.3 | teammate -1.0 | coach +0.9 | age -0.1 | role +1.8 | form -0.2 | history_adjustment -0.7
+Top feature terms, FPPM adjustment: coach__usage_hhi +0.011; age__age +0.011; mate__usg_wavg +0.011; role__bin_30_35 -0.020; age__exp -0.014; age__hinge_young -0.012
+Top feature terms, minutes adjustment: age__age +2.438; role__bin_30_35 +1.098; team__ortg_l1 +0.992; age__hinge_young -1.048; age__exp -0.772; hist__eff_minutes_log -0.693
+
+Archetype: playmaking-heavy    scoring-block share of FP: 46%    breakout score: 38/100
+Upside score: 71   Risk score: 2   P(role expansion >= +3 mpg): 11%
+
+Confidence: High  (score 98/100)

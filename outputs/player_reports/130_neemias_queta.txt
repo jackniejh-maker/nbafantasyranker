@@ -1,0 +1,45 @@
+PLAYER: Neemias Queta   (BOS, C, age 27.6)
+
+Projected Rank (total value): 130 of 519    | by FPPG: 129    | risk-adjusted: 138
+Consensus rank (comparison only): 133    model-minus-consensus rank: -3    value vs consensus slot: +7 FP
+
+Projected FPPM:    1.12      (80% range 0.94 - 1.32)
+Projected Minutes: 23.7      (80% range 14.2 - 30.0)
+Projected FPPG:    26.6      (80% range 14.8 - 35.9)
+Projected Games:   61      (availability 75%, 80% range 35 - 77 games)
+Projected Total:   1643
+  (in-season: 19 FP already banked over 1 games)
+
+10th percentile total: 634
+25th percentile total: 1017
+50th percentile total: 1467
+75th percentile total: 1935
+90th percentile total: 2383
+Mean of simulated totals: 1494   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 400    risk-adjusted value: 933
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.35 | 11.9 mpg | 16.0 FPPG | 28 GP | BOS
+  2024-25: FPPM 0.98 | 14.4 mpg | 14.0 FPPG | 60 GP | BOS
+  2025-26: FPPM 1.17 | 25.4 mpg | 29.7 FPPG | 76 GP | BOS
+  2026-27: FPPM 0.86 | 22.0 mpg | 19.0 FPPG | 1 GP | BOS
+  last-season fantasy profile per game: scoring block +1.0 | rebounds +4.0 | assists +4.0 | stocks +12.0 | turnovers -2.0 | missed-shot cost -3.0
+  FP per FGA 6.33 | FP per possession used 3.89 | FPPM per usage point 0.090 | usage 9.6% | TS% 0.387
+
+Main positive drivers:
+  + favorable team environment (pace / efficiency / roster turnover) [+2.3 FPPG]  (~+139 FP)
+  + coach tendencies (rotation / pace) help [+0.9 FPPG]  (~+54 FP)
+Main negative drivers:
+  - fewer games expected (76 -> 61)  (~-399 FP)
+  - fewer minutes (25.4 -> 23.7 mpg)  (~-112 FP)
+  - lower per-minute production (FPPM 1.17 -> 1.12)  (~-70 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +2.3 | teammate -0.5 | coach +0.9 | age -0.2 | role +0.2 | form +0.6 | history_adjustment +2.3
+Top feature terms, FPPM adjustment: hist__tpar_l1 +0.017; hist__blk_pct_l1 +0.014; newc__height_in +0.014; age__hinge_young -0.012; hist__fppm_shrunk -0.008; coach__star_mpg -0.007
+Top feature terms, minutes adjustment: team__ortg_l1 +0.992; mate__same_pos_min +0.911; age__age +0.765; age__hinge_young -1.048; hist__fppm_l3 -0.878; pos__c -0.876
+
+Archetype: rebounding-heavy    scoring-block share of FP: 40%    breakout score: 15/100
+Upside score: 86   Risk score: 33   P(role expansion >= +3 mpg): 17%
+
+Confidence: Medium  (score 64/100)

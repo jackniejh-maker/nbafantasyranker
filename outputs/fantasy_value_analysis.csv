@@ -1,0 +1,27 @@
+section,metric,value,note
+scoring_breakeven,value_made_2pt,3.0,
+scoring_breakeven,value_made_3pt,5.0,
+scoring_breakeven,value_made_ft,1.0,
+scoring_breakeven,value_missed_fg,-1.0,
+scoring_breakeven,value_missed_ft,-1.0,
+scoring_breakeven,breakeven_2pt_pct,0.25,
+scoring_breakeven,breakeven_3pt_pct,0.16666666666666666,
+scoring_breakeven,breakeven_ft_pct,0.5,
+fp_per_minute,scoring block (PTS+2FGM-FGA+FTM-FTA+3PM),0.5018565908132021,top-20% FPPM players: 0.669; others: 0.460
+fp_per_minute,rebounds,0.18227631394628058,top-20% FPPM players: 0.240; others: 0.168
+fp_per_minute,assists (x2),0.2198104465227749,top-20% FPPM players: 0.299; others: 0.200
+fp_per_minute,steals+blocks (x4),0.22205732001626236,top-20% FPPM players: 0.257; others: 0.213
+fp_per_minute,turnovers (x-2),-0.11361342149487857,top-20% FPPM players: -0.151; others: -0.104
+fp_per_minute,missed shots (attempt cost),-0.2166437490980514,top-20% FPPM players: -0.261; others: -0.206
+spearman_with_FPPM,usg,0.6267502127330394,"conventional efficiency (TS%, eFG%) vs fantasy value"
+spearman_with_FPPM,ts,0.3463172319287427,"conventional efficiency (TS%, eFG%) vs fantasy value"
+spearman_with_FPPM,efg,0.2074614614653411,"conventional efficiency (TS%, eFG%) vs fantasy value"
+spearman_with_FPPM,ast_pct,0.5342113406049355,"conventional efficiency (TS%, eFG%) vs fantasy value"
+spearman_with_FPPM,reb_pct,0.4170821867851341,"conventional efficiency (TS%, eFG%) vs fantasy value"
+spearman_with_FPPM,stocks_pct,0.33953463956945046,"conventional efficiency (TS%, eFG%) vs fantasy value"
+spearman_with_FPPM,tov_pct,0.11908464012200377,"conventional efficiency (TS%, eFG%) vs fantasy value"
+spearman_with_FPPM,fp_per_fga,0.17699830918675197,"conventional efficiency (TS%, eFG%) vs fantasy value"
+spearman_with_FPPM,fp_per_poss,0.057851783089657306,"conventional efficiency (TS%, eFG%) vs fantasy value"
+spearman_with_FPPM,mpg,0.46858054728813014,"conventional efficiency (TS%, eFG%) vs fantasy value"
+totals,share_of_fp_from_scoring_block,0.5014795158836671,
+totals,share_of_fp_from_peripherals,0.49852048411633293,

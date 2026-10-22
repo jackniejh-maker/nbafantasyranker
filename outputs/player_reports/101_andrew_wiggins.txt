@@ -1,0 +1,47 @@
+PLAYER: Andrew Wiggins   (MIA, F, age 31.9)
+
+Projected Rank (total value): 101 of 519    | by FPPG: 118    | risk-adjusted: 101
+Consensus rank (comparison only): 104    model-minus-consensus rank: -3    value vs consensus slot: +5 FP
+
+Projected FPPM:    0.96      (80% range 0.77 - 1.15)
+Projected Minutes: 27.9      (80% range 21.8 - 32.2)
+Projected FPPG:    26.7      (80% range 18.3 - 34.1)
+Projected Games:   64      (availability 79%, 80% range 35 - 75 games)
+Projected Total:   1709
+  (in-season: 11 FP already banked over 1 games)
+
+10th percentile total: 787
+25th percentile total: 1179
+50th percentile total: 1566
+75th percentile total: 1939
+90th percentile total: 2263
+Mean of simulated totals: 1553   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 536    risk-adjusted value: 1051
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.85 | 27.1 mpg | 22.9 FPPG | 71 GP | GSW
+  2024-25: FPPM 1.02 | 30.7 mpg | 31.4 FPPG | 60 GP | MIA  (traded GSW -> MIA)
+  2025-26: FPPM 1.05 | 30.4 mpg | 32.0 FPPG | 68 GP | MIA
+  2026-27: FPPM 0.41 | 27.0 mpg | 11.0 FPPG | 1 GP | MIA
+  last-season fantasy profile per game: scoring block +11.0 | rebounds +2.0 | assists +2.0 | stocks +0.0 | turnovers -4.0 | missed-shot cost -6.0
+  FP per FGA 1.00 | FP per possession used 0.85 | FPPM per usage point 0.019 | usage 20.9% | TS% 0.500
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+2.2 FPPG]  (~+138 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+0.9 FPPG]  (~+57 FP)
+  + coach tendencies (rotation / pace) help [+0.9 FPPG]  (~+54 FP)
+Main negative drivers:
+  - lower per-minute production (FPPM 1.05 -> 0.96)  (~-173 FP)
+  - fewer minutes (30.4 -> 27.9 mpg)  (~-148 FP)
+  - fewer games expected (68 -> 64)  (~-117 FP)
+  - age-related decline expected [-1.3 FPPG]  (~-83 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.9 | teammate -1.3 | coach +0.9 | age -1.3 | role +2.2 | form +0.2 | history_adjustment -0.6
+Top feature terms, FPPM adjustment: coach__games_known +0.010; age__age +0.010; late__fppm_l1 +0.008; age__exp -0.028; age__hinge_young -0.012; mate__best_fppm -0.007
+Top feature terms, minutes adjustment: age__age +2.223; role__bin_25_30 +0.730; team__rot_size_exp +0.658; age__exp -1.521; age__hinge_young -1.048; mate__quality_wavg -0.833
+
+Archetype: all-around    scoring-block share of FP: 54%    breakout score: 3/100
+Upside score: 36   Risk score: 17   P(role expansion >= +3 mpg): 5%
+
+Confidence: High  (score 84/100)

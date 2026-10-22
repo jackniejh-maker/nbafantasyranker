@@ -1,0 +1,45 @@
+PLAYER: Ajay Mitchell   (OKC, G, age 24.6)
+
+Projected Rank (total value): 191 of 519    | by FPPG: 163    | risk-adjusted: 198
+Consensus rank (comparison only): 158    model-minus-consensus rank: +33    value vs consensus slot: -156 FP
+
+Projected FPPM:    1.03      (80% range 0.84 - 1.21)
+Projected Minutes: 23.8      (80% range 12.9 - 31.0)
+Projected FPPG:    24.5      (80% range 12.1 - 33.9)
+Projected Games:   55      (availability 67%, 80% range 22 - 76 games)
+Projected Total:   1351
+  (in-season: 15 FP already banked over 1 games)
+
+10th percentile total: 377
+25th percentile total: 704
+50th percentile total: 1147
+75th percentile total: 1647
+90th percentile total: 2097
+Mean of simulated totals: 1213   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 240    risk-adjusted value: 693
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2024-25: FPPM 0.83 | 16.6 mpg | 13.8 FPPG | 37 GP | OKC
+  2025-26: FPPM 1.08 | 25.8 mpg | 27.9 FPPG | 57 GP | OKC
+  2026-27: FPPM 0.65 | 23.0 mpg | 15.0 FPPG | 1 GP | OKC
+  last-season fantasy profile per game: scoring block +0.0 | rebounds +5.0 | assists +12.0 | stocks +0.0 | turnovers -2.0 | missed-shot cost -6.0
+  FP per FGA 1.88 | FP per possession used 1.67 | FPPM per usage point 0.040 | usage 16.4% | TS% 0.250
+
+Main positive drivers:
+  + favorable team environment (pace / efficiency / roster turnover) [+2.8 FPPG]  (~+152 FP)
+  + role and depth-chart position favor more production [+1.2 FPPG]  (~+66 FP)
+Main negative drivers:
+  - stronger teammate competition for usage, shots and minutes [-2.2 FPPG]  (~-121 FP)
+  - fewer minutes (25.8 -> 23.8 mpg)  (~-110 FP)
+  - lower per-minute production (FPPM 1.08 -> 1.03)  (~-73 FP)
+  - fewer games expected (57 -> 55)  (~-59 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +2.8 | teammate -2.2 | coach -0.3 | age +0.5 | role +1.2 | form -0.2 | history_adjustment +2.0
+Top feature terms, FPPM adjustment: age__exp +0.013; mate__same_pos_min +0.008; team__net_proj +0.008; mate__quality_wavg -0.012; mate__best_fppm -0.008; newc__height_in -0.006
+Top feature terms, minutes adjustment: team__rot_size_exp +1.088; team__ortg_l1 +0.783; age__exp +0.726; mate__quality_wavg -1.499; mate__same_pos_min -1.028; age__hinge_young -0.521
+
+Archetype: all-around    scoring-block share of FP: 50%    breakout score: 17/100
+Upside score: 89   Risk score: 47   P(role expansion >= +3 mpg): 18%
+
+Confidence: Medium  (score 48/100)

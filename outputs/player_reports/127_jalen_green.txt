@@ -1,0 +1,47 @@
+PLAYER: Jalen Green   (PHX, G, age 25.0)
+
+Projected Rank (total value): 127 of 519    | by FPPG: 115    | risk-adjusted: 125
+Consensus rank (comparison only): 89    model-minus-consensus rank: +38    value vs consensus slot: -221 FP
+
+Projected FPPM:    1.01      (80% range 0.83 - 1.19)
+Projected Minutes: 27.1      (80% range 20.2 - 31.7)
+Projected FPPG:    27.3      (80% range 18.2 - 34.7)
+Projected Games:   58      (availability 72%, 80% range 32 - 74 games)
+Projected Total:   1609
+  (in-season: 16 FP already banked over 1 games)
+
+10th percentile total: 708
+25th percentile total: 1079
+50th percentile total: 1473
+75th percentile total: 1870
+90th percentile total: 2229
+Mean of simulated totals: 1473   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 447    risk-adjusted value: 960
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.97 | 31.7 mpg | 30.9 FPPG | 82 GP | HOU
+  2024-25: FPPM 0.96 | 32.9 mpg | 31.7 FPPG | 82 GP | HOU
+  2025-26: FPPM 1.04 | 25.9 mpg | 26.8 FPPG | 32 GP | PHX
+  2026-27: FPPM 0.64 | 25.0 mpg | 16.0 FPPG | 1 GP | PHX
+  last-season fantasy profile per game: scoring block +8.0 | rebounds +2.0 | assists +6.0 | stocks +4.0 | turnovers -4.0 | missed-shot cost -8.0
+  FP per FGA 1.33 | FP per possession used 1.14 | FPPM per usage point 0.026 | usage 24.6% | TS% 0.417
+
+Main positive drivers:
+  + more games expected (32 -> 58)  (~+720 FP)
+  + role and depth-chart position favor more production [+2.2 FPPG]  (~+126 FP)
+  + more minutes (25.9 -> 27.1 mpg)  (~+72 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+0.8 FPPG]  (~+47 FP)
+Main negative drivers:
+  - age-related decline expected [-1.2 FPPG]  (~-71 FP)
+  - stronger teammate competition for usage, shots and minutes [-0.9 FPPG]  (~-51 FP)
+  - lower per-minute production (FPPM 1.04 -> 1.01)  (~-49 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.8 | teammate -0.9 | coach -0.1 | age -1.2 | role +2.2 | form +0.7 | history_adjustment -0.5
+Top feature terms, FPPM adjustment: hist__usg_l1 +0.012; role__usg_high +0.011; hist__usg_w +0.011; age__hinge_young -0.012; newc__height_in -0.006; team__reb_net -0.005
+Top feature terms, minutes adjustment: hist__usg_l1 +0.772; role__bin_25_30 +0.730; role__is_top5 +0.597; age__hinge_young -1.017; role__gap_hist -0.722; hist__avail_l1 -0.613
+
+Archetype: scoring-heavy    scoring-block share of FP: 62%    breakout score: 79/100
+Upside score: 52   Risk score: 27   P(role expansion >= +3 mpg): 28%
+
+Confidence: High  (score 77/100)

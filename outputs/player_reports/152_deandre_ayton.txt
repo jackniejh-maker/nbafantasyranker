@@ -1,0 +1,44 @@
+PLAYER: Deandre Ayton   (WAS, C, age 28.5)
+
+Projected Rank (total value): 152 of 519    | by FPPG: 148    | risk-adjusted: 149
+Consensus rank (comparison only): 314    model-minus-consensus rank: -162    value vs consensus slot: +697 FP
+
+Projected FPPM:    1.07      (80% range 0.88 - 1.26)
+Projected Minutes: 23.3      (80% range 15.3 - 28.7)
+Projected FPPG:    24.9      (80% range 14.9 - 32.7)
+Projected Games:   60      (availability 74%, 80% range 33 - 75 games)
+Projected Total:   1509
+  (in-season: 26 FP already banked over 1 games)
+
+10th percentile total: 630
+25th percentile total: 963
+50th percentile total: 1356
+75th percentile total: 1763
+90th percentile total: 2128
+Mean of simulated totals: 1374   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 397    risk-adjusted value: 876
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.12 | 32.4 mpg | 36.3 FPPG | 55 GP | POR
+  2024-25: FPPM 1.07 | 30.2 mpg | 32.5 FPPG | 40 GP | POR
+  2025-26: FPPM 1.03 | 27.3 mpg | 28.1 FPPG | 72 GP | LAL
+  2026-27: FPPM 1.73 | 15.0 mpg | 26.0 FPPG | 1 GP | WAS
+  last-season fantasy profile per game: scoring block +14.0 | rebounds +4.0 | assists +0.0 | stocks +8.0 | turnovers -0.0 | missed-shot cost -2.0
+  FP per FGA 4.33 | FP per possession used 3.78 | FPPM per usage point 0.091 | usage 19.1% | TS% 0.799
+
+Main positive drivers:
+  + higher per-minute production (FPPM 1.03 -> 1.07)  (~+54 FP)
+Main negative drivers:
+  - fewer games expected (72 -> 60)  (~-310 FP)
+  - fewer minutes (27.3 -> 23.3 mpg)  (~-252 FP)
+  - unfavorable team environment (pace / efficiency / roster turnover) [-1.4 FPPG]  (~-81 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -1.4 | teammate +0.1 | coach -0.0 | age -0.6 | role -0.3 | form -0.1 | history_adjustment -1.9
+Top feature terms, FPPM adjustment: hist__tpar_l1 +0.017; coach__star_mpg +0.015; newc__height_in +0.014; age__hinge_young -0.012; age__exp -0.010; team__usage_conc -0.009
+Top feature terms, minutes adjustment: team__rot_size_exp +1.662; age__age +1.088; mate__same_pos_min +0.939; age__hinge_young -1.048; pos__c -0.876; hist__reb_pct_w -0.777
+
+Archetype: rebounding-heavy    scoring-block share of FP: 51%    breakout score: 19/100
+Upside score: 56   Risk score: 28   P(role expansion >= +3 mpg): 5%
+
+Confidence: High  (score 70/100)

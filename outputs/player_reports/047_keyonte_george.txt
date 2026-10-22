@@ -1,0 +1,46 @@
+PLAYER: Keyonte George   (UTA, G, age 23.2)
+
+Projected Rank (total value): 47 of 519    | by FPPG: 56    | risk-adjusted: 50
+Consensus rank (comparison only): 65    model-minus-consensus rank: -18    value vs consensus slot: +178 FP
+
+Projected FPPM:    1.13      (80% range 0.94 - 1.32)
+Projected Minutes: 31.6      (80% range 25.0 - 36.1)
+Projected FPPG:    35.5      (80% range 25.3 - 43.8)
+Projected Games:   61      (availability 76%, 80% range 36 - 77 games)
+Projected Total:   2216
+  (in-season: 38 FP already banked over 1 games)
+
+10th percentile total: 1094
+25th percentile total: 1559
+50th percentile total: 2085
+75th percentile total: 2566
+90th percentile total: 2997
+Mean of simulated totals: 2057   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 713    risk-adjusted value: 1399
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.78 | 27.0 mpg | 21.1 FPPG | 75 GP | UTA
+  2024-25: FPPM 0.91 | 31.4 mpg | 28.5 FPPG | 67 GP | UTA
+  2025-26: FPPM 1.18 | 33.1 mpg | 39.1 FPPG | 54 GP | UTA
+  2026-27: FPPM 1.31 | 29.0 mpg | 38.0 FPPG | 1 GP | UTA
+  last-season fantasy profile per game: scoring block +25.0 | rebounds +3.0 | assists +10.0 | stocks +4.0 | turnovers -4.0 | missed-shot cost -8.0
+  FP per FGA 3.17 | FP per possession used 2.22 | FPPM per usage point 0.050 | usage 26.1% | TS% 0.729
+
+Main positive drivers:
+  + more games expected (54 -> 61)  (~+259 FP)
+  + role and depth-chart position favor more production [+3.7 FPPG]  (~+228 FP)
+  + age / development curve favors growth [+2.1 FPPG]  (~+132 FP)
+Main negative drivers:
+  - lower per-minute production (FPPM 1.18 -> 1.13)  (~-108 FP)
+  - fewer minutes (33.1 -> 31.6 mpg)  (~-103 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.1 FPPG]  (~-70 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.3 | teammate -1.1 | coach +0.1 | age +2.1 | role +3.7 | form +0.3 | history_adjustment +1.0
+Top feature terms, FPPM adjustment: age__hinge_young +0.015; hist__fppm_l1 +0.012; late__fppm_l1 +0.011; coach__usage_hhi -0.008; newc__height_in -0.006; team__net_proj -0.006
+Top feature terms, minutes adjustment: age__hinge_young +1.308; team__rot_size_exp +1.116; role__bin_25_30 +0.730; coach__rot_size -0.833; age__age -0.673; team__drtg_proj -0.520
+
+Archetype: playmaking-heavy    scoring-block share of FP: 58%    breakout score: 22/100
+Upside score: 85   Risk score: 17   P(role expansion >= +3 mpg): 10%
+
+Confidence: High  (score 87/100)

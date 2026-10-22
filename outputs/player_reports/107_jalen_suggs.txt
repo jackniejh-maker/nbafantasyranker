@@ -1,0 +1,44 @@
+PLAYER: Jalen Suggs   (ORL, G, age 25.7)
+
+Projected Rank (total value): 107 of 519    | by FPPG: 93    | risk-adjusted: 121
+Consensus rank (comparison only): 138    model-minus-consensus rank: -31    value vs consensus slot: +110 FP
+
+Projected FPPM:    1.05      (80% range 0.88 - 1.23)
+Projected Minutes: 28.3      (80% range 20.4 - 33.5)
+Projected FPPG:    29.6      (80% range 19.4 - 37.9)
+Projected Games:   57      (availability 70%, 80% range 30 - 72 games)
+Projected Total:   1700
+  (in-season: 19 FP already banked over 1 games)
+
+10th percentile total: 724
+25th percentile total: 1122
+50th percentile total: 1549
+75th percentile total: 1985
+90th percentile total: 2389
+Mean of simulated totals: 1554   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 432    risk-adjusted value: 990
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.99 | 27.0 mpg | 26.7 FPPG | 75 GP | ORL
+  2024-25: FPPM 1.07 | 28.7 mpg | 30.7 FPPG | 35 GP | ORL
+  2025-26: FPPM 1.23 | 27.5 mpg | 33.8 FPPG | 57 GP | ORL
+  2026-27: FPPM 0.59 | 32.0 mpg | 19.0 FPPG | 1 GP | ORL
+  last-season fantasy profile per game: scoring block +2.0 | rebounds +3.0 | assists +10.0 | stocks +8.0 | turnovers -4.0 | missed-shot cost -6.0
+  FP per FGA 2.38 | FP per possession used 1.75 | FPPM per usage point 0.044 | usage 13.4% | TS% 0.338
+
+Main positive drivers:
+  + more minutes (27.5 -> 28.3 mpg)  (~+47 FP)
+Main negative drivers:
+  - lower per-minute production (FPPM 1.23 -> 1.05)  (~-290 FP)
+  - age-related decline expected [-1.0 FPPG]  (~-55 FP)
+  - stronger teammate competition for usage, shots and minutes [-0.7 FPPG]  (~-40 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.2 | teammate -0.7 | coach -0.4 | age -1.0 | role +0.5 | form +0.4 | history_adjustment +0.6
+Top feature terms, FPPM adjustment: hist__stl_pct_l1 +0.015; hist__fppm_l1 +0.014; hist__fppm_raw_w +0.011; age__hinge_young -0.012; mate__reb_wavg -0.010; hist__fppm_shrunk -0.010
+Top feature terms, minutes adjustment: hist__fppm_raw_w +0.386; hist__fppm_fixed +0.370; mate__reb_wavg +0.367; age__hinge_young -1.048; mate__quality_wavg -0.825; coach__stability -0.485
+
+Archetype: stocks-heavy    scoring-block share of FP: 47%    breakout score: 16/100
+Upside score: 71   Risk score: 32   P(role expansion >= +3 mpg): 27%
+
+Confidence: High  (score 73/100)

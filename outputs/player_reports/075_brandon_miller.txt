@@ -1,0 +1,46 @@
+PLAYER: Brandon Miller   (CHA, F, age 24.2)
+
+Projected Rank (total value): 75 of 519    | by FPPG: 62    | risk-adjusted: 78
+Consensus rank (comparison only): 57    model-minus-consensus rank: +18    value vs consensus slot: -186 FP
+
+Projected FPPM:    1.10      (80% range 0.93 - 1.28)
+Projected Minutes: 31.0      (80% range 23.8 - 35.7)
+Projected FPPG:    34.0      (80% range 23.7 - 42.3)
+Projected Games:   58      (availability 71%, 80% range 31 - 73 games)
+Projected Total:   1972
+  (in-season: 16 FP already banked over 1 games)
+
+10th percentile total: 882
+25th percentile total: 1353
+50th percentile total: 1841
+75th percentile total: 2294
+90th percentile total: 2738
+Mean of simulated totals: 1820   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 534    risk-adjusted value: 1187
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.90 | 32.2 mpg | 28.9 FPPG | 74 GP | CHA
+  2024-25: FPPM 1.01 | 34.3 mpg | 34.7 FPPG | 27 GP | CHA
+  2025-26: FPPM 1.13 | 30.3 mpg | 34.2 FPPG | 65 GP | CHA
+  2026-27: FPPM 0.44 | 36.0 mpg | 16.0 FPPG | 1 GP | CHA
+  last-season fantasy profile per game: scoring block +13.0 | rebounds +3.0 | assists +2.0 | stocks +4.0 | turnovers -6.0 | missed-shot cost -15.0
+  FP per FGA 0.76 | FP per possession used 0.64 | FPPM per usage point 0.016 | usage 27.7% | TS% 0.411
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+2.7 FPPG]  (~+157 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.2 FPPG]  (~+70 FP)
+  + age / development curve favors growth [+0.7 FPPG]  (~+42 FP)
+  + more minutes (30.3 -> 31.0 mpg)  (~+42 FP)
+Main negative drivers:
+  - fewer games expected (65 -> 58)  (~-255 FP)
+  - lower per-minute production (FPPM 1.13 -> 1.10)  (~-53 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.2 | teammate +0.0 | coach -0.5 | age +0.7 | role +2.7 | form +0.4 | history_adjustment +0.1
+Top feature terms, FPPM adjustment: role__usg_high +0.011; mate__usg_wavg +0.010; hist__fppm_l1 +0.009; team__ast_added -0.009; hist__tpar_l1 -0.007; hist__fppm_shrunk -0.007
+Top feature terms, minutes adjustment: team__rot_size_exp +1.058; team__ortg_l1 +0.844; role__bin_25_30 +0.730; coach__rot_size -0.819; role__budget_ratio -0.691; hist__mpg_l3 -0.558
+
+Archetype: scoring-heavy    scoring-block share of FP: 61%    breakout score: 52/100
+Upside score: 83   Risk score: 30   P(role expansion >= +3 mpg): 25%
+
+Confidence: High  (score 78/100)

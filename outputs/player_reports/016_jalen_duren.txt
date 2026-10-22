@@ -1,0 +1,46 @@
+PLAYER: Jalen Duren   (DET, C, age 23.2)
+
+Projected Rank (total value): 16 of 519    | by FPPG: 24    | risk-adjusted: 14
+Consensus rank (comparison only): 27    model-minus-consensus rank: -11    value vs consensus slot: +117 FP
+
+Projected FPPM:    1.38      (80% range 1.20 - 1.56)
+Projected Minutes: 29.7      (80% range 23.0 - 34.2)
+Projected FPPG:    41.1      (80% range 29.6 - 50.1)
+Projected Games:   66      (availability 82%, 80% range 38 - 77 games)
+Projected Total:   2755
+  (in-season: 41 FP already banked over 1 games)
+
+10th percentile total: 1388
+25th percentile total: 2002
+50th percentile total: 2569
+75th percentile total: 3059
+90th percentile total: 3505
+Mean of simulated totals: 2510   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 976    risk-adjusted value: 1772
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.13 | 29.1 mpg | 32.8 FPPG | 61 GP | DET
+  2024-25: FPPM 1.26 | 26.1 mpg | 33.0 FPPG | 78 GP | DET
+  2025-26: FPPM 1.37 | 28.3 mpg | 38.8 FPPG | 70 GP | DET
+  2026-27: FPPM 1.46 | 28.0 mpg | 41.0 FPPG | 1 GP | DET
+  last-season fantasy profile per game: scoring block +24.0 | rebounds +9.0 | assists +2.0 | stocks +8.0 | turnovers -2.0 | missed-shot cost -6.0
+  FP per FGA 3.15 | FP per possession used 2.40 | FPPM per usage point 0.059 | usage 25.0% | TS% 0.684
+
+Main positive drivers:
+  + favorable team environment (pace / efficiency / roster turnover) [+2.6 FPPG]  (~+170 FP)
+  + more minutes (28.3 -> 29.7 mpg)  (~+136 FP)
+  + age / development curve favors growth [+2.0 FPPG]  (~+135 FP)
+  + late-season / post-trade form is a positive signal [+1.1 FPPG]  (~+70 FP)
+Main negative drivers:
+  - fewer games expected (70 -> 66)  (~-161 FP)
+  - coach tendencies (rotation / pace) hurt [-0.7 FPPG]  (~-43 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +2.6 | teammate +0.7 | coach -0.7 | age +2.0 | role -0.0 | form +1.1 | history_adjustment +2.3
+Top feature terms, FPPM adjustment: late__fppm_l1 +0.023; hist__fppm_l1 +0.021; hist__fppm_raw_w +0.020; hist__fppm_shrunk -0.018; mate__same_pos_min -0.007; team__usage_conc -0.006
+Top feature terms, minutes adjustment: age__hinge_young +1.345; team__rot_size_exp +1.231; mate__same_pos_min +0.950; hist__reb_pct_w -1.114; pos__c -0.876; coach__double_big -0.749
+
+Archetype: rebounding-heavy    scoring-block share of FP: 48%    breakout score: 76/100
+Upside score: 88   Risk score: 8   P(role expansion >= +3 mpg): 30%
+
+Confidence: High  (score 94/100)

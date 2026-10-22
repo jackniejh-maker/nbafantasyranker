@@ -1,0 +1,44 @@
+PLAYER: Yves Missi   (NOP, C, age 22.7)
+
+Projected Rank (total value): 99 of 519    | by FPPG: 132    | risk-adjusted: 103
+Consensus rank (comparison only): 340    model-minus-consensus rank: -241    value vs consensus slot: +969 FP
+
+Projected FPPM:    1.08      (80% range 0.90 - 1.26)
+Projected Minutes: 24.2      (80% range 16.0 - 29.6)
+Projected FPPG:    26.1      (80% range 15.7 - 34.3)
+Projected Games:   65      (availability 80%, 80% range 36 - 75 games)
+Projected Total:   1742
+  (in-season: 58 FP already banked over 1 games)
+
+10th percentile total: 749
+25th percentile total: 1135
+50th percentile total: 1569
+75th percentile total: 1974
+90th percentile total: 2334
+Mean of simulated totals: 1561   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 512    risk-adjusted value: 1041
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2024-25: FPPM 0.92 | 26.8 mpg | 24.8 FPPG | 73 GP | NOP
+  2025-26: FPPM 0.99 | 19.6 mpg | 19.5 FPPG | 66 GP | NOP
+  2026-27: FPPM 1.93 | 30.0 mpg | 58.0 FPPG | 1 GP | NOP
+  last-season fantasy profile per game: scoring block +16.0 | rebounds +14.0 | assists +10.0 | stocks +20.0 | turnovers -2.0 | missed-shot cost -2.0
+  FP per FGA 9.67 | FP per possession used 6.62 | FPPM per usage point 0.165 | usage 11.8% | TS% 0.838
+
+Main positive drivers:
+  + more minutes (19.6 -> 24.2 mpg)  (~+317 FP)
+  + age / development curve favors growth [+2.7 FPPG]  (~+175 FP)
+  + higher per-minute production (FPPM 0.99 -> 1.08)  (~+134 FP)
+Main negative drivers:
+  - role and depth-chart position limit production [-1.3 FPPG]  (~-81 FP)
+  - unfavorable team environment (pace / efficiency / roster turnover) [-1.0 FPPG]  (~-63 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -1.0 | teammate -0.4 | coach -0.3 | age +2.7 | role -1.3 | form +0.1 | history_adjustment -1.0
+Top feature terms, FPPM adjustment: hist__blk_pct_l1 +0.023; age__hinge_young +0.022; hist__tpar_l1 +0.017; mate__usg_wavg -0.010; team__usage_conc -0.008; hist__stl_pct_l1 -0.008
+Top feature terms, minutes adjustment: age__hinge_young +1.995; team__rot_size_exp +1.613; mate__same_pos_min +0.814; pos__c -0.876; age__age -0.845; role__budget_ratio -0.728
+
+Archetype: rebounding-heavy    scoring-block share of FP: 32%    breakout score: 99/100
+Upside score: 54   Risk score: 21   P(role expansion >= +3 mpg): 57%
+
+Confidence: High  (score 78/100)

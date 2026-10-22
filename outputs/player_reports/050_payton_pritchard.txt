@@ -1,0 +1,46 @@
+PLAYER: Payton Pritchard   (BOS, G, age 29.0)
+
+Projected Rank (total value): 50 of 519    | by FPPG: 84    | risk-adjusted: 45
+Consensus rank (comparison only): 87    model-minus-consensus rank: -37    value vs consensus slot: +343 FP
+
+Projected FPPM:    1.03      (80% range 0.86 - 1.22)
+Projected Minutes: 30.0      (80% range 23.3 - 34.5)
+Projected FPPG:    30.9      (80% range 21.7 - 38.8)
+Projected Games:   71      (availability 88%, 80% range 43 - 81 games)
+Projected Total:   2230
+  (in-season: 23 FP already banked over 1 games)
+
+10th percentile total: 1153
+25th percentile total: 1596
+50th percentile total: 2056
+75th percentile total: 2483
+90th percentile total: 2848
+Mean of simulated totals: 2032   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 842    risk-adjusted value: 1449
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.97 | 22.2 mpg | 21.6 FPPG | 82 GP | BOS
+  2024-25: FPPM 1.04 | 28.4 mpg | 29.7 FPPG | 80 GP | BOS
+  2025-26: FPPM 1.03 | 32.4 mpg | 33.5 FPPG | 79 GP | BOS
+  2026-27: FPPM 0.82 | 28.0 mpg | 23.0 FPPG | 1 GP | BOS
+  last-season fantasy profile per game: scoring block +17.0 | rebounds +4.0 | assists +2.0 | stocks +0.0 | turnovers -0.0 | missed-shot cost -6.0
+  FP per FGA 2.56 | FP per possession used 1.84 | FPPM per usage point 0.043 | usage 19.3% | TS% 0.679
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+3.3 FPPG]  (~+238 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+2.1 FPPG]  (~+153 FP)
+  + coach tendencies (rotation / pace) help [+0.8 FPPG]  (~+60 FP)
+Main negative drivers:
+  - fewer games expected (79 -> 71)  (~-237 FP)
+  - fewer minutes (32.4 -> 30.0 mpg)  (~-175 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.0 FPPG]  (~-70 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +2.1 | teammate -1.0 | coach +0.8 | age +0.3 | role +3.3 | form +0.1 | history_adjustment +1.0
+Top feature terms, FPPM adjustment: coach__usage_hhi +0.011; mate__usg_wavg +0.010; role__bin_25_30 +0.007; age__hinge_young -0.012; newc__height_in -0.011; coach__star_mpg -0.007
+Top feature terms, minutes adjustment: age__age +1.248; team__ortg_l1 +0.992; role__bin_25_30 +0.730; age__hinge_young -1.048; mate__quality_wavg -0.731; hist__eff_minutes_log -0.542
+
+Archetype: playmaking-heavy    scoring-block share of FP: 54%    breakout score: 15/100
+Upside score: 61   Risk score: 2   P(role expansion >= +3 mpg): 6%
+
+Confidence: High  (score 94/100)

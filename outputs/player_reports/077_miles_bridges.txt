@@ -1,0 +1,45 @@
+PLAYER: Miles Bridges   (PHX, F, age 28.9)
+
+Projected Rank (total value): 77 of 519    | by FPPG: 90    | risk-adjusted: 66
+Consensus rank (comparison only): 84    model-minus-consensus rank: -7    value vs consensus slot: +84 FP
+
+Projected FPPM:    0.98      (80% range 0.81 - 1.17)
+Projected Minutes: 30.3      (80% range 23.8 - 34.7)
+Projected FPPG:    29.9      (80% range 20.8 - 37.5)
+Projected Games:   67      (availability 82%, 80% range 38 - 78 games)
+Projected Total:   2001
+  (in-season: 13 FP already banked over 1 games)
+
+10th percentile total: 974
+25th percentile total: 1404
+50th percentile total: 1837
+75th percentile total: 2240
+90th percentile total: 2614
+Mean of simulated totals: 1818   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 697    risk-adjusted value: 1267
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.99 | 37.5 mpg | 37.1 FPPG | 69 GP | CHA
+  2024-25: FPPM 1.14 | 31.7 mpg | 36.2 FPPG | 64 GP | CHA
+  2025-26: FPPM 1.00 | 31.0 mpg | 30.9 FPPG | 77 GP | CHA
+  2026-27: FPPM 0.45 | 29.0 mpg | 13.0 FPPG | 1 GP | PHX
+  last-season fantasy profile per game: scoring block +3.0 | rebounds +4.0 | assists +0.0 | stocks +8.0 | turnovers -2.0 | missed-shot cost -8.0
+  FP per FGA 1.18 | FP per possession used 1.01 | FPPM per usage point 0.023 | usage 19.5% | TS% 0.337
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+2.1 FPPG]  (~+142 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+0.8 FPPG]  (~+53 FP)
+Main negative drivers:
+  - fewer games expected (77 -> 67)  (~-311 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.0 FPPG]  (~-64 FP)
+  - fewer minutes (31.0 -> 30.3 mpg)  (~-42 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.8 | teammate -1.0 | coach -0.1 | age -0.6 | role +2.1 | form -0.2 | history_adjustment -2.1
+Top feature terms, FPPM adjustment: role__usg_high +0.011; role__bin_25_30 +0.007; hist__fppm_raw_w +0.006; age__hinge_young -0.012; age__exp -0.010; hist__fppm_shrunk -0.006
+Top feature terms, minutes adjustment: age__age +1.201; role__bin_25_30 +0.730; role__is_top5 +0.597; age__hinge_young -1.048; hist__mpg_l3 -0.846; hist__eff_minutes_log -0.553
+
+Archetype: scoring-heavy    scoring-block share of FP: 56%    breakout score: 28/100
+Upside score: 58   Risk score: 9   P(role expansion >= +3 mpg): 14%
+
+Confidence: High  (score 89/100)

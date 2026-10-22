@@ -1,0 +1,45 @@
+PLAYER: Saddiq Bey   (NOP, G, age 27.8)
+
+Projected Rank (total value): 110 of 519    | by FPPG: 136    | risk-adjusted: 112
+Consensus rank (comparison only): 152    model-minus-consensus rank: -42    value vs consensus slot: +170 FP
+
+Projected FPPM:    0.90      (80% range 0.73 - 1.07)
+Projected Minutes: 29.0      (80% range 20.8 - 34.3)
+Projected FPPG:    26.0      (80% range 16.5 - 33.7)
+Projected Games:   65      (availability 80%, 80% range 36 - 76 games)
+Projected Total:   1694
+  (in-season: 15 FP already banked over 1 games)
+
+10th percentile total: 742
+25th percentile total: 1124
+50th percentile total: 1526
+75th percentile total: 1908
+90th percentile total: 2278
+Mean of simulated totals: 1521   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 501    risk-adjusted value: 1014
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2022-23: FPPM 0.86 | 27.6 mpg | 23.9 FPPG | 77 GP | ATL  (traded DET -> ATL)
+  2023-24: FPPM 0.76 | 32.7 mpg | 24.8 FPPG | 63 GP | ATL
+  2025-26: FPPM 0.98 | 31.2 mpg | 30.7 FPPG | 72 GP | NOP
+  2026-27: FPPM 0.62 | 24.0 mpg | 15.0 FPPG | 1 GP | NOP
+  last-season fantasy profile per game: scoring block +14.0 | rebounds +5.0 | assists +0.0 | stocks +0.0 | turnovers -4.0 | missed-shot cost -5.0
+  FP per FGA 1.67 | FP per possession used 1.22 | FPPM per usage point 0.030 | usage 20.7% | TS% 0.630
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+2.6 FPPG]  (~+167 FP)
+Main negative drivers:
+  - fewer games expected (72 -> 65)  (~-192 FP)
+  - lower per-minute production (FPPM 0.98 -> 0.90)  (~-161 FP)
+  - fewer minutes (31.2 -> 29.0 mpg)  (~-129 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.8 FPPG]  (~-116 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -1.1 | teammate -1.8 | coach -0.3 | age -0.2 | role +2.6 | form +0.4 | history_adjustment -0.8
+Top feature terms, FPPM adjustment: role__bin_25_30 +0.007; team__depth15 +0.006; team__oversub +0.006; age__hinge_young -0.012; hist__tov_pct_l1 -0.011; team__usage_conc -0.008
+Top feature terms, minutes adjustment: team__rot_size_exp +1.613; age__age +0.851; role__gap_hist +0.822; age__hinge_young -1.048; mate__quality_wavg -0.737; role__budget_ratio -0.728
+
+Archetype: all-around    scoring-block share of FP: 56%    breakout score: 6/100
+Upside score: 51   Risk score: 21   P(role expansion >= +3 mpg): 10%
+
+Confidence: High  (score 79/100)

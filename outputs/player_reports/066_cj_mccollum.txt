@@ -1,0 +1,46 @@
+PLAYER: CJ McCollum   (ATL, G, age 35.4)
+
+Projected Rank (total value): 66 of 519    | by FPPG: 80    | risk-adjusted: 60
+Consensus rank (comparison only): 86    model-minus-consensus rank: -20    value vs consensus slot: +187 FP
+
+Projected FPPM:    1.12      (80% range 0.91 - 1.33)
+Projected Minutes: 28.1      (80% range 23.6 - 31.1)
+Projected FPPG:    31.4      (80% range 23.2 - 38.5)
+Projected Games:   65      (availability 80%, 80% range 36 - 76 games)
+Projected Total:   2056
+  (in-season: 30 FP already banked over 1 games)
+
+10th percentile total: 1038
+25th percentile total: 1482
+50th percentile total: 1907
+75th percentile total: 2298
+90th percentile total: 2630
+Mean of simulated totals: 1876   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 726    risk-adjusted value: 1316
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.18 | 32.7 mpg | 38.5 FPPG | 66 GP | NOP
+  2024-25: FPPM 1.05 | 32.8 mpg | 34.4 FPPG | 56 GP | NOP
+  2025-26: FPPM 1.07 | 29.8 mpg | 31.9 FPPG | 76 GP | ATL  (traded WAS -> ATL)
+  2026-27: FPPM 1.20 | 25.0 mpg | 30.0 FPPG | 1 GP | ATL
+  last-season fantasy profile per game: scoring block +28.0 | rebounds +2.0 | assists +6.0 | stocks +0.0 | turnovers -6.0 | missed-shot cost -2.0
+  FP per FGA 3.33 | FP per possession used 2.41 | FPPM per usage point 0.062 | usage 19.4% | TS% 1.006
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+2.0 FPPG]  (~+128 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.3 FPPG]  (~+83 FP)
+  + higher per-minute production (FPPM 1.07 -> 1.12)  (~+82 FP)
+Main negative drivers:
+  - fewer games expected (76 -> 65)  (~-357 FP)
+  - fewer minutes (29.8 -> 28.1 mpg)  (~-119 FP)
+  - age-related decline expected [-1.1 FPPG]  (~-72 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.3 | teammate -0.4 | coach +0.4 | age -1.1 | role +2.0 | form +0.2 | history_adjustment -0.6
+Top feature terms, FPPM adjustment: age__age +0.015; age__c2 +0.014; trade__last_stint_gap +0.013; age__exp -0.032; age__hinge_old -0.014; age__hinge_young -0.012
+Top feature terms, minutes adjustment: age__age +3.364; team__rot_size_exp +1.292; coach__rot_size +0.648; age__exp -1.770; age__hinge_young -1.048; role__budget_ratio -0.842
+
+Archetype: scoring-heavy    scoring-block share of FP: 60%    breakout score: 26/100
+Upside score: 44   Risk score: 8   P(role expansion >= +3 mpg): 3%
+
+Confidence: High  (score 93/100)

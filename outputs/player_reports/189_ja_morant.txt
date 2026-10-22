@@ -1,0 +1,44 @@
+PLAYER: Ja Morant   (POR, G, age 27.5)
+
+Projected Rank (total value): 189 of 519    | by FPPG: 82    | risk-adjusted: 218
+Consensus rank (comparison only): 71    model-minus-consensus rank: +118    value vs consensus slot: -708 FP
+
+Projected FPPM:    1.23      (80% range 1.04 - 1.43)
+Projected Minutes: 25.8      (80% range 15.1 - 33.0)
+Projected FPPG:    31.8      (80% range 17.2 - 42.6)
+Projected Games:   41      (availability 51%, 80% range 9 - 63 games)
+Projected Total:   1365
+  (in-season: 51 FP already banked over 1 games)
+
+10th percentile total: 259
+25th percentile total: 680
+50th percentile total: 1159
+75th percentile total: 1693
+90th percentile total: 2181
+Mean of simulated totals: 1215   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 114    risk-adjusted value: 637
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.28 | 35.3 mpg | 45.3 FPPG | 9 GP | MEM
+  2024-25: FPPM 1.30 | 30.3 mpg | 39.3 FPPG | 50 GP | MEM
+  2025-26: FPPM 1.21 | 28.4 mpg | 34.4 FPPG | 20 GP | MEM
+  2026-27: FPPM 2.22 | 23.0 mpg | 51.0 FPPG | 1 GP | POR
+  last-season fantasy profile per game: scoring block +20.0 | rebounds +5.0 | assists +16.0 | stocks +12.0 | turnovers -2.0 | missed-shot cost -2.0
+  FP per FGA 6.38 | FP per possession used 5.67 | FPPM per usage point 0.140 | usage 15.8% | TS% 0.875
+
+Main positive drivers:
+  + more games expected (20 -> 41)  (~+678 FP)
+  + role and depth-chart position favor more production [+2.5 FPPG]  (~+102 FP)
+Main negative drivers:
+  - fewer minutes (28.4 -> 25.8 mpg)  (~-133 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.1 FPPG]  (~-47 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.1 | teammate -1.1 | coach -0.3 | age -0.6 | role +2.5 | form +0.4 | history_adjustment -0.6
+Top feature terms, FPPM adjustment: hist__fppm_raw_w +0.018; hist__usg_w +0.014; hist__fppm_l1 +0.013; hist__fppm_shrunk -0.012; age__hinge_young -0.012; newc__height_in -0.011
+Top feature terms, minutes adjustment: hist__usg_l1 +0.783; age__age +0.739; role__bin_25_30 +0.730; age__hinge_young -1.048; hist__avail_l1 -0.864; mate__quality_wavg -0.788
+
+Archetype: playmaking-heavy    scoring-block share of FP: 54%    breakout score: 49/100
+Upside score: 94   Risk score: 81   P(role expansion >= +3 mpg): 16%
+
+Confidence: Medium  (score 43/100)

@@ -1,0 +1,45 @@
+PLAYER: Cooper Flagg   (DAL, F, age 20.1)
+
+Projected Rank (total value): 15 of 519    | by FPPG: 15    | risk-adjusted: 16
+Consensus rank (comparison only): 10    model-minus-consensus rank: +5    value vs consensus slot: -59 FP
+
+Projected FPPM:    1.29      (80% range 1.13 - 1.46)
+Projected Minutes: 33.3      (80% range 25.8 - 38.3)
+Projected FPPG:    42.9      (80% range 31.1 - 52.5)
+Projected Games:   64      (availability 79%, 80% range 36 - 75 games)
+Projected Total:   2800
+  (in-season: 51 FP already banked over 1 games)
+
+10th percentile total: 1366
+25th percentile total: 2009
+50th percentile total: 2605
+75th percentile total: 3128
+90th percentile total: 3578
+Mean of simulated totals: 2539   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 931    risk-adjusted value: 1768
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2025-26: FPPM 1.18 | 33.6 mpg | 39.7 FPPG | 70 GP | DAL
+  2026-27: FPPM 1.55 | 33.0 mpg | 51.0 FPPG | 1 GP | DAL
+  last-season fantasy profile per game: scoring block +34.0 | rebounds +5.0 | assists +4.0 | stocks +16.0 | turnovers -8.0 | missed-shot cost -9.0
+  FP per FGA 3.00 | FP per possession used 1.91 | FPPM per usage point 0.044 | usage 34.9% | TS% 0.704
+
+Main positive drivers:
+  + age / development curve favors growth [+7.5 FPPG]  (~+477 FP)
+  + role and depth-chart position favor more production [+3.8 FPPG]  (~+243 FP)
+  + higher per-minute production (FPPM 1.18 -> 1.29)  (~+231 FP)
+  + late-season / post-trade form is a positive signal [+1.0 FPPG]  (~+63 FP)
+Main negative drivers:
+  - fewer games expected (70 -> 64)  (~-255 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.5 FPPG]  (~-98 FP)
+  - unfavorable team environment (pace / efficiency / roster turnover) [-0.7 FPPG]  (~-46 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.7 | teammate -1.5 | coach -0.4 | age +7.5 | role +3.8 | form +1.0 | history_adjustment +0.8
+Top feature terms, FPPM adjustment: age__hinge_young +0.054; age__exp +0.018; late__fppm_l1 +0.016; hist__fppm_shrunk -0.010; team__usage_conc -0.007; age__age -0.007
+Top feature terms, minutes adjustment: age__hinge_young +4.769; team__rot_size_exp +1.662; role__gap_hist +1.111; age__age -1.536; mate__same_pos_min -1.131; role__budget_ratio -0.682
+
+Archetype: scoring-heavy    scoring-block share of FP: 51%    breakout score: 77/100
+Upside score: 91   Risk score: 13   P(role expansion >= +3 mpg): 19%
+
+Confidence: High  (score 92/100)

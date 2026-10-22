@@ -1,0 +1,45 @@
+PLAYER: Max Christie   (DAL, G, age 24.0)
+
+Projected Rank (total value): 179 of 519    | by FPPG: 233    | risk-adjusted: 161
+Consensus rank (comparison only): 333    model-minus-consensus rank: -154    value vs consensus slot: +568 FP
+
+Projected FPPM:    0.72      (80% range 0.54 - 0.90)
+Projected Minutes: 26.7      (80% range 19.6 - 31.4)
+Projected FPPG:    19.2      (80% range 11.8 - 25.8)
+Projected Games:   69      (availability 85%, 80% range 40 - 80 games)
+Projected Total:   1321
+  (in-season: 5 FP already banked over 1 games)
+
+10th percentile total: 599
+25th percentile total: 869
+50th percentile total: 1185
+75th percentile total: 1503
+90th percentile total: 1789
+Mean of simulated totals: 1198   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 426    risk-adjusted value: 805
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.65 | 14.4 mpg | 9.4 FPPG | 67 GP | LAL
+  2024-25: FPPM 0.71 | 27.2 mpg | 19.4 FPPG | 78 GP | DAL  (traded LAL -> DAL)
+  2025-26: FPPM 0.75 | 29.1 mpg | 21.8 FPPG | 77 GP | DAL
+  2026-27: FPPM 0.17 | 29.0 mpg | 5.0 FPPG | 1 GP | DAL
+  last-season fantasy profile per game: scoring block +2.0 | rebounds +3.0 | assists +4.0 | stocks +0.0 | turnovers -4.0 | missed-shot cost -6.0
+  FP per FGA 0.62 | FP per possession used 0.50 | FPPM per usage point 0.012 | usage 14.9% | TS% 0.312
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+1.0 FPPG]  (~+67 FP)
+Main negative drivers:
+  - fewer games expected (77 -> 69)  (~-160 FP)
+  - fewer minutes (29.1 -> 26.7 mpg)  (~-118 FP)
+  - lower per-minute production (FPPM 0.75 -> 0.72)  (~-59 FP)
+  - stronger teammate competition for usage, shots and minutes [-0.7 FPPG]  (~-46 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.5 | teammate -0.7 | coach -0.2 | age +0.4 | role +1.0 | form -0.5 | history_adjustment -0.6
+Top feature terms, FPPM adjustment: hist__fppm_shrunk +0.007; team__depth15 +0.006; team__oversub +0.005; late__fppm_l1 -0.013; hist__tpar_l1 -0.012; hist__fppm_raw_w -0.011
+Top feature terms, minutes adjustment: team__rot_size_exp +1.662; role__gap_hist +1.107; hist__mpg_l3 +0.525; mate__quality_wavg -0.707; role__budget_ratio -0.682; team__oversub -0.444
+
+Archetype: all-around    scoring-block share of FP: 54%    breakout score: 16/100
+Upside score: 18   Risk score: 13   P(role expansion >= +3 mpg): 7%
+
+Confidence: High  (score 79/100)

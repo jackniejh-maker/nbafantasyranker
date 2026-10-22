@@ -1,0 +1,128 @@
+[
+ {
+  "check": "box-score PTS inconsistent with FGM/3PM/FTM",
+  "severity": "info",
+  "count": 0,
+  "detail": "flagged only - raw PTS is kept for fantasy scoring",
+  "examples": ""
+ },
+ {
+  "check": "OREB + DREB != REB",
+  "severity": "info",
+  "count": 0,
+  "detail": "flagged only",
+  "examples": ""
+ },
+ {
+  "check": "one player_id with several names",
+  "severity": "info",
+  "count": 0,
+  "detail": "name spellings differ across rows",
+  "examples": ""
+ },
+ {
+  "check": "duplicate player names (different player_id)",
+  "severity": "warning",
+  "count": 5,
+  "detail": "matching by name is ambiguous for these; ids are used everywhere in the model",
+  "examples": "corey brewer; daryl macon; isaiah canaan; trevon scott; wayne selden"
+ },
+ {
+  "check": "missing seasons",
+  "severity": "info",
+  "count": 0,
+  "detail": "expected 2015..2025",
+  "examples": ""
+ },
+ {
+  "check": "seasons with unusually few games",
+  "severity": "info",
+  "count": 0,
+  "detail": "median 1230 games per season",
+  "examples": ""
+ },
+ {
+  "check": "seasons with fewer than expected teams",
+  "severity": "info",
+  "count": 4,
+  "detail": "max teams per season 30",
+  "examples": "2015: 29; 2016: 28; 2017: 28; 2026: 28"
+ },
+ {
+  "check": "team-games whose player minutes do not add up to 240+5k*OT",
+  "severity": "warning",
+  "count": 7,
+  "detail": "tolerance 4% of 240",
+  "examples": "401070832/PHX: 276; 401071433/MIN: 276; 401071544/SAC: 252"
+ },
+ {
+  "check": "impossible games played (GP > team games)",
+  "severity": "error",
+  "count": 3,
+  "detail": "",
+  "examples": "3191/2016: 78>76; 2767/2016: 77>76; 2990984/2023: 85>83"
+ },
+ {
+  "check": "GP greater than the regular-season length",
+  "severity": "error",
+  "count": 5,
+  "detail": "",
+  "examples": ""
+ },
+ {
+  "check": "season totals with makes > attempts",
+  "severity": "info",
+  "count": 0,
+  "detail": "",
+  "examples": ""
+ },
+ {
+  "check": "implausible TS% / usage values",
+  "severity": "warning",
+  "count": 3,
+  "detail": "",
+  "examples": "4278412/2023; 4713010/2026; 5107968/2026"
+ },
+ {
+  "check": "players with several team entries in a season (traded)",
+  "severity": "info",
+  "count": 754,
+  "detail": "549 distinct players; each stint preserved in `stints`",
+  "examples": ""
+ },
+ {
+  "check": "players changing teams between consecutive seasons",
+  "severity": "info",
+  "count": 1362,
+  "detail": "",
+  "examples": ""
+ },
+ {
+  "check": "missing current-team information",
+  "severity": "info",
+  "count": 0,
+  "detail": "",
+  "examples": ""
+ },
+ {
+  "check": "players on duplicate current rosters",
+  "severity": "info",
+  "count": 0,
+  "detail": "",
+  "examples": ""
+ },
+ {
+  "check": "rostered players with no NBA game history (rookies / new)",
+  "severity": "info",
+  "count": 42,
+  "detail": "routed to the rookie/newcomer model",
+  "examples": "Zuby Ejiofor; Henri Veesaar; Chris Cenac Jr.; Dillon Mitchell; Tyler Bilodeau"
+ },
+ {
+  "check": "last-season rotation players (>=500 min) not on any current roster",
+  "severity": "info",
+  "count": 27,
+  "detail": "free agents / retired / unsigned - excluded from rankings",
+  "examples": "Ochai Agbaji; Keaton Wallace; Cam Thomas; Tyrese Martin; Lonzo Ball"
+ }
+]

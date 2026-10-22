@@ -1,0 +1,46 @@
+PLAYER: Brandon Ingram   (LAC, F, age 29.4)
+
+Projected Rank (total value): 79 of 519    | by FPPG: 51    | risk-adjusted: 87
+Consensus rank (comparison only): 107    model-minus-consensus rank: -28    value vs consensus slot: +255 FP
+
+Projected FPPM:    1.14      (80% range 0.96 - 1.33)
+Projected Minutes: 31.9      (80% range 24.5 - 37.0)
+Projected FPPG:    36.4      (80% range 25.3 - 45.3)
+Projected Games:   54      (availability 67%, 80% range 22 - 72 games)
+Projected Total:   1978
+
+10th percentile total: 706
+25th percentile total: 1220
+50th percentile total: 1804
+75th percentile total: 2363
+90th percentile total: 2814
+Mean of simulated totals: 1792   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 455    risk-adjusted value: 1130
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2022-23: FPPM 1.17 | 34.2 mpg | 39.9 FPPG | 45 GP | NOP
+  2023-24: FPPM 1.15 | 32.9 mpg | 37.9 FPPG | 64 GP | NOP
+  2024-25: FPPM 1.12 | 33.0 mpg | 37.1 FPPG | 18 GP | NOP
+  2025-26: FPPM 1.05 | 33.8 mpg | 35.6 FPPG | 77 GP | TOR
+  last-season fantasy profile per game: scoring block +21.6 | rebounds +5.6 | assists +7.4 | stocks +5.9 | turnovers -4.9 | missed-shot cost -9.6
+  FP per FGA 2.13 | FP per possession used 1.68 | FPPM per usage point 0.039 | usage 27.1% | TS% 0.573
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+2.9 FPPG]  (~+160 FP)
+  + higher per-minute production (FPPM 1.05 -> 1.14)  (~+147 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.4 FPPG]  (~+77 FP)
+Main negative drivers:
+  - fewer games expected (77 -> 54)  (~-823 FP)
+  - fewer minutes (33.8 -> 31.9 mpg)  (~-114 FP)
+  - age-related decline expected [-1.2 FPPG]  (~-67 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.4 | teammate +0.3 | coach +0.3 | age -1.2 | role +2.9 | form +0.2 | history_adjustment -0.9
+Top feature terms, FPPM adjustment: mate__usg_wavg +0.012; role__usg_high +0.011; mate__reb_wavg +0.011; age__exp -0.019; age__hinge_young -0.012; hist__fppm_shrunk -0.008
+Top feature terms, minutes adjustment: team__rot_size_exp +1.538; age__age +1.383; role__bin_25_30 +0.730; age__hinge_young -1.048; age__exp -1.021; hist__mpg_l3 -0.600
+
+Archetype: scoring-heavy    scoring-block share of FP: 59%    breakout score: 46/100
+Upside score: 94   Risk score: 38   P(role expansion >= +3 mpg): 11%
+Injury report: Out - Achilles (return Nov 08)  (known games missed assumed: 8)
+
+Confidence: Medium  (score 65/100)

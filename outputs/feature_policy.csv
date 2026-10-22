@@ -1,0 +1,141 @@
+feature,group,allowed_information,uses_target_season_stats,uses_preseason_roster_info
+hist__fppm_shrunk,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__fppm_fixed,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__fppm_raw_w,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__mpg_w,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__avail_shrunk,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__usg_w,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__ast_pct_w,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__reb_pct_w,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__eff_minutes_log,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__n_seasons,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__fppm_l1,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__mpg_l1,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__avail_l1,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__log_min_l1,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__fppm_l2,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__mpg_l2,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__avail_l2,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__log_min_l2,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__has_l2,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__fppm_l3,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__mpg_l3,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__avail_l3,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__has_l3,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__gs_rate_l1,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__gs_rate_l2,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__usg_l1,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__ts_l1,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__ast_pct_l1,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__reb_pct_l1,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__stl_pct_l1,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__blk_pct_l1,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__tov_pct_l1,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__ftr_l1,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__tpar_l1,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__fp_per_fga_l1,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__missing_l1,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__d_mpg,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__d_usg,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__d_ts,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+hist__d_fppm,hist,"player's own track record from seasons < T (lags l1..l3, recency/credibility weights, rates)",False,False
+late__mpg_l1,late,form over the last 20 games of season T-1,False,False
+late__fppm_l1,late,form over the last 20 games of season T-1,False,False
+late__mpg_gap,late,form over the last 20 games of season T-1,False,False
+late__fppm_gap,late,form over the last 20 games of season T-1,False,False
+trade__traded_l1,trade,last-season trade split (stint with final team vs whole season) - season T-1 only,False,False
+trade__last_stint_share,trade,last-season trade split (stint with final team vs whole season) - season T-1 only,False,False
+trade__last_stint_gap,trade,last-season trade split (stint with final team vs whole season) - season T-1 only,False,False
+age__age,age,"age on Feb 1 of season T from birth date (+ spline/quadratic terms), years in league",False,True
+age__c2,age,"age on Feb 1 of season T from birth date (+ spline/quadratic terms), years in league",False,True
+age__hinge_young,age,"age on Feb 1 of season T from birth date (+ spline/quadratic terms), years in league",False,True
+age__hinge_old,age,"age on Feb 1 of season T from birth date (+ spline/quadratic terms), years in league",False,True
+age__exp,age,"age on Feb 1 of season T from birth date (+ spline/quadratic terms), years in league",False,True
+role__mpg_ref,role,"baseline minutes from seasons < T, redistributed over the preseason roster (240-minute budget); starter proxies",False,True
+role__mpg_budget,role,"baseline minutes from seasons < T, redistributed over the preseason roster (240-minute budget); starter proxies",False,True
+role__budget_ratio,role,"baseline minutes from seasons < T, redistributed over the preseason roster (240-minute budget); starter proxies",False,True
+role__gap_hist,role,"baseline minutes from seasons < T, redistributed over the preseason roster (240-minute budget); starter proxies",False,True
+role__bin_20_25,role,"baseline minutes from seasons < T, redistributed over the preseason roster (240-minute budget); starter proxies",False,True
+role__bin_25_30,role,"baseline minutes from seasons < T, redistributed over the preseason roster (240-minute budget); starter proxies",False,True
+role__bin_30_35,role,"baseline minutes from seasons < T, redistributed over the preseason roster (240-minute budget); starter proxies",False,True
+role__bin_35p,role,"baseline minutes from seasons < T, redistributed over the preseason roster (240-minute budget); starter proxies",False,True
+role__usg_low,role,"baseline minutes from seasons < T, redistributed over the preseason roster (240-minute budget); starter proxies",False,True
+role__usg_high,role,"baseline minutes from seasons < T, redistributed over the preseason roster (240-minute budget); starter proxies",False,True
+role__is_top5,role,"baseline minutes from seasons < T, redistributed over the preseason roster (240-minute budget); starter proxies",False,True
+pos__g,pos,listed position (known before the season),False,True
+pos__f,pos,listed position (known before the season),False,True
+pos__c,pos,listed position (known before the season),False,True
+team__pace_l1,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__pace_proj,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__ortg_l1,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__ortg_proj,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__drtg_l1,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__drtg_proj,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__net_proj,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__poss_pg_l1,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__fga_pg_l1,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__ast_pg_l1,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__reb_pg_l1,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__tpar_l1,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__ftr_l1,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__ast_rate_l1,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__continuity,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__min_vacated,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__min_added,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__fga_vacated,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__fga_added,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__ast_vacated,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__ast_added,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__reb_vacated,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__reb_added,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__min_net,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__fga_net,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__ast_net,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__reb_net,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__oversub,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__rot_size_exp,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__depth15,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__usage_conc,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+team__top3_min_share,team,team ratings / pace / possessions from seasons < T; roster turnover vs last season; projected roster structure,False,True
+mate__usg_wavg,mate,preseason teammates' prior-season usage/assist/rebound rates and baseline minutes; own-x-teammate products,False,True
+mate__usg_top2,mate,preseason teammates' prior-season usage/assist/rebound rates and baseline minutes; own-x-teammate products,False,True
+mate__usg_top3,mate,preseason teammates' prior-season usage/assist/rebound rates and baseline minutes; own-x-teammate products,False,True
+mate__high_usg_n,mate,preseason teammates' prior-season usage/assist/rebound rates and baseline minutes; own-x-teammate products,False,True
+mate__starter_usg,mate,preseason teammates' prior-season usage/assist/rebound rates and baseline minutes; own-x-teammate products,False,True
+mate__ast_wavg,mate,preseason teammates' prior-season usage/assist/rebound rates and baseline minutes; own-x-teammate products,False,True
+mate__ast_max,mate,preseason teammates' prior-season usage/assist/rebound rates and baseline minutes; own-x-teammate products,False,True
+mate__reb_wavg,mate,preseason teammates' prior-season usage/assist/rebound rates and baseline minutes; own-x-teammate products,False,True
+mate__front_min,mate,preseason teammates' prior-season usage/assist/rebound rates and baseline minutes; own-x-teammate products,False,True
+mate__fga_sum,mate,preseason teammates' prior-season usage/assist/rebound rates and baseline minutes; own-x-teammate products,False,True
+mate__tpa_sum,mate,preseason teammates' prior-season usage/assist/rebound rates and baseline minutes; own-x-teammate products,False,True
+mate__same_pos_min,mate,preseason teammates' prior-season usage/assist/rebound rates and baseline minutes; own-x-teammate products,False,True
+mate__same_pos_n,mate,preseason teammates' prior-season usage/assist/rebound rates and baseline minutes; own-x-teammate products,False,True
+mate__rank_in_pos,mate,preseason teammates' prior-season usage/assist/rebound rates and baseline minutes; own-x-teammate products,False,True
+mate__quality_wavg,mate,preseason teammates' prior-season usage/assist/rebound rates and baseline minutes; own-x-teammate products,False,True
+mate__best_fppm,mate,preseason teammates' prior-season usage/assist/rebound rates and baseline minutes; own-x-teammate products,False,True
+role__rank_in_team,role,"baseline minutes from seasons < T, redistributed over the preseason roster (240-minute budget); starter proxies",False,True
+mate__x_usg,mate,preseason teammates' prior-season usage/assist/rebound rates and baseline minutes; own-x-teammate products,False,True
+mate__x_ast,mate,preseason teammates' prior-season usage/assist/rebound rates and baseline minutes; own-x-teammate products,False,True
+mate__x_reb,mate,preseason teammates' prior-season usage/assist/rebound rates and baseline minutes; own-x-teammate products,False,True
+mate__x_3p_ast,mate,preseason teammates' prior-season usage/assist/rebound rates and baseline minutes; own-x-teammate products,False,True
+coach__pace,coach,head coach's tendencies from seasons < T (shrunk to league mean); coach new to team flag,False,True
+coach__starter_mpg,coach,head coach's tendencies from seasons < T (shrunk to league mean); coach new to team flag,False,True
+coach__star_mpg,coach,head coach's tendencies from seasons < T (shrunk to league mean); coach new to team flag,False,True
+coach__bench_mpg,coach,head coach's tendencies from seasons < T (shrunk to league mean); coach new to team flag,False,True
+coach__rot_size,coach,head coach's tendencies from seasons < T (shrunk to league mean); coach new to team flag,False,True
+coach__rookie_mpg,coach,head coach's tendencies from seasons < T (shrunk to league mean); coach new to team flag,False,True
+coach__y2_mpg,coach,head coach's tendencies from seasons < T (shrunk to league mean); coach new to team flag,False,True
+coach__stability,coach,head coach's tendencies from seasons < T (shrunk to league mean); coach new to team flag,False,True
+coach__double_big,coach,head coach's tendencies from seasons < T (shrunk to league mean); coach new to team flag,False,True
+coach__small_ball,coach,head coach's tendencies from seasons < T (shrunk to league mean); coach new to team flag,False,True
+coach__usage_hhi,coach,head coach's tendencies from seasons < T (shrunk to league mean); coach new to team flag,False,True
+coach__games_known,coach,head coach's tendencies from seasons < T (shrunk to league mean); coach new to team flag,False,True
+coach__new_to_team,coach,head coach's tendencies from seasons < T (shrunk to league mean); coach new to team flag,False,True
+newc__log_pick,newc,"draft slot, height, nationality, credibility of the limited NBA history (rookie / low-history model)",False,True
+newc__undrafted,newc,"draft slot, height, nationality, credibility of the limited NBA history (rookie / low-history model)",False,True
+newc__lottery,newc,"draft slot, height, nationality, credibility of the limited NBA history (rookie / low-history model)",False,True
+newc__height_in,newc,"draft slot, height, nationality, credibility of the limited NBA history (rookie / low-history model)",False,True
+newc__intl,newc,"draft slot, height, nationality, credibility of the limited NBA history (rookie / low-history model)",False,True
+newc__cred,newc,"draft slot, height, nationality, credibility of the limited NBA history (rookie / low-history model)",False,True
+newc__obs_dev,newc,"draft slot, height, nationality, credibility of the limited NBA history (rookie / low-history model)",False,True
+newc__is_rookie,newc,"draft slot, height, nationality, credibility of the limited NBA history (rookie / low-history model)",False,True

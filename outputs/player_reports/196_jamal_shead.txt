@@ -1,0 +1,45 @@
+PLAYER: Jamal Shead   (TOR, G, age 24.5)
+
+Projected Rank (total value): 196 of 519    | by FPPG: 255    | risk-adjusted: 190
+Consensus rank (comparison only): 346    model-minus-consensus rank: -150    value vs consensus slot: +532 FP
+
+Projected FPPM:    0.88      (80% range 0.71 - 1.06)
+Projected Minutes: 20.7      (80% range 11.8 - 26.7)
+Projected FPPG:    18.2      (80% range 9.4 - 25.4)
+Projected Games:   70      (availability 86%, 80% range 41 - 81 games)
+Projected Total:   1283
+  (in-season: 8 FP already banked over 1 games)
+
+10th percentile total: 486
+25th percentile total: 772
+50th percentile total: 1123
+75th percentile total: 1476
+90th percentile total: 1786
+Mean of simulated totals: 1140   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 321    risk-adjusted value: 722
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2024-25: FPPM 0.87 | 19.5 mpg | 17.0 FPPG | 75 GP | TOR
+  2025-26: FPPM 0.89 | 22.5 mpg | 20.0 FPPG | 82 GP | TOR
+  2026-27: FPPM 0.50 | 16.0 mpg | 8.0 FPPG | 1 GP | TOR
+  last-season fantasy profile per game: scoring block +0.0 | rebounds +2.0 | assists +10.0 | stocks +4.0 | turnovers -8.0 | missed-shot cost -2.0
+  FP per FGA 4.00 | FP per possession used 1.16 | FPPM per usage point 0.031 | usage 16.1% | TS% 0.347
+
+Main positive drivers:
+  + favorable team environment (pace / efficiency / roster turnover) [+1.2 FPPG]  (~+82 FP)
+  + role and depth-chart position favor more production [+0.8 FPPG]  (~+53 FP)
+Main negative drivers:
+  - fewer games expected (82 -> 70)  (~-218 FP)
+  - fewer minutes (22.5 -> 20.7 mpg)  (~-109 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.1 FPPG]  (~-78 FP)
+  - coach tendencies (rotation / pace) hurt [-0.7 FPPG]  (~-51 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.2 | teammate -1.1 | coach -0.7 | age +0.5 | role +0.8 | form -0.0 | history_adjustment +0.2
+Top feature terms, FPPM adjustment: age__exp +0.013; hist__tov_pct_l1 +0.008; team__ast_pg_l1 +0.007; newc__height_in -0.014; mate__quality_wavg -0.012; mate__reb_wavg -0.007
+Top feature terms, minutes adjustment: age__exp +0.726; hist__reb_pct_w +0.556; team__ortg_l1 +0.490; mate__quality_wavg -1.443; hist__ast_pct_w -0.505; role__is_top5 -0.443
+
+Archetype: playmaking-heavy    scoring-block share of FP: 33%    breakout score: 34/100
+Upside score: 28   Risk score: 31   P(role expansion >= +3 mpg): 15%
+
+Confidence: Medium  (score 66/100)

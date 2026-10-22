@@ -1,0 +1,46 @@
+PLAYER: Davion Mitchell   (MIA, G, age 28.4)
+
+Projected Rank (total value): 126 of 519    | by FPPG: 160    | risk-adjusted: 116
+Consensus rank (comparison only): 155    model-minus-consensus rank: -29    value vs consensus slot: +151 FP
+
+Projected FPPM:    0.87      (80% range 0.69 - 1.06)
+Projected Minutes: 27.9      (80% range 20.4 - 33.2)
+Projected FPPG:    24.3      (80% range 15.5 - 31.7)
+Projected Games:   66      (availability 82%, 80% range 38 - 77 games)
+Projected Total:   1643
+  (in-season: 28 FP already banked over 1 games)
+
+10th percentile total: 761
+25th percentile total: 1112
+50th percentile total: 1477
+75th percentile total: 1852
+90th percentile total: 2194
+Mean of simulated totals: 1485   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 534    risk-adjusted value: 1006
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.68 | 15.3 mpg | 10.4 FPPG | 72 GP | SAC
+  2024-25: FPPM 0.79 | 27.8 mpg | 22.0 FPPG | 73 GP | MIA  (traded TOR -> MIA)
+  2025-26: FPPM 0.95 | 28.6 mpg | 27.2 FPPG | 70 GP | MIA
+  2026-27: FPPM 0.85 | 33.0 mpg | 28.0 FPPG | 1 GP | MIA
+  last-season fantasy profile per game: scoring block +12.0 | rebounds +0.0 | assists +22.0 | stocks +4.0 | turnovers -10.0 | missed-shot cost -4.0
+  FP per FGA 3.50 | FP per possession used 2.02 | FPPM per usage point 0.046 | usage 18.3% | TS% 0.619
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+1.9 FPPG]  (~+129 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+0.8 FPPG]  (~+53 FP)
+  + coach tendencies (rotation / pace) help [+0.8 FPPG]  (~+50 FP)
+Main negative drivers:
+  - lower per-minute production (FPPM 0.95 -> 0.87)  (~-151 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.3 FPPG]  (~-89 FP)
+  - fewer games expected (70 -> 66)  (~-86 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.8 | teammate -1.3 | coach +0.8 | age +0.0 | role +1.9 | form +0.0 | history_adjustment +0.1
+Top feature terms, FPPM adjustment: coach__games_known +0.010; hist__tov_pct_l1 +0.007; team__ast_pg_l1 +0.007; newc__height_in -0.016; age__hinge_young -0.012; mate__usg_wavg -0.008
+Top feature terms, minutes adjustment: age__age +1.048; role__gap_hist +0.792; team__rot_size_exp +0.658; age__hinge_young -1.048; mate__quality_wavg -0.949; team__pace_l1 -0.435
+
+Archetype: playmaking-heavy    scoring-block share of FP: 40%    breakout score: 18/100
+Upside score: 42   Risk score: 12   P(role expansion >= +3 mpg): 18%
+
+Confidence: High  (score 81/100)

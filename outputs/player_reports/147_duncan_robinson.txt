@@ -1,0 +1,44 @@
+PLAYER: Duncan Robinson   (DET, F, age 32.8)
+
+Projected Rank (total value): 147 of 519    | by FPPG: 191    | risk-adjusted: 131
+Consensus rank (comparison only): 302    model-minus-consensus rank: -155    value vs consensus slot: +679 FP
+
+Projected FPPM:    0.82      (80% range 0.64 - 1.01)
+Projected Minutes: 26.5      (80% range 20.6 - 30.5)
+Projected FPPG:    21.7      (80% range 14.3 - 28.2)
+Projected Games:   68      (availability 84%, 80% range 40 - 79 games)
+Projected Total:   1508
+  (in-season: 28 FP already banked over 1 games)
+
+10th percentile total: 732
+25th percentile total: 1045
+50th percentile total: 1369
+75th percentile total: 1699
+90th percentile total: 2001
+Mean of simulated totals: 1373   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 524    risk-adjusted value: 946
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.84 | 28.0 mpg | 23.5 FPPG | 68 GP | MIA
+  2024-25: FPPM 0.81 | 24.1 mpg | 19.6 FPPG | 74 GP | MIA
+  2025-26: FPPM 0.83 | 27.4 mpg | 22.7 FPPG | 77 GP | DET
+  2026-27: FPPM 1.00 | 28.0 mpg | 28.0 FPPG | 1 GP | DET
+  last-season fantasy profile per game: scoring block +24.0 | rebounds +2.0 | assists +4.0 | stocks +4.0 | turnovers -6.0 | missed-shot cost -7.0
+  FP per FGA 2.80 | FP per possession used 1.69 | FPPM per usage point 0.041 | usage 24.2% | TS% 0.777
+
+Main positive drivers:
+  + favorable team environment (pace / efficiency / roster turnover) [+1.6 FPPG]  (~+108 FP)
+  + role and depth-chart position favor more production [+0.9 FPPG]  (~+65 FP)
+Main negative drivers:
+  - fewer games expected (77 -> 68)  (~-192 FP)
+  - fewer minutes (27.4 -> 26.5 mpg)  (~-52 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.6 | teammate -0.2 | coach -0.4 | age +0.3 | role +0.9 | form +0.1 | history_adjustment -1.9
+Top feature terms, FPPM adjustment: age__age +0.011; team__net_proj +0.006; age__c2 +0.005; hist__tpar_l1 -0.019; age__hinge_young -0.012; age__exp -0.010
+Top feature terms, minutes adjustment: age__age +2.502; team__rot_size_exp +1.231; team__ortg_l1 +0.709; age__hinge_young -1.048; mate__quality_wavg -0.990; coach__double_big -0.749
+
+Archetype: all-around    scoring-block share of FP: 62%    breakout score: 41/100
+Upside score: 23   Risk score: 7   P(role expansion >= +3 mpg): 10%
+
+Confidence: High  (score 86/100)

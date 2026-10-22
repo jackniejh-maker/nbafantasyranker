@@ -1,0 +1,45 @@
+PLAYER: Bennedict Mathurin   (NOP, G, age 24.6)
+
+Projected Rank (total value): 173 of 519    | by FPPG: 193    | risk-adjusted: 164
+Consensus rank (comparison only): 289    model-minus-consensus rank: -116    value vs consensus slot: +492 FP
+
+Projected FPPM:    0.88      (80% range 0.71 - 1.07)
+Projected Minutes: 24.6      (80% range 17.2 - 29.6)
+Projected FPPG:    21.7      (80% range 13.4 - 28.7)
+Projected Games:   60      (availability 75%, 80% range 35 - 76 games)
+Projected Total:   1331
+  (in-season: 20 FP already banked over 1 games)
+
+10th percentile total: 577
+25th percentile total: 882
+50th percentile total: 1212
+75th percentile total: 1571
+90th percentile total: 1894
+Mean of simulated totals: 1231   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 369    risk-adjusted value: 790
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.85 | 26.1 mpg | 22.1 FPPG | 60 GP | IND
+  2024-25: FPPM 0.84 | 29.9 mpg | 24.9 FPPG | 72 GP | IND
+  2025-26: FPPM 0.88 | 30.0 mpg | 26.4 FPPG | 54 GP | LAC  (traded IND -> LAC)
+  2026-27: FPPM 1.11 | 18.0 mpg | 20.0 FPPG | 1 GP | NOP
+  last-season fantasy profile per game: scoring block +9.0 | rebounds +3.0 | assists +4.0 | stocks +4.0 | turnovers -0.0 | missed-shot cost -5.0
+  FP per FGA 2.86 | FP per possession used 2.07 | FPPM per usage point 0.052 | usage 21.6% | TS% 0.571
+
+Main positive drivers:
+  + more games expected (54 -> 60)  (~+138 FP)
+  + role and depth-chart position favor more production [+0.7 FPPG]  (~+40 FP)
+Main negative drivers:
+  - fewer minutes (30.0 -> 24.6 mpg)  (~-283 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.6 FPPG]  (~-94 FP)
+  - unfavorable team environment (pace / efficiency / roster turnover) [-1.0 FPPG]  (~-57 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -1.0 | teammate -1.6 | coach -0.3 | age -0.3 | role +0.7 | form -0.3 | history_adjustment -0.2
+Top feature terms, FPPM adjustment: trade__last_stint_gap +0.016; team__depth15 +0.006; team__oversub +0.006; trade__traded_l1 -0.011; team__usage_conc -0.008; mate__quality_wavg -0.006
+Top feature terms, minutes adjustment: team__rot_size_exp +1.613; role__gap_hist +0.851; trade__last_stint_gap +0.397; mate__quality_wavg -0.781; role__budget_ratio -0.728; trade__traded_l1 -0.657
+
+Archetype: scoring-heavy    scoring-block share of FP: 63%    breakout score: 10/100
+Upside score: 33   Risk score: 27   P(role expansion >= +3 mpg): 2%
+
+Confidence: High  (score 71/100)

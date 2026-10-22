@@ -1,0 +1,211 @@
+{
+  "league": {
+    "name": "ESPN Points League",
+    "teams": 12,
+    "roster_spots": 13
+  },
+  "scoring": {
+    "pts": 1,
+    "fgm": 2,
+    "fga": -1,
+    "ftm": 1,
+    "fta": -1,
+    "fg3m": 1,
+    "reb": 1,
+    "ast": 2,
+    "stl": 4,
+    "blk": 4,
+    "tov": -2
+  },
+  "seasons": {
+    "first_season": 2015,
+    "target_season": null,
+    "season_length": 82,
+    "history_window": 3,
+    "rollover_month": 7
+  },
+  "weighting": {
+    "recency_weights": [
+      0.5,
+      0.3,
+      0.2
+    ],
+    "shrink_minutes": 1500,
+    "role_tau_minutes": 10.0,
+    "team_change_discount": 0.92,
+    "old_age_decay": 0.05,
+    "prior_lookback_seasons": 3,
+    "baseline_games_k": 20,
+    "avail_prior_weight": 2.0,
+    "use_tuned": true
+  },
+  "eligibility": {
+    "min_history_minutes": 400,
+    "min_target_minutes": 300,
+    "min_target_games": 10,
+    "newcomer_min_target_minutes": 100,
+    "opening_roster_games": 10
+  },
+  "validation": {
+    "n_test_seasons": 5,
+    "min_train_seasons": 4,
+    "inner_cv_min_seasons": 3,
+    "selection_metric": "top_n_mae",
+    "parsimony_tolerance": 0.01,
+    "top_n": 100,
+    "eval_min_minutes": 500
+  },
+  "models": {
+    "final_candidates": [
+      "ridge",
+      "elastic_net",
+      "gbm"
+    ],
+    "ridge_alphas": [
+      1,
+      3,
+      10,
+      30,
+      100,
+      300,
+      1000,
+      3000
+    ],
+    "enet_alphas": [
+      0.003,
+      0.01,
+      0.03,
+      0.1
+    ],
+    "enet_l1_ratios": [
+      0.2,
+      0.6,
+      0.95
+    ],
+    "gbm_backend": "auto",
+    "gbm_grid": [
+      {
+        "max_depth": 2,
+        "n_estimators": 200,
+        "learning_rate": 0.04
+      },
+      {
+        "max_depth": 3,
+        "n_estimators": 150,
+        "learning_rate": 0.04
+      }
+    ],
+    "winsor_quantile": 0.005,
+    "target_weight_k_minutes": 600,
+    "random_state": 0
+  },
+  "minutes_reconciliation": {
+    "mode": "auto",
+    "team_minutes": 240.0,
+    "cap_up": 1.1,
+    "cap_down": 0.65,
+    "max_mpg": 41.0
+  },
+  "simulation": {
+    "n_sims": 10000,
+    "seed": 42,
+    "chunk_players": 100,
+    "newcomer_uncertainty_mult": 1.5,
+    "min_pool_size": 80
+  },
+  "ranking": {
+    "risk_lambda": 0.5,
+    "downside_quantile": 0.1,
+    "default_ranking": "total"
+  },
+  "breakout": {
+    "weights": {
+      "fppm_gain": 0.3,
+      "minutes_gain": 0.25,
+      "role_expansion_prob": 0.2,
+      "upside": 0.15,
+      "market_gap": 0.1
+    },
+    "minutes_expansion_delta": 3.0
+  },
+  "in_season": {
+    "enabled": true,
+    "k_minutes_default": 900,
+    "k_games_default": 15,
+    "avail_k_games": 20
+  },
+  "injuries": {
+    "enabled": true,
+    "games_per_day": 0.5,
+    "unknown_duration_games": 0
+  },
+  "game_model": {
+    "enabled": true,
+    "gbm_max_rows": 100000,
+    "rolling_windows": [
+      5,
+      10,
+      20
+    ]
+  },
+  "name_aliases": {},
+  "scraping": {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+    "timeout_seconds": 45,
+    "max_retries": 4,
+    "backoff_seconds": 2.0,
+    "min_interval_seconds": {
+      "nba": 1.5,
+      "espn": 1.0,
+      "rotowire": 2.5,
+      "basketball_reference": 3.6,
+      "espn_stats": 0.2
+    },
+    "ttl_hours": {
+      "current_season_games": 20,
+      "rosters": 12,
+      "player_index": 168,
+      "injuries": 3,
+      "consensus": 24
+    }
+  },
+  "sources": {
+    "game_logs": [
+      "nba"
+    ],
+    "team_game_logs": [
+      "nba"
+    ],
+    "starters": [
+      "nba"
+    ],
+    "rosters": [
+      "nba"
+    ],
+    "current_rosters": [
+      "nba",
+      "espn"
+    ],
+    "player_index": [
+      "nba"
+    ],
+    "injuries": [
+      "espn",
+      "rotowire"
+    ],
+    "consensus": [
+      "espn"
+    ]
+  },
+  "paths": {
+    "overrides_csv": "config/player_overrides.csv",
+    "external_consensus_csv": "data/external/consensus_rankings.csv",
+    "external_prospects_csv": "data/external/prospects.csv"
+  },
+  "source_profile": "nba",
+  "espn_stats": {
+    "workers": 4,
+    "min_teams": 25,
+    "min_players": 300
+  }
+}

@@ -1,0 +1,45 @@
+PLAYER: Trey Murphy III   (NOP, F, age 26.6)
+
+Projected Rank (total value): 68 of 519    | by FPPG: 66    | risk-adjusted: 71
+Consensus rank (comparison only): 63    model-minus-consensus rank: +5    value vs consensus slot: -40 FP
+
+Projected FPPM:    1.01      (80% range 0.84 - 1.19)
+Projected Minutes: 33.0      (80% range 25.9 - 37.7)
+Projected FPPG:    33.3      (80% range 23.3 - 41.6)
+Projected Games:   60      (availability 74%, 80% range 34 - 76 games)
+Projected Total:   2025
+  (in-season: 16 FP already banked over 1 games)
+
+10th percentile total: 947
+25th percentile total: 1399
+50th percentile total: 1882
+75th percentile total: 2351
+90th percentile total: 2780
+Mean of simulated totals: 1872   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 603    risk-adjusted value: 1243
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.00 | 29.7 mpg | 29.6 FPPG | 57 GP | NOP
+  2024-25: FPPM 1.08 | 35.0 mpg | 37.7 FPPG | 53 GP | NOP
+  2025-26: FPPM 1.14 | 35.5 mpg | 40.5 FPPG | 66 GP | NOP
+  2026-27: FPPM 0.50 | 32.0 mpg | 16.0 FPPG | 1 GP | NOP
+  last-season fantasy profile per game: scoring block +10.0 | rebounds +4.0 | assists +2.0 | stocks +0.0 | turnovers -0.0 | missed-shot cost -7.0
+  FP per FGA 1.45 | FP per possession used 1.40 | FPPM per usage point 0.035 | usage 14.4% | TS% 0.481
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+2.5 FPPG]  (~+149 FP)
+Main negative drivers:
+  - lower per-minute production (FPPM 1.14 -> 1.01)  (~-263 FP)
+  - fewer games expected (66 -> 60)  (~-191 FP)
+  - fewer minutes (35.5 -> 33.0 mpg)  (~-150 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.6 FPPG]  (~-94 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -1.2 | teammate -1.6 | coach -0.3 | age -0.7 | role +2.5 | form +0.6 | history_adjustment +0.0
+Top feature terms, FPPM adjustment: hist__fppm_l1 +0.010; late__fppm_l1 +0.010; hist__fppm_raw_w +0.009; age__hinge_young -0.012; hist__fppm_shrunk -0.008; hist__tpar_l1 -0.008
+Top feature terms, minutes adjustment: team__rot_size_exp +1.613; role__gap_hist +1.155; role__bin_25_30 +0.730; age__hinge_young -1.048; role__budget_ratio -0.728; mate__quality_wavg -0.558
+
+Archetype: scoring-heavy    scoring-block share of FP: 57%    breakout score: 2/100
+Upside score: 84   Risk score: 23   P(role expansion >= +3 mpg): 8%
+
+Confidence: High  (score 81/100)

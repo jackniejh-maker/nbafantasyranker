@@ -1,0 +1,46 @@
+PLAYER: T.J. McConnell   (IND, G, age 34.9)
+
+Projected Rank (total value): 170 of 519    | by FPPG: 167    | risk-adjusted: 163
+Consensus rank (comparison only): 344    model-minus-consensus rank: -174    value vs consensus slot: +663 FP
+
+Projected FPPM:    1.35      (80% range 1.14 - 1.57)
+Projected Minutes: 17.4      (80% range 11.2 - 21.5)
+Projected FPPG:    23.4      (80% range 14.1 - 30.8)
+Projected Games:   59      (availability 73%, 80% range 33 - 75 games)
+Projected Total:   1392
+
+10th percentile total: 553
+25th percentile total: 881
+50th percentile total: 1256
+75th percentile total: 1630
+90th percentile total: 1972
+Mean of simulated totals: 1264   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 334    risk-adjusted value: 795
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2022-23: FPPM 1.19 | 20.4 mpg | 24.2 FPPG | 75 GP | IND
+  2023-24: FPPM 1.46 | 18.2 mpg | 26.5 FPPG | 72 GP | IND
+  2024-25: FPPM 1.29 | 18.2 mpg | 23.5 FPPG | 78 GP | IND
+  2025-26: FPPM 1.46 | 17.2 mpg | 25.1 FPPG | 56 GP | IND
+  last-season fantasy profile per game: scoring block +10.2 | rebounds +2.2 | assists +10.2 | stocks +4.7 | turnovers -2.3 | missed-shot cost -3.8
+  FP per FGA 3.12 | FP per possession used 2.67 | FPPM per usage point 0.062 | usage 23.6% | TS% 0.567
+
+Main positive drivers:
+  + more games expected (56 -> 59)  (~+80 FP)
+  + role and depth-chart position favor more production [+1.2 FPPG]  (~+71 FP)
+Main negative drivers:
+  - lower per-minute production (FPPM 1.46 -> 1.35)  (~-119 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.7 FPPG]  (~-99 FP)
+  - unfavorable team environment (pace / efficiency / roster turnover) [-1.0 FPPG]  (~-62 FP)
+  - coach tendencies (rotation / pace) hurt [-0.8 FPPG]  (~-49 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -1.0 | teammate -1.7 | coach -0.8 | age -0.0 | role +1.2 | form -0.0 | history_adjustment +3.1
+Top feature terms, FPPM adjustment: hist__fppm_raw_w +0.026; hist__fppm_l1 +0.025; late__fppm_l1 +0.021; age__exp -0.023; hist__fppm_shrunk -0.019; newc__height_in -0.014
+Top feature terms, minutes adjustment: age__age +3.193; hist__fppm_raw_w +0.888; team__rot_size_exp +0.751; age__exp -1.271; hist__fppm_l3 -1.085; age__hinge_young -1.048
+
+Archetype: playmaking-heavy    scoring-block share of FP: 41%    breakout score: 41/100
+Upside score: 42   Risk score: 35   P(role expansion >= +3 mpg): 19%
+Injury report: Day-To-Day - Hamstring (return Oct 23)  (known games missed assumed: 0)
+
+Confidence: High  (score 68/100)

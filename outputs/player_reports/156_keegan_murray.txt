@@ -1,0 +1,44 @@
+PLAYER: Keegan Murray   (SAC, F, age 26.5)
+
+Projected Rank (total value): 156 of 519    | by FPPG: 121    | risk-adjusted: 160
+Consensus rank (comparison only): 113    model-minus-consensus rank: +43    value vs consensus slot: -209 FP
+
+Projected FPPM:    0.85      (80% range 0.67 - 1.03)
+Projected Minutes: 31.5      (80% range 24.2 - 36.3)
+Projected FPPG:    26.7      (80% range 17.5 - 34.4)
+Projected Games:   54      (availability 67%, 80% range 22 - 76 games)
+Projected Total:   1453
+  (in-season: 4 FP already banked over 1 games)
+
+10th percentile total: 534
+25th percentile total: 890
+50th percentile total: 1314
+75th percentile total: 1779
+90th percentile total: 2164
+Mean of simulated totals: 1347   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 347    risk-adjusted value: 831
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.91 | 33.6 mpg | 30.5 FPPG | 77 GP | SAC
+  2024-25: FPPM 0.81 | 34.3 mpg | 27.9 FPPG | 76 GP | SAC
+  2025-26: FPPM 0.86 | 34.6 mpg | 29.9 FPPG | 23 GP | SAC
+  2026-27: FPPM 0.14 | 28.0 mpg | 4.0 FPPG | 1 GP | SAC
+  last-season fantasy profile per game: scoring block -4.0 | rebounds +4.0 | assists +0.0 | stocks +4.0 | turnovers -0.0 | missed-shot cost -7.0
+  FP per FGA 0.50 | FP per possession used 0.50 | FPPM per usage point 0.012 | usage 12.0% | TS% 0.125
+
+Main positive drivers:
+  + more games expected (23 -> 54)  (~+835 FP)
+  + role and depth-chart position favor more production [+1.0 FPPG]  (~+57 FP)
+Main negative drivers:
+  - fewer minutes (34.6 -> 31.5 mpg)  (~-139 FP)
+  - unfavorable team environment (pace / efficiency / roster turnover) [-0.9 FPPG]  (~-49 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.9 | teammate -0.3 | coach -0.5 | age -0.3 | role +1.0 | form -0.0 | history_adjustment -3.2
+Top feature terms, FPPM adjustment: hist__blk_pct_l1 +0.009; role__rank_in_team +0.007; team__ast_added +0.006; role__bin_30_35 -0.020; age__hinge_young -0.012; mate__reb_wavg -0.010
+Top feature terms, minutes adjustment: role__bin_30_35 +1.098; team__rot_size_exp +0.794; role__is_top5 +0.597; age__hinge_young -1.048; hist__avail_l1 -0.801; hist__mpg_l3 -0.646
+
+Archetype: all-around    scoring-block share of FP: 49%    breakout score: 36/100
+Upside score: 73   Risk score: 35   P(role expansion >= +3 mpg): 6%
+
+Confidence: Medium  (score 61/100)

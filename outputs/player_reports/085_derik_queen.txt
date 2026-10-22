@@ -1,0 +1,44 @@
+PLAYER: Derik Queen   (NOP, C, age 22.1)
+
+Projected Rank (total value): 85 of 519    | by FPPG: 102    | risk-adjusted: 80
+Consensus rank (comparison only): 91    model-minus-consensus rank: -6    value vs consensus slot: +100 FP
+
+Projected FPPM:    1.16      (80% range 1.00 - 1.33)
+Projected Minutes: 24.4      (80% range 15.0 - 30.8)
+Projected FPPG:    28.4      (80% range 16.3 - 37.7)
+Projected Games:   68      (availability 85%, 80% range 40 - 79 games)
+Projected Total:   1976
+  (in-season: 28 FP already banked over 1 games)
+
+10th percentile total: 825
+25th percentile total: 1262
+50th percentile total: 1750
+75th percentile total: 2250
+90th percentile total: 2670
+Mean of simulated totals: 1760   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 560    risk-adjusted value: 1155
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2025-26: FPPM 1.13 | 25.0 mpg | 28.3 FPPG | 81 GP | NOP
+  2026-27: FPPM 1.56 | 18.0 mpg | 28.0 FPPG | 1 GP | NOP
+  last-season fantasy profile per game: scoring block +10.0 | rebounds +10.0 | assists +2.0 | stocks +8.0 | turnovers -2.0 | missed-shot cost -2.0
+  FP per FGA 7.00 | FP per possession used 3.66 | FPPM per usage point 0.091 | usage 17.1% | TS% 0.753
+
+Main positive drivers:
+  + age / development curve favors growth [+4.3 FPPG]  (~+296 FP)
+  + higher per-minute production (FPPM 1.13 -> 1.16)  (~+55 FP)
+Main negative drivers:
+  - fewer games expected (81 -> 68)  (~-356 FP)
+  - unfavorable team environment (pace / efficiency / roster turnover) [-1.1 FPPG]  (~-77 FP)
+  - role and depth-chart position limit production [-0.7 FPPG]  (~-51 FP)
+  - fewer minutes (25.0 -> 24.4 mpg)  (~-49 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -1.1 | teammate -0.6 | coach -0.3 | age +4.3 | role -0.7 | form -0.3 | history_adjustment +1.0
+Top feature terms, FPPM adjustment: age__hinge_young +0.032; age__exp +0.018; hist__tpar_l1 +0.012; team__usage_conc -0.008; hist__fppm_shrunk -0.007; mate__same_pos_min -0.007
+Top feature terms, minutes adjustment: age__hinge_young +2.824; team__rot_size_exp +1.613; age__exp +0.975; age__age -1.051; pos__c -0.876; role__budget_ratio -0.728
+
+Archetype: rebounding-heavy    scoring-block share of FP: 38%    breakout score: 57/100
+Upside score: 86   Risk score: 23   P(role expansion >= +3 mpg): 22%
+
+Confidence: High  (score 75/100)

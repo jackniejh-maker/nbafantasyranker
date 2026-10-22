@@ -1,0 +1,45 @@
+PLAYER: Zion Williamson   (NOP, F, age 26.6)
+
+Projected Rank (total value): 65 of 519    | by FPPG: 53    | risk-adjusted: 74
+Consensus rank (comparison only): 54    model-minus-consensus rank: +11    value vs consensus slot: -130 FP
+
+Projected FPPM:    1.20      (80% range 1.02 - 1.38)
+Projected Minutes: 30.2      (80% range 22.3 - 35.3)
+Projected FPPG:    36.2      (80% range 24.7 - 44.9)
+Projected Games:   57      (availability 70%, 80% range 30 - 72 games)
+Projected Total:   2088
+  (in-season: 37 FP already banked over 1 games)
+
+10th percentile total: 904
+25th percentile total: 1394
+50th percentile total: 1907
+75th percentile total: 2404
+90th percentile total: 2855
+Mean of simulated totals: 1892   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 532    risk-adjusted value: 1219
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.28 | 31.6 mpg | 40.4 FPPG | 70 GP | NOP
+  2024-25: FPPM 1.56 | 28.5 mpg | 44.5 FPPG | 30 GP | NOP
+  2025-26: FPPM 1.20 | 29.7 mpg | 35.6 FPPG | 62 GP | NOP
+  2026-27: FPPM 1.16 | 32.0 mpg | 37.0 FPPG | 1 GP | NOP
+  last-season fantasy profile per game: scoring block +22.0 | rebounds +3.0 | assists +6.0 | stocks +12.0 | turnovers -6.0 | missed-shot cost -9.0
+  FP per FGA 2.31 | FP per possession used 1.71 | FPPM per usage point 0.042 | usage 27.2% | TS% 0.590
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+1.8 FPPG]  (~+103 FP)
+Main negative drivers:
+  - fewer games expected (62 -> 57)  (~-191 FP)
+  - unfavorable team environment (pace / efficiency / roster turnover) [-1.2 FPPG]  (~-68 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.1 FPPG]  (~-63 FP)
+  - age-related decline expected [-1.1 FPPG]  (~-61 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -1.2 | teammate -1.1 | coach -0.4 | age -1.1 | role +1.8 | form +0.1 | history_adjustment +0.4
+Top feature terms, FPPM adjustment: hist__fppm_raw_w +0.019; hist__tpar_l1 +0.017; hist__fppm_l1 +0.013; hist__fppm_shrunk -0.015; age__hinge_young -0.012; team__usage_conc -0.008
+Top feature terms, minutes adjustment: team__rot_size_exp +1.613; role__gap_hist +0.713; hist__fppm_raw_w +0.667; age__hinge_young -1.048; hist__fppm_l3 -0.744; role__budget_ratio -0.728
+
+Archetype: scoring-heavy    scoring-block share of FP: 58%    breakout score: 62/100
+Upside score: 89   Risk score: 32   P(role expansion >= +3 mpg): 25%
+
+Confidence: High  (score 77/100)

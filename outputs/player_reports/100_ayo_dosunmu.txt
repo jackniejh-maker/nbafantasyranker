@@ -1,0 +1,46 @@
+PLAYER: Ayo Dosunmu   (MIN, G, age 27.0)
+
+Projected Rank (total value): 100 of 519    | by FPPG: 116    | risk-adjusted: 102
+Consensus rank (comparison only): 103    model-minus-consensus rank: -3    value vs consensus slot: +6 FP
+
+Projected FPPM:    0.96      (80% range 0.79 - 1.15)
+Projected Minutes: 28.2      (80% range 20.8 - 33.1)
+Projected FPPG:    27.1      (80% range 17.8 - 34.6)
+Projected Games:   62      (availability 77%, 80% range 36 - 78 games)
+Projected Total:   1706
+  (in-season: 25 FP already banked over 1 games)
+
+10th percentile total: 773
+25th percentile total: 1150
+50th percentile total: 1568
+75th percentile total: 1972
+90th percentile total: 2345
+Mean of simulated totals: 1569   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 516    risk-adjusted value: 1042
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.87 | 29.2 mpg | 25.4 FPPG | 76 GP | CHI
+  2024-25: FPPM 0.92 | 30.3 mpg | 28.0 FPPG | 46 GP | CHI
+  2025-26: FPPM 1.06 | 27.3 mpg | 29.0 FPPG | 69 GP | MIN  (traded CHI -> MIN)
+  2026-27: FPPM 0.86 | 29.0 mpg | 25.0 FPPG | 1 GP | MIN
+  last-season fantasy profile per game: scoring block +16.0 | rebounds +5.0 | assists +6.0 | stocks +0.0 | turnovers -2.0 | missed-shot cost -7.0
+  FP per FGA 1.92 | FP per possession used 1.63 | FPPM per usage point 0.042 | usage 20.3% | TS% 0.559
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+1.3 FPPG]  (~+82 FP)
+  + more minutes (27.3 -> 28.2 mpg)  (~+54 FP)
+Main negative drivers:
+  - fewer games expected (69 -> 62)  (~-187 FP)
+  - lower per-minute production (FPPM 1.06 -> 0.96)  (~-177 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.7 FPPG]  (~-104 FP)
+  - late-season / post-trade form is a negative signal [-1.1 FPPG]  (~-67 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.5 | teammate -1.7 | coach -0.2 | age -0.4 | role +1.3 | form -1.1 | history_adjustment +0.1
+Top feature terms, FPPM adjustment: coach__usage_hhi +0.008; role__bin_25_30 +0.007; hist__fppm_l1 +0.006; age__hinge_young -0.012; trade__traded_l1 -0.011; coach__rot_size -0.008
+Top feature terms, minutes adjustment: coach__rot_size +0.802; role__bin_25_30 +0.730; age__age +0.593; age__hinge_young -1.048; mate__quality_wavg -0.806; coach__double_big -0.795
+
+Archetype: all-around    scoring-block share of FP: 53%    breakout score: 33/100
+Upside score: 58   Risk score: 20   P(role expansion >= +3 mpg): 27%
+
+Confidence: High  (score 79/100)

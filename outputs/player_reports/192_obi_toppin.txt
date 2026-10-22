@@ -1,0 +1,44 @@
+PLAYER: Obi Toppin   (IND, F, age 28.9)
+
+Projected Rank (total value): 192 of 519    | by FPPG: 181    | risk-adjusted: 194
+Consensus rank (comparison only): 282    model-minus-consensus rank: -90    value vs consensus slot: +402 FP
+
+Projected FPPM:    1.14      (80% range 0.96 - 1.33)
+Projected Minutes: 20.1      (80% range 11.4 - 25.9)
+Projected FPPG:    22.9      (80% range 12.2 - 31.4)
+Projected Games:   56      (availability 69%, 80% range 24 - 78 games)
+Projected Total:   1314
+  (in-season: 38 FP already banked over 1 games)
+
+10th percentile total: 428
+25th percentile total: 741
+50th percentile total: 1145
+75th percentile total: 1603
+90th percentile total: 2019
+Mean of simulated totals: 1201   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 287    risk-adjusted value: 716
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.04 | 21.2 mpg | 22.0 FPPG | 83 GP | IND
+  2024-25: FPPM 1.09 | 19.6 mpg | 21.4 FPPG | 79 GP | IND
+  2025-26: FPPM 1.24 | 17.7 mpg | 21.9 FPPG | 24 GP | IND
+  2026-27: FPPM 1.52 | 25.0 mpg | 38.0 FPPG | 1 GP | IND
+  last-season fantasy profile per game: scoring block +25.0 | rebounds +3.0 | assists +2.0 | stocks +8.0 | turnovers -0.0 | missed-shot cost -6.0
+  FP per FGA 3.17 | FP per possession used 2.85 | FPPM per usage point 0.069 | usage 22.1% | TS% 0.751
+
+Main positive drivers:
+  + more games expected (24 -> 56)  (~+725 FP)
+  + more minutes (17.7 -> 20.1 mpg)  (~+151 FP)
+Main negative drivers:
+  - lower per-minute production (FPPM 1.24 -> 1.14)  (~-105 FP)
+  - unfavorable team environment (pace / efficiency / roster turnover) [-0.8 FPPG]  (~-47 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.8 | teammate -0.2 | coach -0.6 | age +0.4 | role -0.1 | form +0.2 | history_adjustment +1.7
+Top feature terms, FPPM adjustment: late__fppm_l1 +0.017; hist__fppm_l1 +0.014; coach__games_known +0.010; age__hinge_young -0.012; mate__quality_wavg -0.010; hist__fppm_shrunk -0.008
+Top feature terms, minutes adjustment: age__age +1.216; team__rot_size_exp +0.751; mate__ast_wavg +0.448; mate__quality_wavg -1.184; age__hinge_young -1.048; hist__avail_l1 -0.780
+
+Archetype: scoring-heavy    scoring-block share of FP: 57%    breakout score: 84/100
+Upside score: 78   Risk score: 39   P(role expansion >= +3 mpg): 40%
+
+Confidence: Medium  (score 53/100)

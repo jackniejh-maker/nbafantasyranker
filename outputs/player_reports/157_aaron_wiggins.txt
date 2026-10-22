@@ -1,0 +1,46 @@
+PLAYER: Aaron Wiggins   (ATL, G, age 28.1)
+
+Projected Rank (total value): 157 of 519    | by FPPG: 195    | risk-adjusted: 158
+Consensus rank (comparison only): 285    model-minus-consensus rank: -128    value vs consensus slot: +573 FP
+
+Projected FPPM:    0.96      (80% range 0.78 - 1.15)
+Projected Minutes: 22.6      (80% range 14.4 - 27.9)
+Projected FPPG:    21.7      (80% range 12.5 - 29.0)
+Projected Games:   66      (availability 82%, 80% range 38 - 77 games)
+Projected Total:   1464
+  (in-season: 27 FP already banked over 1 games)
+
+10th percentile total: 600
+25th percentile total: 934
+50th percentile total: 1306
+75th percentile total: 1651
+90th percentile total: 1985
+Mean of simulated totals: 1306   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 403    risk-adjusted value: 854
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.96 | 15.7 mpg | 15.2 FPPG | 78 GP | OKC
+  2024-25: FPPM 1.00 | 22.8 mpg | 22.7 FPPG | 77 GP | OKC
+  2025-26: FPPM 0.86 | 21.8 mpg | 18.8 FPPG | 65 GP | OKC
+  2026-27: FPPM 0.84 | 32.0 mpg | 27.0 FPPG | 1 GP | ATL
+  last-season fantasy profile per game: scoring block +20.0 | rebounds +3.0 | assists +0.0 | stocks +8.0 | turnovers -4.0 | missed-shot cost -4.0
+  FP per FGA 3.00 | FP per possession used 2.19 | FPPM per usage point 0.056 | usage 15.0% | TS% 0.775
+
+Main positive drivers:
+  + higher per-minute production (FPPM 0.86 -> 0.96)  (~+147 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.0 FPPG]  (~+68 FP)
+  + role and depth-chart position favor more production [+0.9 FPPG]  (~+60 FP)
+  + more minutes (21.8 -> 22.6 mpg)  (~+51 FP)
+Main negative drivers:
+  - late-season / post-trade form is a negative signal [-1.0 FPPG]  (~-65 FP)
+  - stronger teammate competition for usage, shots and minutes [-0.8 FPPG]  (~-53 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.0 | teammate -0.8 | coach +0.4 | age +0.0 | role +0.9 | form -1.0 | history_adjustment +0.9
+Top feature terms, FPPM adjustment: team__ast_pg_l1 +0.008; mate__usg_wavg +0.008; team__oversub +0.007; age__hinge_young -0.012; team__usage_conc -0.007; late__fppm_l1 -0.007
+Top feature terms, minutes adjustment: team__rot_size_exp +1.292; age__age +0.940; coach__rot_size +0.648; age__hinge_young -1.048; role__budget_ratio -0.842; late__mpg_gap -0.671
+
+Archetype: all-around    scoring-block share of FP: 54%    breakout score: 89/100
+Upside score: 32   Risk score: 25   P(role expansion >= +3 mpg): 27%
+
+Confidence: High  (score 74/100)

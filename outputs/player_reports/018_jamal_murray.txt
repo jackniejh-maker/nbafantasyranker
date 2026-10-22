@@ -1,0 +1,46 @@
+PLAYER: Jamal Murray   (DEN, G, age 29.9)
+
+Projected Rank (total value): 18 of 519    | by FPPG: 18    | risk-adjusted: 20
+Consensus rank (comparison only): 31    model-minus-consensus rank: -13    value vs consensus slot: +155 FP
+
+Projected FPPM:    1.25      (80% range 1.07 - 1.44)
+Projected Minutes: 33.9      (80% range 27.3 - 38.2)
+Projected FPPG:    42.4      (80% range 31.3 - 51.3)
+Projected Games:   65      (availability 80%, 80% range 35 - 76 games)
+Projected Total:   2776
+
+10th percentile total: 1336
+25th percentile total: 1959
+50th percentile total: 2542
+75th percentile total: 3086
+90th percentile total: 3543
+Mean of simulated totals: 2495   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 904    risk-adjusted value: 1723
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2022-23: FPPM 1.14 | 32.8 mpg | 37.4 FPPG | 65 GP | DEN
+  2023-24: FPPM 1.33 | 31.6 mpg | 41.9 FPPG | 59 GP | DEN
+  2024-25: FPPM 1.15 | 36.1 mpg | 41.7 FPPG | 67 GP | DEN
+  2025-26: FPPM 1.32 | 35.4 mpg | 46.6 FPPG | 75 GP | DEN
+  last-season fantasy profile per game: scoring block +27.5 | rebounds +4.4 | assists +14.3 | stocks +5.1 | turnovers -4.6 | missed-shot cost -10.0
+  FP per FGA 2.57 | FP per possession used 2.05 | FPPM per usage point 0.047 | usage 28.1% | TS% 0.622
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+3.9 FPPG]  (~+255 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.8 FPPG]  (~+117 FP)
+  + late-season / post-trade form is a positive signal [+0.8 FPPG]  (~+52 FP)
+Main negative drivers:
+  - fewer games expected (75 -> 65)  (~-406 FP)
+  - lower per-minute production (FPPM 1.32 -> 1.25)  (~-146 FP)
+  - stronger teammate competition for usage, shots and minutes [-2.2 FPPG]  (~-144 FP)
+  - fewer minutes (35.4 -> 33.9 mpg)  (~-124 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.8 | teammate -2.2 | coach +0.2 | age -1.1 | role +3.9 | form +0.8 | history_adjustment +1.0
+Top feature terms, FPPM adjustment: hist__fppm_raw_w +0.019; hist__fppm_l1 +0.018; late__fppm_l1 +0.014; age__exp -0.019; hist__fppm_shrunk -0.017; age__hinge_young -0.012
+Top feature terms, minutes adjustment: age__age +1.557; team__ortg_l1 +1.099; role__gap_hist +0.773; mate__quality_wavg -1.124; age__hinge_young -1.048; age__exp -1.021
+
+Archetype: scoring-heavy    scoring-block share of FP: 56%    breakout score: 8/100
+Upside score: 93   Risk score: 14   P(role expansion >= +3 mpg): 10%
+
+Confidence: High  (score 91/100)

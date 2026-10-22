@@ -1,0 +1,45 @@
+PLAYER: Reed Sheppard   (HOU, G, age 22.6)
+
+Projected Rank (total value): 103 of 519    | by FPPG: 123    | risk-adjusted: 107
+Consensus rank (comparison only): 97    model-minus-consensus rank: +6    value vs consensus slot: -54 FP
+
+Projected FPPM:    1.08      (80% range 0.90 - 1.27)
+Projected Minutes: 24.6      (80% range 15.7 - 30.5)
+Projected FPPG:    26.5      (80% range 15.8 - 35.2)
+Projected Games:   66      (availability 81%, 80% range 37 - 77 games)
+Projected Total:   1753
+  (in-season: 12 FP already banked over 1 games)
+
+10th percentile total: 735
+25th percentile total: 1122
+50th percentile total: 1563
+75th percentile total: 1984
+90th percentile total: 2374
+Mean of simulated totals: 1567   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 495    risk-adjusted value: 1029
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2024-25: FPPM 0.86 | 12.6 mpg | 10.9 FPPG | 52 GP | HOU
+  2025-26: FPPM 1.13 | 26.2 mpg | 29.7 FPPG | 82 GP | HOU
+  2026-27: FPPM 0.75 | 16.0 mpg | 12.0 FPPG | 1 GP | HOU
+  last-season fantasy profile per game: scoring block +0.0 | rebounds +2.0 | assists +8.0 | stocks +8.0 | turnovers -6.0 | missed-shot cost -5.0
+  FP per FGA 2.00 | FP per possession used 1.33 | FPPM per usage point 0.032 | usage 23.7% | TS% 0.250
+
+Main positive drivers:
+  + age / development curve favors growth [+3.3 FPPG]  (~+217 FP)
+  + role and depth-chart position favor more production [+1.6 FPPG]  (~+108 FP)
+Main negative drivers:
+  - fewer games expected (82 -> 66)  (~-435 FP)
+  - fewer minutes (26.2 -> 24.6 mpg)  (~-118 FP)
+  - lower per-minute production (FPPM 1.13 -> 1.08)  (~-85 FP)
+  - stronger teammate competition for usage, shots and minutes [-0.9 FPPG]  (~-61 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.4 | teammate -0.9 | coach +0.2 | age +3.3 | role +1.6 | form +0.5 | history_adjustment +3.4
+Top feature terms, FPPM adjustment: age__hinge_young +0.024; age__exp +0.013; hist__stl_pct_l1 +0.012; hist__tpar_l1 -0.011; newc__height_in -0.011; coach__rot_size -0.009
+Top feature terms, minutes adjustment: age__hinge_young +2.145; role__gap_hist +0.983; coach__rot_size +0.864; mate__quality_wavg -1.062; age__age -0.882; role__budget_ratio -0.551
+
+Archetype: stocks-heavy    scoring-block share of FP: 46%    breakout score: 11/100
+Upside score: 65   Risk score: 23   P(role expansion >= +3 mpg): 15%
+
+Confidence: High  (score 75/100)

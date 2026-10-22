@@ -1,0 +1,45 @@
+PLAYER: Alex Caruso   (OKC, G, age 32.9)
+
+Projected Rank (total value): 186 of 519    | by FPPG: 196    | risk-adjusted: 180
+Consensus rank (comparison only): 151    model-minus-consensus rank: +35    value vs consensus slot: -196 FP
+
+Projected FPPM:    1.01      (80% range 0.81 - 1.21)
+Projected Minutes: 21.2      (80% range 14.4 - 25.6)
+Projected FPPG:    21.4      (80% range 13.0 - 28.3)
+Projected Games:   59      (availability 73%, 80% range 33 - 75 games)
+Projected Total:   1287
+  (in-season: 24 FP already banked over 1 games)
+
+10th percentile total: 534
+25th percentile total: 831
+50th percentile total: 1162
+75th percentile total: 1515
+90th percentile total: 1833
+Mean of simulated totals: 1178   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 337    risk-adjusted value: 750
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.04 | 28.7 mpg | 29.8 FPPG | 71 GP | CHI
+  2024-25: FPPM 1.16 | 19.7 mpg | 22.9 FPPG | 54 GP | OKC
+  2025-26: FPPM 0.96 | 18.2 mpg | 17.5 FPPG | 56 GP | OKC
+  2026-27: FPPM 0.96 | 25.0 mpg | 24.0 FPPG | 1 GP | OKC
+  last-season fantasy profile per game: scoring block +12.0 | rebounds +6.0 | assists +2.0 | stocks +4.0 | turnovers -0.0 | missed-shot cost -2.0
+  FP per FGA 6.00 | FP per possession used 4.92 | FPPM per usage point 0.118 | usage 8.2% | TS% 0.922
+
+Main positive drivers:
+  + more minutes (18.2 -> 21.2 mpg)  (~+175 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+2.7 FPPG]  (~+157 FP)
+  + more games expected (56 -> 59)  (~+66 FP)
+  + higher per-minute production (FPPM 0.96 -> 1.01)  (~+63 FP)
+Main negative drivers:
+  - stronger teammate competition for usage, shots and minutes [-2.0 FPPG]  (~-119 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +2.7 | teammate -2.0 | coach -0.3 | age +0.2 | role +0.1 | form -0.4 | history_adjustment +1.0
+Top feature terms, FPPM adjustment: hist__stl_pct_l1 +0.017; age__age +0.011; mate__same_pos_min +0.008; age__exp -0.014; mate__quality_wavg -0.012; age__hinge_young -0.012
+Top feature terms, minutes adjustment: age__age +2.551; team__rot_size_exp +1.088; team__ortg_l1 +0.783; mate__quality_wavg -1.499; age__hinge_young -1.048; mate__same_pos_min -1.028
+
+Archetype: stocks-heavy    scoring-block share of FP: 35%    breakout score: 92/100
+Upside score: 30   Risk score: 30   P(role expansion >= +3 mpg): 46%
+
+Confidence: High  (score 69/100)

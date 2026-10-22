@@ -1,0 +1,47 @@
+PLAYER: Anthony Edwards   (MIN, G, age 25.5)
+
+Projected Rank (total value): 6 of 519    | by FPPG: 8    | risk-adjusted: 7
+Consensus rank (comparison only): 6    model-minus-consensus rank: +0    value vs consensus slot: +0 FP
+
+Projected FPPM:    1.35      (80% range 1.18 - 1.53)
+Projected Minutes: 33.7      (80% range 27.4 - 37.9)
+Projected FPPG:    45.6      (80% range 34.4 - 54.4)
+Projected Games:   66      (availability 81%, 80% range 37 - 77 games)
+Projected Total:   3071
+  (in-season: 76 FP already banked over 1 games)
+
+10th percentile total: 1580
+25th percentile total: 2248
+50th percentile total: 2873
+75th percentile total: 3399
+90th percentile total: 3850
+Mean of simulated totals: 2791   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 1115    risk-adjusted value: 1994
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.21 | 35.1 mpg | 42.6 FPPG | 79 GP | MIN
+  2024-25: FPPM 1.21 | 36.3 mpg | 44.1 FPPG | 79 GP | MIN
+  2025-26: FPPM 1.30 | 35.0 mpg | 45.6 FPPG | 61 GP | MIN
+  2026-27: FPPM 2.30 | 33.0 mpg | 76.0 FPPG | 1 GP | MIN
+  last-season fantasy profile per game: scoring block +56.0 | rebounds +10.0 | assists +6.0 | stocks +12.0 | turnovers -8.0 | missed-shot cost -14.0
+  FP per FGA 2.62 | FP per possession used 2.16 | FPPM per usage point 0.056 | usage 41.0% | TS% 0.721
+
+Main positive drivers:
+  + more games expected (61 -> 66)  (~+216 FP)
+  + role and depth-chart position favor more production [+2.5 FPPG]  (~+168 FP)
+  + higher per-minute production (FPPM 1.30 -> 1.35)  (~+105 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+0.6 FPPG]  (~+41 FP)
+Main negative drivers:
+  - fewer minutes (35.0 -> 33.7 mpg)  (~-110 FP)
+  - age-related decline expected [-1.3 FPPG]  (~-85 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.2 FPPG]  (~-78 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.6 | teammate -1.2 | coach -0.3 | age -1.3 | role +2.5 | form +0.6 | history_adjustment +1.0
+Top feature terms, FPPM adjustment: hist__fppm_l1 +0.018; hist__fppm_raw_w +0.017; hist__usg_w +0.015; role__bin_30_35 -0.020; hist__fppm_shrunk -0.019; age__hinge_young -0.012
+Top feature terms, minutes adjustment: role__bin_30_35 +1.098; coach__rot_size +0.802; hist__usg_l1 +0.744; age__hinge_young -1.048; coach__double_big -0.795; hist__mpg_l3 -0.736
+
+Archetype: scoring-heavy    scoring-block share of FP: 64%    breakout score: 61/100
+Upside score: 91   Risk score: 5   P(role expansion >= +3 mpg): 9%
+
+Confidence: High  (score 97/100)

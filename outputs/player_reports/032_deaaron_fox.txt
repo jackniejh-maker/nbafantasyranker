@@ -1,0 +1,46 @@
+PLAYER: De'Aaron Fox   (SAS, G, age 29.1)
+
+Projected Rank (total value): 32 of 519    | by FPPG: 41    | risk-adjusted: 31
+Consensus rank (comparison only): 47    model-minus-consensus rank: -15    value vs consensus slot: +261 FP
+
+Projected FPPM:    1.20      (80% range 1.02 - 1.38)
+Projected Minutes: 31.8      (80% range 25.4 - 36.0)
+Projected FPPG:    38.0      (80% range 27.9 - 46.1)
+Projected Games:   65      (availability 81%, 80% range 37 - 77 games)
+Projected Total:   2524
+  (in-season: 37 FP already banked over 1 games)
+
+10th percentile total: 1286
+25th percentile total: 1826
+50th percentile total: 2345
+75th percentile total: 2811
+90th percentile total: 3210
+Mean of simulated totals: 2297   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 893    risk-adjusted value: 1619
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.31 | 35.9 mpg | 46.9 FPPG | 74 GP | SAC
+  2024-25: FPPM 1.18 | 36.2 mpg | 42.5 FPPG | 62 GP | SAS  (traded SAC -> SAS)
+  2025-26: FPPM 1.18 | 31.0 mpg | 36.6 FPPG | 73 GP | SAS
+  2026-27: FPPM 1.16 | 32.0 mpg | 37.0 FPPG | 1 GP | SAS
+  last-season fantasy profile per game: scoring block +16.0 | rebounds +7.0 | assists +14.0 | stocks +4.0 | turnovers -4.0 | missed-shot cost -4.0
+  FP per FGA 4.11 | FP per possession used 3.00 | FPPM per usage point 0.073 | usage 15.8% | TS% 0.678
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+3.0 FPPG]  (~+198 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.0 FPPG]  (~+67 FP)
+  + more minutes (31.0 -> 31.8 mpg)  (~+62 FP)
+Main negative drivers:
+  - fewer games expected (73 -> 65)  (~-287 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.8 FPPG]  (~-117 FP)
+  - age-related decline expected [-0.9 FPPG]  (~-60 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.0 | teammate -1.8 | coach -0.1 | age -0.9 | role +3.0 | form +0.6 | history_adjustment -0.6
+Top feature terms, FPPM adjustment: hist__fppm_raw_w +0.015; late__fppm_l1 +0.013; hist__fppm_l1 +0.012; age__exp -0.014; hist__fppm_shrunk -0.013; age__hinge_young -0.012
+Top feature terms, minutes adjustment: age__age +1.284; team__ortg_l1 +0.865; team__rot_size_exp +0.833; age__hinge_young -1.048; mate__quality_wavg -0.893; role__budget_ratio -0.795
+
+Archetype: scoring-heavy    scoring-block share of FP: 55%    breakout score: 67/100
+Upside score: 76   Risk score: 8   P(role expansion >= +3 mpg): 24%
+
+Confidence: High  (score 95/100)

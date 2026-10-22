@@ -1,0 +1,45 @@
+PLAYER: Tobias Harris   (SAS, F, age 34.5)
+
+Projected Rank (total value): 138 of 519    | by FPPG: 137    | risk-adjusted: 134
+Consensus rank (comparison only): 112    model-minus-consensus rank: +26    value vs consensus slot: -86 FP
+
+Projected FPPM:    0.95      (80% range 0.75 - 1.16)
+Projected Minutes: 27.1      (80% range 22.0 - 30.3)
+Projected FPPG:    25.7      (80% range 17.9 - 32.6)
+Projected Games:   60      (availability 75%, 80% range 34 - 76 games)
+Projected Total:   1555
+
+10th percentile total: 701
+25th percentile total: 1065
+50th percentile total: 1439
+75th percentile total: 1816
+90th percentile total: 2159
+Mean of simulated totals: 1440   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 453    risk-adjusted value: 946
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2022-23: FPPM 0.92 | 32.9 mpg | 30.4 FPPG | 74 GP | PHI
+  2023-24: FPPM 1.02 | 33.9 mpg | 34.4 FPPG | 70 GP | PHI
+  2024-25: FPPM 0.93 | 31.6 mpg | 29.4 FPPG | 73 GP | DET
+  2025-26: FPPM 0.97 | 27.8 mpg | 27.0 FPPG | 63 GP | DET
+  last-season fantasy profile per game: scoring block +13.6 | rebounds +5.1 | assists +5.0 | stocks +5.3 | turnovers -2.0 | missed-shot cost -5.9
+  FP per FGA 2.58 | FP per possession used 2.15 | FPPM per usage point 0.051 | usage 19.0% | TS% 0.574
+
+Main positive drivers:
+  + favorable team environment (pace / efficiency / roster turnover) [+0.8 FPPG]  (~+49 FP)
+Main negative drivers:
+  - stronger teammate competition for usage, shots and minutes [-2.7 FPPG]  (~-162 FP)
+  - age-related decline expected [-1.8 FPPG]  (~-108 FP)
+  - fewer games expected (63 -> 60)  (~-66 FP)
+  - fewer minutes (27.8 -> 27.1 mpg)  (~-40 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.8 | teammate -2.7 | coach -0.0 | age -1.8 | role +0.4 | form +0.3 | history_adjustment -1.6
+Top feature terms, FPPM adjustment: age__age +0.014; age__c2 +0.011; coach__star_mpg +0.010; age__exp -0.042; age__hinge_young -0.012; age__hinge_old -0.012
+Top feature terms, minutes adjustment: age__age +3.091; team__ortg_l1 +0.865; team__rot_size_exp +0.833; age__exp -2.269; mate__quality_wavg -1.142; age__hinge_young -1.048
+
+Archetype: all-around    scoring-block share of FP: 50%    breakout score: 23/100
+Upside score: 43   Risk score: 24   P(role expansion >= +3 mpg): 8%
+Injury report: Day-To-Day - Calf (return Oct 23)  (known games missed assumed: 0)
+
+Confidence: High  (score 78/100)

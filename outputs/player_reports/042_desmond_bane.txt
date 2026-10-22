@@ -1,0 +1,44 @@
+PLAYER: Desmond Bane   (ORL, G, age 28.6)
+
+Projected Rank (total value): 42 of 519    | by FPPG: 60    | risk-adjusted: 39
+Consensus rank (comparison only): 42    model-minus-consensus rank: +0    value vs consensus slot: +0 FP
+
+Projected FPPM:    1.07      (80% range 0.89 - 1.25)
+Projected Minutes: 32.7      (80% range 25.8 - 37.1)
+Projected FPPG:    34.9      (80% range 24.7 - 43.1)
+Projected Games:   66      (availability 81%, 80% range 37 - 77 games)
+Projected Total:   2325
+  (in-season: 31 FP already banked over 1 games)
+
+10th percentile total: 1150
+25th percentile total: 1659
+50th percentile total: 2142
+75th percentile total: 2593
+90th percentile total: 2984
+Mean of simulated totals: 2110   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 814    risk-adjusted value: 1478
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.20 | 34.4 mpg | 41.4 FPPG | 42 GP | MEM
+  2024-25: FPPM 1.22 | 31.9 mpg | 39.0 FPPG | 69 GP | MEM
+  2025-26: FPPM 1.06 | 33.6 mpg | 35.6 FPPG | 82 GP | ORL
+  2026-27: FPPM 0.94 | 33.0 mpg | 31.0 FPPG | 1 GP | ORL
+  last-season fantasy profile per game: scoring block +14.0 | rebounds +5.0 | assists +4.0 | stocks +12.0 | turnovers -4.0 | missed-shot cost -12.0
+  FP per FGA 2.07 | FP per possession used 1.54 | FPPM per usage point 0.039 | usage 23.9% | TS% 0.498
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+2.7 FPPG]  (~+178 FP)
+Main negative drivers:
+  - fewer games expected (82 -> 66)  (~-565 FP)
+  - fewer minutes (33.6 -> 32.7 mpg)  (~-67 FP)
+  - stronger teammate competition for usage, shots and minutes [-0.8 FPPG]  (~-56 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.3 | teammate -0.8 | coach -0.5 | age +0.1 | role +2.7 | form +0.3 | history_adjustment -0.8
+Top feature terms, FPPM adjustment: hist__fppm_raw_w +0.011; role__bin_25_30 +0.007; late__fppm_l1 +0.007; age__hinge_young -0.012; mate__reb_wavg -0.011; hist__fppm_shrunk -0.010
+Top feature terms, minutes adjustment: age__age +1.113; role__bin_25_30 +0.730; role__is_top5 +0.597; age__hinge_young -1.048; mate__quality_wavg -0.766; hist__mpg_l3 -0.689
+
+Archetype: scoring-heavy    scoring-block share of FP: 58%    breakout score: 27/100
+Upside score: 71   Risk score: 8   P(role expansion >= +3 mpg): 14%
+
+Confidence: High  (score 92/100)

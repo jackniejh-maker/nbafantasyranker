@@ -1,0 +1,45 @@
+PLAYER: Myles Turner   (MIL, C, age 30.9)
+
+Projected Rank (total value): 92 of 519    | by FPPG: 125    | risk-adjusted: 89
+Consensus rank (comparison only): 118    model-minus-consensus rank: -26    value vs consensus slot: +138 FP
+
+Projected FPPM:    1.07      (80% range 0.90 - 1.26)
+Projected Minutes: 24.6      (80% range 18.2 - 28.9)
+Projected FPPG:    26.4      (80% range 17.7 - 33.4)
+Projected Games:   67      (availability 83%, 80% range 38 - 78 games)
+Projected Total:   1794
+  (in-season: 23 FP already banked over 1 games)
+
+10th percentile total: 854
+25th percentile total: 1244
+50th percentile total: 1640
+75th percentile total: 2008
+90th percentile total: 2344
+Mean of simulated totals: 1625   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 603    risk-adjusted value: 1121
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.26 | 27.0 mpg | 34.1 FPPG | 78 GP | IND
+  2024-25: FPPM 1.12 | 30.2 mpg | 33.8 FPPG | 72 GP | IND
+  2025-26: FPPM 1.02 | 26.9 mpg | 27.4 FPPG | 71 GP | MIL
+  2026-27: FPPM 0.72 | 32.0 mpg | 23.0 FPPG | 1 GP | MIL
+  last-season fantasy profile per game: scoring block +14.0 | rebounds +5.0 | assists +6.0 | stocks +4.0 | turnovers -6.0 | missed-shot cost -3.0
+  FP per FGA 3.29 | FP per possession used 2.20 | FPPM per usage point 0.054 | usage 13.4% | TS% 0.739
+
+Main positive drivers:
+  + higher per-minute production (FPPM 1.02 -> 1.07)  (~+89 FP)
+Main negative drivers:
+  - fewer minutes (26.9 -> 24.6 mpg)  (~-169 FP)
+  - fewer games expected (71 -> 67)  (~-101 FP)
+  - age-related decline expected [-1.0 FPPG]  (~-66 FP)
+  - unfavorable team environment (pace / efficiency / roster turnover) [-0.7 FPPG]  (~-48 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.7 | teammate +0.6 | coach +0.1 | age -1.0 | role -0.4 | form -0.5 | history_adjustment -1.1
+Top feature terms, FPPM adjustment: hist__blk_pct_l1 +0.018; coach__star_mpg +0.013; newc__height_in +0.011; age__exp -0.023; age__hinge_young -0.012; hist__tpar_l1 -0.011
+Top feature terms, minutes adjustment: age__age +1.863; team__rot_size_exp +1.662; mate__same_pos_min +0.772; age__exp -1.271; age__hinge_young -1.048; pos__c -0.876
+
+Archetype: stocks-heavy    scoring-block share of FP: 49%    breakout score: 37/100
+Upside score: 39   Risk score: 11   P(role expansion >= +3 mpg): 6%
+
+Confidence: High  (score 87/100)

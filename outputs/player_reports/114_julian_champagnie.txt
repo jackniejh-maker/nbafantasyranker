@@ -1,0 +1,44 @@
+PLAYER: Julian Champagnie   (SAS, F, age 25.6)
+
+Projected Rank (total value): 114 of 519    | by FPPG: 179    | risk-adjusted: 99
+Consensus rank (comparison only): 130    model-minus-consensus rank: -16    value vs consensus slot: +55 FP
+
+Projected FPPM:    0.85      (80% range 0.68 - 1.04)
+Projected Minutes: 27.1      (80% range 19.9 - 32.0)
+Projected FPPG:    23.1      (80% range 14.9 - 30.3)
+Projected Games:   72      (availability 88%, 80% range 43 - 81 games)
+Projected Total:   1691
+  (in-season: 33 FP already banked over 1 games)
+
+10th percentile total: 810
+25th percentile total: 1152
+50th percentile total: 1522
+75th percentile total: 1884
+90th percentile total: 2225
+Mean of simulated totals: 1524   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 589    risk-adjusted value: 1056
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.80 | 19.9 mpg | 15.8 FPPG | 74 GP | SAS
+  2024-25: FPPM 0.85 | 23.6 mpg | 20.1 FPPG | 82 GP | SAS
+  2025-26: FPPM 0.87 | 27.6 mpg | 24.1 FPPG | 83 GP | SAS
+  2026-27: FPPM 1.10 | 30.0 mpg | 33.0 FPPG | 1 GP | SAS
+  last-season fantasy profile per game: scoring block +8.0 | rebounds +3.0 | assists +2.0 | stocks +20.0 | turnovers -0.0 | missed-shot cost -5.0
+  FP per FGA 4.12 | FP per possession used 4.12 | FPPM per usage point 0.101 | usage 10.9% | TS% 0.500
+
+Main positive drivers:
+  + favorable team environment (pace / efficiency / roster turnover) [+0.7 FPPG]  (~+52 FP)
+  + role and depth-chart position favor more production [+0.6 FPPG]  (~+42 FP)
+Main negative drivers:
+  - fewer games expected (83 -> 72)  (~-263 FP)
+  - stronger teammate competition for usage, shots and minutes [-2.2 FPPG]  (~-158 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.7 | teammate -2.2 | coach -0.0 | age -0.5 | role +0.6 | form -0.0 | history_adjustment -0.1
+Top feature terms, FPPM adjustment: coach__star_mpg +0.010; team__oversub +0.006; coach__games_known +0.006; hist__tpar_l1 -0.018; age__hinge_young -0.012; mate__quality_wavg -0.010
+Top feature terms, minutes adjustment: role__gap_hist +1.035; team__ortg_l1 +0.865; team__rot_size_exp +0.833; mate__quality_wavg -1.231; age__hinge_young -1.048; role__budget_ratio -0.795
+
+Archetype: all-around    scoring-block share of FP: 49%    breakout score: 36/100
+Upside score: 38   Risk score: 6   P(role expansion >= +3 mpg): 18%
+
+Confidence: High  (score 86/100)

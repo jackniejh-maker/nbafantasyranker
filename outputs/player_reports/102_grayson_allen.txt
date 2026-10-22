@@ -1,0 +1,45 @@
+PLAYER: Grayson Allen   (CHA, G, age 31.3)
+
+Projected Rank (total value): 102 of 519    | by FPPG: 110    | risk-adjusted: 105
+Consensus rank (comparison only): 349    model-minus-consensus rank: -247    value vs consensus slot: +984 FP
+
+Projected FPPM:    1.01      (80% range 0.82 - 1.20)
+Projected Minutes: 27.7      (80% range 21.1 - 32.0)
+Projected FPPG:    27.9      (80% range 18.8 - 35.1)
+Projected Games:   60      (availability 74%, 80% range 33 - 76 games)
+Projected Total:   1703
+  (in-season: 32 FP already banked over 1 games)
+
+10th percentile total: 787
+25th percentile total: 1163
+50th percentile total: 1566
+75th percentile total: 1974
+90th percentile total: 2333
+Mean of simulated totals: 1565   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 508    risk-adjusted value: 1037
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.88 | 33.5 mpg | 29.5 FPPG | 75 GP | PHX
+  2024-25: FPPM 0.88 | 24.1 mpg | 21.4 FPPG | 64 GP | PHX
+  2025-26: FPPM 1.06 | 28.8 mpg | 30.5 FPPG | 51 GP | PHX
+  2026-27: FPPM 1.10 | 29.0 mpg | 32.0 FPPG | 1 GP | CHA
+  last-season fantasy profile per game: scoring block +29.0 | rebounds +3.0 | assists +8.0 | stocks +0.0 | turnovers -8.0 | missed-shot cost -3.0
+  FP per FGA 3.56 | FP per possession used 2.17 | FPPM per usage point 0.054 | usage 20.4% | TS% 0.976
+
+Main positive drivers:
+  + more games expected (51 -> 60)  (~+249 FP)
+  + role and depth-chart position favor more production [+1.6 FPPG]  (~+98 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.1 FPPG]  (~+63 FP)
+Main negative drivers:
+  - lower per-minute production (FPPM 1.06 -> 1.01)  (~-87 FP)
+  - fewer minutes (28.8 -> 27.7 mpg)  (~-65 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.1 | teammate -0.6 | coach -0.4 | age +0.1 | role +1.6 | form +0.0 | history_adjustment +0.8
+Top feature terms, FPPM adjustment: age__age +0.009; coach__rot_size +0.009; coach__y2_mpg +0.008; hist__tpar_l1 -0.015; age__hinge_young -0.012; age__exp -0.010
+Top feature terms, minutes adjustment: age__age +2.016; team__rot_size_exp +1.058; team__ortg_l1 +0.844; age__hinge_young -1.048; coach__rot_size -0.819; role__budget_ratio -0.691
+
+Archetype: all-around    scoring-block share of FP: 55%    breakout score: 52/100
+Upside score: 55   Risk score: 21   P(role expansion >= +3 mpg): 11%
+
+Confidence: High  (score 80/100)

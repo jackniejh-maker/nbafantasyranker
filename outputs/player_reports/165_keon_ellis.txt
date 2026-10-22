@@ -1,0 +1,44 @@
+PLAYER: Keon Ellis   (BKN, G, age 27.1)
+
+Projected Rank (total value): 165 of 519    | by FPPG: 200    | risk-adjusted: 155
+Consensus rank (comparison only): 277    model-minus-consensus rank: -112    value vs consensus slot: +524 FP
+
+Projected FPPM:    0.86      (80% range 0.69 - 1.05)
+Projected Minutes: 24.8      (80% range 16.7 - 30.2)
+Projected FPPG:    21.5      (80% range 12.7 - 28.7)
+Projected Games:   67      (availability 82%, 80% range 38 - 78 games)
+Projected Total:   1455
+  (in-season: 27 FP already banked over 1 games)
+
+10th percentile total: 614
+25th percentile total: 930
+50th percentile total: 1280
+75th percentile total: 1645
+90th percentile total: 1994
+Mean of simulated totals: 1301   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 434    risk-adjusted value: 857
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.92 | 17.1 mpg | 15.7 FPPG | 57 GP | SAC
+  2024-25: FPPM 0.94 | 24.4 mpg | 22.9 FPPG | 80 GP | SAC
+  2025-26: FPPM 0.83 | 20.5 mpg | 16.9 FPPG | 72 GP | CLE  (traded SAC -> CLE)
+  2026-27: FPPM 0.79 | 34.0 mpg | 27.0 FPPG | 1 GP | BKN
+  last-season fantasy profile per game: scoring block +7.0 | rebounds +2.0 | assists +8.0 | stocks +12.0 | turnovers -2.0 | missed-shot cost -4.0
+  FP per FGA 3.86 | FP per possession used 3.38 | FPPM per usage point 0.079 | usage 10.0% | TS% 0.500
+
+Main positive drivers:
+  + more minutes (20.5 -> 24.8 mpg)  (~+248 FP)
+  + higher per-minute production (FPPM 0.83 -> 0.86)  (~+64 FP)
+Main negative drivers:
+  - fewer games expected (72 -> 67)  (~-117 FP)
+  - unfavorable team environment (pace / efficiency / roster turnover) [-0.8 FPPG]  (~-56 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.8 | teammate +0.3 | coach -0.4 | age -0.0 | role +0.5 | form +0.1 | history_adjustment +0.7
+Top feature terms, FPPM adjustment: trade__last_stint_gap +0.013; coach__rot_size +0.012; hist__stl_pct_l1 +0.011; hist__tpar_l1 -0.014; age__hinge_young -0.012; trade__traded_l1 -0.011
+Top feature terms, minutes adjustment: team__rot_size_exp +1.597; late__mpg_gap +0.676; age__age +0.602; coach__rot_size -1.166; age__hinge_young -1.048; trade__traded_l1 -0.657
+
+Archetype: stocks-heavy    scoring-block share of FP: 42%    breakout score: 96/100
+Upside score: 41   Risk score: 18   P(role expansion >= +3 mpg): 55%
+
+Confidence: High  (score 72/100)

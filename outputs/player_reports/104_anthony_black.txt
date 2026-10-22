@@ -1,0 +1,44 @@
+PLAYER: Anthony Black   (ORL, G, age 23.0)
+
+Projected Rank (total value): 104 of 519    | by FPPG: 109    | risk-adjusted: 108
+Consensus rank (comparison only): 142    model-minus-consensus rank: -38    value vs consensus slot: +145 FP
+
+Projected FPPM:    0.94      (80% range 0.75 - 1.14)
+Projected Minutes: 29.5      (80% range 22.2 - 34.3)
+Projected FPPG:    27.9      (80% range 18.2 - 35.9)
+Projected Games:   61      (availability 76%, 80% range 35 - 77 games)
+Projected Total:   1705
+
+10th percentile total: 762
+25th percentile total: 1150
+50th percentile total: 1561
+75th percentile total: 1992
+90th percentile total: 2383
+Mean of simulated totals: 1573   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 491    risk-adjusted value: 1026
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.64 | 17.3 mpg | 11.0 FPPG | 67 GP | ORL
+  2024-25: FPPM 0.86 | 24.1 mpg | 20.8 FPPG | 78 GP | ORL
+  2025-26: FPPM 1.00 | 29.9 mpg | 29.9 FPPG | 64 GP | ORL
+  last-season fantasy profile per game: scoring block +14.3 | rebounds +3.8 | assists +7.4 | stocks +8.5 | turnovers -4.1 | missed-shot cost -7.6
+  FP per FGA 2.48 | FP per possession used 1.90 | FPPM per usage point 0.045 | usage 22.3% | TS% 0.549
+
+Main positive drivers:
+  + age / development curve favors growth [+2.1 FPPG]  (~+128 FP)
+  + role and depth-chart position favor more production [+1.4 FPPG]  (~+87 FP)
+Main negative drivers:
+  - lower per-minute production (FPPM 1.00 -> 0.94)  (~-102 FP)
+  - fewer games expected (64 -> 61)  (~-78 FP)
+  - stronger teammate competition for usage, shots and minutes [-0.8 FPPG]  (~-49 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.2 | teammate -0.8 | coach -0.4 | age +2.1 | role +1.4 | form +0.1 | history_adjustment +1.9
+Top feature terms, FPPM adjustment: age__hinge_young +0.018; age__exp +0.009; hist__stl_pct_l1 +0.007; mate__reb_wavg -0.010; mate__quality_wavg -0.008; team__reb_net -0.007
+Top feature terms, minutes adjustment: age__hinge_young +1.575; role__gap_hist +0.963; hist__fppm_l3 +0.516; mate__quality_wavg -0.998; age__age -0.740; coach__stability -0.485
+
+Archetype: all-around    scoring-block share of FP: 44%    breakout score: 33/100
+Upside score: 66   Risk score: 24   P(role expansion >= +3 mpg): 18%
+Injury report: Day-To-Day - Ankle (return Oct 23)  (known games missed assumed: 0)
+
+Confidence: High  (score 76/100)

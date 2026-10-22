@@ -1,0 +1,44 @@
+PLAYER: DeMar DeRozan   (DEN, G, age 37.5)
+
+Projected Rank (total value): 49 of 519    | by FPPG: 77    | risk-adjusted: 44
+Consensus rank (comparison only): 88    model-minus-consensus rank: -39    value vs consensus slot: +375 FP
+
+Projected FPPM:    1.01      (80% range 0.80 - 1.24)
+Projected Minutes: 31.2      (80% range 28.0 - 33.3)
+Projected FPPG:    31.6      (80% range 23.7 - 39.1)
+Projected Games:   70      (availability 86%, 80% range 41 - 81 games)
+Projected Total:   2218
+
+10th percentile total: 1157
+25th percentile total: 1628
+50th percentile total: 2074
+75th percentile total: 2482
+90th percentile total: 2823
+Mean of simulated totals: 2038   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 837    risk-adjusted value: 1456
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2022-23: FPPM 1.14 | 36.3 mpg | 41.5 FPPG | 74 GP | CHI
+  2023-24: FPPM 1.09 | 37.9 mpg | 41.5 FPPG | 79 GP | CHI
+  2024-25: FPPM 1.02 | 35.9 mpg | 36.6 FPPG | 77 GP | SAC
+  2025-26: FPPM 1.03 | 31.3 mpg | 32.2 FPPG | 77 GP | SAC
+  last-season fantasy profile per game: scoring block +18.2 | rebounds +2.9 | assists +8.2 | stocks +5.4 | turnovers -2.5 | missed-shot cost -7.3
+  FP per FGA 2.47 | FP per possession used 1.92 | FPPM per usage point 0.045 | usage 22.9% | TS% 0.594
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+2.0 FPPG]  (~+139 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.5 FPPG]  (~+104 FP)
+Main negative drivers:
+  - fewer games expected (77 -> 70)  (~-214 FP)
+  - age-related decline expected [-2.6 FPPG]  (~-180 FP)
+  - stronger teammate competition for usage, shots and minutes [-2.1 FPPG]  (~-149 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.5 | teammate -2.1 | coach +0.2 | age -2.6 | role +2.0 | form +0.2 | history_adjustment -1.1
+Top feature terms, FPPM adjustment: age__c2 +0.019; age__age +0.017; hist__tpar_l1 +0.011; age__exp -0.051; age__hinge_old -0.017; age__hinge_young -0.012
+Top feature terms, minutes adjustment: age__age +3.749; team__ortg_l1 +1.099; role__bin_25_30 +0.730; age__exp -2.769; mate__quality_wavg -1.381; age__hinge_young -1.048
+
+Archetype: scoring-heavy    scoring-block share of FP: 57%    breakout score: 27/100
+Upside score: 50   Risk score: 3   P(role expansion >= +3 mpg): 4%
+
+Confidence: High  (score 96/100)

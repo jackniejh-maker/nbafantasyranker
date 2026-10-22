@@ -1,0 +1,47 @@
+PLAYER: Nickeil Alexander-Walker   (ATL, G, age 28.4)
+
+Projected Rank (total value): 58 of 519    | by FPPG: 88    | risk-adjusted: 47
+Consensus rank (comparison only): 51    model-minus-consensus rank: +7    value vs consensus slot: -29 FP
+
+Projected FPPM:    1.03      (80% range 0.85 - 1.20)
+Projected Minutes: 29.5      (80% range 22.7 - 34.0)
+Projected FPPG:    30.3      (80% range 20.9 - 37.6)
+Projected Games:   71      (availability 88%, 80% range 43 - 81 games)
+Projected Total:   2210
+  (in-season: 48 FP already banked over 1 games)
+
+10th percentile total: 1137
+25th percentile total: 1577
+50th percentile total: 2025
+75th percentile total: 2450
+90th percentile total: 2812
+Mean of simulated totals: 2007   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 846    risk-adjusted value: 1435
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.81 | 23.5 mpg | 19.0 FPPG | 82 GP | MIN
+  2024-25: FPPM 0.80 | 25.3 mpg | 20.3 FPPG | 82 GP | MIN
+  2025-26: FPPM 1.09 | 33.4 mpg | 36.4 FPPG | 78 GP | ATL
+  2026-27: FPPM 1.60 | 30.0 mpg | 48.0 FPPG | 1 GP | ATL
+  last-season fantasy profile per game: scoring block +34.0 | rebounds +4.0 | assists +6.0 | stocks +8.0 | turnovers -4.0 | missed-shot cost -10.0
+  FP per FGA 3.20 | FP per possession used 2.11 | FPPM per usage point 0.054 | usage 29.6% | TS% 0.748
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+2.4 FPPG]  (~+172 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.3 FPPG]  (~+89 FP)
+  + late-season / post-trade form is a positive signal [+1.0 FPPG]  (~+69 FP)
+Main negative drivers:
+  - fewer minutes (33.4 -> 29.5 mpg)  (~-285 FP)
+  - fewer games expected (78 -> 71)  (~-200 FP)
+  - lower per-minute production (FPPM 1.09 -> 1.03)  (~-133 FP)
+  - stronger teammate competition for usage, shots and minutes [-0.7 FPPG]  (~-53 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.3 | teammate -0.7 | coach +0.4 | age -0.4 | role +2.4 | form +1.0 | history_adjustment +2.0
+Top feature terms, FPPM adjustment: late__fppm_l1 +0.014; mate__usg_wavg +0.009; team__ast_pg_l1 +0.008; age__hinge_young -0.012; hist__tpar_l1 -0.007; team__usage_conc -0.007
+Top feature terms, minutes adjustment: role__gap_hist +1.443; team__rot_size_exp +1.292; age__age +1.051; age__hinge_young -1.048; role__budget_ratio -0.842; team__oversub -0.571
+
+Archetype: all-around    scoring-block share of FP: 54%    breakout score: 2/100
+Upside score: 61   Risk score: 2   P(role expansion >= +3 mpg): 3%
+
+Confidence: High  (score 93/100)

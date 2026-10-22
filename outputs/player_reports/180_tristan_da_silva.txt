@@ -1,0 +1,43 @@
+PLAYER: Tristan da Silva   (ORL, F, age 25.7)
+
+Projected Rank (total value): 180 of 519    | by FPPG: 237    | risk-adjusted: 165
+Consensus rank (comparison only): 273    model-minus-consensus rank: -93    value vs consensus slot: +421 FP
+
+Projected FPPM:    0.76      (80% range 0.59 - 0.93)
+Projected Minutes: 25.2      (80% range 16.4 - 31.0)
+Projected FPPG:    19.3      (80% range 10.9 - 26.0)
+Projected Games:   68      (availability 84%, 80% range 39 - 79 games)
+Projected Total:   1343
+  (in-season: 29 FP already banked over 1 games)
+
+10th percentile total: 560
+25th percentile total: 852
+50th percentile total: 1183
+75th percentile total: 1524
+90th percentile total: 1838
+Mean of simulated totals: 1200   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 393    risk-adjusted value: 788
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2024-25: FPPM 0.66 | 22.0 mpg | 14.6 FPPG | 74 GP | ORL
+  2025-26: FPPM 0.83 | 24.7 mpg | 20.5 FPPG | 77 GP | ORL
+  2026-27: FPPM 1.04 | 28.0 mpg | 29.0 FPPG | 1 GP | ORL
+  last-season fantasy profile per game: scoring block +17.0 | rebounds +2.0 | assists +6.0 | stocks +8.0 | turnovers -4.0 | missed-shot cost -6.0
+  FP per FGA 2.64 | FP per possession used 2.23 | FPPM per usage point 0.057 | usage 18.2% | TS% 0.636
+
+Main positive drivers:
+  (none above the materiality threshold)
+Main negative drivers:
+  - fewer games expected (77 -> 68)  (~-169 FP)
+  - lower per-minute production (FPPM 0.83 -> 0.76)  (~-113 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.1 FPPG]  (~-76 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.2 | teammate -1.1 | coach -0.3 | age +0.2 | role +0.2 | form +0.2 | history_adjustment -0.9
+Top feature terms, FPPM adjustment: age__exp +0.013; hist__fppm_shrunk +0.006; newc__height_in +0.004; age__hinge_young -0.012; mate__reb_wavg -0.009; mate__quality_wavg -0.009
+Top feature terms, minutes adjustment: age__exp +0.726; mate__reb_wavg +0.345; team__ortg_l1 +0.344; mate__quality_wavg -1.108; age__hinge_young -1.048; coach__stability -0.485
+
+Archetype: all-around    scoring-block share of FP: 50%    breakout score: 48/100
+Upside score: 27   Risk score: 20   P(role expansion >= +3 mpg): 27%
+
+Confidence: High  (score 72/100)

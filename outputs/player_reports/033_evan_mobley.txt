@@ -1,0 +1,47 @@
+PLAYER: Evan Mobley   (CLE, C, age 25.6)
+
+Projected Rank (total value): 33 of 519    | by FPPG: 26    | risk-adjusted: 33
+Consensus rank (comparison only): 36    model-minus-consensus rank: -3    value vs consensus slot: +148 FP
+
+Projected FPPM:    1.31      (80% range 1.13 - 1.51)
+Projected Minutes: 30.9      (80% range 23.5 - 35.9)
+Projected FPPG:    40.6      (80% range 28.6 - 50.3)
+Projected Games:   62      (availability 76%, 80% range 35 - 78 games)
+Projected Total:   2519
+
+10th percentile total: 1198
+25th percentile total: 1736
+50th percentile total: 2340
+75th percentile total: 2912
+90th percentile total: 3419
+Mean of simulated totals: 2325   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 782    risk-adjusted value: 1561
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2022-23: FPPM 1.06 | 34.4 mpg | 36.5 FPPG | 79 GP | CLE
+  2023-24: FPPM 1.26 | 30.6 mpg | 38.5 FPPG | 50 GP | CLE
+  2024-25: FPPM 1.35 | 30.6 mpg | 41.4 FPPG | 71 GP | CLE
+  2025-26: FPPM 1.28 | 32.0 mpg | 40.9 FPPG | 65 GP | CLE
+  last-season fantasy profile per game: scoring block +18.5 | rebounds +9.0 | assists +7.2 | stocks +9.9 | turnovers -3.8 | missed-shot cost -7.8
+  FP per FGA 3.09 | FP per possession used 2.39 | FPPM per usage point 0.056 | usage 22.6% | TS% 0.596
+
+Main positive drivers:
+  + favorable team environment (pace / efficiency / roster turnover) [+2.3 FPPG]  (~+145 FP)
+  + role and depth-chart position favor more production [+1.3 FPPG]  (~+79 FP)
+  + higher per-minute production (FPPM 1.28 -> 1.31)  (~+68 FP)
+  + late-season / post-trade form is a positive signal [+0.7 FPPG]  (~+46 FP)
+Main negative drivers:
+  - stronger teammate competition for usage, shots and minutes [-2.1 FPPG]  (~-132 FP)
+  - fewer games expected (65 -> 62)  (~-119 FP)
+  - fewer minutes (32.0 -> 30.9 mpg)  (~-89 FP)
+  - age-related decline expected [-1.2 FPPG]  (~-73 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +2.3 | teammate -2.1 | coach -0.3 | age -1.2 | role +1.3 | form +0.7 | history_adjustment -0.0
+Top feature terms, FPPM adjustment: hist__fppm_raw_w +0.020; late__fppm_l1 +0.019; hist__fppm_l1 +0.016; hist__fppm_shrunk -0.018; age__hinge_young -0.012; mate__quality_wavg -0.010
+Top feature terms, minutes adjustment: team__ortg_l1 +0.825; role__bin_25_30 +0.730; hist__fppm_raw_w +0.698; mate__quality_wavg -1.236; age__hinge_young -1.048; pos__c -0.876
+
+Archetype: rebounding-heavy    scoring-block share of FP: 46%    breakout score: 53/100
+Upside score: 97   Risk score: 19   P(role expansion >= +3 mpg): 15%
+
+Confidence: High  (score 84/100)

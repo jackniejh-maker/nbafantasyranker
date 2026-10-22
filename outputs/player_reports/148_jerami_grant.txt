@@ -1,0 +1,43 @@
+PLAYER: Jerami Grant   (MEM, F, age 32.9)
+
+Projected Rank (total value): 148 of 519    | by FPPG: 134    | risk-adjusted: 148
+Consensus rank (comparison only): 295    model-minus-consensus rank: -147    value vs consensus slot: +665 FP
+
+Projected FPPM:    0.94      (80% range 0.75 - 1.14)
+Projected Minutes: 27.6      (80% range 21.4 - 31.7)
+Projected FPPG:    25.9      (80% range 17.5 - 33.1)
+Projected Games:   56      (availability 70%, 80% range 30 - 72 games)
+Projected Total:   1479
+  (in-season: 21 FP already banked over 1 games)
+
+10th percentile total: 645
+25th percentile total: 985
+50th percentile total: 1366
+75th percentile total: 1741
+90th percentile total: 2069
+Mean of simulated totals: 1364   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 390    risk-adjusted value: 878
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.92 | 33.9 mpg | 31.1 FPPG | 54 GP | POR
+  2024-25: FPPM 0.78 | 32.4 mpg | 25.5 FPPG | 47 GP | POR
+  2025-26: FPPM 0.93 | 29.8 mpg | 27.8 FPPG | 57 GP | POR
+  2026-27: FPPM 0.88 | 24.0 mpg | 21.0 FPPG | 1 GP | MEM
+  last-season fantasy profile per game: scoring block +15.0 | rebounds +2.0 | assists +6.0 | stocks +4.0 | turnovers -6.0 | missed-shot cost -6.0
+  FP per FGA 2.33 | FP per possession used 1.43 | FPPM per usage point 0.035 | usage 24.7% | TS% 0.644
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+1.5 FPPG]  (~+82 FP)
+Main negative drivers:
+  - fewer minutes (29.8 -> 27.6 mpg)  (~-115 FP)
+  - age-related decline expected [-1.1 FPPG]  (~-60 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.4 | teammate -0.2 | coach +0.2 | age -1.1 | role +1.5 | form +0.1 | history_adjustment -1.6
+Top feature terms, FPPM adjustment: age__age +0.011; coach__star_mpg +0.011; mate__usg_wavg +0.010; age__exp -0.028; age__hinge_young -0.012; team__usage_conc -0.009
+Top feature terms, minutes adjustment: age__age +2.540; team__rot_size_exp +1.662; role__bin_25_30 +0.730; age__exp -1.521; age__hinge_young -1.048; hist__mpg_l3 -0.663
+
+Archetype: scoring-heavy    scoring-block share of FP: 62%    breakout score: 36/100
+Upside score: 38   Risk score: 31   P(role expansion >= +3 mpg): 6%
+
+Confidence: High  (score 76/100)

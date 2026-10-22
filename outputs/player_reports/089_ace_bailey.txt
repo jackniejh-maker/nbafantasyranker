@@ -1,0 +1,44 @@
+PLAYER: Ace Bailey   (UTA, G, age 20.5)
+
+Projected Rank (total value): 89 of 519    | by FPPG: 100    | risk-adjusted: 84
+Consensus rank (comparison only): 124    model-minus-consensus rank: -35    value vs consensus slot: +205 FP
+
+Projected FPPM:    1.05      (80% range 0.88 - 1.23)
+Projected Minutes: 27.3      (80% range 18.8 - 32.7)
+Projected FPPG:    28.6      (80% range 18.3 - 37.0)
+Projected Games:   65      (availability 80%, 80% range 37 - 76 games)
+Projected Total:   1890
+  (in-season: 34 FP already banked over 1 games)
+
+10th percentile total: 839
+25th percentile total: 1255
+50th percentile total: 1695
+75th percentile total: 2107
+90th percentile total: 2497
+Mean of simulated totals: 1685   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 581    risk-adjusted value: 1138
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2025-26: FPPM 0.90 | 27.6 mpg | 24.9 FPPG | 72 GP | UTA
+  2026-27: FPPM 1.42 | 24.0 mpg | 34.0 FPPG | 1 GP | UTA
+  last-season fantasy profile per game: scoring block +13.0 | rebounds +5.0 | assists +6.0 | stocks +12.0 | turnovers -2.0 | missed-shot cost -6.0
+  FP per FGA 3.09 | FP per possession used 2.83 | FPPM per usage point 0.064 | usage 22.1% | TS% 0.545
+
+Main positive drivers:
+  + age / development curve favors growth [+6.1 FPPG]  (~+396 FP)
+  + higher per-minute production (FPPM 0.90 -> 1.05)  (~+260 FP)
+  + role and depth-chart position favor more production [+1.7 FPPG]  (~+113 FP)
+  + late-season / post-trade form is a positive signal [+0.9 FPPG]  (~+58 FP)
+Main negative drivers:
+  - fewer games expected (72 -> 65)  (~-205 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.2 FPPG]  (~-76 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.3 | teammate -1.2 | coach +0.1 | age +6.1 | role +1.7 | form +0.9 | history_adjustment -1.3
+Top feature terms, FPPM adjustment: age__hinge_young +0.054; age__exp +0.018; coach__rot_size +0.009; coach__usage_hhi -0.008; age__age -0.007; hist__has_l2 -0.006
+Top feature terms, minutes adjustment: age__hinge_young +4.769; team__rot_size_exp +1.116; age__exp +0.975; age__age -1.536; coach__rot_size -0.833; mate__quality_wavg -0.599
+
+Archetype: all-around    scoring-block share of FP: 56%    breakout score: 85/100
+Upside score: 63   Risk score: 17   P(role expansion >= +3 mpg): 22%
+
+Confidence: High  (score 80/100)

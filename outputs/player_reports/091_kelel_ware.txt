@@ -1,0 +1,44 @@
+PLAYER: Kel'el Ware   (MIL, C, age 22.8)
+
+Projected Rank (total value): 91 of 519    | by FPPG: 111    | risk-adjusted: 95
+Consensus rank (comparison only): 82    model-minus-consensus rank: +9    value vs consensus slot: -135 FP
+
+Projected FPPM:    1.27      (80% range 1.09 - 1.47)
+Projected Minutes: 21.8      (80% range 13.3 - 27.5)
+Projected FPPG:    27.8      (80% range 16.0 - 37.0)
+Projected Games:   66      (availability 82%, 80% range 38 - 77 games)
+Projected Total:   1856
+  (in-season: 12 FP already banked over 1 games)
+
+10th percentile total: 749
+25th percentile total: 1158
+50th percentile total: 1650
+75th percentile total: 2102
+90th percentile total: 2527
+Mean of simulated totals: 1647   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 500    risk-adjusted value: 1075
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2024-25: FPPM 1.11 | 22.2 mpg | 24.7 FPPG | 64 GP | MIA
+  2025-26: FPPM 1.29 | 22.2 mpg | 28.7 FPPG | 77 GP | MIA
+  2026-27: FPPM 0.86 | 14.0 mpg | 12.0 FPPG | 1 GP | MIL
+  last-season fantasy profile per game: scoring block +5.0 | rebounds +3.0 | assists +2.0 | stocks +4.0 | turnovers -2.0 | missed-shot cost -5.0
+  FP per FGA 2.00 | FP per possession used 1.44 | FPPM per usage point 0.035 | usage 24.4% | TS% 0.478
+
+Main positive drivers:
+  + age / development curve favors growth [+3.3 FPPG]  (~+220 FP)
+  + favorable teammate environment (usage / playmaking / rebounding opportunity) [+2.1 FPPG]  (~+137 FP)
+Main negative drivers:
+  - fewer games expected (77 -> 66)  (~-298 FP)
+  - role and depth-chart position limit production [-1.1 FPPG]  (~-71 FP)
+  - unfavorable team environment (pace / efficiency / roster turnover) [-0.8 FPPG]  (~-53 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.8 | teammate +2.1 | coach -0.0 | age +3.3 | role -1.1 | form +0.5 | history_adjustment +2.0
+Top feature terms, FPPM adjustment: age__hinge_young +0.021; late__fppm_l1 +0.018; hist__fppm_l1 +0.017; hist__fppm_shrunk -0.012; team__ast_added -0.010; team__usage_conc -0.009
+Top feature terms, minutes adjustment: age__hinge_young +1.907; team__rot_size_exp +1.662; mate__x_reb +1.049; hist__reb_pct_w -0.980; pos__c -0.876; age__age -0.823
+
+Archetype: rebounding-heavy    scoring-block share of FP: 43%    breakout score: 42/100
+Upside score: 79   Risk score: 27   P(role expansion >= +3 mpg): 23%
+
+Confidence: High  (score 72/100)

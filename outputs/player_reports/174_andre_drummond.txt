@@ -1,0 +1,45 @@
+PLAYER: Andre Drummond   (NYK, C, age 33.5)
+
+Projected Rank (total value): 174 of 519    | by FPPG: 192    | risk-adjusted: 170
+Consensus rank (comparison only): 160    model-minus-consensus rank: +14    value vs consensus slot: -90 FP
+
+Projected FPPM:    1.11      (80% range 0.92 - 1.32)
+Projected Minutes: 19.6      (80% range 12.5 - 24.3)
+Projected FPPG:    21.8      (80% range 12.8 - 29.1)
+Projected Games:   60      (availability 74%, 80% range 33 - 75 games)
+Projected Total:   1345
+  (in-season: 41 FP already banked over 1 games)
+
+10th percentile total: 549
+25th percentile total: 860
+50th percentile total: 1210
+75th percentile total: 1572
+90th percentile total: 1926
+Mean of simulated totals: 1229   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 349    risk-adjusted value: 780
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.28 | 17.1 mpg | 21.9 FPPG | 79 GP | CHI
+  2024-25: FPPM 1.01 | 18.7 mpg | 18.9 FPPG | 40 GP | PHI
+  2025-26: FPPM 1.06 | 19.6 mpg | 20.7 FPPG | 63 GP | PHI
+  2026-27: FPPM 1.71 | 24.0 mpg | 41.0 FPPG | 1 GP | NYK
+  last-season fantasy profile per game: scoring block +7.0 | rebounds +14.0 | assists +8.0 | stocks +12.0 | turnovers -0.0 | missed-shot cost -10.0
+  FP per FGA 3.15 | FP per possession used 2.78 | FPPM per usage point 0.069 | usage 24.6% | TS% 0.407
+
+Main positive drivers:
+  + higher per-minute production (FPPM 1.06 -> 1.11)  (~+69 FP)
+  + favorable teammate environment (usage / playmaking / rebounding opportunity) [+0.9 FPPG]  (~+56 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+0.7 FPPG]  (~+44 FP)
+Main negative drivers:
+  - age-related decline expected [-1.4 FPPG]  (~-83 FP)
+  - fewer games expected (63 -> 60)  (~-72 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.7 | teammate +0.9 | coach -0.1 | age -1.4 | role -0.5 | form -0.3 | history_adjustment -0.2
+Top feature terms, FPPM adjustment: age__age +0.012; hist__reb_pct_l1 +0.012; newc__height_in +0.011; age__exp -0.037; age__hinge_young -0.012; coach__rot_size -0.009
+Top feature terms, minutes adjustment: age__age +2.735; mate__x_reb +1.078; team__ortg_l1 +0.898; age__exp -2.020; hist__reb_pct_w -1.334; age__hinge_young -1.048
+
+Archetype: rebounding-heavy    scoring-block share of FP: 34%    breakout score: 71/100
+Upside score: 42   Risk score: 30   P(role expansion >= +3 mpg): 21%
+
+Confidence: High  (score 67/100)

@@ -1,0 +1,44 @@
+PLAYER: Jonathan Kuminga   (MIN, F, age 24.3)
+
+Projected Rank (total value): 185 of 519    | by FPPG: 161    | risk-adjusted: 188
+Consensus rank (comparison only): 136    model-minus-consensus rank: +49    value vs consensus slot: -278 FP
+
+Projected FPPM:    1.01      (80% range 0.83 - 1.21)
+Projected Minutes: 24.1      (80% range 15.8 - 29.6)
+Projected FPPG:    24.3      (80% range 14.6 - 32.3)
+Projected Games:   53      (availability 65%, 80% range 20 - 74 games)
+Projected Total:   1321
+  (in-season: 39 FP already banked over 1 games)
+
+10th percentile total: 440
+25th percentile total: 759
+50th percentile total: 1163
+75th percentile total: 1593
+90th percentile total: 2006
+Mean of simulated totals: 1204   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 284    risk-adjusted value: 723
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.03 | 26.4 mpg | 27.2 FPPG | 74 GP | GSW
+  2024-25: FPPM 1.01 | 24.3 mpg | 24.6 FPPG | 47 GP | GSW
+  2025-26: FPPM 0.94 | 23.1 mpg | 21.7 FPPG | 36 GP | ATL  (traded GSW -> ATL)
+  2026-27: FPPM 1.30 | 30.0 mpg | 39.0 FPPG | 1 GP | MIN
+  last-season fantasy profile per game: scoring block +14.0 | rebounds +1.0 | assists +6.0 | stocks +20.0 | turnovers -2.0 | missed-shot cost -5.0
+  FP per FGA 3.90 | FP per possession used 3.55 | FPPM per usage point 0.092 | usage 14.1% | TS% 0.600
+
+Main positive drivers:
+  + more games expected (36 -> 53)  (~+407 FP)
+  + higher per-minute production (FPPM 0.94 -> 1.01)  (~+92 FP)
+  + more minutes (23.1 -> 24.1 mpg)  (~+52 FP)
+Main negative drivers:
+  - stronger teammate competition for usage, shots and minutes [-1.4 FPPG]  (~-72 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.5 | teammate -1.4 | coach -0.2 | age -0.3 | role -0.1 | form -0.4 | history_adjustment -0.8
+Top feature terms, FPPM adjustment: trade__last_stint_gap +0.014; coach__usage_hhi +0.008; hist__usg_w +0.006; trade__traded_l1 -0.011; coach__rot_size -0.008; mate__quality_wavg -0.007
+Top feature terms, minutes adjustment: coach__rot_size +0.802; team__ortg_l1 +0.557; trade__last_stint_gap +0.342; mate__quality_wavg -0.803; coach__double_big -0.795; trade__traded_l1 -0.657
+
+Archetype: scoring-heavy    scoring-block share of FP: 57%    breakout score: 87/100
+Upside score: 72   Risk score: 40   P(role expansion >= +3 mpg): 29%
+
+Confidence: Medium  (score 56/100)

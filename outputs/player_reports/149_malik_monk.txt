@@ -1,0 +1,47 @@
+PLAYER: Malik Monk   (SAC, G, age 29.0)
+
+Projected Rank (total value): 149 of 519    | by FPPG: 143    | risk-adjusted: 147
+Consensus rank (comparison only): 319    model-minus-consensus rank: -170    value vs consensus slot: +718 FP
+
+Projected FPPM:    1.04      (80% range 0.86 - 1.23)
+Projected Minutes: 24.6      (80% range 16.8 - 29.5)
+Projected FPPG:    25.5      (80% range 16.0 - 33.3)
+Projected Games:   59      (availability 73%, 80% range 34 - 75 games)
+Projected Total:   1506
+
+10th percentile total: 637
+25th percentile total: 979
+50th percentile total: 1365
+75th percentile total: 1766
+90th percentile total: 2129
+Mean of simulated totals: 1381   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 395    risk-adjusted value: 880
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2022-23: FPPM 1.08 | 22.4 mpg | 24.2 FPPG | 77 GP | SAC
+  2023-24: FPPM 1.13 | 26.0 mpg | 29.3 FPPG | 72 GP | SAC
+  2024-25: FPPM 1.05 | 31.6 mpg | 33.3 FPPG | 65 GP | SAC
+  2025-26: FPPM 0.99 | 22.0 mpg | 21.8 FPPG | 62 GP | SAC
+  last-season fantasy profile per game: scoring block +13.0 | rebounds +1.9 | assists +6.0 | stocks +3.9 | turnovers -2.9 | missed-shot cost -5.9
+  FP per FGA 2.14 | FP per possession used 1.76 | FPPM per usage point 0.041 | usage 24.1% | TS% 0.568
+
+Main positive drivers:
+  + more minutes (22.0 -> 24.6 mpg)  (~+158 FP)
+  + role and depth-chart position favor more production [+1.3 FPPG]  (~+77 FP)
+  + higher per-minute production (FPPM 0.99 -> 1.04)  (~+67 FP)
+  + favorable teammate environment (usage / playmaking / rebounding opportunity) [+0.7 FPPG]  (~+42 FP)
+Main negative drivers:
+  - fewer games expected (62 -> 59)  (~-76 FP)
+  - unfavorable team environment (pace / efficiency / roster turnover) [-0.9 FPPG]  (~-56 FP)
+  - age-related decline expected [-0.8 FPPG]  (~-46 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.9 | teammate +0.7 | coach -0.5 | age -0.8 | role +1.3 | form +0.2 | history_adjustment -0.4
+Top feature terms, FPPM adjustment: role__usg_high +0.011; mate__usg_wavg +0.010; hist__fppm_raw_w +0.006; age__exp -0.014; age__hinge_young -0.012; mate__reb_wavg -0.012
+Top feature terms, minutes adjustment: age__age +1.242; team__rot_size_exp +0.794; role__is_top5 +0.597; age__hinge_young -1.048; age__exp -0.772; role__gap_hist -0.699
+
+Archetype: playmaking-heavy    scoring-block share of FP: 54%    breakout score: 92/100
+Upside score: 54   Risk score: 30   P(role expansion >= +3 mpg): 42%
+Injury report: Day-To-Day - Ankle (return Oct 23)  (known games missed assumed: 0)
+
+Confidence: High  (score 71/100)

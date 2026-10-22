@@ -1,0 +1,46 @@
+PLAYER: Jabari Smith Jr.   (HOU, F, age 23.7)
+
+Projected Rank (total value): 60 of 519    | by FPPG: 78    | risk-adjusted: 52
+Consensus rank (comparison only): 109    model-minus-consensus rank: -49    value vs consensus slot: +446 FP
+
+Projected FPPM:    0.93      (80% range 0.76 - 1.11)
+Projected Minutes: 34.0      (80% range 27.8 - 38.2)
+Projected FPPG:    31.6      (80% range 22.9 - 39.5)
+Projected Games:   66      (availability 82%, 80% range 38 - 77 games)
+Projected Total:   2144
+  (in-season: 51 FP already banked over 1 games)
+
+10th percentile total: 1106
+25th percentile total: 1558
+50th percentile total: 1987
+75th percentile total: 2392
+90th percentile total: 2757
+Mean of simulated totals: 1962   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 788    risk-adjusted value: 1388
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.91 | 31.9 mpg | 29.0 FPPG | 76 GP | HOU
+  2024-25: FPPM 0.80 | 30.1 mpg | 23.9 FPPG | 57 GP | HOU
+  2025-26: FPPM 0.87 | 35.1 mpg | 30.6 FPPG | 77 GP | HOU
+  2026-27: FPPM 1.42 | 36.0 mpg | 51.0 FPPG | 1 GP | HOU
+  last-season fantasy profile per game: scoring block +38.0 | rebounds +5.0 | assists +2.0 | stocks +8.0 | turnovers -2.0 | missed-shot cost -7.0
+  FP per FGA 3.00 | FP per possession used 2.52 | FPPM per usage point 0.060 | usage 23.6% | TS% 0.781
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+2.3 FPPG]  (~+155 FP)
+  + higher per-minute production (FPPM 0.87 -> 0.93)  (~+133 FP)
+  + age / development curve favors growth [+0.9 FPPG]  (~+58 FP)
+Main negative drivers:
+  - fewer games expected (77 -> 66)  (~-341 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.6 FPPG]  (~-104 FP)
+  - fewer minutes (35.1 -> 34.0 mpg)  (~-73 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.4 | teammate -1.6 | coach +0.2 | age +0.9 | role +2.3 | form +0.0 | history_adjustment -2.0
+Top feature terms, FPPM adjustment: newc__height_in +0.011; role__bin_25_30 +0.007; coach__usage_hhi +0.007; mate__quality_wavg -0.010; coach__rot_size -0.009; hist__tpar_l1 -0.006
+Top feature terms, minutes adjustment: role__gap_hist +1.032; coach__rot_size +0.864; team__ortg_l1 +0.767; mate__quality_wavg -1.255; role__budget_ratio -0.551; hist__mpg_l3 -0.538
+
+Archetype: all-around    scoring-block share of FP: 51%    breakout score: 53/100
+Upside score: 56   Risk score: 4   P(role expansion >= +3 mpg): 10%
+
+Confidence: High  (score 93/100)

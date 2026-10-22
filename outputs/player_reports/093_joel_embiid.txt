@@ -1,0 +1,46 @@
+PLAYER: Joel Embiid   (PHI, C, age 32.9)
+
+Projected Rank (total value): 93 of 519    | by FPPG: 30    | risk-adjusted: 139
+Consensus rank (comparison only): 59    model-minus-consensus rank: +34    value vs consensus slot: -366 FP
+
+Projected FPPM:    1.30      (80% range 1.11 - 1.50)
+Projected Minutes: 30.4      (80% range 22.7 - 35.4)
+Projected FPPG:    39.4      (80% range 27.2 - 49.4)
+Projected Games:   45      (availability 55%, 80% range 13 - 66 games)
+Projected Total:   1800
+  (in-season: 42 FP already banked over 1 games)
+
+10th percentile total: 503
+25th percentile total: 1033
+50th percentile total: 1632
+75th percentile total: 2236
+90th percentile total: 2775
+Mean of simulated totals: 1650   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 230    risk-adjusted value: 931
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.85 | 33.6 mpg | 62.0 FPPG | 39 GP | PHI
+  2024-25: FPPM 1.30 | 30.2 mpg | 39.4 FPPG | 19 GP | PHI
+  2025-26: FPPM 1.38 | 31.5 mpg | 43.5 FPPG | 38 GP | PHI
+  2026-27: FPPM 1.27 | 33.0 mpg | 42.0 FPPG | 1 GP | PHI
+  last-season fantasy profile per game: scoring block +7.0 | rebounds +11.0 | assists +12.0 | stocks +20.0 | turnovers -8.0 | missed-shot cost -12.0
+  FP per FGA 2.80 | FP per possession used 2.02 | FPPM per usage point 0.047 | usage 27.2% | TS% 0.388
+
+Main positive drivers:
+  + more games expected (38 -> 45)  (~+259 FP)
+  + role and depth-chart position favor more production [+2.5 FPPG]  (~+111 FP)
+  + late-season / post-trade form is a positive signal [+1.4 FPPG]  (~+62 FP)
+Main negative drivers:
+  - lower per-minute production (FPPM 1.38 -> 1.30)  (~-112 FP)
+  - fewer minutes (31.5 -> 30.4 mpg)  (~-65 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.0 FPPG]  (~-47 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.1 | teammate -1.0 | coach -0.5 | age -0.3 | role +2.5 | form +1.4 | history_adjustment +0.6
+Top feature terms, FPPM adjustment: hist__fppm_raw_w +0.028; late__fppm_l1 +0.022; hist__fppm_l1 +0.021; age__exp -0.019; hist__fppm_shrunk -0.018; team__ast_added -0.017
+Top feature terms, minutes adjustment: age__age +2.536; hist__fppm_raw_w +0.986; role__gap_hist +0.912; hist__fppm_l3 -1.390; age__hinge_young -1.048; age__exp -1.021
+
+Archetype: scoring-heavy    scoring-block share of FP: 59%    breakout score: 20/100
+Upside score: 98   Risk score: 67   P(role expansion >= +3 mpg): 15%
+
+Confidence: Medium  (score 53/100)

@@ -1,0 +1,46 @@
+PLAYER: Chet Holmgren   (OKC, C, age 24.8)
+
+Projected Rank (total value): 34 of 519    | by FPPG: 29    | risk-adjusted: 34
+Consensus rank (comparison only): 55    model-minus-consensus rank: -21    value vs consensus slot: +246 FP
+
+Projected FPPM:    1.32      (80% range 1.15 - 1.51)
+Projected Minutes: 30.1      (80% range 22.9 - 35.0)
+Projected FPPG:    39.8      (80% range 28.3 - 49.3)
+Projected Games:   60      (availability 74%, 80% range 35 - 76 games)
+Projected Total:   2435
+  (in-season: 37 FP already banked over 1 games)
+
+10th percentile total: 1177
+25th percentile total: 1731
+50th percentile total: 2279
+75th percentile total: 2822
+90th percentile total: 3306
+Mean of simulated totals: 2262   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 766    risk-adjusted value: 1523
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.34 | 29.4 mpg | 39.6 FPPG | 82 GP | OKC
+  2024-25: FPPM 1.29 | 27.4 mpg | 35.3 FPPG | 32 GP | OKC
+  2025-26: FPPM 1.31 | 29.0 mpg | 38.0 FPPG | 69 GP | OKC
+  2026-27: FPPM 1.19 | 31.0 mpg | 37.0 FPPG | 1 GP | OKC
+  last-season fantasy profile per game: scoring block +12.0 | rebounds +7.0 | assists +4.0 | stocks +16.0 | turnovers -2.0 | missed-shot cost -5.0
+  FP per FGA 4.62 | FP per possession used 2.96 | FPPM per usage point 0.071 | usage 16.9% | TS% 0.608
+
+Main positive drivers:
+  + favorable team environment (pace / efficiency / roster turnover) [+3.5 FPPG]  (~+212 FP)
+  + more minutes (29.0 -> 30.1 mpg)  (~+90 FP)
+  + role and depth-chart position favor more production [+1.3 FPPG]  (~+77 FP)
+  + late-season / post-trade form is a positive signal [+0.7 FPPG]  (~+40 FP)
+Main negative drivers:
+  - fewer games expected (69 -> 60)  (~-345 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.5 FPPG]  (~-91 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +3.5 | teammate -1.5 | coach -0.4 | age -0.1 | role +1.3 | form +0.7 | history_adjustment +0.4
+Top feature terms, FPPM adjustment: hist__fppm_raw_w +0.021; hist__blk_pct_l1 +0.019; hist__fppm_l1 +0.018; hist__fppm_shrunk -0.018; mate__quality_wavg -0.011; age__hinge_young -0.008
+Top feature terms, minutes adjustment: team__rot_size_exp +1.088; team__ortg_l1 +0.783; role__bin_25_30 +0.730; mate__quality_wavg -1.355; pos__c -0.876; hist__fppm_l3 -0.868
+
+Archetype: stocks-heavy    scoring-block share of FP: 47%    breakout score: 71/100
+Upside score: 94   Risk score: 18   P(role expansion >= +3 mpg): 29%
+
+Confidence: High  (score 85/100)

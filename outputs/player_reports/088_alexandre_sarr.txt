@@ -1,0 +1,45 @@
+PLAYER: Alex Sarr   (WAS, C, age 21.8)
+
+Projected Rank (total value): 88 of 519    | by FPPG: 74    | risk-adjusted: 92
+Consensus rank (comparison only): 81    model-minus-consensus rank: +7    value vs consensus slot: -99 FP
+
+Projected FPPM:    1.21      (80% range 1.04 - 1.40)
+Projected Minutes: 26.3      (80% range 18.4 - 31.5)
+Projected FPPG:    32.0      (80% range 20.9 - 40.8)
+Projected Games:   58      (availability 71%, 80% range 31 - 73 games)
+Projected Total:   1856
+  (in-season: 16 FP already banked over 1 games)
+
+10th percentile total: 810
+25th percentile total: 1219
+50th percentile total: 1699
+75th percentile total: 2159
+90th percentile total: 2588
+Mean of simulated totals: 1699   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 494    risk-adjusted value: 1097
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2024-25: FPPM 1.02 | 27.1 mpg | 27.7 FPPG | 67 GP | WAS
+  2025-26: FPPM 1.34 | 27.2 mpg | 36.5 FPPG | 48 GP | WAS
+  2026-27: FPPM 0.67 | 24.0 mpg | 16.0 FPPG | 1 GP | WAS
+  last-season fantasy profile per game: scoring block +3.0 | rebounds +9.0 | assists +4.0 | stocks +0.0 | turnovers -0.0 | missed-shot cost -6.0
+  FP per FGA 1.78 | FP per possession used 1.78 | FPPM per usage point 0.043 | usage 15.6% | TS% 0.333
+
+Main positive drivers:
+  + more games expected (48 -> 58)  (~+306 FP)
+  + age / development curve favors growth [+4.7 FPPG]  (~+273 FP)
+Main negative drivers:
+  - lower per-minute production (FPPM 1.34 -> 1.21)  (~-191 FP)
+  - unfavorable team environment (pace / efficiency / roster turnover) [-1.6 FPPG]  (~-91 FP)
+  - fewer minutes (27.2 -> 26.3 mpg)  (~-63 FP)
+  - role and depth-chart position limit production [-1.1 FPPG]  (~-62 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -1.6 | teammate -0.0 | coach -0.1 | age +4.7 | role -1.1 | form -0.0 | history_adjustment +0.2
+Top feature terms, FPPM adjustment: age__hinge_young +0.037; hist__fppm_l1 +0.019; hist__blk_pct_l1 +0.019; hist__fppm_shrunk -0.010; team__usage_conc -0.009; coach__usage_hhi -0.008
+Top feature terms, minutes adjustment: age__hinge_young +3.262; team__rot_size_exp +1.662; mate__same_pos_min +0.913; age__age -1.161; pos__c -0.876; coach__rot_size -0.648
+
+Archetype: stocks-heavy    scoring-block share of FP: 42%    breakout score: 16/100
+Upside score: 81   Risk score: 29   P(role expansion >= +3 mpg): 17%
+
+Confidence: High  (score 75/100)

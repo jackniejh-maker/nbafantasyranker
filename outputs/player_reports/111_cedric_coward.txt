@@ -1,0 +1,42 @@
+PLAYER: Cedric Coward   (MEM, F, age 23.4)
+
+Projected Rank (total value): 111 of 519    | by FPPG: 112    | risk-adjusted: 130
+Consensus rank (comparison only): 120    model-minus-consensus rank: -9    value vs consensus slot: +27 FP
+
+Projected FPPM:    1.05      (80% range 0.89 - 1.22)
+Projected Minutes: 26.4      (80% range 15.3 - 33.7)
+Projected FPPG:    27.8      (80% range 15.1 - 37.7)
+Projected Games:   61      (availability 75%, 80% range 34 - 77 games)
+Projected Total:   1716
+  (in-season: 23 FP already banked over 1 games)
+
+10th percentile total: 629
+25th percentile total: 1043
+50th percentile total: 1526
+75th percentile total: 2017
+90th percentile total: 2472
+Mean of simulated totals: 1550   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 377    risk-adjusted value: 951
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2025-26: FPPM 1.02 | 25.8 mpg | 26.4 FPPG | 62 GP | MEM
+  2026-27: FPPM 0.82 | 28.0 mpg | 23.0 FPPG | 1 GP | MEM
+  last-season fantasy profile per game: scoring block +8.0 | rebounds +7.0 | assists +4.0 | stocks +4.0 | turnovers -0.0 | missed-shot cost -3.0
+  FP per FGA 3.83 | FP per possession used 3.83 | FPPM per usage point 0.094 | usage 8.7% | TS% 0.583
+
+Main positive drivers:
+  + age / development curve favors growth [+2.5 FPPG]  (~+150 FP)
+  + role and depth-chart position favor more production [+1.2 FPPG]  (~+75 FP)
+  + higher per-minute production (FPPM 1.02 -> 1.05)  (~+52 FP)
+Main negative drivers:
+  (none above the materiality threshold)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.4 | teammate -0.2 | coach +0.0 | age +2.5 | role +1.2 | form -0.1 | history_adjustment -0.7
+Top feature terms, FPPM adjustment: age__exp +0.018; age__hinge_young +0.012; coach__star_mpg +0.011; team__usage_conc -0.009; coach__usage_hhi -0.007; hist__has_l2 -0.006
+Top feature terms, minutes adjustment: team__rot_size_exp +1.662; age__hinge_young +1.097; age__exp +0.975; coach__rot_size -0.648; age__age -0.621; team__depth15 -0.485
+
+Archetype: scoring-heavy    scoring-block share of FP: 53%    breakout score: 76/100
+Upside score: 89   Risk score: 40   P(role expansion >= +3 mpg): 30%
+
+Confidence: Medium  (score 63/100)

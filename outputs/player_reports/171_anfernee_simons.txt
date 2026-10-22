@@ -1,0 +1,46 @@
+PLAYER: Anfernee Simons   (PHI, G, age 27.7)
+
+Projected Rank (total value): 171 of 519    | by FPPG: 185    | risk-adjusted: 168
+Consensus rank (comparison only): 306    model-minus-consensus rank: -135    value vs consensus slot: +548 FP
+
+Projected FPPM:    0.85      (80% range 0.67 - 1.04)
+Projected Minutes: 26.4      (80% range 18.6 - 31.5)
+Projected FPPG:    22.5      (80% range 13.8 - 29.7)
+Projected Games:   59      (availability 73%, 80% range 32 - 75 games)
+Projected Total:   1342
+  (in-season: 18 FP already banked over 1 games)
+
+10th percentile total: 552
+25th percentile total: 859
+50th percentile total: 1221
+75th percentile total: 1580
+90th percentile total: 1909
+Mean of simulated totals: 1229   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 340    risk-adjusted value: 781
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.01 | 34.4 mpg | 34.8 FPPG | 46 GP | POR
+  2024-25: FPPM 0.97 | 32.7 mpg | 31.6 FPPG | 70 GP | POR
+  2025-26: FPPM 0.91 | 24.9 mpg | 22.8 FPPG | 55 GP | CHI  (traded BOS -> CHI)
+  2026-27: FPPM 0.72 | 25.0 mpg | 18.0 FPPG | 1 GP | PHI
+  last-season fantasy profile per game: scoring block +16.0 | rebounds +2.0 | assists +0.0 | stocks +0.0 | turnovers -0.0 | missed-shot cost -5.0
+  FP per FGA 1.80 | FP per possession used 1.80 | FPPM per usage point 0.042 | usage 17.3% | TS% 0.650
+
+Main positive drivers:
+  + more games expected (55 -> 59)  (~+86 FP)
+  + more minutes (24.9 -> 26.4 mpg)  (~+76 FP)
+Main negative drivers:
+  - stronger teammate competition for usage, shots and minutes [-2.4 FPPG]  (~-143 FP)
+  - lower per-minute production (FPPM 0.91 -> 0.85)  (~-96 FP)
+  - late-season / post-trade form is a negative signal [-1.2 FPPG]  (~-68 FP)
+  - age-related decline expected [-0.8 FPPG]  (~-48 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.1 | teammate -2.4 | coach -0.3 | age -0.8 | role +0.2 | form -1.2 | history_adjustment -1.7
+Top feature terms, FPPM adjustment: role__usg_high +0.011; team__fga_added +0.010; coach__games_known +0.007; team__ast_added -0.017; coach__star_mpg -0.014; age__hinge_young -0.012
+Top feature terms, minutes adjustment: age__age +0.797; team__rot_size_exp +0.728; hist__reb_pct_w +0.486; mate__quality_wavg -1.080; age__hinge_young -1.048; mate__same_pos_min -0.773
+
+Archetype: scoring-heavy    scoring-block share of FP: 65%    breakout score: 73/100
+Upside score: 34   Risk score: 32   P(role expansion >= +3 mpg): 32%
+
+Confidence: High  (score 69/100)

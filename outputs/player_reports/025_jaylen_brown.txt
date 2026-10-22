@@ -1,0 +1,46 @@
+PLAYER: Jaylen Brown   (PHI, G, age 30.3)
+
+Projected Rank (total value): 25 of 519    | by FPPG: 27    | risk-adjusted: 26
+Consensus rank (comparison only): 34    model-minus-consensus rank: -9    value vs consensus slot: +184 FP
+
+Projected FPPM:    1.19      (80% range 1.02 - 1.38)
+Projected Minutes: 33.7      (80% range 27.4 - 37.8)
+Projected FPPG:    40.2      (80% range 29.7 - 48.7)
+Projected Games:   65      (availability 80%, 80% range 36 - 76 games)
+Projected Total:   2650
+  (in-season: 44 FP already banked over 1 games)
+
+10th percentile total: 1322
+25th percentile total: 1923
+50th percentile total: 2463
+75th percentile total: 2942
+90th percentile total: 3361
+Mean of simulated totals: 2403   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 916    risk-adjusted value: 1689
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.15 | 33.5 mpg | 38.5 FPPG | 70 GP | BOS
+  2024-25: FPPM 1.08 | 34.3 mpg | 37.1 FPPG | 63 GP | BOS
+  2025-26: FPPM 1.27 | 34.4 mpg | 43.6 FPPG | 71 GP | BOS
+  2026-27: FPPM 1.26 | 35.0 mpg | 44.0 FPPG | 1 GP | PHI
+  last-season fantasy profile per game: scoring block +20.0 | rebounds +8.0 | assists +12.0 | stocks +8.0 | turnovers -4.0 | missed-shot cost -8.0
+  FP per FGA 3.14 | FP per possession used 2.48 | FPPM per usage point 0.057 | usage 22.0% | TS% 0.603
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+3.8 FPPG]  (~+244 FP)
+  + late-season / post-trade form is a positive signal [+0.6 FPPG]  (~+40 FP)
+Main negative drivers:
+  - fewer games expected (71 -> 65)  (~-247 FP)
+  - stronger teammate competition for usage, shots and minutes [-3.0 FPPG]  (~-195 FP)
+  - lower per-minute production (FPPM 1.27 -> 1.19)  (~-163 FP)
+  - age-related decline expected [-1.0 FPPG]  (~-62 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.2 | teammate -3.0 | coach -0.5 | age -1.0 | role +3.8 | form +0.6 | history_adjustment +2.2
+Top feature terms, FPPM adjustment: hist__usg_w +0.016; hist__fppm_l1 +0.016; hist__usg_l1 +0.015; age__exp -0.019; team__ast_added -0.017; coach__star_mpg -0.014
+Top feature terms, minutes adjustment: age__age +1.668; hist__usg_l1 +0.963; role__gap_hist +0.847; age__hinge_young -1.048; age__exp -1.021; mate__quality_wavg -0.830
+
+Archetype: scoring-heavy    scoring-block share of FP: 62%    breakout score: 14/100
+Upside score: 84   Risk score: 10   P(role expansion >= +3 mpg): 13%
+
+Confidence: High  (score 93/100)

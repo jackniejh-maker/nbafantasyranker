@@ -1,0 +1,46 @@
+PLAYER: Ausar Thompson   (DET, G, age 24.0)
+
+Projected Rank (total value): 69 of 519    | by FPPG: 79    | risk-adjusted: 69
+Consensus rank (comparison only): 92    model-minus-consensus rank: -23    value vs consensus slot: +242 FP
+
+Projected FPPM:    1.16      (80% range 0.98 - 1.35)
+Projected Minutes: 27.2      (80% range 19.8 - 32.1)
+Projected FPPG:    31.7      (80% range 21.2 - 40.0)
+Projected Games:   64      (availability 79%, 80% range 36 - 75 games)
+Projected Total:   2056
+  (in-season: 30 FP already banked over 1 games)
+
+10th percentile total: 951
+25th percentile total: 1395
+50th percentile total: 1881
+75th percentile total: 2318
+90th percentile total: 2695
+Mean of simulated totals: 1853   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 640    risk-adjusted value: 1261
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.94 | 25.2 mpg | 23.7 FPPG | 63 GP | DET
+  2024-25: FPPM 1.17 | 22.5 mpg | 26.3 FPPG | 59 GP | DET
+  2025-26: FPPM 1.15 | 26.0 mpg | 30.0 FPPG | 73 GP | DET
+  2026-27: FPPM 0.91 | 33.0 mpg | 30.0 FPPG | 1 GP | DET
+  last-season fantasy profile per game: scoring block +11.0 | rebounds +11.0 | assists +10.0 | stocks +4.0 | turnovers -6.0 | missed-shot cost -4.0
+  FP per FGA 3.75 | FP per possession used 2.44 | FPPM per usage point 0.059 | usage 15.3% | TS% 0.590
+
+Main positive drivers:
+  + favorable team environment (pace / efficiency / roster turnover) [+2.2 FPPG]  (~+141 FP)
+  + more minutes (26.0 -> 27.2 mpg)  (~+90 FP)
+  + age / development curve favors growth [+1.0 FPPG]  (~+63 FP)
+  + role and depth-chart position favor more production [+0.9 FPPG]  (~+58 FP)
+Main negative drivers:
+  - fewer games expected (73 -> 64)  (~-287 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.4 FPPG]  (~-89 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +2.2 | teammate -1.4 | coach -0.6 | age +1.0 | role +0.9 | form +0.7 | history_adjustment +1.7
+Top feature terms, FPPM adjustment: hist__stl_pct_l1 +0.019; hist__tpar_l1 +0.016; late__fppm_l1 +0.014; hist__fppm_shrunk -0.009; mate__quality_wavg -0.006; team__usage_conc -0.006
+Top feature terms, minutes adjustment: team__rot_size_exp +1.231; team__ortg_l1 +0.709; age__exp +0.476; mate__quality_wavg -0.750; coach__double_big -0.749; mate__same_pos_min -0.471
+
+Archetype: stocks-heavy    scoring-block share of FP: 34%    breakout score: 71/100
+Upside score: 65   Risk score: 17   P(role expansion >= +3 mpg): 29%
+
+Confidence: High  (score 86/100)

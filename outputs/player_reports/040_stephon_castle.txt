@@ -1,0 +1,45 @@
+PLAYER: Stephon Castle   (SAS, G, age 22.3)
+
+Projected Rank (total value): 40 of 519    | by FPPG: 59    | risk-adjusted: 36
+Consensus rank (comparison only): 46    model-minus-consensus rank: -6    value vs consensus slot: +76 FP
+
+Projected FPPM:    1.16      (80% range 0.98 - 1.33)
+Projected Minutes: 30.3      (80% range 23.2 - 35.0)
+Projected FPPG:    35.1      (80% range 24.6 - 43.4)
+Projected Games:   67      (availability 82%, 80% range 38 - 78 games)
+Projected Total:   2371
+  (in-season: 29 FP already banked over 1 games)
+
+10th percentile total: 1156
+25th percentile total: 1660
+50th percentile total: 2164
+75th percentile total: 2629
+90th percentile total: 3044
+Mean of simulated totals: 2135   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 825    risk-adjusted value: 1494
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2024-25: FPPM 0.94 | 26.7 mpg | 25.2 FPPG | 81 GP | SAS
+  2025-26: FPPM 1.17 | 30.0 mpg | 35.2 FPPG | 69 GP | SAS
+  2026-27: FPPM 1.04 | 28.0 mpg | 29.0 FPPG | 1 GP | SAS
+  last-season fantasy profile per game: scoring block +26.0 | rebounds +7.0 | assists +2.0 | stocks +0.0 | turnovers -6.0 | missed-shot cost -12.0
+  FP per FGA 1.38 | FP per possession used 1.19 | FPPM per usage point 0.029 | usage 35.8% | TS% 0.560
+
+Main positive drivers:
+  + age / development curve favors growth [+4.1 FPPG]  (~+271 FP)
+  + role and depth-chart position favor more production [+2.8 FPPG]  (~+188 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.0 FPPG]  (~+67 FP)
+  + late-season / post-trade form is a positive signal [+0.7 FPPG]  (~+48 FP)
+Main negative drivers:
+  - stronger teammate competition for usage, shots and minutes [-1.9 FPPG]  (~-128 FP)
+  - fewer games expected (69 -> 67)  (~-79 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.0 | teammate -1.9 | coach -0.1 | age +4.1 | role +2.8 | form +0.7 | history_adjustment +0.9
+Top feature terms, FPPM adjustment: age__hinge_young +0.029; age__exp +0.013; late__fppm_l1 +0.013; mate__best_fppm -0.009; mate__quality_wavg -0.009; hist__fppm_shrunk -0.006
+Top feature terms, minutes adjustment: age__hinge_young +2.619; role__gap_hist +0.971; team__ortg_l1 +0.865; mate__quality_wavg -1.044; age__age -1.000; role__budget_ratio -0.795
+
+Archetype: playmaking-heavy    scoring-block share of FP: 48%    breakout score: 57/100
+Upside score: 79   Risk score: 7   P(role expansion >= +3 mpg): 22%
+
+Confidence: High  (score 90/100)

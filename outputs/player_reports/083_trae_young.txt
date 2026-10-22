@@ -1,0 +1,45 @@
+PLAYER: Trae Young   (WAS, G, age 28.4)
+
+Projected Rank (total value): 83 of 519    | by FPPG: 38    | risk-adjusted: 97
+Consensus rank (comparison only): 22    model-minus-consensus rank: +61    value vs consensus slot: -718 FP
+
+Projected FPPM:    1.22      (80% range 1.05 - 1.41)
+Projected Minutes: 31.5      (80% range 23.9 - 36.4)
+Projected FPPG:    38.6      (80% range 27.0 - 47.8)
+Projected Games:   49      (availability 61%, 80% range 17 - 71 games)
+Projected Total:   1949
+  (in-season: 43 FP already banked over 1 games)
+
+10th percentile total: 642
+25th percentile total: 1182
+50th percentile total: 1772
+75th percentile total: 2393
+90th percentile total: 2916
+Mean of simulated totals: 1793   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 368    risk-adjusted value: 1070
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.31 | 35.9 mpg | 47.0 FPPG | 54 GP | ATL
+  2024-25: FPPM 1.26 | 36.0 mpg | 45.3 FPPG | 76 GP | ATL
+  2025-26: FPPM 1.35 | 25.5 mpg | 34.4 FPPG | 15 GP | WAS  (traded ATL -> WAS)
+  2026-27: FPPM 1.13 | 38.0 mpg | 43.0 FPPG | 1 GP | WAS
+  last-season fantasy profile per game: scoring block +11.0 | rebounds +0.0 | assists +26.0 | stocks +8.0 | turnovers -2.0 | missed-shot cost -13.0
+  FP per FGA 3.31 | FP per possession used 2.04 | FPPM per usage point 0.049 | usage 23.1% | TS% 0.499
+
+Main positive drivers:
+  + more games expected (15 -> 49)  (~+1328 FP)
+  + more minutes (25.5 -> 31.5 mpg)  (~+365 FP)
+  + role and depth-chart position favor more production [+1.5 FPPG]  (~+76 FP)
+Main negative drivers:
+  - lower per-minute production (FPPM 1.35 -> 1.22)  (~-197 FP)
+  - unfavorable team environment (pace / efficiency / roster turnover) [-1.6 FPPG]  (~-80 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -1.6 | teammate -0.5 | coach -0.0 | age -0.7 | role +1.5 | form -0.5 | history_adjustment -0.8
+Top feature terms, FPPM adjustment: hist__fppm_l1 +0.020; hist__fppm_raw_w +0.020; late__fppm_l1 +0.018; hist__fppm_shrunk -0.014; age__hinge_young -0.012; newc__height_in -0.011
+Top feature terms, minutes adjustment: team__rot_size_exp +1.662; age__age +1.035; role__bin_25_30 +0.730; age__hinge_young -1.048; hist__ast_pct_w -0.976; hist__avail_l1 -0.969
+
+Archetype: playmaking-heavy    scoring-block share of FP: 52%    breakout score: 94/100
+Upside score: 98   Risk score: 48   P(role expansion >= +3 mpg): 69%
+
+Confidence: Medium  (score 59/100)

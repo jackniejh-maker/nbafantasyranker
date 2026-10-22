@@ -1,0 +1,44 @@
+PLAYER: Royce O'Neale   (CHA, F, age 33.7)
+
+Projected Rank (total value): 162 of 519    | by FPPG: 211    | risk-adjusted: 144
+Consensus rank (comparison only): 338    model-minus-consensus rank: -176    value vs consensus slot: +697 FP
+
+Projected FPPM:    0.92      (80% range 0.72 - 1.12)
+Projected Minutes: 22.1      (80% range 16.6 - 25.7)
+Projected FPPG:    20.2      (80% range 13.1 - 26.3)
+Projected Games:   70      (availability 86%, 80% range 41 - 81 games)
+Projected Total:   1434
+  (in-season: 20 FP already banked over 1 games)
+
+10th percentile total: 675
+25th percentile total: 967
+50th percentile total: 1299
+75th percentile total: 1611
+90th percentile total: 1897
+Mean of simulated totals: 1297   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 493    risk-adjusted value: 896
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.88 | 24.7 mpg | 21.8 FPPG | 79 GP | PHX  (traded BKN -> PHX)
+  2024-25: FPPM 0.93 | 24.6 mpg | 22.8 FPPG | 75 GP | PHX
+  2025-26: FPPM 0.86 | 28.4 mpg | 24.5 FPPG | 78 GP | PHX
+  2026-27: FPPM 1.18 | 17.0 mpg | 20.0 FPPG | 1 GP | CHA
+  last-season fantasy profile per game: scoring block +10.0 | rebounds +4.0 | assists +0.0 | stocks +8.0 | turnovers -2.0 | missed-shot cost -3.0
+  FP per FGA 3.33 | FP per possession used 2.86 | FPPM per usage point 0.071 | usage 16.5% | TS% 0.667
+
+Main positive drivers:
+  + higher per-minute production (FPPM 0.86 -> 0.92)  (~+81 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.0 FPPG]  (~+67 FP)
+Main negative drivers:
+  - fewer minutes (28.4 -> 22.1 mpg)  (~-404 FP)
+  - fewer games expected (78 -> 70)  (~-165 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.0 | teammate -0.3 | coach -0.4 | age +0.2 | role +0.4 | form -0.2 | history_adjustment -0.6
+Top feature terms, FPPM adjustment: age__age +0.013; coach__rot_size +0.009; coach__y2_mpg +0.008; hist__tpar_l1 -0.022; age__exp -0.014; age__hinge_young -0.012
+Top feature terms, minutes adjustment: age__age +2.795; team__rot_size_exp +1.058; role__gap_hist +0.876; age__hinge_young -1.048; coach__rot_size -0.819; age__exp -0.772
+
+Archetype: all-around    scoring-block share of FP: 42%    breakout score: 8/100
+Upside score: 17   Risk score: 8   P(role expansion >= +3 mpg): 0%
+
+Confidence: High  (score 85/100)

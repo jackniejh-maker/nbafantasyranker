@@ -1,0 +1,42 @@
+PLAYER: Ryan Kalkbrenner   (CHA, C, age 25.0)
+
+Projected Rank (total value): 198 of 519    | by FPPG: 221    | risk-adjusted: 206
+Consensus rank (comparison only): 318    model-minus-consensus rank: -120    value vs consensus slot: +469 FP
+
+Projected FPPM:    1.08      (80% range 0.92 - 1.25)
+Projected Minutes: 18.9      (80% range 6.4 - 27.4)
+Projected FPPG:    20.4      (80% range 6.6 - 30.7)
+Projected Games:   64      (availability 79%, 80% range 35 - 75 games)
+Projected Total:   1317
+  (in-season: 22 FP already banked over 1 games)
+
+10th percentile total: 304
+25th percentile total: 665
+50th percentile total: 1118
+75th percentile total: 1565
+90th percentile total: 2014
+Mean of simulated totals: 1157   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 208    risk-adjusted value: 663
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2025-26: FPPM 1.03 | 21.4 mpg | 22.1 FPPG | 69 GP | CHA
+  2026-27: FPPM 1.57 | 14.0 mpg | 22.0 FPPG | 1 GP | CHA
+  last-season fantasy profile per game: scoring block +5.0 | rebounds +5.0 | assists +6.0 | stocks +8.0 | turnovers -2.0 | missed-shot cost -1.0
+  FP per FGA 7.33 | FP per possession used 5.50 | FPPM per usage point 0.137 | usage 11.5% | TS% 0.667
+
+Main positive drivers:
+  + favorable team environment (pace / efficiency / roster turnover) [+1.1 FPPG]  (~+68 FP)
+  + higher per-minute production (FPPM 1.03 -> 1.08)  (~+56 FP)
+Main negative drivers:
+  - fewer minutes (21.4 -> 18.9 mpg)  (~-178 FP)
+  - fewer games expected (69 -> 64)  (~-109 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.1 | teammate +0.6 | coach -0.5 | age +0.3 | role -0.6 | form -0.4 | history_adjustment +0.5
+Top feature terms, FPPM adjustment: hist__blk_pct_l1 +0.019; age__exp +0.018; hist__tpar_l1 +0.017; age__hinge_young -0.012; team__ast_added -0.009; hist__usg_w -0.009
+Top feature terms, minutes adjustment: hist__fp_per_fga_l1 +1.072; team__rot_size_exp +1.058; age__exp +0.975; age__hinge_young -1.048; pos__c -0.876; coach__rot_size -0.819
+
+Archetype: stocks-heavy    scoring-block share of FP: 42%    breakout score: 55/100
+Upside score: 83   Risk score: 53   P(role expansion >= +3 mpg): 19%
+
+Confidence: Medium  (score 47/100)

@@ -1,0 +1,47 @@
+PLAYER: Jimmy Butler III   (GSW, F, age 37.4)
+
+Projected Rank (total value): 144 of 519    | by FPPG: 55    | risk-adjusted: 159
+Consensus rank (comparison only): 146    model-minus-consensus rank: -2    value vs consensus slot: +16 FP
+
+Projected FPPM:    1.18      (80% range 0.96 - 1.41)
+Projected Minutes: 30.3      (80% range 26.2 - 33.0)
+Projected FPPG:    35.7      (80% range 26.7 - 43.8)
+Projected Games:   45      (availability 56%, 80% range 17 - 45 games)
+Projected Total:   1606
+
+10th percentile total: 562
+25th percentile total: 1037
+50th percentile total: 1389
+75th percentile total: 1644
+90th percentile total: 1876
+Mean of simulated totals: 1310   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 289    risk-adjusted value: 839
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2022-23: FPPM 1.35 | 33.4 mpg | 45.2 FPPG | 64 GP | MIA
+  2023-24: FPPM 1.14 | 34.0 mpg | 38.9 FPPG | 60 GP | MIA
+  2024-25: FPPM 1.18 | 31.8 mpg | 37.5 FPPG | 55 GP | GSW  (traded MIA -> GSW)
+  2025-26: FPPM 1.25 | 31.2 mpg | 39.1 FPPG | 38 GP | GSW
+  last-season fantasy profile per game: scoring block +20.3 | rebounds +5.6 | assists +9.7 | stocks +6.6 | turnovers -3.2 | missed-shot cost -6.9
+  FP per FGA 3.21 | FP per possession used 2.29 | FPPM per usage point 0.054 | usage 23.3% | TS% 0.646
+
+Main positive drivers:
+  + more games expected (38 -> 45)  (~+250 FP)
+  + role and depth-chart position favor more production [+2.1 FPPG]  (~+94 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.1 FPPG]  (~+51 FP)
+Main negative drivers:
+  - lower per-minute production (FPPM 1.25 -> 1.18)  (~-100 FP)
+  - age-related decline expected [-1.8 FPPG]  (~-80 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.6 FPPG]  (~-73 FP)
+  - fewer minutes (31.2 -> 30.3 mpg)  (~-49 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.1 | teammate -1.6 | coach -0.4 | age -1.8 | role +2.1 | form +0.4 | history_adjustment +0.3
+Top feature terms, FPPM adjustment: age__c2 +0.019; age__age +0.017; hist__fppm_l1 +0.015; age__exp -0.042; age__hinge_old -0.017; hist__fppm_shrunk -0.012
+Top feature terms, minutes adjustment: age__age +3.749; team__rot_size_exp +1.546; role__bin_25_30 +0.730; age__exp -2.269; age__hinge_young -1.048; mate__quality_wavg -0.829
+
+Archetype: scoring-heavy    scoring-block share of FP: 50%    breakout score: 14/100
+Upside score: 5   Risk score: 47   P(role expansion >= +3 mpg): 4%
+Injury report: Out - Knee (return Jan 02)  (known games missed assumed: 36)
+
+Confidence: High  (score 84/100)

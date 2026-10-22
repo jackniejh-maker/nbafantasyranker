@@ -1,7 +1,10 @@
 __pycache__/
 *.pyc
-data/raw/*
-data/processed/*
-data/cache/*
-!data/*/.gitkeep
+data/**
+!data/**/
+!data/**/.gitkeep
+data_espn/**
+!data_espn/**/
+!data_espn/**/.gitkeep
+sample_outputs/
 demo_run/

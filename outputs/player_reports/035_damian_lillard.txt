@@ -1,0 +1,45 @@
+PLAYER: Damian Lillard   (POR, G, age 36.6)
+
+Projected Rank (total value): 35 of 519    | by FPPG: 42    | risk-adjusted: 35
+Consensus rank (comparison only): 61    model-minus-consensus rank: -26    value vs consensus slot: +256 FP
+
+Projected FPPM:    1.22      (80% range 1.03 - 1.42)
+Projected Minutes: 30.4      (80% range 26.0 - 33.3)
+Projected FPPG:    37.0      (80% range 28.3 - 44.5)
+Projected Games:   62      (availability 76%, 80% range 35 - 77 games)
+Projected Total:   2334
+  (in-season: 50 FP already banked over 1 games)
+
+10th percentile total: 1190
+25th percentile total: 1710
+50th percentile total: 2226
+75th percentile total: 2699
+90th percentile total: 3093
+Mean of simulated totals: 2180   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 800    risk-adjusted value: 1513
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2022-23: FPPM 1.41 | 36.4 mpg | 51.5 FPPG | 58 GP | POR
+  2023-24: FPPM 1.19 | 35.3 mpg | 42.0 FPPG | 73 GP | MIL
+  2024-25: FPPM 1.24 | 36.1 mpg | 44.6 FPPG | 59 GP | MIL
+  2026-27: FPPM 2.08 | 24.0 mpg | 50.0 FPPG | 1 GP | POR
+  last-season fantasy profile per game: scoring block +33.0 | rebounds +3.0 | assists +12.0 | stocks +4.0 | turnovers -2.0 | missed-shot cost -5.0
+  FP per FGA 4.17 | FP per possession used 3.29 | FPPM per usage point 0.081 | usage 25.6% | TS% 0.880
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+2.0 FPPG]  (~+123 FP)
+  + more games expected (59 -> 62)  (~+100 FP)
+Main negative drivers:
+  - fewer minutes (36.1 -> 30.4 mpg)  (~-427 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.6 FPPG]  (~-99 FP)
+  - age-related decline expected [-1.4 FPPG]  (~-86 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.1 | teammate -1.6 | coach -0.3 | age -1.4 | role +2.0 | form +0.6 | history_adjustment -1.8
+Top feature terms, FPPM adjustment: hist__log_min_l1 +0.028; age__c2 +0.019; age__age +0.017; age__exp -0.037; role__bin_30_35 -0.020; age__hinge_old -0.017
+Top feature terms, minutes adjustment: age__age +3.749; role__bin_30_35 +1.098; hist__log_min_l1 +0.969; hist__missing_l1 -3.178; age__exp -2.020; age__hinge_young -1.048
+
+Archetype: scoring-heavy    scoring-block share of FP: 58%    breakout score: 4/100
+Upside score: 77   Risk score: 12   P(role expansion >= +3 mpg): 0%
+
+Confidence: High  (score 92/100)

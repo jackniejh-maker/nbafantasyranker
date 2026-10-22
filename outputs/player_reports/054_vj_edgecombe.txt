@@ -1,0 +1,42 @@
+PLAYER: VJ Edgecombe   (PHI, G, age 21.5)
+
+Projected Rank (total value): 54 of 519    | by FPPG: 67    | risk-adjusted: 51
+Consensus rank (comparison only): 74    model-minus-consensus rank: -20    value vs consensus slot: +183 FP
+
+Projected FPPM:    0.97      (80% range 0.81 - 1.14)
+Projected Minutes: 34.4      (80% range 26.5 - 39.8)
+Projected FPPG:    33.4      (80% range 23.3 - 41.6)
+Projected Games:   66      (availability 82%, 80% range 38 - 77 games)
+Projected Total:   2217
+  (in-season: 14 FP already banked over 1 games)
+
+10th percentile total: 1074
+25th percentile total: 1561
+50th percentile total: 2037
+75th percentile total: 2492
+90th percentile total: 2871
+Mean of simulated totals: 2008   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 758    risk-adjusted value: 1397
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2025-26: FPPM 0.97 | 35.0 mpg | 34.0 FPPG | 75 GP | PHI
+  2026-27: FPPM 0.40 | 35.0 mpg | 14.0 FPPG | 1 GP | PHI
+  last-season fantasy profile per game: scoring block +6.0 | rebounds +4.0 | assists +2.0 | stocks +4.0 | turnovers -2.0 | missed-shot cost -7.0
+  FP per FGA 1.40 | FP per possession used 1.18 | FPPM per usage point 0.027 | usage 14.7% | TS% 0.414
+
+Main positive drivers:
+  + age / development curve favors growth [+5.2 FPPG]  (~+346 FP)
+  + role and depth-chart position favor more production [+3.2 FPPG]  (~+214 FP)
+Main negative drivers:
+  - fewer games expected (75 -> 66)  (~-298 FP)
+  - stronger teammate competition for usage, shots and minutes [-3.2 FPPG]  (~-214 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.2 | teammate -3.2 | coach -0.4 | age +5.2 | role +3.2 | form +0.6 | history_adjustment -1.2
+Top feature terms, FPPM adjustment: age__hinge_young +0.040; age__exp +0.018; team__fga_added +0.010; team__ast_added -0.017; coach__star_mpg -0.014; mate__usg_wavg -0.013
+Top feature terms, minutes adjustment: age__hinge_young +3.609; role__gap_hist +1.132; age__exp +0.975; age__age -1.247; mate__quality_wavg -1.051; mate__same_pos_min -0.690
+
+Archetype: all-around    scoring-block share of FP: 47%    breakout score: 45/100
+Upside score: 69   Risk score: 10   P(role expansion >= +3 mpg): 20%
+
+Confidence: High  (score 90/100)

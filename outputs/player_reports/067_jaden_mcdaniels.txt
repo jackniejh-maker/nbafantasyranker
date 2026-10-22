@@ -1,0 +1,45 @@
+PLAYER: Jaden McDaniels   (MIN, F, age 26.3)
+
+Projected Rank (total value): 67 of 519    | by FPPG: 97    | risk-adjusted: 61
+Consensus rank (comparison only): 85    model-minus-consensus rank: -18    value vs consensus slot: +142 FP
+
+Projected FPPM:    0.96      (80% range 0.79 - 1.14)
+Projected Minutes: 30.5      (80% range 23.8 - 34.9)
+Projected FPPG:    29.2      (80% range 20.3 - 36.7)
+Projected Games:   69      (availability 85%, 80% range 40 - 80 games)
+Projected Total:   2053
+  (in-season: 41 FP already banked over 1 games)
+
+10th percentile total: 1014
+25th percentile total: 1452
+50th percentile total: 1892
+75th percentile total: 2295
+90th percentile total: 2646
+Mean of simulated totals: 1866   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 732    risk-adjusted value: 1312
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.70 | 29.2 mpg | 20.5 FPPG | 72 GP | MIN
+  2024-25: FPPM 0.91 | 32.0 mpg | 29.0 FPPG | 82 GP | MIN
+  2025-26: FPPM 0.97 | 31.7 mpg | 30.8 FPPG | 73 GP | MIN
+  2026-27: FPPM 1.41 | 29.0 mpg | 41.0 FPPG | 1 GP | MIN
+  last-season fantasy profile per game: scoring block +23.0 | rebounds +8.0 | assists +2.0 | stocks +12.0 | turnovers -4.0 | missed-shot cost -3.0
+  FP per FGA 3.73 | FP per possession used 3.15 | FPPM per usage point 0.082 | usage 17.2% | TS% 0.773
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+1.8 FPPG]  (~+125 FP)
+Main negative drivers:
+  - fewer games expected (73 -> 69)  (~-121 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.5 FPPG]  (~-106 FP)
+  - fewer minutes (31.7 -> 30.5 mpg)  (~-81 FP)
+  - age-related decline expected [-0.7 FPPG]  (~-47 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.5 | teammate -1.5 | coach -0.2 | age -0.7 | role +1.8 | form +0.2 | history_adjustment -0.9
+Top feature terms, FPPM adjustment: coach__usage_hhi +0.008; role__bin_25_30 +0.007; newc__height_in +0.006; age__hinge_young -0.012; coach__rot_size -0.008; hist__eff_minutes_log -0.008
+Top feature terms, minutes adjustment: coach__rot_size +0.802; role__bin_25_30 +0.730; role__is_top5 +0.597; age__hinge_young -1.048; mate__quality_wavg -0.904; coach__double_big -0.795
+
+Archetype: all-around    scoring-block share of FP: 50%    breakout score: 27/100
+Upside score: 51   Risk score: 6   P(role expansion >= +3 mpg): 11%
+
+Confidence: High  (score 91/100)

@@ -1,0 +1,45 @@
+PLAYER: Jalen Williams   (OKC, G, age 25.8)
+
+Projected Rank (total value): 73 of 519    | by FPPG: 48    | risk-adjusted: 77
+Consensus rank (comparison only): 37    model-minus-consensus rank: +36    value vs consensus slot: -333 FP
+
+Projected FPPM:    1.23      (80% range 1.06 - 1.42)
+Projected Minutes: 29.5      (80% range 22.2 - 34.4)
+Projected FPPG:    36.4      (80% range 25.2 - 45.5)
+Projected Games:   55      (availability 68%, 80% range 23 - 77 games)
+Projected Total:   2039
+  (in-season: 25 FP already banked over 1 games)
+
+10th percentile total: 771
+25th percentile total: 1273
+50th percentile total: 1860
+75th percentile total: 2444
+90th percentile total: 2949
+Mean of simulated totals: 1872   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 516    risk-adjusted value: 1188
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.20 | 31.4 mpg | 37.7 FPPG | 71 GP | OKC
+  2024-25: FPPM 1.30 | 32.5 mpg | 42.3 FPPG | 70 GP | OKC
+  2025-26: FPPM 1.21 | 28.4 mpg | 34.3 FPPG | 33 GP | OKC
+  2026-27: FPPM 0.83 | 30.0 mpg | 25.0 FPPG | 1 GP | OKC
+  last-season fantasy profile per game: scoring block +6.0 | rebounds +7.0 | assists +4.0 | stocks +8.0 | turnovers -0.0 | missed-shot cost -12.0
+  FP per FGA 1.56 | FP per possession used 1.48 | FPPM per usage point 0.035 | usage 23.5% | TS% 0.355
+
+Main positive drivers:
+  + more games expected (33 -> 55)  (~+812 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+3.4 FPPG]  (~+186 FP)
+  + role and depth-chart position favor more production [+3.0 FPPG]  (~+164 FP)
+  + more minutes (28.4 -> 29.5 mpg)  (~+76 FP)
+Main negative drivers:
+  - stronger teammate competition for usage, shots and minutes [-2.5 FPPG]  (~-137 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +3.4 | teammate -2.5 | coach -0.3 | age -0.6 | role +3.0 | form +0.3 | history_adjustment -0.6
+Top feature terms, FPPM adjustment: hist__fppm_raw_w +0.017; hist__fppm_l1 +0.013; late__fppm_l1 +0.011; hist__fppm_shrunk -0.015; age__hinge_young -0.012; mate__quality_wavg -0.012
+Top feature terms, minutes adjustment: team__rot_size_exp +1.088; team__ortg_l1 +0.783; role__bin_25_30 +0.730; mate__quality_wavg -1.425; age__hinge_young -1.048; mate__same_pos_min -0.957
+
+Archetype: scoring-heavy    scoring-block share of FP: 53%    breakout score: 84/100
+Upside score: 98   Risk score: 33   P(role expansion >= +3 mpg): 29%
+
+Confidence: Medium  (score 65/100)

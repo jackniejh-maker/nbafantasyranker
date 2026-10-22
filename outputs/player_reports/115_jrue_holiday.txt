@@ -1,0 +1,46 @@
+PLAYER: Jrue Holiday   (POR, G, age 36.6)
+
+Projected Rank (total value): 115 of 519    | by FPPG: 114    | risk-adjusted: 114
+Consensus rank (comparison only): 139    model-minus-consensus rank: -24    value vs consensus slot: +82 FP
+
+Projected FPPM:    0.98      (80% range 0.77 - 1.20)
+Projected Minutes: 27.3      (80% range 23.4 - 30.0)
+Projected FPPG:    26.9      (80% range 19.3 - 33.6)
+Projected Games:   59      (availability 73%, 80% range 34 - 75 games)
+Projected Total:   1618
+  (in-season: 20 FP already banked over 1 games)
+
+10th percentile total: 794
+25th percentile total: 1130
+50th percentile total: 1520
+75th percentile total: 1894
+90th percentile total: 2216
+Mean of simulated totals: 1508   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 500    risk-adjusted value: 1010
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.97 | 32.8 mpg | 32.0 FPPG | 69 GP | BOS
+  2024-25: FPPM 0.89 | 30.7 mpg | 27.1 FPPG | 62 GP | BOS
+  2025-26: FPPM 1.13 | 29.4 mpg | 33.1 FPPG | 53 GP | POR
+  2026-27: FPPM 0.95 | 21.0 mpg | 20.0 FPPG | 1 GP | POR
+  last-season fantasy profile per game: scoring block +6.0 | rebounds +4.0 | assists +2.0 | stocks +8.0 | turnovers -0.0 | missed-shot cost -4.0
+  FP per FGA 3.33 | FP per possession used 2.58 | FPPM per usage point 0.064 | usage 14.9% | TS% 0.515
+
+Main positive drivers:
+  + more games expected (53 -> 59)  (~+174 FP)
+  + role and depth-chart position favor more production [+2.2 FPPG]  (~+130 FP)
+Main negative drivers:
+  - lower per-minute production (FPPM 1.13 -> 0.98)  (~-231 FP)
+  - age-related decline expected [-2.4 FPPG]  (~-141 FP)
+  - fewer minutes (29.4 -> 27.3 mpg)  (~-120 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.9 FPPG]  (~-114 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.0 | teammate -1.9 | coach -0.3 | age -2.4 | role +2.2 | form +0.3 | history_adjustment -0.8
+Top feature terms, FPPM adjustment: age__c2 +0.019; age__age +0.017; hist__fppm_l1 +0.009; age__exp -0.051; age__hinge_old -0.017; age__hinge_young -0.012
+Top feature terms, minutes adjustment: age__age +3.749; role__bin_25_30 +0.730; role__is_top5 +0.597; age__exp -2.769; age__hinge_young -1.048; mate__quality_wavg -0.911
+
+Archetype: playmaking-heavy    scoring-block share of FP: 46%    breakout score: 3/100
+Upside score: 36   Risk score: 20   P(role expansion >= +3 mpg): 1%
+
+Confidence: High  (score 85/100)

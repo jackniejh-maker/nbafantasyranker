@@ -1,0 +1,45 @@
+PLAYER: Darius Garland   (LAC, G, age 27.0)
+
+Projected Rank (total value): 46 of 519    | by FPPG: 40    | risk-adjusted: 53
+Consensus rank (comparison only): 43    model-minus-consensus rank: +3    value vs consensus slot: -37 FP
+
+Projected FPPM:    1.23      (80% range 1.06 - 1.42)
+Projected Minutes: 30.9      (80% range 23.5 - 35.9)
+Projected FPPG:    38.1      (80% range 26.8 - 47.2)
+Projected Games:   58      (availability 72%, 80% range 32 - 74 games)
+Projected Total:   2254
+  (in-season: 40 FP already banked over 1 games)
+
+10th percentile total: 1036
+25th percentile total: 1561
+50th percentile total: 2087
+75th percentile total: 2613
+90th percentile total: 3084
+Mean of simulated totals: 2078   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 647    risk-adjusted value: 1367
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.01 | 33.3 mpg | 33.5 FPPG | 57 GP | CLE
+  2024-25: FPPM 1.27 | 30.7 mpg | 38.9 FPPG | 75 GP | CLE
+  2025-26: FPPM 1.15 | 29.8 mpg | 34.4 FPPG | 45 GP | LAC  (traded CLE -> LAC)
+  2026-27: FPPM 1.25 | 32.0 mpg | 40.0 FPPG | 1 GP | LAC
+  last-season fantasy profile per game: scoring block +33.0 | rebounds +1.0 | assists +8.0 | stocks +4.0 | turnovers -6.0 | missed-shot cost -11.0
+  FP per FGA 2.11 | FP per possession used 1.57 | FPPM per usage point 0.037 | usage 34.0% | TS% 0.666
+
+Main positive drivers:
+  + more games expected (45 -> 58)  (~+498 FP)
+  + role and depth-chart position favor more production [+3.4 FPPG]  (~+197 FP)
+  + higher per-minute production (FPPM 1.15 -> 1.23)  (~+142 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.5 FPPG]  (~+87 FP)
+Main negative drivers:
+  - age-related decline expected [-0.9 FPPG]  (~-54 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.5 | teammate -0.6 | coach +0.3 | age -0.9 | role +3.4 | form +0.6 | history_adjustment -0.3
+Top feature terms, FPPM adjustment: trade__last_stint_gap +0.020; late__fppm_l1 +0.015; hist__fppm_raw_w +0.013; newc__height_in -0.014; age__hinge_young -0.012; hist__fppm_shrunk -0.012
+Top feature terms, minutes adjustment: team__rot_size_exp +1.538; role__bin_25_30 +0.730; team__ortg_l1 +0.623; age__hinge_young -1.048; trade__traded_l1 -0.657; hist__mpg_l3 -0.627
+
+Archetype: playmaking-heavy    scoring-block share of FP: 56%    breakout score: 89/100
+Upside score: 93   Risk score: 25   P(role expansion >= +3 mpg): 28%
+
+Confidence: High  (score 80/100)

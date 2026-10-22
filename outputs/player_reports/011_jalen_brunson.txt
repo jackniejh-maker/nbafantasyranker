@@ -1,0 +1,47 @@
+PLAYER: Jalen Brunson   (NYK, G, age 30.4)
+
+Projected Rank (total value): 11 of 519    | by FPPG: 20    | risk-adjusted: 9
+Consensus rank (comparison only): 13    model-minus-consensus rank: -2    value vs consensus slot: +12 FP
+
+Projected FPPM:    1.22      (80% range 1.05 - 1.40)
+Projected Minutes: 34.4      (80% range 28.6 - 38.4)
+Projected FPPG:    41.9      (80% range 31.7 - 50.6)
+Projected Games:   67      (availability 83%, 80% range 39 - 78 games)
+Projected Total:   2824
+  (in-season: 22 FP already banked over 1 games)
+
+10th percentile total: 1489
+25th percentile total: 2079
+50th percentile total: 2635
+75th percentile total: 3142
+90th percentile total: 3551
+Mean of simulated totals: 2584   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 1060    risk-adjusted value: 1848
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.30 | 35.4 mpg | 46.2 FPPG | 77 GP | NYK
+  2024-25: FPPM 1.22 | 35.4 mpg | 43.3 FPPG | 65 GP | NYK
+  2025-26: FPPM 1.20 | 35.2 mpg | 42.1 FPPG | 75 GP | NYK
+  2026-27: FPPM 0.65 | 34.0 mpg | 22.0 FPPG | 1 GP | NYK
+  last-season fantasy profile per game: scoring block +15.0 | rebounds +5.0 | assists +6.0 | stocks +0.0 | turnovers -4.0 | missed-shot cost -13.0
+  FP per FGA 1.16 | FP per possession used 0.90 | FPPM per usage point 0.022 | usage 28.9% | TS% 0.466
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+2.9 FPPG]  (~+192 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.2 FPPG]  (~+77 FP)
+  + late-season / post-trade form is a positive signal [+0.9 FPPG]  (~+58 FP)
+  + higher per-minute production (FPPM 1.20 -> 1.22)  (~+50 FP)
+Main negative drivers:
+  - fewer games expected (75 -> 67)  (~-342 FP)
+  - fewer minutes (35.2 -> 34.4 mpg)  (~-62 FP)
+  - stronger teammate competition for usage, shots and minutes [-0.9 FPPG]  (~-57 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.2 | teammate -0.9 | coach -0.1 | age -0.0 | role +2.9 | form +0.9 | history_adjustment +0.1
+Top feature terms, FPPM adjustment: hist__fppm_raw_w +0.016; hist__usg_w +0.014; hist__fppm_l1 +0.013; role__bin_30_35 -0.020; hist__fppm_shrunk -0.017; age__hinge_young -0.012
+Top feature terms, minutes adjustment: age__age +1.717; role__bin_30_35 +1.098; team__ortg_l1 +0.898; age__hinge_young -1.048; mate__same_pos_min -0.860; hist__fppm_l3 -0.787
+
+Archetype: scoring-heavy    scoring-block share of FP: 63%    breakout score: 42/100
+Upside score: 86   Risk score: 3   P(role expansion >= +3 mpg): 11%
+
+Confidence: High  (score 97/100)

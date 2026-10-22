@@ -1,0 +1,45 @@
+PLAYER: Paolo Banchero   (ORL, F, age 24.2)
+
+Projected Rank (total value): 19 of 519    | by FPPG: 21    | risk-adjusted: 19
+Consensus rank (comparison only): 40    model-minus-consensus rank: -21    value vs consensus slot: +364 FP
+
+Projected FPPM:    1.17      (80% range 1.00 - 1.35)
+Projected Minutes: 35.6      (80% range 29.1 - 39.9)
+Projected FPPG:    41.6      (80% range 30.9 - 50.2)
+Projected Games:   63      (availability 78%, 80% range 35 - 74 games)
+Projected Total:   2699
+  (in-season: 61 FP already banked over 1 games)
+
+10th percentile total: 1371
+25th percentile total: 1962
+50th percentile total: 2528
+75th percentile total: 3005
+90th percentile total: 3415
+Mean of simulated totals: 2453   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 922    risk-adjusted value: 1725
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.09 | 35.0 mpg | 38.0 FPPG | 80 GP | ORL
+  2024-25: FPPM 1.17 | 34.4 mpg | 40.3 FPPG | 46 GP | ORL
+  2025-26: FPPM 1.09 | 34.7 mpg | 37.9 FPPG | 72 GP | ORL
+  2026-27: FPPM 1.49 | 41.0 mpg | 61.0 FPPG | 1 GP | ORL
+  last-season fantasy profile per game: scoring block +42.0 | rebounds +7.0 | assists +20.0 | stocks +4.0 | turnovers -12.0 | missed-shot cost -6.0
+  FP per FGA 5.08 | FP per possession used 2.44 | FPPM per usage point 0.062 | usage 24.0% | TS% 0.919
+
+Main positive drivers:
+  + higher per-minute production (FPPM 1.09 -> 1.17)  (~+174 FP)
+  + role and depth-chart position favor more production [+2.0 FPPG]  (~+125 FP)
+  + more minutes (34.7 -> 35.6 mpg)  (~+69 FP)
+Main negative drivers:
+  - fewer games expected (72 -> 63)  (~-359 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.0 FPPG]  (~-66 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.3 | teammate -1.0 | coach -0.5 | age +0.3 | role +2.0 | form +0.4 | history_adjustment -1.0
+Top feature terms, FPPM adjustment: hist__usg_w +0.012; role__usg_high +0.011; hist__fppm_raw_w +0.010; role__bin_30_35 -0.020; hist__fppm_shrunk -0.012; team__reb_net -0.007
+Top feature terms, minutes adjustment: role__bin_30_35 +1.098; role__is_top5 +0.597; hist__usg_l1 +0.502; mate__quality_wavg -0.785; hist__mpg_l3 -0.727; role__rank_in_team -0.541
+
+Archetype: scoring-heavy    scoring-block share of FP: 55%    breakout score: 81/100
+Upside score: 81   Risk score: 11   P(role expansion >= +3 mpg): 25%
+
+Confidence: High  (score 96/100)

@@ -1,0 +1,44 @@
+PLAYER: Brice Sensabaugh   (UTA, F, age 23.3)
+
+Projected Rank (total value): 177 of 519    | by FPPG: 198    | risk-adjusted: 173
+Consensus rank (comparison only): 308    model-minus-consensus rank: -131    value vs consensus slot: +539 FP
+
+Projected FPPM:    0.96      (80% range 0.77 - 1.15)
+Projected Minutes: 22.4      (80% range 14.2 - 27.9)
+Projected FPPG:    21.4      (80% range 12.3 - 29.1)
+Projected Games:   63      (availability 77%, 80% range 38 - 79 games)
+Projected Total:   1343
+  (in-season: 0 FP already banked over 1 games)
+
+10th percentile total: 542
+25th percentile total: 848
+50th percentile total: 1205
+75th percentile total: 1577
+90th percentile total: 1932
+Mean of simulated totals: 1228   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 341    risk-adjusted value: 773
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.71 | 18.2 mpg | 13.0 FPPG | 32 GP | UTA
+  2024-25: FPPM 0.91 | 20.2 mpg | 18.4 FPPG | 71 GP | UTA
+  2025-26: FPPM 0.97 | 23.8 mpg | 23.1 FPPG | 74 GP | UTA
+  2026-27: FPPM 0.00 | 14.0 mpg | 0.0 FPPG | 1 GP | UTA
+  last-season fantasy profile per game: scoring block +0.0 | rebounds +2.0 | assists +2.0 | stocks +0.0 | turnovers -4.0 | missed-shot cost -3.0
+  FP per FGA 0.00 | FP per possession used 0.00 | FPPM per usage point 0.000 | usage 19.0% | TS% 0.250
+
+Main positive drivers:
+  + age / development curve favors growth [+1.8 FPPG]  (~+113 FP)
+  + late-season / post-trade form is a positive signal [+0.9 FPPG]  (~+55 FP)
+Main negative drivers:
+  - fewer games expected (74 -> 63)  (~-241 FP)
+  - fewer minutes (23.8 -> 22.4 mpg)  (~-88 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.2 | teammate -0.5 | coach +0.0 | age +1.8 | role +0.6 | form +0.9 | history_adjustment +2.0
+Top feature terms, FPPM adjustment: age__hinge_young +0.014; age__exp +0.009; coach__rot_size +0.009; coach__usage_hhi -0.008; hist__tpar_l1 -0.007; team__net_proj -0.006
+Top feature terms, minutes adjustment: age__hinge_young +1.276; team__rot_size_exp +1.116; coach__stability +0.546; coach__rot_size -0.833; age__age -0.665; mate__quality_wavg -0.576
+
+Archetype: scoring-heavy    scoring-block share of FP: 66%    breakout score: 37/100
+Upside score: 45   Risk score: 31   P(role expansion >= +3 mpg): 15%
+
+Confidence: Medium  (score 66/100)

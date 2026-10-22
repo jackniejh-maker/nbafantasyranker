@@ -1,0 +1,46 @@
+PLAYER: Giannis Antetokounmpo   (MIA, F, age 32.2)
+
+Projected Rank (total value): 14 of 519    | by FPPG: 5    | risk-adjusted: 27
+Consensus rank (comparison only): 5    model-minus-consensus rank: +9    value vs consensus slot: -306 FP
+
+Projected FPPM:    1.63      (80% range 1.45 - 1.82)
+Projected Minutes: 30.3      (80% range 24.2 - 34.3)
+Projected FPPG:    49.4      (80% range 37.3 - 59.1)
+Projected Games:   56      (availability 69%, 80% range 23 - 78 games)
+Projected Total:   2811
+  (in-season: 43 FP already banked over 1 games)
+
+10th percentile total: 1122
+25th percentile total: 1830
+50th percentile total: 2606
+75th percentile total: 3359
+90th percentile total: 3994
+Mean of simulated totals: 2594   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 757    risk-adjusted value: 1681
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.65 | 35.2 mpg | 58.2 FPPG | 73 GP | MIL
+  2024-25: FPPM 1.68 | 34.2 mpg | 57.6 FPPG | 68 GP | MIL
+  2025-26: FPPM 1.71 | 28.9 mpg | 49.4 FPPG | 36 GP | MIL
+  2026-27: FPPM 1.43 | 30.0 mpg | 43.0 FPPG | 1 GP | MIA
+  last-season fantasy profile per game: scoring block +37.0 | rebounds +6.0 | assists +2.0 | stocks +4.0 | turnovers -6.0 | missed-shot cost -11.0
+  FP per FGA 2.26 | FP per possession used 1.53 | FPPM per usage point 0.035 | usage 40.8% | TS% 0.696
+
+Main positive drivers:
+  + more games expected (36 -> 56)  (~+989 FP)
+  + role and depth-chart position favor more production [+2.5 FPPG]  (~+141 FP)
+  + more minutes (28.9 -> 30.3 mpg)  (~+129 FP)
+  + coach tendencies (rotation / pace) help [+1.4 FPPG]  (~+76 FP)
+Main negative drivers:
+  - lower per-minute production (FPPM 1.71 -> 1.63)  (~-132 FP)
+  - age-related decline expected [-2.1 FPPG]  (~-119 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.3 | teammate -0.1 | coach +1.4 | age -2.1 | role +2.5 | form +0.4 | history_adjustment +2.6
+Top feature terms, FPPM adjustment: hist__fppm_raw_w +0.037; hist__fppm_l1 +0.035; late__fppm_l1 +0.028; age__exp -0.032; hist__fppm_shrunk -0.032; age__hinge_young -0.012
+Top feature terms, minutes adjustment: age__age +2.295; hist__fppm_raw_w +1.247; hist__fppm_fixed +1.215; age__exp -1.770; hist__fppm_l3 -1.390; age__hinge_young -1.048
+
+Archetype: scoring-heavy    scoring-block share of FP: 54%    breakout score: 70/100
+Upside score: 100   Risk score: 29   P(role expansion >= +3 mpg): 29%
+
+Confidence: High  (score 70/100)

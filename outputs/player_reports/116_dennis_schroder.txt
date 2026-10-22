@@ -1,0 +1,46 @@
+PLAYER: Dennis Schroder   (CHA, G, age 33.4)
+
+Projected Rank (total value): 116 of 519    | by FPPG: 162    | risk-adjusted: 98
+Consensus rank (comparison only): 336    model-minus-consensus rank: -220    value vs consensus slot: +909 FP
+
+Projected FPPM:    0.93      (80% range 0.75 - 1.12)
+Projected Minutes: 25.7      (80% range 20.4 - 29.3)
+Projected FPPG:    23.9      (80% range 16.6 - 30.3)
+Projected Games:   68      (availability 84%, 80% range 39 - 79 games)
+Projected Total:   1646
+  (in-season: 30 FP already banked over 1 games)
+
+10th percentile total: 820
+25th percentile total: 1166
+50th percentile total: 1520
+75th percentile total: 1844
+90th percentile total: 2151
+Mean of simulated totals: 1507   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 595    risk-adjusted value: 1057
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.94 | 31.1 mpg | 29.2 FPPG | 80 GP | BKN  (traded TOR -> BKN)
+  2024-25: FPPM 0.93 | 28.1 mpg | 26.0 FPPG | 75 GP | DET  (traded BKN -> DET)
+  2025-26: FPPM 0.92 | 24.2 mpg | 22.4 FPPG | 70 GP | CLE  (traded SAC -> CLE)
+  2026-27: FPPM 0.86 | 35.0 mpg | 30.0 FPPG | 1 GP | CHA
+  last-season fantasy profile per game: scoring block +20.0 | rebounds +4.0 | assists +12.0 | stocks +0.0 | turnovers -6.0 | missed-shot cost -6.0
+  FP per FGA 2.31 | FP per possession used 1.65 | FPPM per usage point 0.041 | usage 20.9% | TS% 0.625
+
+Main positive drivers:
+  + more minutes (24.2 -> 25.7 mpg)  (~+91 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.0 FPPG]  (~+66 FP)
+  + role and depth-chart position favor more production [+0.9 FPPG]  (~+64 FP)
+Main negative drivers:
+  - late-season / post-trade form is a negative signal [-2.2 FPPG]  (~-147 FP)
+  - age-related decline expected [-1.2 FPPG]  (~-79 FP)
+  - fewer games expected (70 -> 68)  (~-54 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.0 | teammate -0.4 | coach -0.4 | age -1.2 | role +0.9 | form -2.2 | history_adjustment -0.5
+Top feature terms, FPPM adjustment: age__age +0.012; coach__rot_size +0.009; coach__y2_mpg +0.008; age__exp -0.032; newc__height_in -0.014; age__hinge_young -0.012
+Top feature terms, minutes adjustment: age__age +2.702; team__rot_size_exp +1.058; team__ortg_l1 +0.844; age__exp -1.770; age__hinge_young -1.048; coach__rot_size -0.819
+
+Archetype: playmaking-heavy    scoring-block share of FP: 46%    breakout score: 83/100
+Upside score: 22   Risk score: 5   P(role expansion >= +3 mpg): 27%
+
+Confidence: High  (score 90/100)

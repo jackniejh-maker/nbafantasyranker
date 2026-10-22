@@ -1,0 +1,44 @@
+PLAYER: Collin Murray-Boyles   (TOR, F, age 21.6)
+
+Projected Rank (total value): 163 of 519    | by FPPG: 157    | risk-adjusted: 169
+Consensus rank (comparison only): 149    model-minus-consensus rank: +14    value vs consensus slot: -71 FP
+
+Projected FPPM:    1.09      (80% range 0.92 - 1.26)
+Projected Minutes: 22.9      (80% range 11.4 - 30.3)
+Projected FPPG:    24.8      (80% range 11.7 - 34.5)
+Projected Games:   59      (availability 73%, 80% range 32 - 74 games)
+Projected Total:   1485
+  (in-season: 25 FP already banked over 1 games)
+
+10th percentile total: 456
+25th percentile total: 842
+50th percentile total: 1294
+75th percentile total: 1760
+90th percentile total: 2199
+Mean of simulated totals: 1322   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 266    risk-adjusted value: 780
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2025-26: FPPM 1.06 | 21.8 mpg | 23.1 FPPG | 57 GP | TOR
+  2026-27: FPPM 1.25 | 20.0 mpg | 25.0 FPPG | 1 GP | TOR
+  last-season fantasy profile per game: scoring block +3.0 | rebounds +8.0 | assists +6.0 | stocks +8.0 | turnovers -0.0 | missed-shot cost -5.0
+  FP per FGA 3.57 | FP per possession used 3.17 | FPPM per usage point 0.085 | usage 14.7% | TS% 0.381
+
+Main positive drivers:
+  + age / development curve favors growth [+4.7 FPPG]  (~+274 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.4 FPPG]  (~+82 FP)
+  + more minutes (21.8 -> 22.9 mpg)  (~+66 FP)
+  + more games expected (57 -> 59)  (~+45 FP)
+Main negative drivers:
+  - stronger teammate competition for usage, shots and minutes [-1.9 FPPG]  (~-114 FP)
+  - coach tendencies (rotation / pace) hurt [-0.9 FPPG]  (~-52 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.4 | teammate -1.9 | coach -0.9 | age +4.7 | role +0.4 | form +0.5 | history_adjustment +0.4
+Top feature terms, FPPM adjustment: age__hinge_young +0.038; age__exp +0.018; late__fppm_l1 +0.011; mate__quality_wavg -0.011; mate__ast_wavg -0.007; hist__has_l2 -0.006
+Top feature terms, minutes adjustment: age__hinge_young +3.426; age__exp +0.975; mate__ast_wavg +0.500; mate__quality_wavg -1.319; age__age -1.202; mate__same_pos_min -0.473
+
+Archetype: stocks-heavy    scoring-block share of FP: 39%    breakout score: 79/100
+Upside score: 84   Risk score: 48   P(role expansion >= +3 mpg): 32%
+
+Confidence: Medium  (score 56/100)

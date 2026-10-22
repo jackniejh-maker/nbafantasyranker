@@ -1,0 +1,43 @@
+PLAYER: Jaylon Tyson   (CLE, G, age 24.2)
+
+Projected Rank (total value): 195 of 519    | by FPPG: 194    | risk-adjusted: 204
+Consensus rank (comparison only): 327    model-minus-consensus rank: -132    value vs consensus slot: +503 FP
+
+Projected FPPM:    0.97      (80% range 0.79 - 1.16)
+Projected Minutes: 22.7      (80% range 11.7 - 29.6)
+Projected FPPG:    22.0      (80% range 10.4 - 30.9)
+Projected Games:   59      (availability 72%, 80% range 32 - 75 games)
+Projected Total:   1298
+
+10th percentile total: 396
+25th percentile total: 732
+50th percentile total: 1131
+75th percentile total: 1540
+90th percentile total: 1935
+Mean of simulated totals: 1159   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 212    risk-adjusted value: 672
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2024-25: FPPM 0.79 | 9.6 mpg | 7.6 FPPG | 47 GP | CLE
+  2025-26: FPPM 0.97 | 27.0 mpg | 26.2 FPPG | 66 GP | CLE
+  last-season fantasy profile per game: scoring block +14.7 | rebounds +5.1 | assists +4.5 | stocks +5.0 | turnovers -3.0 | missed-shot cost -5.6
+  FP per FGA 2.58 | FP per possession used 2.12 | FPPM per usage point 0.050 | usage 19.4% | TS% 0.608
+
+Main positive drivers:
+  + favorable team environment (pace / efficiency / roster turnover) [+1.7 FPPG]  (~+103 FP)
+  + role and depth-chart position favor more production [+1.7 FPPG]  (~+100 FP)
+  + age / development curve favors growth [+1.0 FPPG]  (~+58 FP)
+Main negative drivers:
+  - fewer minutes (27.0 -> 22.7 mpg)  (~-246 FP)
+  - fewer games expected (66 -> 59)  (~-151 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.7 FPPG]  (~-103 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.7 | teammate -1.7 | coach -0.2 | age +1.0 | role +1.7 | form -0.6 | history_adjustment +1.0
+Top feature terms, FPPM adjustment: coach__star_mpg +0.014; age__exp +0.013; coach__games_known +0.006; mate__quality_wavg -0.012; mate__reb_wavg -0.010; mate__usg_wavg -0.007
+Top feature terms, minutes adjustment: role__gap_hist +0.843; team__ortg_l1 +0.825; hist__d_mpg +0.808; mate__quality_wavg -1.499; coach__double_big -0.563; mate__same_pos_min -0.538
+
+Archetype: all-around    scoring-block share of FP: 54%    breakout score: 13/100
+Upside score: 63   Risk score: 52   P(role expansion >= +3 mpg): 9%
+
+Confidence: Medium  (score 54/100)

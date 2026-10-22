@@ -1,0 +1,46 @@
+PLAYER: Kris Dunn   (LAC, G, age 32.9)
+
+Projected Rank (total value): 124 of 519    | by FPPG: 177    | risk-adjusted: 106
+Consensus rank (comparison only): 300    model-minus-consensus rank: -176    value vs consensus slot: +795 FP
+
+Projected FPPM:    0.95      (80% range 0.76 - 1.14)
+Projected Minutes: 24.2      (80% range 18.1 - 28.2)
+Projected FPPG:    22.9      (80% range 15.1 - 29.6)
+Projected Games:   69      (availability 85%, 80% range 41 - 81 games)
+Projected Total:   1631
+  (in-season: 42 FP already banked over 1 games)
+
+10th percentile total: 791
+25th percentile total: 1124
+50th percentile total: 1490
+75th percentile total: 1840
+90th percentile total: 2148
+Mean of simulated totals: 1485   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 584    risk-adjusted value: 1037
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.03 | 19.2 mpg | 19.9 FPPG | 65 GP | UTA
+  2024-25: FPPM 0.91 | 24.1 mpg | 22.1 FPPG | 74 GP | LAC
+  2025-26: FPPM 0.83 | 27.2 mpg | 22.6 FPPG | 82 GP | LAC
+  2026-27: FPPM 1.56 | 27.0 mpg | 42.0 FPPG | 1 GP | LAC
+  last-season fantasy profile per game: scoring block +7.0 | rebounds +5.0 | assists +14.0 | stocks +20.0 | turnovers -4.0 | missed-shot cost -4.0
+  FP per FGA 8.40 | FP per possession used 5.33 | FPPM per usage point 0.125 | usage 12.4% | TS% 0.595
+
+Main positive drivers:
+  + higher per-minute production (FPPM 0.83 -> 0.95)  (~+198 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.1 FPPG]  (~+78 FP)
+  + role and depth-chart position favor more production [+1.1 FPPG]  (~+73 FP)
+Main negative drivers:
+  - fewer games expected (82 -> 69)  (~-293 FP)
+  - fewer minutes (27.2 -> 24.2 mpg)  (~-199 FP)
+  - stronger teammate competition for usage, shots and minutes [-0.8 FPPG]  (~-53 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.1 | teammate -0.8 | coach +0.2 | age -0.3 | role +1.1 | form -0.2 | history_adjustment -0.3
+Top feature terms, FPPM adjustment: hist__stl_pct_l1 +0.013; age__age +0.011; coach__games_known +0.010; age__exp -0.019; age__hinge_young -0.012; newc__height_in -0.009
+Top feature terms, minutes adjustment: age__age +2.534; team__rot_size_exp +1.538; role__gap_hist +0.692; age__hinge_young -1.048; age__exp -1.021; mate__same_pos_min -0.525
+
+Archetype: stocks-heavy    scoring-block share of FP: 31%    breakout score: 57/100
+Upside score: 27   Risk score: 5   P(role expansion >= +3 mpg): 4%
+
+Confidence: High  (score 87/100)

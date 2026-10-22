@@ -1,0 +1,47 @@
+PLAYER: Paul Reed   (DET, F, age 27.6)
+
+Projected Rank (total value): 164 of 519    | by FPPG: 174    | risk-adjusted: 175
+Consensus rank (comparison only): 279    model-minus-consensus rank: -115    value vs consensus slot: +530 FP
+
+Projected FPPM:    1.35      (80% range 1.16 - 1.54)
+Projected Minutes: 17.5      (80% range 7.5 - 24.1)
+Projected FPPG:    23.5      (80% range 9.5 - 33.5)
+Projected Games:   61      (availability 76%, 80% range 35 - 77 games)
+Projected Total:   1464
+  (in-season: 17 FP already banked over 1 games)
+
+10th percentile total: 402
+25th percentile total: 790
+50th percentile total: 1285
+75th percentile total: 1771
+90th percentile total: 2222
+Mean of simulated totals: 1315   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 252    risk-adjusted value: 769
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.14 | 19.4 mpg | 22.1 FPPG | 82 GP | PHI
+  2024-25: FPPM 1.36 | 9.8 mpg | 13.3 FPPG | 45 GP | DET
+  2025-26: FPPM 1.52 | 13.8 mpg | 21.0 FPPG | 65 GP | DET
+  2026-27: FPPM 1.00 | 17.0 mpg | 17.0 FPPG | 1 GP | DET
+  last-season fantasy profile per game: scoring block +7.0 | rebounds +6.0 | assists +4.0 | stocks +4.0 | turnovers -4.0 | missed-shot cost -1.0
+  FP per FGA 5.67 | FP per possession used 2.89 | FPPM per usage point 0.071 | usage 14.2% | TS% 0.773
+
+Main positive drivers:
+  + more minutes (13.8 -> 17.5 mpg)  (~+302 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+2.5 FPPG]  (~+151 FP)
+  + role and depth-chart position favor more production [+1.1 FPPG]  (~+65 FP)
+  + late-season / post-trade form is a positive signal [+0.8 FPPG]  (~+52 FP)
+Main negative drivers:
+  - lower per-minute production (FPPM 1.52 -> 1.35)  (~-184 FP)
+  - fewer games expected (65 -> 61)  (~-83 FP)
+  - coach tendencies (rotation / pace) hurt [-0.7 FPPG]  (~-40 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +2.5 | teammate -0.4 | coach -0.7 | age -0.1 | role +1.1 | form +0.8 | history_adjustment +5.7
+Top feature terms, FPPM adjustment: late__fppm_l1 +0.033; hist__fppm_l1 +0.028; hist__fppm_raw_w +0.026; hist__fppm_shrunk -0.016; age__hinge_young -0.012; role__rank_in_team -0.009
+Top feature terms, minutes adjustment: team__rot_size_exp +1.231; hist__fppm_raw_w +0.892; age__age +0.791; age__hinge_young -1.048; coach__double_big -0.749; mate__quality_wavg -0.702
+
+Archetype: stocks-heavy    scoring-block share of FP: 37%    breakout score: 73/100
+Upside score: 88   Risk score: 50   P(role expansion >= +3 mpg): 50%
+
+Confidence: Medium  (score 52/100)

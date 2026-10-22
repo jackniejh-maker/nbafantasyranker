@@ -1,0 +1,46 @@
+PLAYER: Alperen Sengun   (HOU, C, age 24.5)
+
+Projected Rank (total value): 10 of 519    | by FPPG: 17    | risk-adjusted: 10
+Consensus rank (comparison only): 23    model-minus-consensus rank: -13    value vs consensus slot: +176 FP
+
+Projected FPPM:    1.36      (80% range 1.18 - 1.54)
+Projected Minutes: 31.4      (80% range 25.0 - 35.6)
+Projected FPPG:    42.6      (80% range 31.5 - 51.5)
+Projected Games:   67      (availability 82%, 80% range 38 - 77 games)
+Projected Total:   2877
+  (in-season: 39 FP already banked over 1 games)
+
+10th percentile total: 1461
+25th percentile total: 2077
+50th percentile total: 2664
+75th percentile total: 3179
+90th percentile total: 3617
+Mean of simulated totals: 2605   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 1021    risk-adjusted value: 1843
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.32 | 32.5 mpg | 42.9 FPPG | 63 GP | HOU
+  2024-25: FPPM 1.27 | 31.6 mpg | 40.2 FPPG | 76 GP | HOU
+  2025-26: FPPM 1.31 | 33.3 mpg | 43.8 FPPG | 72 GP | HOU
+  2026-27: FPPM 1.30 | 30.0 mpg | 39.0 FPPG | 1 GP | HOU
+  last-season fantasy profile per game: scoring block +27.0 | rebounds +10.0 | assists +10.0 | stocks +0.0 | turnovers -8.0 | missed-shot cost -7.0
+  FP per FGA 2.60 | FP per possession used 1.88 | FPPM per usage point 0.045 | usage 29.1% | TS% 0.686
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+2.3 FPPG]  (~+155 FP)
+  + higher per-minute production (FPPM 1.31 -> 1.36)  (~+89 FP)
+  + late-season / post-trade form is a positive signal [+0.7 FPPG]  (~+44 FP)
+Main negative drivers:
+  - fewer games expected (72 -> 67)  (~-233 FP)
+  - fewer minutes (33.3 -> 31.4 mpg)  (~-175 FP)
+  - age-related decline expected [-0.7 FPPG]  (~-47 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.5 | teammate -0.2 | coach +0.3 | age -0.7 | role +2.3 | form +0.7 | history_adjustment +0.7
+Top feature terms, FPPM adjustment: hist__fppm_raw_w +0.020; hist__fppm_l1 +0.018; late__fppm_l1 +0.017; hist__fppm_shrunk -0.018; coach__rot_size -0.009; mate__quality_wavg -0.006
+Top feature terms, minutes adjustment: coach__rot_size +0.864; role__gap_hist +0.783; team__ortg_l1 +0.767; pos__c -0.876; hist__fppm_l3 -0.820; mate__quality_wavg -0.792
+
+Archetype: rebounding-heavy    scoring-block share of FP: 46%    breakout score: 34/100
+Upside score: 90   Risk score: 7   P(role expansion >= +3 mpg): 7%
+
+Confidence: High  (score 95/100)

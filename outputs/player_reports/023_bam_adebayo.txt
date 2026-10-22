@@ -1,0 +1,46 @@
+PLAYER: Bam Adebayo   (MIA, C, age 29.5)
+
+Projected Rank (total value): 23 of 519    | by FPPG: 35    | risk-adjusted: 18
+Consensus rank (comparison only): 29    model-minus-consensus rank: -6    value vs consensus slot: +84 FP
+
+Projected FPPM:    1.22      (80% range 1.04 - 1.40)
+Projected Minutes: 31.9      (80% range 25.7 - 36.0)
+Projected FPPG:    38.8      (80% range 28.8 - 47.1)
+Projected Games:   68      (availability 84%, 80% range 39 - 79 games)
+Projected Total:   2681
+  (in-season: 38 FP already banked over 1 games)
+
+10th percentile total: 1401
+25th percentile total: 1947
+50th percentile total: 2488
+75th percentile total: 2973
+90th percentile total: 3398
+Mean of simulated totals: 2441   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 1001    risk-adjusted value: 1745
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.20 | 34.0 mpg | 40.7 FPPG | 71 GP | MIA
+  2024-25: FPPM 1.15 | 34.3 mpg | 39.5 FPPG | 78 GP | MIA
+  2025-26: FPPM 1.21 | 32.4 mpg | 39.2 FPPG | 73 GP | MIA
+  2026-27: FPPM 1.23 | 31.0 mpg | 38.0 FPPG | 1 GP | MIA
+  last-season fantasy profile per game: scoring block +15.0 | rebounds +7.0 | assists +8.0 | stocks +12.0 | turnovers -4.0 | missed-shot cost -7.0
+  FP per FGA 3.17 | FP per possession used 2.48 | FPPM per usage point 0.057 | usage 21.5% | TS% 0.563
+
+Main positive drivers:
+  + late-season / post-trade form is a positive signal [+1.5 FPPG]  (~+102 FP)
+  + role and depth-chart position favor more production [+1.4 FPPG]  (~+99 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.1 FPPG]  (~+73 FP)
+  + coach tendencies (rotation / pace) help [+1.0 FPPG]  (~+71 FP)
+Main negative drivers:
+  - fewer games expected (73 -> 68)  (~-192 FP)
+  - age-related decline expected [-0.8 FPPG]  (~-53 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.1 | teammate -0.3 | coach +1.0 | age -0.8 | role +1.4 | form +1.5 | history_adjustment -0.1
+Top feature terms, FPPM adjustment: late__fppm_l1 +0.017; hist__fppm_raw_w +0.014; hist__fppm_l1 +0.013; age__exp -0.014; hist__fppm_shrunk -0.013; age__hinge_young -0.012
+Top feature terms, minutes adjustment: age__age +1.425; mate__same_pos_min +0.921; role__bin_25_30 +0.730; age__hinge_young -1.048; pos__c -0.876; age__exp -0.772
+
+Archetype: rebounding-heavy    scoring-block share of FP: 46%    breakout score: 46/100
+Upside score: 85   Risk score: 3   P(role expansion >= +3 mpg): 14%
+
+Confidence: High  (score 97/100)

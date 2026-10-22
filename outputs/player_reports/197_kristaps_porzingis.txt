@@ -1,0 +1,47 @@
+PLAYER: Kristaps Porzingis   (GSW, C, age 31.5)
+
+Projected Rank (total value): 197 of 519    | by FPPG: 98    | risk-adjusted: 221
+Consensus rank (comparison only): 105    model-minus-consensus rank: +92    value vs consensus slot: -435 FP
+
+Projected FPPM:    1.24      (80% range 1.04 - 1.44)
+Projected Minutes: 23.5      (80% range 15.3 - 28.9)
+Projected FPPG:    29.0      (80% range 17.5 - 38.0)
+Projected Games:   45      (availability 56%, 80% range 14 - 61 games)
+Projected Total:   1303
+
+10th percentile total: 300
+25th percentile total: 684
+50th percentile total: 1121
+75th percentile total: 1574
+90th percentile total: 1944
+Mean of simulated totals: 1138   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 133    risk-adjusted value: 627
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2022-23: FPPM 1.33 | 32.6 mpg | 43.5 FPPG | 65 GP | WAS
+  2023-24: FPPM 1.37 | 29.6 mpg | 40.5 FPPG | 57 GP | BOS
+  2024-25: FPPM 1.32 | 28.8 mpg | 37.9 FPPG | 42 GP | BOS
+  2025-26: FPPM 1.29 | 24.1 mpg | 31.0 FPPG | 32 GP | GSW  (traded ATL -> GSW)
+  last-season split by team stint (before vs after a trade):
+    ATL: 17 GP, 24.3 mpg, FPPM 1.36 (413 min)
+    GSW: 15 GP, 23.8 mpg, FPPM 1.20 (357 min)
+  last-season fantasy profile per game: scoring block +16.2 | rebounds +5.2 | assists +5.1 | stocks +7.0 | turnovers -2.6 | missed-shot cost -7.5
+  FP per FGA 2.55 | FP per possession used 1.99 | FPPM per usage point 0.047 | usage 27.6% | TS% 0.582
+
+Main positive drivers:
+  + more games expected (32 -> 45)  (~+375 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.1 FPPG]  (~+50 FP)
+Main negative drivers:
+  - late-season / post-trade form is a negative signal [-2.0 FPPG]  (~-89 FP)
+  - lower per-minute production (FPPM 1.29 -> 1.24)  (~-55 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.1 | teammate -0.4 | coach -0.6 | age -0.8 | role -0.1 | form -2.0 | history_adjustment +0.0
+Top feature terms, FPPM adjustment: hist__fppm_raw_w +0.021; newc__height_in +0.019; hist__fppm_l1 +0.017; age__exp -0.023; hist__fppm_shrunk -0.014; age__hinge_young -0.012
+Top feature terms, minutes adjustment: age__age +2.077; team__rot_size_exp +1.546; mate__same_pos_min +0.888; age__exp -1.271; age__hinge_young -1.048; hist__fppm_l3 -0.913
+
+Archetype: scoring-heavy    scoring-block share of FP: 54%    breakout score: 42/100
+Upside score: 67   Risk score: 78   P(role expansion >= +3 mpg): 19%
+Injury report: Out - Illness (return Dec 01)  (known games missed assumed: 20)
+
+Confidence: Medium  (score 49/100)

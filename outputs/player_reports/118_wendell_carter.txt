@@ -1,0 +1,45 @@
+PLAYER: Wendell Carter Jr.   (ORL, C, age 27.8)
+
+Projected Rank (total value): 118 of 519    | by FPPG: 154    | risk-adjusted: 111
+Consensus rank (comparison only): 337    model-minus-consensus rank: -219    value vs consensus slot: +896 FP
+
+Projected FPPM:    0.91      (80% range 0.73 - 1.09)
+Projected Minutes: 27.0      (80% range 19.6 - 32.0)
+Projected FPPG:    24.5      (80% range 15.7 - 32.0)
+Projected Games:   66      (availability 81%, 80% range 37 - 77 games)
+Projected Total:   1658
+  (in-season: 40 FP already banked over 1 games)
+
+10th percentile total: 763
+25th percentile total: 1112
+50th percentile total: 1502
+75th percentile total: 1861
+90th percentile total: 2201
+Mean of simulated totals: 1496   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 527    risk-adjusted value: 1015
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.95 | 25.5 mpg | 24.3 FPPG | 55 GP | ORL
+  2024-25: FPPM 0.88 | 25.9 mpg | 22.8 FPPG | 68 GP | ORL
+  2025-26: FPPM 0.91 | 29.4 mpg | 26.6 FPPG | 78 GP | ORL
+  2026-27: FPPM 1.29 | 31.0 mpg | 40.0 FPPG | 1 GP | ORL
+  last-season fantasy profile per game: scoring block +29.0 | rebounds +7.0 | assists +0.0 | stocks +4.0 | turnovers -0.0 | missed-shot cost -2.0
+  FP per FGA 4.00 | FP per possession used 3.28 | FPPM per usage point 0.083 | usage 15.5% | TS% 0.902
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+1.4 FPPG]  (~+90 FP)
+Main negative drivers:
+  - fewer games expected (78 -> 66)  (~-295 FP)
+  - fewer minutes (29.4 -> 27.0 mpg)  (~-140 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.2 FPPG]  (~-80 FP)
+  - age-related decline expected [-0.8 FPPG]  (~-54 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.2 | teammate -1.2 | coach -0.4 | age -0.8 | role +1.4 | form -0.0 | history_adjustment -1.3
+Top feature terms, FPPM adjustment: newc__height_in +0.009; role__bin_25_30 +0.007; age__age +0.004; age__hinge_young -0.012; age__exp -0.010; mate__quality_wavg -0.008
+Top feature terms, minutes adjustment: age__age +0.845; role__bin_25_30 +0.730; mate__same_pos_min +0.600; age__hinge_young -1.048; mate__quality_wavg -1.009; pos__c -0.876
+
+Archetype: rebounding-heavy    scoring-block share of FP: 44%    breakout score: 29/100
+Upside score: 37   Risk score: 15   P(role expansion >= +3 mpg): 9%
+
+Confidence: High  (score 83/100)

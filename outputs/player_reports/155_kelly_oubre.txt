@@ -1,0 +1,45 @@
+PLAYER: Kelly Oubre Jr.   (IND, G, age 31.1)
+
+Projected Rank (total value): 155 of 519    | by FPPG: 152    | risk-adjusted: 153
+Consensus rank (comparison only): 305    model-minus-consensus rank: -150    value vs consensus slot: +645 FP
+
+Projected FPPM:    0.89      (80% range 0.71 - 1.08)
+Projected Minutes: 27.9      (80% range 21.3 - 32.1)
+Projected FPPG:    24.7      (80% range 16.4 - 31.9)
+Projected Games:   58      (availability 72%, 80% range 32 - 74 games)
+Projected Total:   1455
+  (in-season: 17 FP already banked over 1 games)
+
+10th percentile total: 630
+25th percentile total: 966
+50th percentile total: 1326
+75th percentile total: 1699
+90th percentile total: 2032
+Mean of simulated totals: 1335   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 391    risk-adjusted value: 858
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.90 | 30.3 mpg | 27.2 FPPG | 68 GP | PHI
+  2024-25: FPPM 0.86 | 34.7 mpg | 30.0 FPPG | 60 GP | PHI
+  2025-26: FPPM 0.87 | 31.5 mpg | 27.3 FPPG | 50 GP | PHI
+  2026-27: FPPM 0.61 | 28.0 mpg | 17.0 FPPG | 1 GP | IND
+  last-season fantasy profile per game: scoring block +3.0 | rebounds +2.0 | assists +6.0 | stocks +8.0 | turnovers -2.0 | missed-shot cost -3.0
+  FP per FGA 3.40 | FP per possession used 2.83 | FPPM per usage point 0.068 | usage 8.9% | TS% 0.400
+
+Main positive drivers:
+  + more games expected (50 -> 58)  (~+202 FP)
+  + role and depth-chart position favor more production [+2.2 FPPG]  (~+125 FP)
+Main negative drivers:
+  - fewer minutes (31.5 -> 27.9 mpg)  (~-188 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.3 FPPG]  (~-74 FP)
+  - age-related decline expected [-1.0 FPPG]  (~-57 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.6 | teammate -1.3 | coach -0.4 | age -1.0 | role +2.2 | form +0.0 | history_adjustment -2.1
+Top feature terms, FPPM adjustment: coach__games_known +0.010; age__age +0.009; role__bin_25_30 +0.007; age__exp -0.023; age__hinge_young -0.012; mate__quality_wavg -0.011
+Top feature terms, minutes adjustment: age__age +1.960; team__rot_size_exp +0.751; role__bin_25_30 +0.730; mate__quality_wavg -1.341; age__exp -1.271; age__hinge_young -1.048
+
+Archetype: all-around    scoring-block share of FP: 52%    breakout score: 33/100
+Upside score: 40   Risk score: 28   P(role expansion >= +3 mpg): 3%
+
+Confidence: High  (score 74/100)

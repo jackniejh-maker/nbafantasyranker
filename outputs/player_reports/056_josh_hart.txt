@@ -1,0 +1,44 @@
+PLAYER: Josh Hart   (NYK, G, age 31.9)
+
+Projected Rank (total value): 56 of 519    | by FPPG: 72    | risk-adjusted: 49
+Consensus rank (comparison only): 93    model-minus-consensus rank: -37    value vs consensus slot: +399 FP
+
+Projected FPPM:    1.04      (80% range 0.86 - 1.23)
+Projected Minutes: 30.9      (80% range 25.3 - 34.5)
+Projected FPPG:    32.1      (80% range 23.4 - 39.5)
+Projected Games:   67      (availability 83%, 80% range 38 - 78 games)
+Projected Total:   2188
+  (in-season: 32 FP already banked over 1 games)
+
+10th percentile total: 1129
+25th percentile total: 1593
+50th percentile total: 2031
+75th percentile total: 2440
+90th percentile total: 2797
+Mean of simulated totals: 1999   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 802    risk-adjusted value: 1416
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.82 | 33.4 mpg | 27.4 FPPG | 81 GP | NYK
+  2024-25: FPPM 1.05 | 37.6 mpg | 39.5 FPPG | 77 GP | NYK
+  2025-26: FPPM 1.06 | 30.2 mpg | 31.9 FPPG | 67 GP | NYK
+  2026-27: FPPM 1.07 | 30.0 mpg | 32.0 FPPG | 1 GP | NYK
+  last-season fantasy profile per game: scoring block +15.0 | rebounds +7.0 | assists +6.0 | stocks +8.0 | turnovers -4.0 | missed-shot cost -6.0
+  FP per FGA 3.20 | FP per possession used 2.40 | FPPM per usage point 0.060 | usage 17.8% | TS% 0.618
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+2.0 FPPG]  (~+134 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.0 FPPG]  (~+66 FP)
+  + more minutes (30.2 -> 30.9 mpg)  (~+46 FP)
+Main negative drivers:
+  - stronger teammate competition for usage, shots and minutes [-1.6 FPPG]  (~-105 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.0 | teammate -1.6 | coach -0.1 | age -0.1 | role +2.0 | form +0.1 | history_adjustment -1.2
+Top feature terms, FPPM adjustment: age__age +0.010; hist__tov_pct_l1 +0.007; coach__usage_hhi +0.007; age__exp -0.014; age__hinge_young -0.012; coach__rot_size -0.009
+Top feature terms, minutes adjustment: age__age +2.213; team__ortg_l1 +0.898; coach__rot_size +0.864; age__hinge_young -1.048; mate__same_pos_min -0.880; age__exp -0.772
+
+Archetype: rebounding-heavy    scoring-block share of FP: 37%    breakout score: 62/100
+Upside score: 55   Risk score: 4   P(role expansion >= +3 mpg): 20%
+
+Confidence: High  (score 94/100)

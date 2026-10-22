@@ -1,0 +1,43 @@
+PLAYER: Maxime Raynaud   (SAC, C, age 23.8)
+
+Projected Rank (total value): 108 of 519    | by FPPG: 107    | risk-adjusted: 122
+
+Projected FPPM:    0.99      (80% range 0.83 - 1.16)
+Projected Minutes: 28.3      (80% range 17.6 - 35.3)
+Projected FPPG:    28.2      (80% range 16.2 - 37.3)
+Projected Games:   62      (availability 76%, 80% range 35 - 76 games)
+Projected Total:   1741
+
+10th percentile total: 672
+25th percentile total: 1081
+50th percentile total: 1548
+75th percentile total: 2003
+90th percentile total: 2439
+Mean of simulated totals: 1559   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 422    risk-adjusted value: 985
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2025-26: FPPM 0.96 | 26.6 mpg | 25.4 FPPG | 74 GP | SAC
+  last-season fantasy profile per game: scoring block +13.6 | rebounds +7.5 | assists +2.7 | stocks +4.2 | turnovers -2.5 | missed-shot cost -4.4
+  FP per FGA 2.80 | FP per possession used 2.24 | FPPM per usage point 0.052 | usage 18.2% | TS% 0.619
+
+Main positive drivers:
+  + age / development curve favors growth [+1.8 FPPG]  (~+110 FP)
+  + more minutes (26.6 -> 28.3 mpg)  (~+106 FP)
+  + higher per-minute production (FPPM 0.96 -> 0.99)  (~+68 FP)
+  + late-season / post-trade form is a positive signal [+1.1 FPPG]  (~+65 FP)
+Main negative drivers:
+  - fewer games expected (74 -> 62)  (~-344 FP)
+  - unfavorable team environment (pace / efficiency / roster turnover) [-0.9 FPPG]  (~-56 FP)
+  - role and depth-chart position limit production [-0.8 FPPG]  (~-52 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.9 | teammate +0.2 | coach -0.5 | age +1.8 | role -0.8 | form +1.1 | history_adjustment -1.1
+Top feature terms, FPPM adjustment: age__exp +0.018; newc__height_in +0.016; hist__tpar_l1 +0.012; mate__same_pos_min -0.008; coach__star_mpg -0.007; team__net_proj -0.007
+Top feature terms, minutes adjustment: mate__same_pos_min +1.017; age__exp +0.975; team__rot_size_exp +0.794; pos__c -0.876; hist__reb_pct_w -0.595; team__drtg_proj -0.520
+
+Archetype: rebounding-heavy    scoring-block share of FP: 53%    breakout score: 81/100
+Upside score: 82   Risk score: 34   P(role expansion >= +3 mpg): 36%
+Injury report: Out - Knee (return Nov 02)  (known games missed assumed: 6)
+
+Confidence: High  (score 67/100)

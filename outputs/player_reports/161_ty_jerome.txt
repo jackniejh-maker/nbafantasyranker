@@ -1,0 +1,45 @@
+PLAYER: Ty Jerome   (MEM, G, age 29.6)
+
+Projected Rank (total value): 161 of 519    | by FPPG: 65    | risk-adjusted: 186
+Consensus rank (comparison only): 69    model-minus-consensus rank: +92    value vs consensus slot: -582 FP
+
+Projected FPPM:    1.41      (80% range 1.21 - 1.61)
+Projected Minutes: 24.3      (80% range 12.1 - 32.0)
+Projected FPPG:    34.2      (80% range 16.3 - 47.2)
+Projected Games:   43      (availability 53%, 80% range 10 - 64 games)
+Projected Total:   1534
+  (in-season: 79 FP already banked over 1 games)
+
+10th percentile total: 299
+25th percentile total: 736
+50th percentile total: 1299
+75th percentile total: 1920
+90th percentile total: 2507
+Mean of simulated totals: 1373   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 161    risk-adjusted value: 730
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.60 | 7.5 mpg | 4.5 FPPG | 2 GP | CLE
+  2024-25: FPPM 1.28 | 19.9 mpg | 25.4 FPPG | 70 GP | CLE
+  2025-26: FPPM 1.63 | 22.7 mpg | 37.1 FPPG | 15 GP | MEM
+  2026-27: FPPM 2.47 | 32.0 mpg | 79.0 FPPG | 1 GP | MEM
+  last-season fantasy profile per game: scoring block +58.0 | rebounds +7.0 | assists +12.0 | stocks +4.0 | turnovers -2.0 | missed-shot cost -9.0
+  FP per FGA 3.16 | FP per possession used 2.72 | FPPM per usage point 0.067 | usage 36.9% | TS% 0.801
+
+Main positive drivers:
+  + more games expected (15 -> 43)  (~+942 FP)
+  + role and depth-chart position favor more production [+2.8 FPPG]  (~+121 FP)
+  + more minutes (22.7 -> 24.3 mpg)  (~+92 FP)
+  + favorable teammate environment (usage / playmaking / rebounding opportunity) [+1.2 FPPG]  (~+52 FP)
+Main negative drivers:
+  - lower per-minute production (FPPM 1.63 -> 1.41)  (~-233 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.5 | teammate +1.2 | coach -0.1 | age +0.3 | role +2.8 | form +0.7 | history_adjustment +7.3
+Top feature terms, FPPM adjustment: hist__fppm_l1 +0.033; late__fppm_l1 +0.030; hist__fppm_raw_w +0.023; hist__fppm_shrunk -0.013; age__hinge_young -0.012; team__usage_conc -0.009
+Top feature terms, minutes adjustment: team__rot_size_exp +1.662; age__age +1.434; hist__mpg_l3 +0.942; age__hinge_young -1.048; hist__avail_l1 -0.969; hist__avail_shrunk -0.706
+
+Archetype: scoring-heavy    scoring-block share of FP: 56%    breakout score: 40/100
+Upside score: 99   Risk score: 76   P(role expansion >= +3 mpg): 36%
+
+Confidence: Medium  (score 43/100)

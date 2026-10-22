@@ -1,0 +1,46 @@
+PLAYER: Jakob Poeltl   (TOR, C, age 31.3)
+
+Projected Rank (total value): 169 of 519    | by FPPG: 138    | risk-adjusted: 166
+Consensus rank (comparison only): 121    model-minus-consensus rank: +48    value vs consensus slot: -241 FP
+
+Projected FPPM:    1.12      (80% range 0.93 - 1.32)
+Projected Minutes: 23.1      (80% range 15.5 - 28.0)
+Projected FPPG:    25.9      (80% range 16.0 - 34.0)
+Projected Games:   55      (availability 67%, 80% range 22 - 75 games)
+Projected Total:   1430
+  (in-season: 16 FP already banked over 1 games)
+
+10th percentile total: 484
+25th percentile total: 839
+50th percentile total: 1257
+75th percentile total: 1712
+90th percentile total: 2141
+Mean of simulated totals: 1297   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 319    risk-adjusted value: 788
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.21 | 26.4 mpg | 32.0 FPPG | 50 GP | TOR
+  2024-25: FPPM 1.25 | 29.6 mpg | 37.1 FPPG | 57 GP | TOR
+  2025-26: FPPM 1.10 | 25.0 mpg | 27.4 FPPG | 46 GP | TOR
+  2026-27: FPPM 0.73 | 22.0 mpg | 16.0 FPPG | 1 GP | TOR
+  last-season fantasy profile per game: scoring block +2.0 | rebounds +6.0 | assists +0.0 | stocks +8.0 | turnovers -0.0 | missed-shot cost -2.0
+  FP per FGA 16.00 | FP per possession used 6.90 | FPPM per usage point 0.184 | usage 3.9% | TS% 0.647
+
+Main positive drivers:
+  + more games expected (46 -> 55)  (~+221 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.5 FPPG]  (~+80 FP)
+  + role and depth-chart position favor more production [+0.9 FPPG]  (~+51 FP)
+Main negative drivers:
+  - fewer minutes (25.0 -> 23.1 mpg)  (~-115 FP)
+  - coach tendencies (rotation / pace) hurt [-0.9 FPPG]  (~-52 FP)
+  - stronger teammate competition for usage, shots and minutes [-0.9 FPPG]  (~-49 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.5 | teammate -0.9 | coach -0.9 | age -0.5 | role +0.9 | form +0.5 | history_adjustment -1.6
+Top feature terms, FPPM adjustment: hist__tpar_l1 +0.017; newc__height_in +0.014; hist__fppm_raw_w +0.013; age__exp -0.019; age__hinge_young -0.012; hist__fppm_shrunk -0.011
+Top feature terms, minutes adjustment: age__age +2.010; mate__same_pos_min +1.019; role__bin_25_30 +0.730; mate__quality_wavg -1.216; age__hinge_young -1.048; age__exp -1.021
+
+Archetype: rebounding-heavy    scoring-block share of FP: 43%    breakout score: 44/100
+Upside score: 80   Risk score: 38   P(role expansion >= +3 mpg): 10%
+
+Confidence: Medium  (score 57/100)

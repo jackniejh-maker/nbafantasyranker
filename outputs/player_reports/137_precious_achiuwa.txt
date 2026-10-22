@@ -1,0 +1,45 @@
+PLAYER: Precious Achiuwa   (SAC, F, age 27.4)
+
+Projected Rank (total value): 137 of 519    | by FPPG: 156    | risk-adjusted: 133
+Consensus rank (comparison only): 350    model-minus-consensus rank: -213    value vs consensus slot: +866 FP
+
+Projected FPPM:    0.97      (80% range 0.79 - 1.15)
+Projected Minutes: 25.2      (80% range 16.9 - 30.7)
+Projected FPPG:    24.4      (80% range 14.8 - 32.3)
+Projected Games:   65      (availability 80%, 80% range 36 - 76 games)
+Projected Total:   1614
+  (in-season: 32 FP already banked over 1 games)
+
+10th percentile total: 674
+25th percentile total: 1038
+50th percentile total: 1440
+75th percentile total: 1833
+90th percentile total: 2186
+Mean of simulated totals: 1445   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 453    risk-adjusted value: 946
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.94 | 21.9 mpg | 20.5 FPPG | 74 GP | NYK  (traded TOR -> NYK)
+  2024-25: FPPM 0.90 | 20.5 mpg | 18.5 FPPG | 57 GP | NYK
+  2025-26: FPPM 1.01 | 24.0 mpg | 24.1 FPPG | 73 GP | SAC
+  2026-27: FPPM 1.10 | 29.0 mpg | 32.0 FPPG | 1 GP | SAC
+  last-season fantasy profile per game: scoring block +17.0 | rebounds +5.0 | assists +4.0 | stocks +8.0 | turnovers -2.0 | missed-shot cost -4.0
+  FP per FGA 4.00 | FP per possession used 2.86 | FPPM per usage point 0.068 | usage 16.2% | TS% 0.735
+
+Main positive drivers:
+  + more minutes (24.0 -> 25.2 mpg)  (~+79 FP)
+  + late-season / post-trade form is a positive signal [+1.1 FPPG]  (~+70 FP)
+Main negative drivers:
+  - fewer games expected (73 -> 65)  (~-199 FP)
+  - lower per-minute production (FPPM 1.01 -> 0.97)  (~-63 FP)
+  - unfavorable team environment (pace / efficiency / roster turnover) [-0.9 FPPG]  (~-57 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.9 | teammate -0.3 | coach -0.4 | age -0.2 | role +0.6 | form +1.1 | history_adjustment +0.5
+Top feature terms, FPPM adjustment: hist__tpar_l1 +0.010; team__ast_added +0.006; team__ast_net +0.006; age__hinge_young -0.012; coach__star_mpg -0.007; team__net_proj -0.007
+Top feature terms, minutes adjustment: late__mpg_gap +0.852; team__rot_size_exp +0.794; age__age +0.703; age__hinge_young -1.048; hist__reb_pct_w -0.526; team__drtg_proj -0.520
+
+Archetype: rebounding-heavy    scoring-block share of FP: 38%    breakout score: 73/100
+Upside score: 49   Risk score: 24   P(role expansion >= +3 mpg): 31%
+
+Confidence: High  (score 75/100)

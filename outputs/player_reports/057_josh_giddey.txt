@@ -1,0 +1,45 @@
+PLAYER: Josh Giddey   (CHI, G, age 24.3)
+
+Projected Rank (total value): 57 of 519    | by FPPG: 57    | risk-adjusted: 56
+Consensus rank (comparison only): 24    model-minus-consensus rank: +33    value vs consensus slot: -437 FP
+
+Projected FPPM:    1.26      (80% range 1.08 - 1.44)
+Projected Minutes: 27.9      (80% range 20.9 - 32.6)
+Projected FPPG:    35.1      (80% range 24.3 - 43.8)
+Projected Games:   62      (availability 77%, 80% range 36 - 78 games)
+Projected Total:   2190
+  (in-season: 1 FP already banked over 1 games)
+
+10th percentile total: 1014
+25th percentile total: 1517
+50th percentile total: 2027
+75th percentile total: 2543
+90th percentile total: 2983
+Mean of simulated totals: 2022   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 663    risk-adjusted value: 1345
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.16 | 25.1 mpg | 29.2 FPPG | 80 GP | OKC
+  2024-25: FPPM 1.28 | 30.2 mpg | 38.7 FPPG | 70 GP | CHI
+  2025-26: FPPM 1.31 | 32.1 mpg | 41.9 FPPG | 54 GP | CHI
+  2026-27: FPPM 0.04 | 24.0 mpg | 1.0 FPPG | 1 GP | CHI
+  last-season fantasy profile per game: scoring block -8.0 | rebounds +7.0 | assists +12.0 | stocks +0.0 | turnovers -10.0 | missed-shot cost -11.0
+  FP per FGA 0.10 | FP per possession used 0.06 | FPPM per usage point 0.002 | usage 23.9% | TS% 0.092
+
+Main positive drivers:
+  + more games expected (54 -> 62)  (~+293 FP)
+  + role and depth-chart position favor more production [+3.6 FPPG]  (~+226 FP)
+  + late-season / post-trade form is a positive signal [+0.7 FPPG]  (~+43 FP)
+Main negative drivers:
+  - fewer minutes (32.1 -> 27.9 mpg)  (~-329 FP)
+  - lower per-minute production (FPPM 1.31 -> 1.26)  (~-85 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.1 | teammate -0.2 | coach +0.0 | age -0.3 | role +3.6 | form +0.7 | history_adjustment +1.0
+Top feature terms, FPPM adjustment: hist__fppm_raw_w +0.018; hist__fppm_l1 +0.018; late__fppm_l1 +0.015; hist__fppm_shrunk -0.016; team__usage_conc -0.008; coach__usage_hhi -0.006
+Top feature terms, minutes adjustment: team__rot_size_exp +1.106; role__bin_25_30 +0.730; role__gap_hist +0.648; hist__ast_pct_w -0.678; role__rank_in_team -0.541; hist__fppm_l3 -0.512
+
+Archetype: playmaking-heavy    scoring-block share of FP: 40%    breakout score: 5/100
+Upside score: 90   Risk score: 21   P(role expansion >= +3 mpg): 3%
+
+Confidence: High  (score 81/100)

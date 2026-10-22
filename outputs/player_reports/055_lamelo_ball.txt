@@ -1,0 +1,46 @@
+PLAYER: LaMelo Ball   (MIN, G, age 25.4)
+
+Projected Rank (total value): 55 of 519    | by FPPG: 39    | risk-adjusted: 64
+Consensus rank (comparison only): 14    model-minus-consensus rank: +41    value vs consensus slot: -573 FP
+
+Projected FPPM:    1.39      (80% range 1.21 - 1.57)
+Projected Minutes: 27.6      (80% range 19.3 - 33.2)
+Projected FPPG:    38.4      (80% range 25.2 - 48.3)
+Projected Games:   57      (availability 70%, 80% range 31 - 73 games)
+Projected Total:   2232
+  (in-season: 42 FP already banked over 1 games)
+
+10th percentile total: 957
+25th percentile total: 1471
+50th percentile total: 2033
+75th percentile total: 2598
+90th percentile total: 3121
+Mean of simulated totals: 2038   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 567    risk-adjusted value: 1300
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.40 | 32.4 mpg | 45.5 FPPG | 22 GP | CHA
+  2024-25: FPPM 1.32 | 32.0 mpg | 42.4 FPPG | 47 GP | CHA
+  2025-26: FPPM 1.42 | 28.0 mpg | 39.7 FPPG | 72 GP | CHA
+  2026-27: FPPM 1.45 | 29.0 mpg | 42.0 FPPG | 1 GP | MIN
+  last-season fantasy profile per game: scoring block +22.0 | rebounds +2.0 | assists +12.0 | stocks +8.0 | turnovers -2.0 | missed-shot cost -11.0
+  FP per FGA 2.47 | FP per possession used 2.17 | FPPM per usage point 0.057 | usage 25.6% | TS% 0.573
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+3.9 FPPG]  (~+222 FP)
+  + late-season / post-trade form is a positive signal [+1.1 FPPG]  (~+64 FP)
+Main negative drivers:
+  - fewer games expected (72 -> 57)  (~-576 FP)
+  - age-related decline expected [-1.3 FPPG]  (~-75 FP)
+  - stronger teammate competition for usage, shots and minutes [-0.8 FPPG]  (~-48 FP)
+  - lower per-minute production (FPPM 1.42 -> 1.39)  (~-42 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.6 | teammate -0.8 | coach -0.3 | age -1.3 | role +3.9 | form +1.1 | history_adjustment +1.2
+Top feature terms, FPPM adjustment: hist__fppm_raw_w +0.025; late__fppm_l1 +0.023; hist__fppm_l1 +0.023; hist__fppm_shrunk -0.021; age__hinge_young -0.012; hist__tpar_l1 -0.011
+Top feature terms, minutes adjustment: hist__fppm_raw_w +0.873; coach__rot_size +0.802; hist__fppm_fixed +0.783; age__hinge_young -1.048; hist__fppm_l3 -0.986; hist__ast_pct_w -0.896
+
+Archetype: playmaking-heavy    scoring-block share of FP: 53%    breakout score: 30/100
+Upside score: 97   Risk score: 32   P(role expansion >= +3 mpg): 22%
+
+Confidence: High  (score 74/100)

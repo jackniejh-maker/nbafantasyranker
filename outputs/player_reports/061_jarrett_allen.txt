@@ -1,0 +1,46 @@
+PLAYER: Jarrett Allen   (CLE, C, age 28.8)
+
+Projected Rank (total value): 61 of 519    | by FPPG: 63    | risk-adjusted: 58
+Consensus rank (comparison only): 58    model-minus-consensus rank: +3    value vs consensus slot: -54 FP
+
+Projected FPPM:    1.24      (80% range 1.06 - 1.43)
+Projected Minutes: 27.2      (80% range 20.1 - 31.8)
+Projected FPPG:    33.6      (80% range 23.1 - 42.3)
+Projected Games:   65      (availability 79%, 80% range 36 - 76 games)
+Projected Total:   2172
+
+10th percentile total: 1001
+25th percentile total: 1481
+50th percentile total: 1970
+75th percentile total: 2431
+90th percentile total: 2831
+Mean of simulated totals: 1951   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 681    risk-adjusted value: 1325
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2022-23: FPPM 1.05 | 32.8 mpg | 34.5 FPPG | 68 GP | CLE
+  2023-24: FPPM 1.20 | 31.7 mpg | 38.1 FPPG | 77 GP | CLE
+  2024-25: FPPM 1.22 | 28.0 mpg | 34.3 FPPG | 82 GP | CLE
+  2025-26: FPPM 1.22 | 27.2 mpg | 33.3 FPPG | 56 GP | CLE
+  last-season fantasy profile per game: scoring block +16.6 | rebounds +8.5 | assists +3.6 | stocks +7.3 | turnovers -2.7 | missed-shot cost -4.8
+  FP per FGA 3.53 | FP per possession used 2.60 | FPPM per usage point 0.061 | usage 20.0% | TS% 0.669
+
+Main positive drivers:
+  + more games expected (56 -> 65)  (~+289 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+2.2 FPPG]  (~+141 FP)
+  + late-season / post-trade form is a positive signal [+1.2 FPPG]  (~+76 FP)
+  + role and depth-chart position favor more production [+0.8 FPPG]  (~+53 FP)
+Main negative drivers:
+  - stronger teammate competition for usage, shots and minutes [-2.0 FPPG]  (~-128 FP)
+  - age-related decline expected [-1.4 FPPG]  (~-91 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +2.2 | teammate -2.0 | coach -0.3 | age -1.4 | role +0.8 | form +1.2 | history_adjustment -0.0
+Top feature terms, FPPM adjustment: late__fppm_l1 +0.023; hist__tpar_l1 +0.017; hist__fppm_raw_w +0.016; age__exp -0.019; hist__fppm_shrunk -0.015; age__hinge_young -0.012
+Top feature terms, minutes adjustment: age__age +1.173; team__ortg_l1 +0.825; role__bin_25_30 +0.730; mate__quality_wavg -1.327; age__hinge_young -1.048; age__exp -1.021
+
+Archetype: rebounding-heavy    scoring-block share of FP: 48%    breakout score: 68/100
+Upside score: 75   Risk score: 16   P(role expansion >= +3 mpg): 20%
+Injury report: Day-To-Day - Knee (return Oct 22)  (known games missed assumed: 0)
+
+Confidence: High  (score 86/100)

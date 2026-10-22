@@ -1,0 +1,45 @@
+PLAYER: Tyrese Haliburton   (IND, G, age 26.9)
+
+Projected Rank (total value): 13 of 519    | by FPPG: 14    | risk-adjusted: 13
+Consensus rank (comparison only): 17    model-minus-consensus rank: -4    value vs consensus slot: +65 FP
+
+Projected FPPM:    1.38      (80% range 1.21 - 1.55)
+Projected Minutes: 31.7      (80% range 23.9 - 36.8)
+Projected FPPG:    43.6      (80% range 30.9 - 53.1)
+Projected Games:   65      (availability 80%, 80% range 36 - 76 games)
+Projected Total:   2869
+  (in-season: 50 FP already banked over 1 games)
+
+10th percentile total: 1395
+25th percentile total: 2016
+50th percentile total: 2623
+75th percentile total: 3183
+90th percentile total: 3667
+Mean of simulated totals: 2582   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 976    risk-adjusted value: 1800
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2022-23: FPPM 1.51 | 33.5 mpg | 50.6 FPPG | 56 GP | IND
+  2023-24: FPPM 1.56 | 32.3 mpg | 50.5 FPPG | 70 GP | IND
+  2024-25: FPPM 1.41 | 33.6 mpg | 47.5 FPPG | 73 GP | IND
+  2026-27: FPPM 1.47 | 34.0 mpg | 50.0 FPPG | 1 GP | IND
+  last-season fantasy profile per game: scoring block +26.0 | rebounds +2.0 | assists +24.0 | stocks +4.0 | turnovers -6.0 | missed-shot cost -7.0
+  FP per FGA 3.33 | FP per possession used 2.48 | FPPM per usage point 0.060 | usage 24.6% | TS% 0.669
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+2.6 FPPG]  (~+168 FP)
+Main negative drivers:
+  - fewer games expected (73 -> 65)  (~-365 FP)
+  - fewer minutes (33.6 -> 31.7 mpg)  (~-171 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.8 FPPG]  (~-116 FP)
+  - lower per-minute production (FPPM 1.41 -> 1.38)  (~-78 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -1.0 | teammate -1.8 | coach -0.7 | age -0.5 | role +2.6 | form +0.6 | history_adjustment -2.2
+Top feature terms, FPPM adjustment: hist__fppm_raw_w +0.029; hist__log_min_l1 +0.028; hist__fppm_l1 +0.016; hist__fppm_shrunk -0.022; age__hinge_young -0.012; hist__fppm_l3 -0.008
+Top feature terms, minutes adjustment: hist__fppm_raw_w +1.014; hist__log_min_l1 +0.969; hist__fppm_fixed +0.847; hist__missing_l1 -3.178; hist__fppm_l3 -1.293; age__hinge_young -1.048
+
+Archetype: playmaking-heavy    scoring-block share of FP: 43%    breakout score: 12/100
+Upside score: 96   Risk score: 10   P(role expansion >= +3 mpg): 11%
+
+Confidence: High  (score 91/100)

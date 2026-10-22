@@ -1,0 +1,44 @@
+PLAYER: Norman Powell   (CHI, G, age 33.7)
+
+Projected Rank (total value): 96 of 519    | by FPPG: 104    | risk-adjusted: 94
+Consensus rank (comparison only): 75    model-minus-consensus rank: +21    value vs consensus slot: -222 FP
+
+Projected FPPM:    1.04      (80% range 0.85 - 1.24)
+Projected Minutes: 26.9      (80% range 21.3 - 30.6)
+Projected FPPG:    28.0      (80% range 19.5 - 35.2)
+Projected Games:   61      (availability 76%, 80% range 36 - 77 games)
+Projected Total:   1738
+  (in-season: 19 FP already banked over 1 games)
+
+10th percentile total: 827
+25th percentile total: 1206
+50th percentile total: 1618
+75th percentile total: 2013
+90th percentile total: 2368
+Mean of simulated totals: 1608   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 547    risk-adjusted value: 1083
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.83 | 26.2 mpg | 21.8 FPPG | 76 GP | LAC
+  2024-25: FPPM 1.00 | 32.6 mpg | 32.6 FPPG | 60 GP | LAC
+  2025-26: FPPM 1.10 | 29.6 mpg | 32.5 FPPG | 58 GP | MIA
+  2026-27: FPPM 0.86 | 22.0 mpg | 19.0 FPPG | 1 GP | CHI
+  last-season fantasy profile per game: scoring block +10.0 | rebounds +5.0 | assists +2.0 | stocks +4.0 | turnovers -2.0 | missed-shot cost -10.0
+  FP per FGA 2.11 | FP per possession used 1.28 | FPPM per usage point 0.035 | usage 24.4% | TS% 0.542
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+3.2 FPPG]  (~+194 FP)
+  + more games expected (58 -> 61)  (~+94 FP)
+Main negative drivers:
+  - fewer minutes (29.6 -> 26.9 mpg)  (~-173 FP)
+  - lower per-minute production (FPPM 1.10 -> 1.04)  (~-95 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.0 | teammate +0.2 | coach +0.0 | age -0.6 | role +3.2 | form -0.5 | history_adjustment +0.7
+Top feature terms, FPPM adjustment: age__age +0.013; role__usg_high +0.011; age__c2 +0.008; age__exp -0.023; age__hinge_young -0.012; age__hinge_old -0.010
+Top feature terms, minutes adjustment: age__age +2.805; team__rot_size_exp +1.106; role__bin_25_30 +0.730; age__exp -1.271; age__hinge_young -1.048; coach__rot_size -0.481
+
+Archetype: scoring-heavy    scoring-block share of FP: 71%    breakout score: 7/100
+Upside score: 50   Risk score: 18   P(role expansion >= +3 mpg): 3%
+
+Confidence: High  (score 84/100)

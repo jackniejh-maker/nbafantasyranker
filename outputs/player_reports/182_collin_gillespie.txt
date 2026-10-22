@@ -1,0 +1,46 @@
+PLAYER: Collin Gillespie   (PHX, G, age 27.6)
+
+Projected Rank (total value): 182 of 519    | by FPPG: 178    | risk-adjusted: 193
+Consensus rank (comparison only): 122    model-minus-consensus rank: +60    value vs consensus slot: -321 FP
+
+Projected FPPM:    0.94      (80% range 0.76 - 1.14)
+Projected Minutes: 24.6      (80% range 14.8 - 31.2)
+Projected FPPG:    23.2      (80% range 12.7 - 32.3)
+Projected Games:   57      (availability 70%, 80% range 31 - 73 games)
+Projected Total:   1326
+  (in-season: 4 FP already banked over 1 games)
+
+10th percentile total: 458
+25th percentile total: 794
+50th percentile total: 1174
+75th percentile total: 1586
+90th percentile total: 1985
+Mean of simulated totals: 1207   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 258    risk-adjusted value: 716
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.85 | 9.5 mpg | 8.0 FPPG | 24 GP | DEN
+  2024-25: FPPM 1.11 | 14.4 mpg | 16.0 FPPG | 32 GP | PHX
+  2025-26: FPPM 1.04 | 28.5 mpg | 29.7 FPPG | 80 GP | PHX
+  2026-27: FPPM 0.19 | 21.0 mpg | 4.0 FPPG | 1 GP | PHX
+  last-season fantasy profile per game: scoring block -9.0 | rebounds +1.0 | assists +4.0 | stocks +16.0 | turnovers -8.0 | missed-shot cost -9.0
+  FP per FGA 0.50 | FP per possession used 0.32 | FPPM per usage point 0.007 | usage 26.1% | TS% 0.000
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+1.5 FPPG]  (~+85 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+0.8 FPPG]  (~+43 FP)
+Main negative drivers:
+  - fewer games expected (80 -> 57)  (~-535 FP)
+  - fewer minutes (28.5 -> 24.6 mpg)  (~-208 FP)
+  - lower per-minute production (FPPM 1.04 -> 0.94)  (~-138 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.2 FPPG]  (~-69 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.8 | teammate -1.2 | coach -0.1 | age +0.5 | role +1.5 | form -0.4 | history_adjustment +2.8
+Top feature terms, FPPM adjustment: age__exp +0.009; hist__fppm_raw_w +0.006; hist__stl_pct_l1 +0.006; hist__tpar_l1 -0.015; newc__height_in -0.014; age__hinge_young -0.012
+Top feature terms, minutes adjustment: role__gap_hist +0.870; hist__mpg_l3 +0.823; age__age +0.781; age__hinge_young -1.048; role__is_top5 -0.443; mate__quality_wavg -0.434
+
+Archetype: playmaking-heavy    scoring-block share of FP: 45%    breakout score: 2/100
+Upside score: 64   Risk score: 45   P(role expansion >= +3 mpg): 9%
+
+Confidence: Medium  (score 58/100)

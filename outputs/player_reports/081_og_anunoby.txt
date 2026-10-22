@@ -1,0 +1,46 @@
+PLAYER: OG Anunoby   (NYK, F, age 29.5)
+
+Projected Rank (total value): 81 of 519    | by FPPG: 87    | risk-adjusted: 76
+Consensus rank (comparison only): 78    model-minus-consensus rank: +3    value vs consensus slot: -31 FP
+
+Projected FPPM:    0.94      (80% range 0.78 - 1.13)
+Projected Minutes: 32.2      (80% range 25.8 - 36.5)
+Projected FPPG:    30.4      (80% range 21.5 - 38.2)
+Projected Games:   63      (availability 78%, 80% range 35 - 74 games)
+Projected Total:   1943
+  (in-season: 14 FP already banked over 1 games)
+
+10th percentile total: 939
+25th percentile total: 1367
+50th percentile total: 1798
+75th percentile total: 2195
+90th percentile total: 2535
+Mean of simulated totals: 1768   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 630    risk-adjusted value: 1214
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.87 | 34.1 mpg | 29.5 FPPG | 50 GP | NYK  (traded TOR -> NYK)
+  2024-25: FPPM 0.96 | 36.6 mpg | 35.0 FPPG | 74 GP | NYK
+  2025-26: FPPM 1.00 | 33.3 mpg | 33.3 FPPG | 68 GP | NYK
+  2026-27: FPPM 0.44 | 32.0 mpg | 14.0 FPPG | 1 GP | NYK
+  last-season fantasy profile per game: scoring block +5.0 | rebounds +5.0 | assists +0.0 | stocks +8.0 | turnovers -4.0 | missed-shot cost -9.0
+  FP per FGA 1.17 | FP per possession used 0.91 | FPPM per usage point 0.023 | usage 19.2% | TS% 0.375
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+1.8 FPPG]  (~+112 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.0 FPPG]  (~+64 FP)
+Main negative drivers:
+  - fewer games expected (68 -> 63)  (~-141 FP)
+  - lower per-minute production (FPPM 1.00 -> 0.94)  (~-114 FP)
+  - fewer minutes (33.3 -> 32.2 mpg)  (~-66 FP)
+  - age-related decline expected [-0.7 FPPG]  (~-47 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.0 | teammate -0.6 | coach -0.1 | age -0.7 | role +1.8 | form +0.4 | history_adjustment -1.1
+Top feature terms, FPPM adjustment: coach__usage_hhi +0.007; role__bin_25_30 +0.007; hist__stl_pct_l1 +0.007; age__exp -0.014; age__hinge_young -0.012; coach__rot_size -0.009
+Top feature terms, minutes adjustment: age__age +1.426; team__ortg_l1 +0.898; coach__rot_size +0.864; age__hinge_young -1.048; age__exp -0.772; mate__quality_wavg -0.768
+
+Archetype: all-around    scoring-block share of FP: 55%    breakout score: 14/100
+Upside score: 47   Risk score: 15   P(role expansion >= +3 mpg): 11%
+
+Confidence: High  (score 89/100)

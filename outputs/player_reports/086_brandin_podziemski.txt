@@ -1,0 +1,45 @@
+PLAYER: Brandin Podziemski   (GSW, G, age 23.9)
+
+Projected Rank (total value): 86 of 519    | by FPPG: 96    | risk-adjusted: 82
+Consensus rank (comparison only): 83    model-minus-consensus rank: +3    value vs consensus slot: -52 FP
+
+Projected FPPM:    1.05      (80% range 0.87 - 1.24)
+Projected Minutes: 28.1      (80% range 21.2 - 32.7)
+Projected FPPG:    29.5      (80% range 20.0 - 37.4)
+Projected Games:   65      (availability 80%, 80% range 35 - 75 games)
+Projected Total:   1905
+
+10th percentile total: 866
+25th percentile total: 1297
+50th percentile total: 1720
+75th percentile total: 2130
+90th percentile total: 2506
+Mean of simulated totals: 1712   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 580    risk-adjusted value: 1150
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.91 | 27.0 mpg | 24.5 FPPG | 73 GP | GSW
+  2024-25: FPPM 1.00 | 26.9 mpg | 26.8 FPPG | 64 GP | GSW
+  2025-26: FPPM 1.00 | 28.5 mpg | 28.5 FPPG | 82 GP | GSW
+  last-season fantasy profile per game: scoring block +14.1 | rebounds +5.1 | assists +7.4 | stocks +5.0 | turnovers -3.2 | missed-shot cost -6.4
+  FP per FGA 2.70 | FP per possession used 2.12 | FPPM per usage point 0.050 | usage 20.2% | TS% 0.583
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+2.9 FPPG]  (~+185 FP)
+  + higher per-minute production (FPPM 1.00 -> 1.05)  (~+85 FP)
+  + age / development curve favors growth [+1.0 FPPG]  (~+67 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.0 FPPG]  (~+66 FP)
+Main negative drivers:
+  - fewer games expected (82 -> 65)  (~-513 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.8 FPPG]  (~-117 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.0 | teammate -1.8 | coach -0.3 | age +1.0 | role +2.9 | form +0.6 | history_adjustment +0.4
+Top feature terms, FPPM adjustment: coach__games_known +0.010; age__exp +0.009; role__bin_25_30 +0.007; mate__quality_wavg -0.008; team__usage_conc -0.008; newc__height_in -0.006
+Top feature terms, minutes adjustment: team__rot_size_exp +1.546; role__bin_25_30 +0.730; role__is_top5 +0.597; mate__quality_wavg -1.004; hist__eff_minutes_log -0.510; age__age -0.440
+
+Archetype: all-around    scoring-block share of FP: 45%    breakout score: 54/100
+Upside score: 60   Risk score: 18   P(role expansion >= +3 mpg): 18%
+Injury report: Day-To-Day - Back (return Oct 23)  (known games missed assumed: 0)
+
+Confidence: High  (score 83/100)

@@ -1,0 +1,43 @@
+PLAYER: Kon Knueppel   (CHA, G, age 21.5)
+
+Projected Rank (total value): 43 of 519    | by FPPG: 54    | risk-adjusted: 48
+Consensus rank (comparison only): 41    model-minus-consensus rank: +2    value vs consensus slot: -32 FP
+
+Projected FPPM:    1.11      (80% range 0.95 - 1.29)
+Projected Minutes: 32.2      (80% range 23.9 - 37.8)
+Projected FPPG:    35.8      (80% range 24.7 - 45.1)
+Projected Games:   65      (availability 80%, 80% range 36 - 76 games)
+Projected Total:   2315
+
+10th percentile total: 1093
+25th percentile total: 1612
+50th percentile total: 2125
+75th percentile total: 2621
+90th percentile total: 3048
+Mean of simulated totals: 2101   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 741    risk-adjusted value: 1433
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2025-26: FPPM 1.04 | 31.5 mpg | 32.7 FPPG | 81 GP | CHA
+  last-season fantasy profile per game: scoring block +20.8 | rebounds +5.3 | assists +6.8 | stocks +3.8 | turnovers -4.0 | missed-shot cost -7.4
+  FP per FGA 2.44 | FP per possession used 1.97 | FPPM per usage point 0.046 | usage 22.5% | TS% 0.633
+
+Main positive drivers:
+  + age / development curve favors growth [+5.5 FPPG]  (~+354 FP)
+  + higher per-minute production (FPPM 1.04 -> 1.11)  (~+155 FP)
+  + role and depth-chart position favor more production [+2.0 FPPG]  (~+127 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.2 FPPG]  (~+76 FP)
+Main negative drivers:
+  - fewer games expected (81 -> 65)  (~-586 FP)
+  - stronger teammate competition for usage, shots and minutes [-0.7 FPPG]  (~-46 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.2 | teammate -0.7 | coach -0.5 | age +5.5 | role +2.0 | form -0.2 | history_adjustment -0.5
+Top feature terms, FPPM adjustment: age__hinge_young +0.041; age__exp +0.018; coach__rot_size +0.009; hist__tpar_l1 -0.011; team__ast_added -0.009; hist__has_l2 -0.006
+Top feature terms, minutes adjustment: age__hinge_young +3.624; team__rot_size_exp +1.058; age__exp +0.975; age__age -1.251; coach__rot_size -0.819; role__budget_ratio -0.691
+
+Archetype: scoring-heavy    scoring-block share of FP: 64%    breakout score: 75/100
+Upside score: 87   Risk score: 15   P(role expansion >= +3 mpg): 28%
+Injury report: Day-To-Day - Hamstring (return Oct 23)  (known games missed assumed: 0)
+
+Confidence: High  (score 87/100)

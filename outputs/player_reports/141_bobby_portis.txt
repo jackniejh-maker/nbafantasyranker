@@ -1,0 +1,45 @@
+PLAYER: Bobby Portis   (MIA, F, age 32.0)
+
+Projected Rank (total value): 141 of 519    | by FPPG: 155    | risk-adjusted: 132
+Consensus rank (comparison only): 313    model-minus-consensus rank: -172    value vs consensus slot: +761 FP
+
+Projected FPPM:    1.04      (80% range 0.86 - 1.24)
+Projected Minutes: 23.6      (80% range 16.7 - 28.1)
+Projected FPPG:    24.6      (80% range 15.7 - 31.6)
+Projected Games:   63      (availability 77%, 80% range 38 - 79 games)
+Projected Total:   1561
+  (in-season: 19 FP already banked over 1 games)
+
+10th percentile total: 706
+25th percentile total: 1052
+50th percentile total: 1421
+75th percentile total: 1817
+90th percentile total: 2179
+Mean of simulated totals: 1441   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 472    risk-adjusted value: 946
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.12 | 24.5 mpg | 27.5 FPPG | 82 GP | MIL
+  2024-25: FPPM 1.15 | 25.2 mpg | 29.0 FPPG | 50 GP | MIL
+  2025-26: FPPM 1.07 | 24.1 mpg | 25.8 FPPG | 67 GP | MIL
+  2026-27: FPPM 0.76 | 25.0 mpg | 19.0 FPPG | 1 GP | MIA
+  last-season fantasy profile per game: scoring block +9.0 | rebounds +4.0 | assists +2.0 | stocks +8.0 | turnovers -4.0 | missed-shot cost -2.0
+  FP per FGA 3.80 | FP per possession used 2.71 | FPPM per usage point 0.062 | usage 12.2% | TS% 0.700
+
+Main positive drivers:
+  + coach tendencies (rotation / pace) help [+0.9 FPPG]  (~+56 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+0.9 FPPG]  (~+55 FP)
+Main negative drivers:
+  - fewer games expected (67 -> 63)  (~-104 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.2 FPPG]  (~-74 FP)
+  - age-related decline expected [-0.8 FPPG]  (~-49 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.9 | teammate -1.2 | coach +0.9 | age -0.8 | role +0.1 | form +0.3 | history_adjustment +0.7
+Top feature terms, FPPM adjustment: age__age +0.010; coach__games_known +0.010; hist__fppm_raw_w +0.009; age__exp -0.023; age__hinge_young -0.012; hist__fppm_shrunk -0.008
+Top feature terms, minutes adjustment: age__age +2.235; team__rot_size_exp +0.658; team__ortg_l1 +0.545; age__exp -1.271; age__hinge_young -1.048; mate__quality_wavg -0.767
+
+Archetype: rebounding-heavy    scoring-block share of FP: 54%    breakout score: 49/100
+Upside score: 53   Risk score: 20   P(role expansion >= +3 mpg): 15%
+
+Confidence: High  (score 76/100)

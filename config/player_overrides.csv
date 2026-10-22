@@ -1,0 +1,7 @@
+# Manual overrides - applied AFTER all models.  One row per player; leave a cell empty to keep the model value.
+#   expected_minutes_override : minutes per game WHEN ACTIVE (replaces the projected minutes; teammates' budget is re-spread)
+#   expected_games_override   : games the player will play this season (replaces projected availability; no injury double-count)
+#   team_override             : NBA team abbreviation (use when a trade/signing has not reached the data sources yet)
+#   exclude                   : true to drop the player (retired / not signing)
+# match by player_id when you know it, otherwise by player_name.  Lines starting with # are ignored.
+player_name,player_id,expected_minutes_override,expected_games_override,team_override,exclude,notes

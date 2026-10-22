@@ -1,0 +1,46 @@
+PLAYER: Moussa Diabate   (CHA, F, age 25.0)
+
+Projected Rank (total value): 134 of 519    | by FPPG: 130    | risk-adjusted: 136
+Consensus rank (comparison only): 334    model-minus-consensus rank: -200    value vs consensus slot: +846 FP
+
+Projected FPPM:    1.06      (80% range 0.87 - 1.25)
+Projected Minutes: 24.8      (80% range 15.8 - 30.9)
+Projected FPPG:    26.2      (80% range 15.3 - 34.9)
+Projected Games:   60      (availability 74%, 80% range 34 - 75 games)
+Projected Total:   1618
+  (in-season: 46 FP already banked over 1 games)
+
+10th percentile total: 651
+25th percentile total: 1030
+50th percentile total: 1459
+75th percentile total: 1899
+90th percentile total: 2315
+Mean of simulated totals: 1479   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 420    risk-adjusted value: 939
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.17 | 6.0 mpg | 7.0 FPPG | 11 GP | LAC
+  2024-25: FPPM 0.95 | 17.7 mpg | 16.9 FPPG | 70 GP | CHA
+  2025-26: FPPM 1.00 | 26.0 mpg | 25.9 FPPG | 73 GP | CHA
+  2026-27: FPPM 1.35 | 34.0 mpg | 46.0 FPPG | 1 GP | CHA
+  last-season fantasy profile per game: scoring block +20.0 | rebounds +8.0 | assists +6.0 | stocks +20.0 | turnovers -8.0 | missed-shot cost -4.0
+  FP per FGA 4.18 | FP per possession used 2.82 | FPPM per usage point 0.070 | usage 19.3% | TS% 0.690
+
+Main positive drivers:
+  + higher per-minute production (FPPM 1.00 -> 1.06)  (~+88 FP)
+  + role and depth-chart position favor more production [+1.2 FPPG]  (~+72 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.1 FPPG]  (~+64 FP)
+Main negative drivers:
+  - fewer games expected (73 -> 60)  (~-343 FP)
+  - fewer minutes (26.0 -> 24.8 mpg)  (~-76 FP)
+  - age-related decline expected [-0.8 FPPG]  (~-48 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.1 | teammate +0.5 | coach -0.5 | age -0.8 | role +1.2 | form +0.1 | history_adjustment +1.6
+Top feature terms, FPPM adjustment: hist__tpar_l1 +0.017; newc__height_in +0.009; coach__rot_size +0.009; age__hinge_young -0.012; team__ast_added -0.009; hist__usg_w -0.009
+Top feature terms, minutes adjustment: role__gap_hist +1.109; team__rot_size_exp +1.058; hist__fp_per_fga_l1 +1.057; age__hinge_young -1.048; coach__rot_size -0.819; hist__reb_pct_w -0.785
+
+Archetype: rebounding-heavy    scoring-block share of FP: 33%    breakout score: 69/100
+Upside score: 74   Risk score: 31   P(role expansion >= +3 mpg): 19%
+
+Confidence: High  (score 67/100)

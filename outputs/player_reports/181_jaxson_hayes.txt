@@ -1,0 +1,43 @@
+PLAYER: Jaxson Hayes   (UTA, C, age 26.7)
+
+Projected Rank (total value): 181 of 519    | by FPPG: 205    | risk-adjusted: 182
+Consensus rank (comparison only): 253    model-minus-consensus rank: -72    value vs consensus slot: +287 FP
+
+Projected FPPM:    1.04      (80% range 0.86 - 1.24)
+Projected Minutes: 20.0      (80% range 10.4 - 26.4)
+Projected FPPG:    20.9      (80% range 9.9 - 29.3)
+Projected Games:   62      (availability 77%, 80% range 36 - 78 games)
+Projected Total:   1342
+  (in-season: 44 FP already banked over 1 games)
+
+10th percentile total: 463
+25th percentile total: 786
+50th percentile total: 1180
+75th percentile total: 1580
+90th percentile total: 1979
+Mean of simulated totals: 1212   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 300    risk-adjusted value: 740
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.90 | 12.5 mpg | 11.2 FPPG | 71 GP | LAL
+  2024-25: FPPM 0.98 | 19.6 mpg | 19.1 FPPG | 56 GP | LAL
+  2025-26: FPPM 1.02 | 18.3 mpg | 18.7 FPPG | 66 GP | LAL
+  2026-27: FPPM 1.69 | 26.0 mpg | 44.0 FPPG | 1 GP | UTA
+  last-season fantasy profile per game: scoring block +3.0 | rebounds +5.0 | assists +6.0 | stocks +32.0 | turnovers -2.0 | missed-shot cost -4.0
+  FP per FGA 14.67 | FP per possession used 7.64 | FPPM per usage point 0.173 | usage 9.8% | TS% 0.525
+
+Main positive drivers:
+  + more minutes (18.3 -> 20.0 mpg)  (~+108 FP)
+Main negative drivers:
+  - fewer games expected (66 -> 62)  (~-78 FP)
+  - age-related decline expected [-0.8 FPPG]  (~-48 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.2 | teammate -0.2 | coach -0.1 | age -0.8 | role -0.1 | form +0.3 | history_adjustment +1.8
+Top feature terms, FPPM adjustment: hist__tpar_l1 +0.017; newc__height_in +0.014; hist__blk_pct_l1 +0.009; age__hinge_young -0.012; hist__usg_w -0.008; coach__usage_hhi -0.008
+Top feature terms, minutes adjustment: team__rot_size_exp +1.116; hist__fp_per_fga_l1 +0.838; mate__same_pos_min +0.791; age__hinge_young -1.048; pos__c -0.876; coach__rot_size -0.833
+
+Archetype: efficiency-driven    scoring-block share of FP: 44%    breakout score: 83/100
+Upside score: 63   Risk score: 37   P(role expansion >= +3 mpg): 35%
+
+Confidence: Medium  (score 59/100)

@@ -1,0 +1,45 @@
+PLAYER: Andrew Nembhard   (IND, G, age 27.0)
+
+Projected Rank (total value): 78 of 519    | by FPPG: 76    | risk-adjusted: 73
+Consensus rank (comparison only): 126    model-minus-consensus rank: -48    value vs consensus slot: +353 FP
+
+Projected FPPM:    1.03      (80% range 0.86 - 1.21)
+Projected Minutes: 31.2      (80% range 23.7 - 36.1)
+Projected FPPG:    32.0      (80% range 22.0 - 40.3)
+Projected Games:   61      (availability 75%, 80% range 34 - 77 games)
+Projected Total:   1982
+  (in-season: 39 FP already banked over 1 games)
+
+10th percentile total: 923
+25th percentile total: 1364
+50th percentile total: 1829
+75th percentile total: 2285
+90th percentile total: 2708
+Mean of simulated totals: 1823   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 612    risk-adjusted value: 1220
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.85 | 25.3 mpg | 21.6 FPPG | 67 GP | IND
+  2024-25: FPPM 0.87 | 29.0 mpg | 25.2 FPPG | 65 GP | IND
+  2025-26: FPPM 1.09 | 31.3 mpg | 34.1 FPPG | 57 GP | IND
+  2026-27: FPPM 1.15 | 34.0 mpg | 39.0 FPPG | 1 GP | IND
+  last-season fantasy profile per game: scoring block +19.0 | rebounds +2.0 | assists +18.0 | stocks +4.0 | turnovers -4.0 | missed-shot cost -5.0
+  FP per FGA 3.90 | FP per possession used 2.59 | FPPM per usage point 0.062 | usage 18.4% | TS% 0.688
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+3.1 FPPG]  (~+189 FP)
+  + more games expected (57 -> 61)  (~+121 FP)
+Main negative drivers:
+  - lower per-minute production (FPPM 1.09 -> 1.03)  (~-116 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.6 FPPG]  (~-98 FP)
+  - unfavorable team environment (pace / efficiency / roster turnover) [-0.7 FPPG]  (~-44 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.7 | teammate -1.6 | coach -0.5 | age -0.0 | role +3.1 | form +0.3 | history_adjustment -0.2
+Top feature terms, FPPM adjustment: coach__games_known +0.010; hist__ast_pct_l1 +0.009; late__fppm_l1 +0.008; age__hinge_young -0.012; mate__quality_wavg -0.010; coach__usage_hhi -0.008
+Top feature terms, minutes adjustment: team__rot_size_exp +0.751; role__bin_25_30 +0.730; role__gap_hist +0.663; mate__quality_wavg -1.264; age__hinge_young -1.048; mate__same_pos_min -0.708
+
+Archetype: playmaking-heavy    scoring-block share of FP: 45%    breakout score: 47/100
+Upside score: 79   Risk score: 19   P(role expansion >= +3 mpg): 21%
+
+Confidence: High  (score 80/100)

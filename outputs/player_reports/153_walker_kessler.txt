@@ -1,0 +1,45 @@
+PLAYER: Walker Kessler   (LAL, C, age 25.5)
+
+Projected Rank (total value): 153 of 519    | by FPPG: 68    | risk-adjusted: 176
+Consensus rank (comparison only): 67    model-minus-consensus rank: +86    value vs consensus slot: -550 FP
+
+Projected FPPM:    1.25      (80% range 1.06 - 1.44)
+Projected Minutes: 26.5      (80% range 17.4 - 32.7)
+Projected FPPG:    33.1      (80% range 20.3 - 43.7)
+Projected Games:   45      (availability 55%, 80% range 12 - 66 games)
+Projected Total:   1528
+  (in-season: 51 FP already banked over 1 games)
+
+10th percentile total: 380
+25th percentile total: 820
+50th percentile total: 1342
+75th percentile total: 1910
+90th percentile total: 2401
+Mean of simulated totals: 1390   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 186    risk-adjusted value: 764
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.21 | 23.2 mpg | 28.1 FPPG | 64 GP | UTA
+  2024-25: FPPM 1.23 | 30.1 mpg | 36.8 FPPG | 58 GP | UTA
+  2025-26: FPPM 1.31 | 31.0 mpg | 40.6 FPPG | 5 GP | UTA
+  2026-27: FPPM 1.70 | 30.0 mpg | 51.0 FPPG | 1 GP | LAL
+  last-season fantasy profile per game: scoring block +36.0 | rebounds +9.0 | assists +2.0 | stocks +8.0 | turnovers -4.0 | missed-shot cost -2.0
+  FP per FGA 4.25 | FP per possession used 3.24 | FPPM per usage point 0.075 | usage 22.7% | TS% 0.945
+
+Main positive drivers:
+  + more games expected (5 -> 45)  (~+1312 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.8 FPPG]  (~+79 FP)
+  + role and depth-chart position favor more production [+1.0 FPPG]  (~+45 FP)
+Main negative drivers:
+  - fewer minutes (31.0 -> 26.5 mpg)  (~-248 FP)
+  - lower per-minute production (FPPM 1.31 -> 1.25)  (~-77 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.8 | teammate -0.1 | coach +0.3 | age -0.7 | role +1.0 | form +0.6 | history_adjustment +0.6
+Top feature terms, FPPM adjustment: hist__tov_pct_l1 +0.021; newc__height_in +0.019; hist__blk_pct_l1 +0.018; age__hinge_young -0.012; hist__fppm_shrunk -0.011; mate__same_pos_min -0.009
+Top feature terms, minutes adjustment: mate__same_pos_min +1.205; hist__fp_per_fga_l1 +1.173; team__rot_size_exp +1.088; hist__avail_l1 -1.156; age__hinge_young -1.048; hist__reb_pct_w -0.972
+
+Archetype: stocks-heavy    scoring-block share of FP: 34%    breakout score: 15/100
+Upside score: 96   Risk score: 68   P(role expansion >= +3 mpg): 7%
+
+Confidence: Medium  (score 48/100)

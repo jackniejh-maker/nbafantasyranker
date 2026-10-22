@@ -1,0 +1,46 @@
+PLAYER: Santi Aldama   (DAL, F, age 26.1)
+
+Projected Rank (total value): 166 of 519    | by FPPG: 113    | risk-adjusted: 171
+Consensus rank (comparison only): 345    model-minus-consensus rank: -179    value vs consensus slot: +683 FP
+
+Projected FPPM:    1.06      (80% range 0.88 - 1.25)
+Projected Minutes: 26.1      (80% range 17.6 - 31.5)
+Projected FPPG:    27.5      (80% range 17.0 - 35.9)
+Projected Games:   52      (availability 65%, 80% range 20 - 74 games)
+Projected Total:   1442
+
+10th percentile total: 457
+25th percentile total: 826
+50th percentile total: 1275
+75th percentile total: 1758
+90th percentile total: 2166
+Mean of simulated totals: 1311   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 283    risk-adjusted value: 779
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2022-23: FPPM 0.91 | 21.9 mpg | 20.0 FPPG | 77 GP | MEM
+  2023-24: FPPM 0.94 | 26.6 mpg | 25.1 FPPG | 61 GP | MEM
+  2024-25: FPPM 1.12 | 25.5 mpg | 28.5 FPPG | 65 GP | MEM
+  2025-26: FPPM 1.10 | 27.8 mpg | 30.6 FPPG | 43 GP | MEM
+  last-season fantasy profile per game: scoring block +14.3 | rebounds +6.7 | assists +5.9 | stocks +6.3 | turnovers -2.6 | missed-shot cost -6.7
+  FP per FGA 2.76 | FP per possession used 2.26 | FPPM per usage point 0.055 | usage 20.1% | TS% 0.572
+
+Main positive drivers:
+  + more games expected (43 -> 52)  (~+259 FP)
+  + role and depth-chart position favor more production [+1.4 FPPG]  (~+76 FP)
+Main negative drivers:
+  - fewer minutes (27.8 -> 26.1 mpg)  (~-99 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.6 FPPG]  (~-84 FP)
+  - lower per-minute production (FPPM 1.10 -> 1.06)  (~-58 FP)
+  - age-related decline expected [-0.8 FPPG]  (~-41 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.6 | teammate -1.6 | coach -0.3 | age -0.8 | role +1.4 | form +0.4 | history_adjustment +0.6
+Top feature terms, FPPM adjustment: newc__height_in +0.014; mate__same_pos_min +0.009; hist__fppm_l1 +0.008; age__hinge_young -0.012; team__usage_conc -0.007; hist__fppm_shrunk -0.006
+Top feature terms, minutes adjustment: team__rot_size_exp +1.662; role__gap_hist +0.797; role__is_top5 +0.597; mate__same_pos_min -1.132; age__hinge_young -1.048; role__budget_ratio -0.682
+
+Archetype: rebounding-heavy    scoring-block share of FP: 46%    breakout score: 45/100
+Upside score: 82   Risk score: 44   P(role expansion >= +3 mpg): 13%
+Injury report: Day-To-Day - Knee (return Oct 23)  (known games missed assumed: 0)
+
+Confidence: Medium  (score 56/100)

@@ -1,0 +1,47 @@
+PLAYER: Cade Cunningham   (DET, G, age 25.4)
+
+Projected Rank (total value): 7 of 519    | by FPPG: 7    | risk-adjusted: 8
+Consensus rank (comparison only): 7    model-minus-consensus rank: +0    value vs consensus slot: +0 FP
+
+Projected FPPM:    1.45      (80% range 1.28 - 1.63)
+Projected Minutes: 32.7      (80% range 26.1 - 37.1)
+Projected FPPG:    47.5      (80% range 35.4 - 56.9)
+Projected Games:   63      (availability 78%, 80% range 37 - 79 games)
+Projected Total:   3040
+  (in-season: 39 FP already banked over 1 games)
+
+10th percentile total: 1565
+25th percentile total: 2188
+50th percentile total: 2858
+75th percentile total: 3480
+90th percentile total: 4019
+Mean of simulated totals: 2818   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 1070    risk-adjusted value: 1964
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.18 | 33.5 mpg | 39.6 FPPG | 62 GP | DET
+  2024-25: FPPM 1.39 | 35.0 mpg | 48.7 FPPG | 70 GP | DET
+  2025-26: FPPM 1.49 | 33.9 mpg | 50.4 FPPG | 64 GP | DET
+  2026-27: FPPM 1.11 | 35.0 mpg | 39.0 FPPG | 1 GP | DET
+  last-season fantasy profile per game: scoring block +21.0 | rebounds +4.0 | assists +16.0 | stocks +8.0 | turnovers -10.0 | missed-shot cost -10.0
+  FP per FGA 2.17 | FP per possession used 1.55 | FPPM per usage point 0.038 | usage 29.5% | TS% 0.545
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+4.0 FPPG]  (~+251 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+2.8 FPPG]  (~+176 FP)
+  + late-season / post-trade form is a positive signal [+0.9 FPPG]  (~+59 FP)
+Main negative drivers:
+  - fewer minutes (33.9 -> 32.7 mpg)  (~-112 FP)
+  - age-related decline expected [-1.5 FPPG]  (~-94 FP)
+  - lower per-minute production (FPPM 1.49 -> 1.45)  (~-67 FP)
+  - coach tendencies (rotation / pace) hurt [-0.7 FPPG]  (~-44 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +2.8 | teammate -0.0 | coach -0.7 | age -1.5 | role +4.0 | form +0.9 | history_adjustment +2.3
+Top feature terms, FPPM adjustment: late__fppm_l1 +0.027; hist__fppm_l1 +0.026; hist__fppm_raw_w +0.025; hist__fppm_shrunk -0.022; age__hinge_young -0.012; hist__fppm_fixed -0.006
+Top feature terms, minutes adjustment: team__rot_size_exp +1.231; hist__fppm_raw_w +0.871; hist__fppm_fixed +0.845; age__hinge_young -1.048; hist__ast_pct_w -0.927; coach__double_big -0.749
+
+Archetype: playmaking-heavy    scoring-block share of FP: 52%    breakout score: 23/100
+Upside score: 98   Risk score: 9   P(role expansion >= +3 mpg): 11%
+
+Confidence: High  (score 91/100)

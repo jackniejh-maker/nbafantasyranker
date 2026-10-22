@@ -1,0 +1,44 @@
+PLAYER: P.J. Washington   (DAL, F, age 28.4)
+
+Projected Rank (total value): 119 of 519    | by FPPG: 117    | risk-adjusted: 120
+Consensus rank (comparison only): 270    model-minus-consensus rank: -151    value vs consensus slot: +694 FP
+
+Projected FPPM:    0.91      (80% range 0.74 - 1.10)
+Projected Minutes: 29.6      (80% range 22.4 - 34.3)
+Projected FPPG:    27.0      (80% range 18.1 - 34.6)
+Projected Games:   60      (availability 74%, 80% range 35 - 76 games)
+Projected Total:   1633
+  (in-season: 13 FP already banked over 1 games)
+
+10th percentile total: 759
+25th percentile total: 1112
+50th percentile total: 1500
+75th percentile total: 1911
+90th percentile total: 2269
+Mean of simulated totals: 1511   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 483    risk-adjusted value: 992
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.88 | 30.4 mpg | 26.7 FPPG | 73 GP | DAL  (traded CHA -> DAL)
+  2024-25: FPPM 0.97 | 32.2 mpg | 31.0 FPPG | 57 GP | DAL
+  2025-26: FPPM 0.93 | 30.9 mpg | 28.7 FPPG | 56 GP | DAL
+  2026-27: FPPM 0.42 | 31.0 mpg | 13.0 FPPG | 1 GP | DAL
+  last-season fantasy profile per game: scoring block +9.0 | rebounds +4.0 | assists +4.0 | stocks +4.0 | turnovers -8.0 | missed-shot cost -7.0
+  FP per FGA 1.44 | FP per possession used 0.94 | FPPM per usage point 0.022 | usage 19.3% | TS% 0.506
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+2.0 FPPG]  (~+120 FP)
+  + more games expected (56 -> 60)  (~+106 FP)
+Main negative drivers:
+  - stronger teammate competition for usage, shots and minutes [-1.8 FPPG]  (~-109 FP)
+  - fewer minutes (30.9 -> 29.6 mpg)  (~-74 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.6 | teammate -1.8 | coach -0.3 | age -0.3 | role +2.0 | form -0.0 | history_adjustment -1.5
+Top feature terms, FPPM adjustment: mate__same_pos_min +0.009; role__bin_25_30 +0.007; team__depth15 +0.006; age__hinge_young -0.012; team__usage_conc -0.007; mate__same_pos_n -0.005
+Top feature terms, minutes adjustment: team__rot_size_exp +1.662; age__age +1.060; role__bin_25_30 +0.730; mate__same_pos_min -1.132; age__hinge_young -1.048; role__budget_ratio -0.682
+
+Archetype: all-around    scoring-block share of FP: 47%    breakout score: 49/100
+Upside score: 56   Risk score: 22   P(role expansion >= +3 mpg): 12%
+
+Confidence: High  (score 79/100)

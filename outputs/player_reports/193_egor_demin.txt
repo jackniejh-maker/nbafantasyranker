@@ -1,0 +1,43 @@
+PLAYER: Egor Demin   (BKN, G, age 20.9)
+
+Projected Rank (total value): 193 of 519    | by FPPG: 186    | risk-adjusted: 199
+Consensus rank (comparison only): 111    model-minus-consensus rank: +82    value vs consensus slot: -390 FP
+
+Projected FPPM:    0.92      (80% range 0.75 - 1.10)
+Projected Minutes: 24.5      (80% range 14.1 - 31.4)
+Projected FPPG:    22.6      (80% range 11.9 - 31.2)
+Projected Games:   57      (availability 70%, 80% range 30 - 72 games)
+Projected Total:   1287
+  (in-season: 4 FP already banked over 1 games)
+
+10th percentile total: 422
+25th percentile total: 759
+50th percentile total: 1136
+75th percentile total: 1526
+90th percentile total: 1901
+Mean of simulated totals: 1159   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 237    risk-adjusted value: 687
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2025-26: FPPM 0.87 | 25.1 mpg | 21.8 FPPG | 52 GP | BKN
+  2026-27: FPPM 0.15 | 27.0 mpg | 4.0 FPPG | 1 GP | BKN
+  last-season fantasy profile per game: scoring block -2.0 | rebounds +4.0 | assists +4.0 | stocks +4.0 | turnovers -6.0 | missed-shot cost -8.0
+  FP per FGA 0.40 | FP per possession used 0.31 | FPPM per usage point 0.007 | usage 20.5% | TS% 0.200
+
+Main positive drivers:
+  + age / development curve favors growth [+5.3 FPPG]  (~+298 FP)
+  + more games expected (52 -> 57)  (~+108 FP)
+  + role and depth-chart position favor more production [+1.8 FPPG]  (~+99 FP)
+  + higher per-minute production (FPPM 0.87 -> 0.92)  (~+76 FP)
+Main negative drivers:
+  - unfavorable team environment (pace / efficiency / roster turnover) [-0.9 FPPG]  (~-54 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.9 | teammate -0.1 | coach -0.5 | age +5.3 | role +1.8 | form -0.2 | history_adjustment -1.6
+Top feature terms, FPPM adjustment: age__hinge_young +0.049; age__exp +0.018; coach__rot_size +0.012; hist__tpar_l1 -0.017; coach__usage_hhi -0.009; team__usage_conc -0.007
+Top feature terms, minutes adjustment: age__hinge_young +4.398; team__rot_size_exp +1.597; age__exp +0.975; age__age -1.444; coach__rot_size -1.166; team__drtg_proj -0.509
+
+Archetype: all-around    scoring-block share of FP: 49%    breakout score: 69/100
+Upside score: 55   Risk score: 47   P(role expansion >= +3 mpg): 24%
+
+Confidence: Medium  (score 58/100)

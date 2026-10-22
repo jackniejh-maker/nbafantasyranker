@@ -1,0 +1,47 @@
+PLAYER: Jarace Walker   (IND, F, age 23.4)
+
+Projected Rank (total value): 172 of 519    | by FPPG: 199    | risk-adjusted: 172
+Consensus rank (comparison only): 251    model-minus-consensus rank: -79    value vs consensus slot: +309 FP
+
+Projected FPPM:    0.94      (80% range 0.76 - 1.14)
+Projected Minutes: 22.8      (80% range 14.3 - 28.4)
+Projected FPPG:    21.4      (80% range 12.0 - 29.3)
+Projected Games:   64      (availability 79%, 80% range 36 - 75 games)
+Projected Total:   1375
+  (in-season: 6 FP already banked over 1 games)
+
+10th percentile total: 531
+25th percentile total: 845
+50th percentile total: 1213
+75th percentile total: 1570
+90th percentile total: 1909
+Mean of simulated totals: 1222   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 338    risk-adjusted value: 776
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.98 | 10.4 mpg | 10.1 FPPG | 33 GP | IND
+  2024-25: FPPM 0.93 | 15.9 mpg | 14.7 FPPG | 75 GP | IND
+  2025-26: FPPM 0.87 | 25.7 mpg | 22.4 FPPG | 76 GP | IND
+  2026-27: FPPM 0.32 | 19.0 mpg | 6.0 FPPG | 1 GP | IND
+  last-season fantasy profile per game: scoring block +0.0 | rebounds +6.0 | assists +4.0 | stocks +4.0 | turnovers -8.0 | missed-shot cost -5.0
+  FP per FGA 1.00 | FP per possession used 0.60 | FPPM per usage point 0.014 | usage 21.8% | TS% 0.250
+
+Main positive drivers:
+  + age / development curve favors growth [+1.5 FPPG]  (~+99 FP)
+  + higher per-minute production (FPPM 0.87 -> 0.94)  (~+96 FP)
+  + role and depth-chart position favor more production [+1.1 FPPG]  (~+73 FP)
+  + late-season / post-trade form is a positive signal [+0.7 FPPG]  (~+47 FP)
+Main negative drivers:
+  - fewer games expected (76 -> 64)  (~-255 FP)
+  - fewer minutes (25.7 -> 22.8 mpg)  (~-177 FP)
+  - unfavorable team environment (pace / efficiency / roster turnover) [-0.7 FPPG]  (~-45 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.7 | teammate -0.5 | coach -0.5 | age +1.5 | role +1.1 | form +0.7 | history_adjustment +1.7
+Top feature terms, FPPM adjustment: age__hinge_young +0.012; coach__games_known +0.010; age__exp +0.009; mate__quality_wavg -0.011; coach__usage_hhi -0.008; mate__ast_wavg -0.006
+Top feature terms, minutes adjustment: age__hinge_young +1.071; role__gap_hist +0.956; hist__mpg_l3 +0.768; mate__quality_wavg -1.308; age__age -0.614; coach__rot_size -0.552
+
+Archetype: all-around    scoring-block share of FP: 47%    breakout score: 37/100
+Upside score: 36   Risk score: 32   P(role expansion >= +3 mpg): 9%
+
+Confidence: High  (score 67/100)

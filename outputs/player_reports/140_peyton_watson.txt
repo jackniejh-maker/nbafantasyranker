@@ -1,0 +1,45 @@
+PLAYER: Peyton Watson   (CLE, G, age 24.4)
+
+Projected Rank (total value): 140 of 519    | by FPPG: 146    | risk-adjusted: 137
+Consensus rank (comparison only): 116    model-minus-consensus rank: +24    value vs consensus slot: -92 FP
+
+Projected FPPM:    0.96      (80% range 0.77 - 1.15)
+Projected Minutes: 26.5      (80% range 18.6 - 31.6)
+Projected FPPG:    25.4      (80% range 15.7 - 33.3)
+Projected Games:   62      (availability 75%, 80% range 37 - 78 games)
+Projected Total:   1572
+
+10th percentile total: 692
+25th percentile total: 1031
+50th percentile total: 1427
+75th percentile total: 1846
+90th percentile total: 2236
+Mean of simulated totals: 1450   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 443    risk-adjusted value: 935
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2022-23: FPPM 0.90 | 8.0 mpg | 7.2 FPPG | 23 GP | DEN
+  2023-24: FPPM 0.90 | 18.6 mpg | 16.8 FPPG | 80 GP | DEN
+  2024-25: FPPM 0.85 | 24.4 mpg | 20.7 FPPG | 68 GP | DEN
+  2025-26: FPPM 0.97 | 29.6 mpg | 28.7 FPPG | 54 GP | DEN
+  last-season fantasy profile per game: scoring block +15.0 | rebounds +4.9 | assists +4.1 | stocks +8.2 | turnovers -3.4 | missed-shot cost -6.4
+  FP per FGA 2.67 | FP per possession used 2.05 | FPPM per usage point 0.047 | usage 20.8% | TS% 0.594
+
+Main positive drivers:
+  + more games expected (54 -> 62)  (~+199 FP)
+  + role and depth-chart position favor more production [+2.4 FPPG]  (~+147 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.8 FPPG]  (~+109 FP)
+  + late-season / post-trade form is a positive signal [+0.7 FPPG]  (~+44 FP)
+Main negative drivers:
+  - fewer minutes (29.6 -> 26.5 mpg)  (~-183 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.9 FPPG]  (~-116 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.8 | teammate -1.9 | coach -0.1 | age -0.0 | role +2.4 | form +0.7 | history_adjustment +0.9
+Top feature terms, FPPM adjustment: coach__star_mpg +0.014; hist__blk_pct_l1 +0.007; late__fppm_l1 +0.006; mate__quality_wavg -0.012; mate__reb_wavg -0.011; mate__usg_wavg -0.007
+Top feature terms, minutes adjustment: team__ortg_l1 +0.825; role__gap_hist +0.776; role__is_top5 +0.597; mate__quality_wavg -1.499; coach__double_big -0.563; mate__same_pos_min -0.494
+
+Archetype: stocks-heavy    scoring-block share of FP: 43%    breakout score: 17/100
+Upside score: 64   Risk score: 25   P(role expansion >= +3 mpg): 7%
+
+Confidence: High  (score 72/100)

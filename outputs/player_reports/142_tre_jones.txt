@@ -1,0 +1,45 @@
+PLAYER: Tre Jones   (CHI, G, age 27.1)
+
+Projected Rank (total value): 142 of 519    | by FPPG: 142    | risk-adjusted: 142
+Consensus rank (comparison only): 348    model-minus-consensus rank: -206    value vs consensus slot: +832 FP
+
+Projected FPPM:    1.12      (80% range 0.94 - 1.31)
+Projected Minutes: 23.0      (80% range 14.9 - 28.2)
+Projected FPPG:    25.7      (80% range 15.3 - 33.8)
+Projected Games:   61      (availability 75%, 80% range 35 - 77 games)
+Projected Total:   1587
+  (in-season: 17 FP already banked over 1 games)
+
+10th percentile total: 643
+25th percentile total: 1006
+50th percentile total: 1416
+75th percentile total: 1854
+90th percentile total: 2230
+Mean of simulated totals: 1436   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 410    risk-adjusted value: 913
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.02 | 27.7 mpg | 28.4 FPPG | 77 GP | SAS
+  2024-25: FPPM 1.08 | 19.7 mpg | 21.2 FPPG | 46 GP | CHI  (traded SAS -> CHI)
+  2025-26: FPPM 1.17 | 27.0 mpg | 31.6 FPPG | 65 GP | CHI
+  2026-27: FPPM 1.31 | 13.0 mpg | 17.0 FPPG | 1 GP | CHI
+  last-season fantasy profile per game: scoring block +14.0 | rebounds +3.0 | assists +0.0 | stocks +0.0 | turnovers -0.0 | missed-shot cost -4.0
+  FP per FGA 2.12 | FP per possession used 1.74 | FPPM per usage point 0.048 | usage 27.2% | TS% 0.666
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+2.0 FPPG]  (~+122 FP)
+  + late-season / post-trade form is a positive signal [+0.8 FPPG]  (~+50 FP)
+Main negative drivers:
+  - fewer minutes (27.0 -> 23.0 mpg)  (~-273 FP)
+  - fewer games expected (65 -> 61)  (~-101 FP)
+  - lower per-minute production (FPPM 1.17 -> 1.12)  (~-72 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.1 | teammate -0.4 | coach +0.0 | age -0.4 | role +2.0 | form +0.8 | history_adjustment +1.8
+Top feature terms, FPPM adjustment: late__fppm_l1 +0.015; hist__fppm_l1 +0.011; hist__fppm_raw_w +0.010; newc__height_in -0.014; age__hinge_young -0.012; hist__fppm_shrunk -0.008
+Top feature terms, minutes adjustment: team__rot_size_exp +1.106; age__age +0.602; role__is_top5 +0.597; age__hinge_young -1.048; hist__ast_pct_w -0.490; coach__rot_size -0.481
+
+Archetype: playmaking-heavy    scoring-block share of FP: 42%    breakout score: 8/100
+Upside score: 65   Risk score: 30   P(role expansion >= +3 mpg): 5%
+
+Confidence: High  (score 68/100)

@@ -1,0 +1,44 @@
+PLAYER: Michael Porter Jr.   (BKN, F, age 28.6)
+
+Projected Rank (total value): 37 of 519    | by FPPG: 47    | risk-adjusted: 37
+Consensus rank (comparison only): 45    model-minus-consensus rank: -8    value vs consensus slot: +101 FP
+
+Projected FPPM:    1.14      (80% range 0.96 - 1.32)
+Projected Minutes: 32.2      (80% range 25.6 - 36.7)
+Projected FPPG:    36.6      (80% range 26.6 - 45.1)
+Projected Games:   63      (availability 78%, 80% range 36 - 79 games)
+Projected Total:   2353
+  (in-season: 42 FP already banked over 1 games)
+
+10th percentile total: 1157
+25th percentile total: 1668
+50th percentile total: 2193
+75th percentile total: 2701
+90th percentile total: 3142
+Mean of simulated totals: 2172   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 771    risk-adjusted value: 1482
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.98 | 31.7 mpg | 31.2 FPPG | 81 GP | DEN
+  2024-25: FPPM 0.99 | 33.7 mpg | 33.4 FPPG | 77 GP | DEN
+  2025-26: FPPM 1.21 | 32.5 mpg | 39.3 FPPG | 52 GP | BKN
+  2026-27: FPPM 1.24 | 34.0 mpg | 42.0 FPPG | 1 GP | BKN
+  last-season fantasy profile per game: scoring block +29.0 | rebounds +7.0 | assists +2.0 | stocks +12.0 | turnovers -8.0 | missed-shot cost -12.0
+  FP per FGA 2.00 | FP per possession used 1.62 | FPPM per usage point 0.038 | usage 32.3% | TS% 0.594
+
+Main positive drivers:
+  + more games expected (52 -> 63)  (~+406 FP)
+  + role and depth-chart position favor more production [+2.0 FPPG]  (~+128 FP)
+Main negative drivers:
+  - lower per-minute production (FPPM 1.21 -> 1.14)  (~-150 FP)
+  - unfavorable team environment (pace / efficiency / roster turnover) [-1.1 FPPG]  (~-70 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -1.1 | teammate +0.3 | coach -0.6 | age -0.2 | role +2.0 | form +0.1 | history_adjustment +0.6
+Top feature terms, FPPM adjustment: hist__fppm_l1 +0.013; coach__rot_size +0.012; hist__usg_l1 +0.010; age__hinge_young -0.012; coach__usage_hhi -0.009; hist__fppm_shrunk -0.008
+Top feature terms, minutes adjustment: team__rot_size_exp +1.597; age__age +1.110; role__bin_25_30 +0.730; coach__rot_size -1.166; age__hinge_young -1.048; hist__mpg_l3 -0.527
+
+Archetype: scoring-heavy    scoring-block share of FP: 62%    breakout score: 44/100
+Upside score: 89   Risk score: 15   P(role expansion >= +3 mpg): 17%
+
+Confidence: High  (score 88/100)

@@ -1,0 +1,42 @@
+PLAYER: Daniel Gafford   (DAL, F, age 28.3)
+
+Projected Rank (total value): 146 of 519    | by FPPG: 145    | risk-adjusted: 154
+Consensus rank (comparison only): 140    model-minus-consensus rank: +6    value vs consensus slot: -54 FP
+
+Projected FPPM:    1.18      (80% range 1.00 - 1.37)
+Projected Minutes: 21.4      (80% range 13.2 - 27.1)
+Projected FPPG:    25.2      (80% range 14.5 - 33.9)
+Projected Games:   60      (availability 74%, 80% range 33 - 76 games)
+Projected Total:   1522
+  (in-season: 14 FP already banked over 1 games)
+
+10th percentile total: 571
+25th percentile total: 950
+50th percentile total: 1373
+75th percentile total: 1805
+90th percentile total: 2197
+Mean of simulated totals: 1390   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 342    risk-adjusted value: 858
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.37 | 24.5 mpg | 33.6 FPPG | 74 GP | DAL  (traded WAS -> DAL)
+  2024-25: FPPM 1.40 | 21.6 mpg | 30.2 FPPG | 57 GP | DAL
+  2025-26: FPPM 1.16 | 21.7 mpg | 25.1 FPPG | 55 GP | DAL
+  2026-27: FPPM 0.64 | 22.0 mpg | 14.0 FPPG | 1 GP | DAL
+  last-season fantasy profile per game: scoring block -1.0 | rebounds +3.0 | assists +2.0 | stocks +12.0 | turnovers -2.0 | missed-shot cost -3.0
+  FP per FGA 14.00 | FP per possession used 3.72 | FPPM per usage point 0.086 | usage 7.4% | TS% 0.362
+
+Main positive drivers:
+  + more games expected (55 -> 60)  (~+120 FP)
+Main negative drivers:
+  - stronger teammate competition for usage, shots and minutes [-1.2 FPPG]  (~-69 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.6 | teammate -1.2 | coach -0.3 | age -0.2 | role +0.2 | form +0.5 | history_adjustment +0.7
+Top feature terms, FPPM adjustment: hist__fppm_raw_w +0.019; hist__tpar_l1 +0.017; late__fppm_l1 +0.014; hist__fppm_shrunk -0.014; age__hinge_young -0.012; team__usage_conc -0.007
+Top feature terms, minutes adjustment: team__rot_size_exp +1.662; age__age +1.024; hist__fp_per_fga_l1 +0.696; mate__same_pos_min -1.132; age__hinge_young -1.048; hist__fppm_l3 -0.925
+
+Archetype: stocks-heavy    scoring-block share of FP: 42%    breakout score: 67/100
+Upside score: 68   Risk score: 39   P(role expansion >= +3 mpg): 23%
+
+Confidence: Medium  (score 65/100)

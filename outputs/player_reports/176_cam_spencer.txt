@@ -1,0 +1,43 @@
+PLAYER: Cam Spencer   (MEM, G, age 26.8)
+
+Projected Rank (total value): 176 of 519    | by FPPG: 166    | risk-adjusted: 196
+Consensus rank (comparison only): 280    model-minus-consensus rank: -104    value vs consensus slot: +453 FP
+
+Projected FPPM:    1.09      (80% range 0.91 - 1.28)
+Projected Minutes: 22.3      (80% range 10.5 - 30.2)
+Projected FPPG:    24.3      (80% range 10.6 - 34.6)
+Projected Games:   57      (availability 71%, 80% range 32 - 73 games)
+Projected Total:   1400
+  (in-season: 11 FP already banked over 1 games)
+
+10th percentile total: 404
+25th percentile total: 760
+50th percentile total: 1206
+75th percentile total: 1666
+90th percentile total: 2131
+Mean of simulated totals: 1249   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 220    risk-adjusted value: 713
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2024-25: FPPM 0.94 | 10.0 mpg | 9.5 FPPG | 25 GP | MEM
+  2025-26: FPPM 1.14 | 23.8 mpg | 27.2 FPPG | 72 GP | MEM
+  2026-27: FPPM 0.69 | 16.0 mpg | 11.0 FPPG | 1 GP | MEM
+  last-season fantasy profile per game: scoring block +2.0 | rebounds +3.0 | assists +4.0 | stocks +4.0 | turnovers -2.0 | missed-shot cost -3.0
+  FP per FGA 2.75 | FP per possession used 2.20 | FPPM per usage point 0.054 | usage 12.7% | TS% 0.375
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+1.2 FPPG]  (~+71 FP)
+Main negative drivers:
+  - fewer games expected (72 -> 57)  (~-360 FP)
+  - fewer minutes (23.8 -> 22.3 mpg)  (~-96 FP)
+  - lower per-minute production (FPPM 1.14 -> 1.09)  (~-63 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.4 | teammate +0.6 | coach -0.0 | age +0.7 | role +1.2 | form +0.0 | history_adjustment +2.1
+Top feature terms, FPPM adjustment: age__exp +0.013; coach__star_mpg +0.011; hist__fppm_raw_w +0.011; age__hinge_young -0.012; hist__tpar_l1 -0.010; team__usage_conc -0.009
+Top feature terms, minutes adjustment: team__rot_size_exp +1.662; age__exp +0.726; hist__d_mpg +0.661; age__hinge_young -1.048; coach__rot_size -0.648; hist__ast_pct_w -0.521
+
+Archetype: playmaking-heavy    scoring-block share of FP: 46%    breakout score: 24/100
+Upside score: 87   Risk score: 54   P(role expansion >= +3 mpg): 22%
+
+Confidence: Medium  (score 51/100)

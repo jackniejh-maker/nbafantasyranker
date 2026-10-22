@@ -1,0 +1,47 @@
+PLAYER: Dyson Daniels   (ATL, G, age 23.9)
+
+Projected Rank (total value): 26 of 519    | by FPPG: 37    | risk-adjusted: 21
+Consensus rank (comparison only): 52    model-minus-consensus rank: -26    value vs consensus slot: +414 FP
+
+Projected FPPM:    1.19      (80% range 1.02 - 1.38)
+Projected Minutes: 32.3      (80% range 25.8 - 36.6)
+Projected FPPG:    38.5      (80% range 28.2 - 47.0)
+Projected Games:   67      (availability 83%, 80% range 39 - 79 games)
+Projected Total:   2646
+  (in-season: 47 FP already banked over 1 games)
+
+10th percentile total: 1365
+25th percentile total: 1935
+50th percentile total: 2463
+75th percentile total: 2951
+90th percentile total: 3357
+Mean of simulated totals: 2415   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 970    risk-adjusted value: 1716
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.90 | 22.3 mpg | 20.2 FPPG | 61 GP | NOP
+  2024-25: FPPM 1.18 | 33.9 mpg | 39.8 FPPG | 76 GP | ATL
+  2025-26: FPPM 1.10 | 33.2 mpg | 36.5 FPPG | 76 GP | ATL
+  2026-27: FPPM 1.34 | 35.0 mpg | 47.0 FPPG | 1 GP | ATL
+  last-season fantasy profile per game: scoring block +21.0 | rebounds +4.0 | assists +6.0 | stocks +20.0 | turnovers -4.0 | missed-shot cost -7.0
+  FP per FGA 3.62 | FP per possession used 2.66 | FPPM per usage point 0.068 | usage 19.7% | TS% 0.639
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+3.5 FPPG]  (~+237 FP)
+  + higher per-minute production (FPPM 1.10 -> 1.19)  (~+206 FP)
+  + favorable team environment (pace / efficiency / roster turnover) [+1.4 FPPG]  (~+94 FP)
+  + late-season / post-trade form is a positive signal [+1.0 FPPG]  (~+69 FP)
+Main negative drivers:
+  - fewer games expected (76 -> 67)  (~-330 FP)
+  - fewer minutes (33.2 -> 32.3 mpg)  (~-71 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.0 FPPG]  (~-68 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +1.4 | teammate -1.0 | coach +0.5 | age +0.8 | role +3.5 | form +1.0 | history_adjustment +1.1
+Top feature terms, FPPM adjustment: late__fppm_l1 +0.016; hist__stl_pct_l1 +0.012; hist__tpar_l1 +0.010; hist__fppm_shrunk -0.008; team__usage_conc -0.007; coach__rot_size -0.007
+Top feature terms, minutes adjustment: team__rot_size_exp +1.292; role__gap_hist +1.173; role__bin_25_30 +0.730; role__budget_ratio -0.842; team__oversub -0.571; age__age -0.458
+
+Archetype: stocks-heavy    scoring-block share of FP: 33%    breakout score: 66/100
+Upside score: 82   Risk score: 5   P(role expansion >= +3 mpg): 13%
+
+Confidence: High  (score 95/100)

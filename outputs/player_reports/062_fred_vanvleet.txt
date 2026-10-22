@@ -1,0 +1,45 @@
+PLAYER: Fred VanVleet   (HOU, G, age 32.9)
+
+Projected Rank (total value): 62 of 519    | by FPPG: 70    | risk-adjusted: 63
+Consensus rank (comparison only): 95    model-minus-consensus rank: -33    value vs consensus slot: +308 FP
+
+Projected FPPM:    1.04      (80% range 0.86 - 1.22)
+Projected Minutes: 31.4      (80% range 25.3 - 35.4)
+Projected FPPG:    32.6      (80% range 23.3 - 40.4)
+Projected Games:   62      (availability 77%, 80% range 36 - 78 games)
+Projected Total:   2069
+  (in-season: 44 FP already banked over 1 games)
+
+10th percentile total: 1027
+25th percentile total: 1467
+50th percentile total: 1928
+75th percentile total: 2377
+90th percentile total: 2773
+Mean of simulated totals: 1913   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 680    risk-adjusted value: 1304
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2022-23: FPPM 1.15 | 36.7 mpg | 42.2 FPPG | 69 GP | TOR
+  2023-24: FPPM 1.17 | 36.8 mpg | 43.0 FPPG | 73 GP | HOU
+  2024-25: FPPM 0.94 | 35.2 mpg | 33.0 FPPG | 60 GP | HOU
+  2026-27: FPPM 1.47 | 30.0 mpg | 44.0 FPPG | 1 GP | HOU
+  last-season fantasy profile per game: scoring block +4.0 | rebounds +2.0 | assists +22.0 | stocks +16.0 | turnovers -0.0 | missed-shot cost -6.0
+  FP per FGA 5.50 | FP per possession used 5.50 | FPPM per usage point 0.131 | usage 11.2% | TS% 0.375
+
+Main positive drivers:
+  + higher per-minute production (FPPM 0.94 -> 1.04)  (~+196 FP)
+  + role and depth-chart position favor more production [+2.2 FPPG]  (~+134 FP)
+  + more games expected (60 -> 62)  (~+69 FP)
+Main negative drivers:
+  - fewer minutes (35.2 -> 31.4 mpg)  (~-245 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.2 FPPG]  (~-75 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.4 | teammate -1.2 | coach +0.2 | age -0.4 | role +2.2 | form +0.3 | history_adjustment -3.0
+Top feature terms, FPPM adjustment: hist__log_min_l1 +0.028; age__age +0.011; role__bin_25_30 +0.007; age__exp -0.019; newc__height_in -0.016; age__hinge_young -0.012
+Top feature terms, minutes adjustment: age__age +2.553; hist__log_min_l1 +0.969; coach__rot_size +0.864; hist__missing_l1 -3.178; mate__quality_wavg -1.057; age__hinge_young -1.048
+
+Archetype: playmaking-heavy    scoring-block share of FP: 41%    breakout score: 46/100
+Upside score: 72   Risk score: 14   P(role expansion >= +3 mpg): 2%
+
+Confidence: High  (score 87/100)

@@ -1,0 +1,43 @@
+PLAYER: Rudy Gobert   (MIN, C, age 34.6)
+
+Projected Rank (total value): 51 of 519    | by FPPG: 73    | risk-adjusted: 46
+Consensus rank (comparison only): 70    model-minus-consensus rank: -19    value vs consensus slot: +177 FP
+
+Projected FPPM:    1.04      (80% range 0.85 - 1.24)
+Projected Minutes: 30.8      (80% range 26.4 - 33.7)
+Projected FPPG:    32.1      (80% range 23.9 - 39.2)
+Projected Games:   68      (availability 85%, 80% range 40 - 79 games)
+Projected Total:   2208
+  (in-season: 11 FP already banked over 1 games)
+
+10th percentile total: 1157
+25th percentile total: 1625
+50th percentile total: 2054
+75th percentile total: 2462
+90th percentile total: 2801
+Mean of simulated totals: 2020   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 836    risk-adjusted value: 1445
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.13 | 34.1 mpg | 38.5 FPPG | 76 GP | MIN
+  2024-25: FPPM 1.02 | 33.2 mpg | 34.0 FPPG | 72 GP | MIN
+  2025-26: FPPM 1.06 | 31.3 mpg | 33.0 FPPG | 76 GP | MIN
+  2026-27: FPPM 0.33 | 33.0 mpg | 11.0 FPPG | 1 GP | MIN
+  last-season fantasy profile per game: scoring block +0.0 | rebounds +15.0 | assists +2.0 | stocks +0.0 | turnovers -6.0 | missed-shot cost -5.0
+  FP per FGA 5.50 | FP per possession used 1.29 | FPPM per usage point 0.034 | usage 9.9% | TS% 0.453
+
+Main positive drivers:
+  (none above the materiality threshold)
+Main negative drivers:
+  - fewer games expected (76 -> 68)  (~-242 FP)
+  - age-related decline expected [-1.2 FPPG]  (~-85 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.5 | teammate +0.5 | coach -0.3 | age -1.2 | role -0.0 | form +0.2 | history_adjustment -1.2
+Top feature terms, FPPM adjustment: hist__tpar_l1 +0.017; newc__height_in +0.016; age__age +0.014; age__exp -0.032; role__bin_30_35 -0.020; age__hinge_young -0.012
+Top feature terms, minutes adjustment: age__age +3.108; mate__same_pos_min +1.105; role__bin_30_35 +1.098; age__exp -1.770; age__hinge_young -1.048; hist__reb_pct_w -0.967
+
+Archetype: rebounding-heavy    scoring-block share of FP: 37%    breakout score: 24/100
+Upside score: 50   Risk score: 3   P(role expansion >= +3 mpg): 7%
+
+Confidence: High  (score 97/100)

@@ -1,0 +1,44 @@
+PLAYER: Toumani Camara   (POR, F, age 26.7)
+
+Projected Rank (total value): 95 of 519    | by FPPG: 147    | risk-adjusted: 86
+Consensus rank (comparison only): 154    model-minus-consensus rank: -59    value vs consensus slot: +289 FP
+
+Projected FPPM:    0.83      (80% range 0.66 - 1.01)
+Projected Minutes: 30.0      (80% range 23.3 - 34.5)
+Projected FPPG:    24.9      (80% range 16.7 - 32.1)
+Projected Games:   70      (availability 87%, 80% range 42 - 81 games)
+Projected Total:   1789
+  (in-season: 31 FP already banked over 1 games)
+
+10th percentile total: 875
+25th percentile total: 1239
+50th percentile total: 1620
+75th percentile total: 2005
+90th percentile total: 2339
+Mean of simulated totals: 1621   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 644    risk-adjusted value: 1132
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 0.72 | 24.9 mpg | 18.0 FPPG | 70 GP | POR
+  2024-25: FPPM 0.85 | 32.7 mpg | 27.8 FPPG | 78 GP | POR
+  2025-26: FPPM 0.81 | 33.3 mpg | 27.1 FPPG | 82 GP | POR
+  2026-27: FPPM 1.35 | 23.0 mpg | 31.0 FPPG | 1 GP | POR
+  last-season fantasy profile per game: scoring block +25.0 | rebounds +2.0 | assists +6.0 | stocks +0.0 | turnovers -2.0 | missed-shot cost -3.0
+  FP per FGA 3.44 | FP per possession used 2.85 | FPPM per usage point 0.071 | usage 19.1% | TS% 0.911
+
+Main positive drivers:
+  + role and depth-chart position favor more production [+1.0 FPPG]  (~+73 FP)
+Main negative drivers:
+  - fewer games expected (82 -> 70)  (~-287 FP)
+  - fewer minutes (33.3 -> 30.0 mpg)  (~-192 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.3 FPPG]  (~-91 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.0 | teammate -1.3 | coach -0.3 | age +0.1 | role +1.0 | form +0.3 | history_adjustment -1.7
+Top feature terms, FPPM adjustment: age__exp +0.009; role__rank_in_team +0.005; mate__same_pos_n +0.004; role__bin_30_35 -0.020; hist__tpar_l1 -0.014; age__hinge_young -0.012
+Top feature terms, minutes adjustment: role__bin_30_35 +1.098; mate__same_pos_min +0.746; role__is_top5 +0.597; mate__quality_wavg -1.137; age__hinge_young -1.048; hist__eff_minutes_log -0.601
+
+Archetype: all-around    scoring-block share of FP: 46%    breakout score: 13/100
+Upside score: 43   Risk score: 4   P(role expansion >= +3 mpg): 4%
+
+Confidence: High  (score 88/100)

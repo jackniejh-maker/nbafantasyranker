@@ -1,0 +1,43 @@
+PLAYER: Kyle Kuzma   (MIL, F, age 31.5)
+
+Projected Rank (total value): 113 of 519    | by FPPG: 140    | risk-adjusted: 109
+Consensus rank (comparison only): 321    model-minus-consensus rank: -208    value vs consensus slot: +882 FP
+
+Projected FPPM:    0.96      (80% range 0.78 - 1.14)
+Projected Minutes: 26.7      (80% range 20.5 - 30.9)
+Projected FPPG:    25.6      (80% range 17.3 - 32.5)
+Projected Games:   64      (availability 80%, 80% range 36 - 76 games)
+Projected Total:   1671
+  (in-season: 19 FP already banked over 1 games)
+
+10th percentile total: 767
+25th percentile total: 1137
+50th percentile total: 1523
+75th percentile total: 1880
+90th percentile total: 2191
+Mean of simulated totals: 1509   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 525    risk-adjusted value: 1024
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.13 | 32.6 mpg | 36.7 FPPG | 70 GP | WAS
+  2024-25: FPPM 0.76 | 29.8 mpg | 22.8 FPPG | 65 GP | MIL  (traded WAS -> MIL)
+  2025-26: FPPM 0.91 | 26.2 mpg | 24.0 FPPG | 69 GP | MIL
+  2026-27: FPPM 0.70 | 27.0 mpg | 19.0 FPPG | 1 GP | MIL
+  last-season fantasy profile per game: scoring block +1.0 | rebounds +6.0 | assists +6.0 | stocks +12.0 | turnovers -6.0 | missed-shot cost -7.0
+  FP per FGA 2.11 | FP per possession used 1.58 | FPPM per usage point 0.039 | usage 18.2% | TS% 0.278
+
+Main positive drivers:
+  + higher per-minute production (FPPM 0.91 -> 0.96)  (~+77 FP)
+Main negative drivers:
+  - fewer games expected (69 -> 64)  (~-116 FP)
+  - unfavorable team environment (pace / efficiency / roster turnover) [-0.7 FPPG]  (~-42 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.7 | teammate -0.1 | coach +0.1 | age -0.1 | role +0.4 | form +0.0 | history_adjustment -2.0
+Top feature terms, FPPM adjustment: coach__star_mpg +0.013; age__age +0.009; team__depth15 +0.008; age__exp -0.014; age__hinge_young -0.012; team__ast_added -0.010
+Top feature terms, minutes adjustment: age__age +2.085; team__rot_size_exp +1.662; role__is_top5 +0.597; age__hinge_young -1.048; age__exp -0.772; role__budget_ratio -0.585
+
+Archetype: scoring-heavy    scoring-block share of FP: 59%    breakout score: 80/100
+Upside score: 29   Risk score: 16   P(role expansion >= +3 mpg): 22%
+
+Confidence: High  (score 85/100)

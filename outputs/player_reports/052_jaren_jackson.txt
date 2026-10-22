@@ -1,0 +1,45 @@
+PLAYER: Jaren Jackson Jr.   (UTA, F, age 27.4)
+
+Projected Rank (total value): 52 of 519    | by FPPG: 50    | risk-adjusted: 55
+Consensus rank (comparison only): 79    model-minus-consensus rank: -27    value vs consensus slot: +244 FP
+
+Projected FPPM:    1.23      (80% range 1.05 - 1.41)
+Projected Minutes: 29.5      (80% range 22.3 - 34.4)
+Projected FPPG:    36.3      (80% range 25.3 - 45.2)
+Projected Games:   60      (availability 74%, 80% range 34 - 75 games)
+Projected Total:   2200
+  (in-season: 29 FP already banked over 1 games)
+
+10th percentile total: 1036
+25th percentile total: 1525
+50th percentile total: 2048
+75th percentile total: 2555
+90th percentile total: 3004
+Mean of simulated totals: 2032   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 673    risk-adjusted value: 1361
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.17 | 32.2 mpg | 37.7 FPPG | 66 GP | MEM
+  2024-25: FPPM 1.31 | 29.8 mpg | 39.2 FPPG | 74 GP | MEM
+  2025-26: FPPM 1.15 | 30.3 mpg | 34.9 FPPG | 48 GP | UTA  (traded MEM -> UTA)
+  2026-27: FPPM 1.04 | 28.0 mpg | 29.0 FPPG | 1 GP | UTA
+  last-season fantasy profile per game: scoring block +18.0 | rebounds +5.0 | assists +4.0 | stocks +12.0 | turnovers -10.0 | missed-shot cost -5.0
+  FP per FGA 2.90 | FP per possession used 1.83 | FPPM per usage point 0.041 | usage 25.1% | TS% 0.689
+
+Main positive drivers:
+  + more games expected (48 -> 60)  (~+427 FP)
+  + role and depth-chart position favor more production [+2.9 FPPG]  (~+175 FP)
+  + higher per-minute production (FPPM 1.15 -> 1.23)  (~+143 FP)
+Main negative drivers:
+  - age-related decline expected [-1.2 FPPG]  (~-72 FP)
+  - fewer minutes (30.3 -> 29.5 mpg)  (~-60 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.3 | teammate -0.2 | coach +0.0 | age -1.2 | role +2.9 | form +0.2 | history_adjustment -0.2
+Top feature terms, FPPM adjustment: hist__fppm_raw_w +0.016; late__fppm_l1 +0.014; hist__blk_pct_l1 +0.011; hist__fppm_shrunk -0.014; age__hinge_young -0.012; trade__traded_l1 -0.011
+Top feature terms, minutes adjustment: team__rot_size_exp +1.116; role__bin_25_30 +0.730; age__age +0.706; age__hinge_young -1.048; coach__rot_size -0.833; trade__traded_l1 -0.657
+
+Archetype: stocks-heavy    scoring-block share of FP: 57%    breakout score: 78/100
+Upside score: 90   Risk score: 20   P(role expansion >= +3 mpg): 16%
+
+Confidence: High  (score 82/100)

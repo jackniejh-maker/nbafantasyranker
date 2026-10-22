@@ -1,0 +1,44 @@
+PLAYER: Lauri Markkanen   (UTA, F, age 29.7)
+
+Projected Rank (total value): 82 of 519    | by FPPG: 45    | risk-adjusted: 91
+Consensus rank (comparison only): 49    model-minus-consensus rank: +33    value vs consensus slot: -290 FP
+
+Projected FPPM:    1.12      (80% range 0.94 - 1.31)
+Projected Minutes: 32.9      (80% range 25.4 - 37.8)
+Projected FPPG:    36.9      (80% range 25.8 - 45.6)
+Projected Games:   52      (availability 65%, 80% range 19 - 74 games)
+Projected Total:   1954
+  (in-season: 26 FP already banked over 1 games)
+
+10th percentile total: 682
+25th percentile total: 1190
+50th percentile total: 1785
+75th percentile total: 2368
+90th percentile total: 2868
+Mean of simulated totals: 1790   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 416    risk-adjusted value: 1101
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2023-24: FPPM 1.21 | 33.1 mpg | 40.1 FPPG | 55 GP | UTA
+  2024-25: FPPM 0.94 | 31.4 mpg | 29.5 FPPG | 47 GP | UTA
+  2025-26: FPPM 1.22 | 34.4 mpg | 42.0 FPPG | 42 GP | UTA
+  2026-27: FPPM 0.72 | 36.0 mpg | 26.0 FPPG | 1 GP | UTA
+  last-season fantasy profile per game: scoring block +13.0 | rebounds +9.0 | assists +6.0 | stocks +4.0 | turnovers -6.0 | missed-shot cost -10.0
+  FP per FGA 2.00 | FP per possession used 1.27 | FPPM per usage point 0.029 | usage 25.1% | TS% 0.517
+
+Main positive drivers:
+  + more games expected (42 -> 52)  (~+378 FP)
+  + role and depth-chart position favor more production [+3.1 FPPG]  (~+161 FP)
+Main negative drivers:
+  - lower per-minute production (FPPM 1.22 -> 1.12)  (~-174 FP)
+  - fewer minutes (34.4 -> 32.9 mpg)  (~-87 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.3 | teammate -0.5 | coach +0.1 | age -0.7 | role +3.1 | form +0.7 | history_adjustment -0.7
+Top feature terms, FPPM adjustment: newc__height_in +0.016; late__fppm_l1 +0.014; hist__fppm_l1 +0.014; age__exp -0.014; age__hinge_young -0.012; hist__tov_pct_l1 -0.010
+Top feature terms, minutes adjustment: age__age +1.477; team__rot_size_exp +1.116; role__bin_25_30 +0.730; age__hinge_young -1.048; coach__rot_size -0.833; age__exp -0.772
+
+Archetype: scoring-heavy    scoring-block share of FP: 65%    breakout score: 14/100
+Upside score: 97   Risk score: 42   P(role expansion >= +3 mpg): 12%
+
+Confidence: Medium  (score 62/100)

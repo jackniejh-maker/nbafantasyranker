@@ -1,0 +1,43 @@
+PLAYER: Zaccharie Risacher   (DAL, F, age 21.8)
+
+Projected Rank (total value): 159 of 519    | by FPPG: 189    | risk-adjusted: 152
+Consensus rank (comparison only): 315    model-minus-consensus rank: -156    value vs consensus slot: +648 FP
+
+Projected FPPM:    0.95      (80% range 0.77 - 1.14)
+Projected Minutes: 23.2      (80% range 15.6 - 28.2)
+Projected FPPG:    22.0      (80% range 13.4 - 29.2)
+Projected Games:   65      (availability 81%, 80% range 36 - 76 games)
+Projected Total:   1461
+  (in-season: 25 FP already banked over 1 games)
+
+10th percentile total: 621
+25th percentile total: 946
+50th percentile total: 1303
+75th percentile total: 1651
+90th percentile total: 1975
+Mean of simulated totals: 1306   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 418    risk-adjusted value: 860
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2024-25: FPPM 0.86 | 24.6 mpg | 21.1 FPPG | 75 GP | ATL
+  2025-26: FPPM 0.88 | 22.4 mpg | 19.8 FPPG | 67 GP | ATL
+  2026-27: FPPM 0.93 | 27.0 mpg | 25.0 FPPG | 1 GP | DAL
+  last-season fantasy profile per game: scoring block +1.0 | rebounds +6.0 | assists +4.0 | stocks +20.0 | turnovers -6.0 | missed-shot cost -5.0
+  FP per FGA 3.57 | FP per possession used 2.50 | FPPM per usage point 0.058 | usage 16.0% | TS% 0.286
+
+Main positive drivers:
+  + age / development curve favors growth [+3.7 FPPG]  (~+238 FP)
+  + higher per-minute production (FPPM 0.88 -> 0.95)  (~+99 FP)
+  + more minutes (22.4 -> 23.2 mpg)  (~+47 FP)
+Main negative drivers:
+  - stronger teammate competition for usage, shots and minutes [-1.5 FPPG]  (~-95 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -0.5 | teammate -1.5 | coach -0.3 | age +3.7 | role -0.1 | form -0.2 | history_adjustment -1.0
+Top feature terms, FPPM adjustment: age__hinge_young +0.036; age__exp +0.013; mate__same_pos_min +0.009; team__usage_conc -0.007; mate__same_pos_n -0.005; hist__tpar_l1 -0.005
+Top feature terms, minutes adjustment: age__hinge_young +3.196; team__rot_size_exp +1.662; age__exp +0.726; age__age -1.144; mate__same_pos_min -1.132; role__budget_ratio -0.682
+
+Archetype: all-around    scoring-block share of FP: 55%    breakout score: 86/100
+Upside score: 30   Risk score: 22   P(role expansion >= +3 mpg): 27%
+
+Confidence: High  (score 76/100)

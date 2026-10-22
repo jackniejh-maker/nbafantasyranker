@@ -1,0 +1,44 @@
+PLAYER: Donovan Clingan   (POR, C, age 22.9)
+
+Projected Rank (total value): 63 of 519    | by FPPG: 81    | risk-adjusted: 65
+Consensus rank (comparison only): 72    model-minus-consensus rank: -9    value vs consensus slot: +60 FP
+
+Projected FPPM:    1.24      (80% range 1.06 - 1.42)
+Projected Minutes: 25.6      (80% range 17.3 - 30.9)
+Projected FPPG:    31.6      (80% range 20.0 - 40.6)
+Projected Games:   67      (availability 83%, 80% range 38 - 78 games)
+Projected Total:   2135
+  (in-season: 20 FP already banked over 1 games)
+
+10th percentile total: 954
+25th percentile total: 1406
+50th percentile total: 1922
+75th percentile total: 2390
+90th percentile total: 2810
+Mean of simulated totals: 1905   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 663    risk-adjusted value: 1292
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2024-25: FPPM 1.17 | 19.8 mpg | 23.1 FPPG | 67 GP | POR
+  2025-26: FPPM 1.29 | 27.2 mpg | 35.1 FPPG | 77 GP | POR
+  2026-27: FPPM 0.95 | 21.0 mpg | 20.0 FPPG | 1 GP | POR
+  last-season fantasy profile per game: scoring block +11.0 | rebounds +7.0 | assists +4.0 | stocks +0.0 | turnovers -2.0 | missed-shot cost -6.0
+  FP per FGA 2.22 | FP per possession used 1.84 | FPPM per usage point 0.046 | usage 20.9% | TS% 0.557
+
+Main positive drivers:
+  + age / development curve favors growth [+3.1 FPPG]  (~+207 FP)
+  + late-season / post-trade form is a positive signal [+0.9 FPPG]  (~+61 FP)
+Main negative drivers:
+  - fewer games expected (77 -> 67)  (~-320 FP)
+  - fewer minutes (27.2 -> 25.6 mpg)  (~-135 FP)
+  - lower per-minute production (FPPM 1.29 -> 1.24)  (~-92 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team +0.1 | teammate +0.1 | coach -0.4 | age +3.1 | role -0.4 | form +0.9 | history_adjustment +1.3
+Top feature terms, FPPM adjustment: late__fppm_l1 +0.023; age__hinge_young +0.019; newc__height_in +0.019; hist__fppm_shrunk -0.014; mate__usg_wavg -0.007; mate__ast_wavg -0.007
+Top feature terms, minutes adjustment: age__hinge_young +1.699; age__exp +0.726; mate__same_pos_min +0.717; hist__reb_pct_w -1.206; pos__c -0.876; age__age -0.771
+
+Archetype: rebounding-heavy    scoring-block share of FP: 33%    breakout score: 12/100
+Upside score: 81   Risk score: 16   P(role expansion >= +3 mpg): 14%
+
+Confidence: High  (score 82/100)

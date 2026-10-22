@@ -1,0 +1,45 @@
+PLAYER: Jeremiah Fears   (NOP, G, age 20.3)
+
+Projected Rank (total value): 90 of 519    | by FPPG: 126    | risk-adjusted: 88
+Consensus rank (comparison only): 110    model-minus-consensus rank: -20    value vs consensus slot: +132 FP
+
+Projected FPPM:    1.02      (80% range 0.86 - 1.20)
+Projected Minutes: 25.9      (80% range 17.8 - 31.2)
+Projected FPPG:    26.6      (80% range 16.8 - 34.3)
+Projected Games:   69      (availability 85%, 80% range 41 - 80 games)
+Projected Total:   1835
+  (in-season: 5 FP already banked over 1 games)
+
+10th percentile total: 844
+25th percentile total: 1231
+50th percentile total: 1658
+75th percentile total: 2060
+90th percentile total: 2423
+Mean of simulated totals: 1651   (Projected Total above = projected FPPG x expected games; the median can differ because availability is skewed by injuries)
+Downside tail (mean of worst 10%): 590    risk-adjusted value: 1124
+
+Historical (FPPM / minutes per game / FPPG / games):
+  2025-26: FPPM 0.99 | 25.7 mpg | 25.6 FPPG | 82 GP | NOP
+  2026-27: FPPM 0.24 | 21.0 mpg | 5.0 FPPG | 1 GP | NOP
+  last-season fantasy profile per game: scoring block +2.0 | rebounds +3.0 | assists +2.0 | stocks +0.0 | turnovers -2.0 | missed-shot cost -9.0
+  FP per FGA 0.50 | FP per possession used 0.39 | FPPM per usage point 0.010 | usage 24.5% | TS% 0.340
+
+Main positive drivers:
+  + age / development curve favors growth [+6.2 FPPG]  (~+424 FP)
+  + role and depth-chart position favor more production [+1.5 FPPG]  (~+101 FP)
+  + higher per-minute production (FPPM 0.99 -> 1.02)  (~+55 FP)
+  + late-season / post-trade form is a positive signal [+0.6 FPPG]  (~+40 FP)
+Main negative drivers:
+  - fewer games expected (82 -> 69)  (~-348 FP)
+  - stronger teammate competition for usage, shots and minutes [-1.2 FPPG]  (~-79 FP)
+  - unfavorable team environment (pace / efficiency / roster turnover) [-1.1 FPPG]  (~-78 FP)
+
+Context effects on projected FPPG (model ablation, vs a neutral environment):
+  team -1.1 | teammate -1.2 | coach -0.3 | age +6.2 | role +1.5 | form +0.6 | history_adjustment +0.9
+Top feature terms, FPPM adjustment: age__hinge_young +0.054; age__exp +0.018; role__usg_high +0.011; newc__height_in -0.009; team__usage_conc -0.008; age__age -0.007
+Top feature terms, minutes adjustment: age__hinge_young +4.769; team__rot_size_exp +1.613; age__exp +0.975; age__age -1.536; role__budget_ratio -0.728; mate__quality_wavg -0.678
+
+Archetype: all-around    scoring-block share of FP: 52%    breakout score: 63/100
+Upside score: 54   Risk score: 13   P(role expansion >= +3 mpg): 23%
+
+Confidence: High  (score 84/100)
